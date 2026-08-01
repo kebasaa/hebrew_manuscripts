@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="Sloane237_REV_Gordon" osisRefWork="bible" xml:lang="en">
+    <header>
+      <work osisWork="Sloane237_REV_Gordon">
+        <title>English Translation of Revelation (British Library, Sloane MS 237)</title>
+        <contributor role="ctb" file-as="Gordon, Nehemia">Nehemia Gordon</contributor>
+        <creator role="trl">Nehemia Gordon</creator>
+        <date event="eversion" type="ISO">2017</date>
+        <description>Hebrew transcription and English translation of the Revelation passages in British Library, Sloane MS 237, a fully pointed Hebrew manuscript, transcribed and translated by Nehemia Gordon.</description>
+        <description type="x-contents">A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.</description>
+        <description type="x-script">Square Hebrew script, fully vocalised, ruled and written ten lines to the page.</description>
+        <description type="x-provenance">From the collection of Sir Hans Sloane (1660–1753), baronet, physician and collector. Part of the Sloane bequest, incorporated into the newly founded British Museum in 1753 and held by the British Library since 1973.</description>
+        <description type="x-editorial">The editor's notes record pointing absent from the manuscript — a missing sheva, shin- and sin-dots, and a cholam — together with one extraneous kamatz that the manuscript does carry. The manuscript numbers its own verses with Hebrew letters, which disagree with the printed numbering at Revelation 1:9, 1:15, 1:16, 1:17 and 2:8.</description>
+        <publisher>Nehemia Gordon</publisher>
+        <type type="x-bible">Edition</type>
+        <identifier type="OSIS">Sloane237_REV_Gordon</identifier>
+        <identifier type="x-shelfmark">British Library, Sloane MS 237</identifier>
+        <identifier type="URI">https://www.nehemiaswall.com/sloane-273</identifier>
+        <source>Shelfmark, extent, script, date and provenance from the British Library Archives and Manuscripts catalogue record for Sloane MS 237.</source>
+        <source>Text, translation and annotation from Nehemia Gordon, 'A Hebrew Manuscript of the Book of Revelation' (2017), nehemiaswall.com.</source>
+        <language>en</language>
+        <coverage>Revelation 1:1–2:13</coverage>
+        <rights>© 2017 by Nehemia Gordon</rights>
+        <scope>REV</scope>
+      </work>
+      <work osisWork="bible">
+        <title>Referenced versification (standard)</title>
+        <identifier type="OSIS">bible</identifier>
+        <language>en</language>
+        <refSystem>StandardV11N</refSystem>
+      </work>
+    </header>
+    <div type="titlePage" canonical="false">
+      <title type="main">A Hebrew Manuscript of the Book of Revelation</title>
+      <title type="sub">British Library, MS Sloane 273</title>
+      <title type="sub">Transcribed and Translated by Nehemia Gordon</title>
+      <title type="sub">www.NehemiasWall.com</title>
+      <title type="sub">© 2017 by Nehemia Gordon</title>
+    </div>
+    <div type="book" osisID="Rev" canonical="true">
+        <chapter sID="Rev.1" osisID="Rev.1" n="1"/>
+        <verse sID="Rev.1.1" osisID="Rev.1.1" n="1" subType="x-alt-1"/>The vision of Yehoshua Mashiach, that the Elohim gave him to show his servants that which was necessary to be with wrath, and he taught (horah) sending by the hand of his angel to his servant Yochanan.<verse eID="Rev.1.1"/>
+        <verse sID="Rev.1.2" osisID="Rev.1.2" n="2" subType="x-alt-2"/>That he testified the word of the Elohim and the witness of Yehoshua Mashiach, which he saw, and that are here,<note type="explanation" placement="foot" n="3" osisRef="Rev.1.2" osisID="Rev.1.2!note.3">The word הֵנָּה "here" appears four times in the text, perhaps having the idiosyncratic meaning of "these".</note> and that which was necessary to do<verse eID="Rev.1.2"/>
+        <verse sID="Rev.1.3" osisID="Rev.1.3" n="3" subType="x-alt-3"/>after this. Happy is the man who reads and the ones who hear the words of the prophecy and guard here, those that are written in it. For the time is near.<verse eID="Rev.1.3"/>
+        <verse sID="Rev.1.4" osisID="Rev.1.4" n="4" subType="x-alt-4"/>Yochanan to the seven congregations, that are in Asia. Grace to you and Shalom from him who is, and who will be, and who will come and from the seven souls that are opposite his throne.<verse eID="Rev.1.4"/>
+        <verse sID="Rev.1.5" osisID="Rev.1.5" n="5" subType="x-alt-5"/>And from Yehoshua Mashiach who is the witness of faithfulness. the firstborn of the men and the prince of the kings of the Earth, who loved us and baptized us from our sins<verse eID="Rev.1.5"/>
+        <verse sID="Rev.1.6" osisID="Rev.1.6" n="6" subType="x-alt-6"/>with his blood. And he made us a kingdom and priests to Elohim and his Father. To him is glory and dominion, forever. Amen.<verse eID="Rev.1.6"/>
+        <verse sID="Rev.1.7" osisID="Rev.1.7" n="7" subType="x-alt-7"/>Behold, he has come with the cloud and every eye saw him<verse eID="Rev.1.7"/>
+        <verse sID="Rev.1.8" osisID="Rev.1.8" n="8" subType="x-alt-8"/>I am the Aleph and the Tav, says Yehovah the Elohim. He that is, and he was will be, and he that will come, the Shaddai.<verse eID="Rev.1.8"/>
+        <verse sID="Rev.1.9" osisID="Rev.1.9" n="9" subType="x-alt-4"/>I am Yochanan your brother and a participant in the suffering, and in the kingdom, and in the hope in Mashiach Yehoshua. I was on the island that is called Patmos for the word of the Elohim and for the testimony of<verse eID="Rev.1.9"/>
+        <verse sID="Rev.1.10" osisID="Rev.1.10" n="10" subType="x-alt-10"/>and these that stabbed him. And they will mourn him, all the tribes of the Earth. Also, Amen. Yehoshua Mashiach. I was in the spirit on the lordly<note type="explanation" placement="foot" n="6" osisRef="Rev.1.10" osisID="Rev.1.10!note.6">The unique form אֲדֹנִיִּי is apparently an adjective derived from אֲדֹנָי or אֲדֹנִי.</note> day and I heard a great voice behind me like<verse eID="Rev.1.10"/>
+        <verse sID="Rev.1.11" osisID="Rev.1.11" n="11" subType="x-alt-11"/>a trumpet, that says, That which you see, write in a book, and send to the seven congregations, to Ephesus, and to Smyrna, and to Pergamus, and to Thyatira, and to Sardis, and to Philadelphia, and to Laodicea.<verse eID="Rev.1.11"/>
+        <verse sID="Rev.1.12" osisID="Rev.1.12" n="12" subType="x-alt-12"/>And there I turned to look at the voice that spoke with me. And I was turning and saw seven golden lamps.<verse eID="Rev.1.12"/>
+        <verse sID="Rev.1.13" osisID="Rev.1.13" n="13" subType="x-alt-13"/>And in the middle of the seven lamps dominion for the Son of Man, dressed with a tunic to the legs and girded to the chest with a golden belt.<verse eID="Rev.1.13"/>
+        <verse sID="Rev.1.14" osisID="Rev.1.14" n="14"/>And his head and the hairs are white like bright wool,<verse eID="Rev.1.14"/>
+        <verse sID="Rev.1.15" osisID="Rev.1.15" n="15" subType="x-alt-14"/>like snow, and his eyes like a flame of fire. And his feet are likened to polished copper, when glowing in the furnace. And his voice is like the sound of the deep- sea.<verse eID="Rev.1.15"/>
+        <verse sID="Rev.1.16" osisID="Rev.1.16" n="16" subType="x-alt-15"/>And he is holding in his right hand seven stars. And from his mouth goes forth a double-edged sword. And his face is like the light of the sun<verse eID="Rev.1.16"/>
+        <verse sID="Rev.1.17" osisID="Rev.1.17" n="17" subType="x-alt-16"/>in its strength. And when I saw him, I fell to his feet like a dead person. And he put his right hand on me and he said, Do not be afraid.<verse eID="Rev.1.17"/>
+        <verse sID="Rev.1.18" osisID="Rev.1.18" n="18" subType="x-alt-18"/>I am the first and the last. And the one who lives, and I was dead,<verse eID="Rev.1.18"/>
+        <verse sID="Rev.1.19" osisID="Rev.1.19" n="19" subType="x-alt-19"/>of death and She'ol. Therefore, write that which you saw, and that are here, and that which is necessary to do after this.<verse eID="Rev.1.19"/>
+        <verse sID="Rev.1.20" osisID="Rev.1.20" n="20" subType="x-alt-20"/>and behold I live forever and ever. Amen. And I have the nails The secret of the seven stars that you saw in my right hand and the seven golden lamps, the seven stars are angels of the seven congregations and the seven lamps that you saw, are the seven congregations. they are Revelation - The Second Gate<verse eID="Rev.1.20"/>
+        <chapter eID="Rev.1"/>
+        <title type="chapter" canonical="true">The Second Gate</title>
+        <chapter sID="Rev.2" osisID="Rev.2" n="2"/>
+        <verse sID="Rev.2.1" osisID="Rev.2.1" n="1" subType="x-alt-1"/>To the angel of the congregation of Ephesus, write here: The one who is holding the seven stars in his right hand and that walks in the middle of the seven<verse eID="Rev.2.1"/>
+        <verse sID="Rev.2.2" osisID="Rev.2.2" n="2" subType="x-alt-2"/>golden lamps says. I know your labors, and toil, and abundant patience, and that you are not able to bear evil ones. And you tested it, those who say that they are sent and they are not and you found<verse eID="Rev.2.2"/>
+        <verse sID="Rev.2.3" osisID="Rev.2.3" n="3" subType="x-alt-3"/>them to be liars. And you took and you have abundant patience for my name's sake and you have not<verse eID="Rev.2.3"/>
+        <verse sID="Rev.2.4" osisID="Rev.2.4" n="4" subType="x-alt-4"/>perished. But I have something against you for you left<verse eID="Rev.2.4"/>
+        <verse sID="Rev.2.5" osisID="Rev.2.5" n="5" subType="x-alt-5"/>your first love. And remember from where you were thrown down and repent and do the first deeds. And if not, I will come to you as a sudden surprise. And I will shake your lamp<verse eID="Rev.2.5"/>
+        <verse sID="Rev.2.6" osisID="Rev.2.6" n="6" subType="x-alt-6"/>from its place, if you do not repent. But you have this, that you hate the deed of the Nicolaitans<verse eID="Rev.2.6"/>
+        <verse sID="Rev.2.7" osisID="Rev.2.7" n="7" subType="x-alt-7"/>that I also hate. He who has an ear will hear what the spirit says to congregations. I will let the victorious eat of the tree of life,<verse eID="Rev.2.7"/>
+        <verse sID="Rev.2.8" osisID="Rev.2.8" n="8" subType="x-alt-9"/>And write for the angel of the congregation of Smyrna and here, say, the first and the last that was dead<verse eID="Rev.2.8"/>
+        <verse sID="Rev.2.9" osisID="Rev.2.9" n="9"/>and lives. I know your deeds and the suffering and the poverty, but you are rich. and the despising of those who speak to be Judaic<note type="explanation" placement="foot" n="14" osisRef="Rev.2.9" osisID="Rev.2.9!note.14">Yehudiyim is an adjective meaning "Judaic" and distinct from Yehudim, the normal word for "Jews". Yehudiyim was understood as referring to the Ten Lost Tribes who labeled themselves "Judaic", but not "Jewish". This is referred to in Genesis Rabbah, Vayechi, Section 97, "also in this world you will be honored that all the tribes will call themselves Yehudiyim, just as you are called Yehudah" אף".בעולם הזה תזכה שיקראו כל השבטים על שמך יהודיים, כשם שנקראת אתה יהודה"</note> and they are not, but rather the council of the satan.<verse eID="Rev.2.9"/>
+        <verse sID="Rev.2.10" osisID="Rev.2.10" n="10"/>which is in the divine orchard (pardes). Do not be afraid for suffering was necessary. And behold destruction (Avadon) will give some of you to the prison<verse eID="Rev.2.10"/>
+        <verse sID="Rev.2.11" osisID="Rev.2.11" n="11" subType="x-alt-11"/>of life. He who has an ear will hear what the spirit says to the congregations. The one who overcomes will not<verse eID="Rev.2.11"/>
+        <verse sID="Rev.2.12" osisID="Rev.2.12" n="12"/>be smitten by the Second Death. And to the angel of the congregation in Pergamus write here saying, To he who has the double-edged Cherub<note type="explanation" placement="foot" n="15" osisRef="Rev.2.12" osisID="Rev.2.12!note.15">Presumably הַכֶּרֶב "the Cherub" is a scribal error for הַחֶרֶב "the sword".</note><verse eID="Rev.2.12"/>
+        <verse sID="Rev.2.13" osisID="Rev.2.13" n="13"/>to test you. And you will have suffering for ten days. Be faithful until death and I will give you the crown I know your deeds and where he is sitting, where the seat of Satan is<verse eID="Rev.2.13"/>
+        <chapter eID="Rev.2"/>
+      </div>
+  </osisText>
+</osis>

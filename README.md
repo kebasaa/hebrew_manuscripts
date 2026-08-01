@@ -1,2 +1,2 @@
-# hebrew_manuscripts
+# nt_hebrew_manuscripts
 

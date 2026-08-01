@@ -1,0 +1,138 @@
+{
+    "version":  1,
+    "about":  "Manuscripts Milah offers for download, generated from the OSIS headers by src/build_manifest.py in this repository. Do not edit by hand: regenerate it whenever a text is added or changes. Sizes and checksums are taken over the LF form of each file, which is what GitHub serves, so they do not depend on how a clone was checked out.",
+    "manuscripts":  [
+                        {
+                            "file":  "JAS_CochinOo.1.32_hebrew_commented.osis",
+                            "title":  "James (Cochin MS Oo.1.32)",
+                            "book":  "JAS",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "ca. 1730",
+                            "covers":  "",
+                            "bytes":  24706,
+                            "sha256":  "4298e538e85f7689caeae434cb4f34597d1ec7e42a68984b330c4f1d1a515e54"
+                        },
+                        {
+                            "file":  "JAS_CochinOo.1.32_translation.osis",
+                            "title":  "Translation of James (Cochin MS Oo.1.32)",
+                            "book":  "JAS",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2024",
+                            "covers":  "",
+                            "bytes":  28759,
+                            "sha256":  "9264fa1cf65d99e495366463ad0e2d851f2fa2a4e9b632451d00718bb0e3690d"
+                        },
+                        {
+                            "file":  "JOH_Ebr530_hebrew_commented.osis",
+                            "title":  "John (Vatican, Vat. ebr. 530)",
+                            "book":  "JOH",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "undated",
+                            "covers":  "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+                            "bytes":  7705,
+                            "sha256":  "c93955f3a7c0936e1e6f828cc95c2fe485fc500bebbfba2e110d887d9a73d273"
+                        },
+                        {
+                            "file":  "JOH_Ebr530_translation.osis",
+                            "title":  "English Translation of John (Vatican, Vat. ebr. 530)",
+                            "book":  "JOH",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2018",
+                            "covers":  "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+                            "bytes":  6044,
+                            "sha256":  "ccb85e546cb490e4fbd1e69681f972123a3efdbbeb58bd9ec37867fb5ab9d430"
+                        },
+                        {
+                            "file":  "LUK_Ebr530_hebrew_commented.osis",
+                            "title":  "Luke (Vatican, Vat. ebr. 530)",
+                            "book":  "LUK",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "undated",
+                            "covers":  "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+                            "bytes":  15816,
+                            "sha256":  "b5a0a1084da45659260399eb5e58d76ac067591ce7e64d1f5626d58049bf5ccf"
+                        },
+                        {
+                            "file":  "LUK_Ebr530_translation.osis",
+                            "title":  "English Translation of Luke (Vatican, Vat. ebr. 530)",
+                            "book":  "LUK",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2018",
+                            "covers":  "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+                            "bytes":  11823,
+                            "sha256":  "8382820544e14ba6b2aa9f2e01c63c4696cee06cf60a6887bfe5bdf2ccf9859a"
+                        },
+                        {
+                            "file":  "MAT_CochinOo.1.32_hebrew_commented.osis",
+                            "title":  "Matthew (Cochin MS Oo.1.32)",
+                            "book":  "MAT",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "ca. 1730",
+                            "covers":  "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+                            "bytes":  134823,
+                            "sha256":  "6c28182adae1fdc687398e9aa84bc2c446bcd092b0552319f0c6e416fb196981"
+                        },
+                        {
+                            "file":  "MAT_CochinOo.1.32_translation.osis",
+                            "title":  "Translation of Matthew (Cochin MS Oo.1.32)",
+                            "book":  "MAT",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2025",
+                            "covers":  "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+                            "bytes":  229024,
+                            "sha256":  "b098680e0a47d7d73a56c8aa864774a6e98439cb54d12dafcac279eabee03c3c"
+                        },
+                        {
+                            "file":  "REV_CochinOo.1.16.2_hebrew_commented.osis",
+                            "title":  "Revelation (Cochin MS Oo.1.16.2)",
+                            "book":  "REV",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "ca. 1730",
+                            "covers":  "",
+                            "bytes":  169380,
+                            "sha256":  "f19206d0666e5d5622b7e8db5a5f14b57b015724ce0a33b8ebb63bfcc655db8b"
+                        },
+                        {
+                            "file":  "REV_CochinOo.1.16.2_translation.osis",
+                            "title":  "Translation of Revelation (Cochin MS Oo.1.16.2)",
+                            "book":  "REV",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2024",
+                            "covers":  "",
+                            "bytes":  159386,
+                            "sha256":  "5c7d45fcfd8acd6115918a886348de02135246e48eb61b656b71b1a70e790ea3"
+                        },
+                        {
+                            "file":  "REV_Sloane237_hebrew_commented.osis",
+                            "title":  "Revelation (British Library, Sloane MS 237)",
+                            "book":  "REV",
+                            "role":  "manuscript",
+                            "language":  "he",
+                            "date":  "between 1500 and 1699",
+                            "covers":  "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
+                            "bytes":  17217,
+                            "sha256":  "f4488033fb19b7ab0b65731d96c18ec0ff8ab6c4532d61c40d8ec2354d059172"
+                        },
+                        {
+                            "file":  "REV_Sloane237_translation.osis",
+                            "title":  "English Translation of Revelation (British Library, Sloane MS 237)",
+                            "book":  "REV",
+                            "role":  "translation",
+                            "language":  "en",
+                            "date":  "2017",
+                            "covers":  "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
+                            "bytes":  12787,
+                            "sha256":  "212269d21047923d44339ff3239fc87b1fb9ae616ac113bb5d43c6ef8e189573"
+                        }
+                    ]
+}

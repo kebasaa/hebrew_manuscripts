@@ -1,0 +1,198 @@
+"""Builds the manifest Milah reads to offer manuscripts for download.
+
+Reads the OSIS files in ``data/`` and writes ``manifest.json`` at the root of
+this repository, so Milah can list what is available without downloading
+anything first. The defaults are relative to this file, so it needs no
+arguments::
+
+    python src/build_manifest.py
+
+Re-run it whenever a text is added or an OSIS header changes, and commit the
+result: the manifest is what the application reads, so a stale one hides a
+manuscript sitting right beside it.
+
+Why a manifest at all
+---------------------
+
+Filenames carry almost nothing: ``REV_Sloane237_hebrew_commented.osis`` does not
+say that it is *Revelation (British Library, Sloane MS 237)*, covering
+1:1–2:13, from a manuscript written between 1500 and 1699. All of that is inside
+the file — which is exactly what a download list cannot read, because the point
+of the list is to choose what to download.
+
+The title trap
+--------------
+
+**Do not take the first ``<title>`` in the file.** These OSIS files carry nine
+of them: the work's title, a versification note, the manuscript's own running
+headings, an attribution, a copyright line, and one that is an entire pointed
+Hebrew verse with a footnote nested inside it. Only the ``<title>`` inside
+``<work>`` names the edition; anything looser puts a verse of Hebrew in the
+download window. The app's own parser scopes the same way — see the header
+handling in ``app/src/core/osis.cpp``.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+OSIS_NS = "http://www.bibletechnologies.net/2003/OSIS/namespace"
+XML_NS = "http://www.w3.org/XML/1998/namespace"
+
+#: Milah loads a manuscript and a translation through different roles, so the
+#: manifest has to say which a file is. The name is the only honest signal: a
+#: translation is not merely "the one that is not Hebrew".
+TRANSLATION_SUFFIX = "_translation"
+
+
+def normalised_bytes(path: Path) -> bytes:
+    """The file's content with line endings settled to LF.
+
+    Everything measured about a file — its length and its checksum — is measured
+    over this rather than over what happens to be on disk.
+
+    ``.gitattributes`` sets ``* text=auto``, so the working copy is LF on one
+    clone and CRLF on another depending on ``core.autocrlf``, while GitHub always
+    serves the LF form and that is what Milah downloads and keeps. Measuring the
+    raw file would make the manifest disagree with the app on any Windows clone
+    that converts on checkout — every manuscript would report an update
+    available, for ever, and taking the update would not settle it.
+    """
+    return path.read_bytes().replace(b"\r\n", b"\n")
+
+
+def work_element(root: ET.Element) -> ET.Element | None:
+    """The ``<work>`` inside ``<header>``, which is where the edition is named."""
+    return root.find(f".//{{{OSIS_NS}}}header/{{{OSIS_NS}}}work")
+
+
+def element_text(parent: ET.Element | None, tag: str) -> str:
+    """The plain text of a child element, notes and markup flattened away."""
+    if parent is None:
+        return ""
+    child = parent.find(f"{{{OSIS_NS}}}{tag}")
+    if child is None:
+        return ""
+    # itertext() rather than .text: a title can carry nested markup, and half a
+    # title is worse than none.
+    return re.sub(r"\s+", " ", "".join(child.itertext())).strip()
+
+
+def coverage(work: ET.Element | None) -> str:
+    """What the edition covers, from the description the transcriber wrote."""
+    if work is None:
+        return ""
+    for description in work.findall(f"{{{OSIS_NS}}}description"):
+        if description.get("type") == "x-contents":
+            return re.sub(r"\s+", " ", "".join(description.itertext())).strip()
+    return ""
+
+
+def describe(path: Path) -> dict | None:
+    """One manifest entry, or None when the file is not usable OSIS."""
+    try:
+        root = ET.parse(path).getroot()
+    except ET.ParseError:
+        return None
+
+    work = work_element(root)
+    title = element_text(work, "title")
+    if not title:
+        # No title is not a reason to hide a manuscript; the work id at least
+        # identifies it, and a human can read it.
+        title = (work.get("osisWork") if work is not None else "") or path.stem
+
+    text = root.find(f".//{{{OSIS_NS}}}osisText")
+    language = (text.get(f"{{{XML_NS}}}lang") if text is not None else "") or ""
+
+    content = normalised_bytes(path)
+    is_translation = path.stem.endswith(TRANSLATION_SUFFIX)
+    if is_translation and language == "he":
+        # Worth knowing about rather than silently trusting either signal.
+        print(f"  warning: {path.name} is named a translation but declares Hebrew")
+
+    return {
+        "file": path.name,
+        "title": title,
+        # The OSIS book code the file is named for, used only to group the
+        # download list; the title is what a reader actually reads.
+        "book": path.name.split("_", 1)[0],
+        "role": "translation" if is_translation else "manuscript",
+        "language": language,
+        "date": element_text(work, "date"),
+        "covers": coverage(work),
+        "bytes": len(content),
+        # What tells Milah that a text it already holds has been corrected.
+        # Length cannot: fixing "Sloane MS 237" to "MS Sloane 273" moves not one
+        # byte, and that particular correction is outstanding in this very
+        # repository.
+        "sha256": hashlib.sha256(content).hexdigest(),
+    }
+
+
+def build(source: Path) -> list[dict]:
+    entries = []
+    for path in sorted(source.glob("*.osis")):
+        entry = describe(path)
+        if entry is None:
+            print(f"  skipped (not parseable): {path.name}")
+            continue
+        entries.append(entry)
+    return entries
+
+
+def main() -> int:
+    # This file lives in src/ at the repository root, so the texts are one
+    # level up rather than two.
+    repository = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--source",
+        type=Path,
+        default=repository / "data",
+        help="Folder of published .osis files.",
+    )
+    parser.add_argument(
+        "--out",
+        type=Path,
+        default=repository / "manifest.json",
+    )
+    args = parser.parse_args()
+
+    if not args.source.is_dir():
+        print(f"No such folder: {args.source}")
+        return 1
+
+    entries = build(args.source)
+    if not entries:
+        print(f"No .osis files in {args.source}")
+        return 1
+
+    document = {
+        "version": 1,
+        "about": (
+            "Manuscripts Milah offers for download, generated from the OSIS "
+            "headers by src/build_manifest.py in this repository. Do not edit "
+            "by hand: regenerate it whenever a text is added or changes. Sizes "
+            "and checksums are taken over the LF form of each file, which is "
+            "what GitHub serves, so they do not depend on how a clone was "
+            "checked out."
+        ),
+        "manuscripts": entries,
+    }
+    args.out.write_text(
+        json.dumps(document, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+    )
+
+    total = sum(entry["bytes"] for entry in entries)
+    print(f"{len(entries)} manuscripts, {total / 1024:.0f} KB -> {args.out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

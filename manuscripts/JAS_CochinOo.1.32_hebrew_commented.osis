@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="CochinOo.1.32_JAS_Hebrew_Commented" osisRefWork="bible" xml:lang="he">
+    <header>
+      <work osisWork="CochinOo.1.32_JAS_Hebrew_Commented">
+        <title>James (Cochin MS Oo.1.32)</title>
+        <date event="original" type="ISO">ca. 1730</date>
+        <description>The Cochin Hebrew New Testament manuscripts are significant 18th-century Hebrew versions of the New Testament. This file encodes James from Cambridge MS Oo.1.32.</description>
+        <publisher>Project Truth Ministries</publisher>
+        <type type="x-manuscript">Manuscript</type>
+        <identifier type="OSIS">CochinOo.1.32_JAS_Hebrew_Commented</identifier>
+        <identifier type="x-shelfmark">MS.Oo.1.32</identifier>
+        <identifier type="URI">https://projecttruthministries.org/studies/cochin-james/</identifier>
+        <language>he</language>
+        <scope>JAS</scope>
+      </work>
+      <work osisWork="bible">
+        <title>Referenced versification (standard)</title>
+        <identifier type="OSIS">bible</identifier>
+        <language>he</language>
+        <refSystem>StandardV11N</refSystem>
+      </work>
+    </header>
+    <div type="book" osisID="Jas" canonical="true">
+        <chapter sID="Jas.1" osisID="Jas.1" n="1"/>
+        <verse sID="Jas.1.1" osisID="Jas.1.1" n="1"/>יעקב עבד ה ואדון יש֜ו֜ המשיח לשנים עשר שבטים המפזרים בכל המקומות שמחה מקודם<verse eID="Jas.1.1"/>
+        <verse sID="Jas.1.2" osisID="Jas.1.2" n="2"/>אחֵי אהובים תחשבו זאת ושמחה באם שאתם נֹופלים בנסיון<note type="explanation" placement="foot" n="10" osisRef="Jas.1.2" osisID="Jas.1.2!note.10">Aramaic plural noun.</note><verse eID="Jas.1.2"/>
+        <verse sID="Jas.1.3" osisID="Jas.1.3" n="3"/>ודעו שאמונותיכם באם שהיא שלימה<note type="explanation" placement="foot" n="11" osisRef="Jas.1.3" osisID="Jas.1.3!note.11">Aramaic noun.</note> גורם היא סבלות<verse eID="Jas.1.3"/>
+        <verse sID="Jas.1.4" osisID="Jas.1.4" n="4"/>אבל סבלות צריך להיות עד הסוף כדי שתהיו במליאה<note type="explanation" placement="foot" n="13" osisRef="Jas.1.4" osisID="Jas.1.4!note.13">Aramaic adverb first found in the Mishnah Shabbat 10:2 (c. 190 - 230 CE).</note> ולא צלח תחסר שלם דבר ממכם<verse eID="Jas.1.4"/>
+        <verse sID="Jas.1.5" osisID="Jas.1.5" n="5"/>אבל באם שיש אחד בכם שחסר לו חכמה זה צריך להתפלל מה שנותן לכל אדם וגם הוא יתן לו<verse eID="Jas.1.5"/>
+        <verse sID="Jas.1.6" osisID="Jas.1.6" n="6"/>ספק<note type="explanation" placement="foot" n="14" osisRef="Jas.1.6" osisID="Jas.1.6!note.14">Aramaic passive participle meaning, “In doubt.”</note> אבל הוא צריך להתפלל באמונה ולא ב כי מי שמסופק זה הוא דומה למאזנים על הים<verse eID="Jas.1.6"/>
+        <verse sID="Jas.1.7" osisID="Jas.1.7" n="7"/>וזה האדם אינה צריך לחשב שיקבל איזה דבר מהאדון<verse eID="Jas.1.7"/>
+        <verse sID="Jas.1.8" osisID="Jas.1.8" n="8"/>מסופק<note type="explanation" placement="foot" n="15" osisRef="Jas.1.8" osisID="Jas.1.8!note.15">Mishnaic word first found in Mishnah Perkei Avot 1:16.</note> וכעל הוא בלי ידע בכל־דרכיו<verse eID="Jas.1.8"/>
+        <verse sID="Jas.1.9" osisID="Jas.1.9" n="9"/>אבל אח אחד ששפל יוכל להתפאר את גבהו<verse eID="Jas.1.9"/>
+        <verse sID="Jas.1.10" osisID="Jas.1.10" n="10"/>והעושר צריך להתפאר את שפלתו כי כציץ שדה יבש<verse eID="Jas.1.10"/>
+        <verse sID="Jas.1.11" osisID="Jas.1.11" n="11"/>וכציץ יצא וימל ויברח כצל ולא יעמוד<verse eID="Jas.1.11"/>
+        <verse sID="Jas.1.12" osisID="Jas.1.12" n="12"/>ואשרי האנוש יוכיחנו אלוה ומוסר שדי אל תמאס כי אחר היסורים תקבל הכתר החיים שמבטיח ה֔ לאלה שאהוב אויי<verse eID="Jas.1.12"/>
+        <verse sID="Jas.1.13" osisID="Jas.1.13" n="13"/>ואל תאמר אחד באם שנסיון<note type="explanation" placement="foot" n="16" osisRef="Jas.1.13" osisID="Jas.1.13!note.16">Aramaic noun meaning, “temptation.”</note> בא עליו זה בא מה כי ה לא מנסה או אדם לרע והוא אינה מנסה לשום אחד<verse eID="Jas.1.13"/>
+        <verse sID="Jas.1.14" osisID="Jas.1.14" n="14"/>רק כל אחד ינסה באם שתאותו מנצח אותו<verse eID="Jas.1.14"/>
+        <verse sID="Jas.1.15" osisID="Jas.1.15" n="15"/>ואח֜ כ֜ באם שקבל התאוה גורם היא החטא אבל החטא באם שכלא גורם היא המות<verse eID="Jas.1.15"/>
+        <verse sID="Jas.1.16" osisID="Jas.1.16" n="16"/>אל תתעו אחים אהובים<verse eID="Jas.1.16"/>
+        <verse sID="Jas.1.17" osisID="Jas.1.17" n="17"/>כל מתנה טובה בא מלמעלה מאור האב ואצלו לא יש חילוף מאור ומחושך<verse eID="Jas.1.17"/>
+        <verse sID="Jas.1.18" osisID="Jas.1.18" n="18"/>והוא הראה לנו כפי רצונו ע״י דיבור האמת שאנו בכורים מבריאתו<verse eID="Jas.1.18"/>
+        <verse sID="Jas.1.19" osisID="Jas.1.19" n="19"/>בשביל זה אחים אהובים כל בני אדם צריך להיות מהיר לשמוע אבל לא לדבר ולא לאף<verse eID="Jas.1.19"/>
+        <verse sID="Jas.1.20" osisID="Jas.1.20" n="20"/>כי האף מבני אדם אינו עושה מה שטוב לפני ה֔<verse eID="Jas.1.20"/>
+        <verse sID="Jas.1.21" osisID="Jas.1.21" n="21"/><note type="explanation" placement="foot" osisRef="Jas.1.21" osisID="Jas.1.21!note.absent">This verse does not exist and Cochin Oo.1.32. And verse 1:21 is numbered 1:22 in the</note><verse eID="Jas.1.21"/>
+        <verse sID="Jas.1.22" osisID="Jas.1.22" n="22"/>אבל תהיו מאילו שעושים הדיבור ולא מהשומעים לבד שבעצמו מרמאים אתכם<verse eID="Jas.1.22"/>
+        <verse sID="Jas.1.23" osisID="Jas.1.23" n="23"/>כי באם שאחד יש השומע הדיבור לאינו עושה זה הוא דומה לאיש שרואה את עצמו במראות הצובאות<verse eID="Jas.1.23"/>
+        <verse sID="Jas.1.24" osisID="Jas.1.24" n="24"/>כיון שאחר שראה את עצמו הולך הוא ממנו ושוכח את מה בראה<verse eID="Jas.1.24"/>
+        <verse sID="Jas.1.25" osisID="Jas.1.25" n="25"/>אבל מי שרואה במלואה בדת השמחה ומקיים אותו ואינו שוכח מה ששמע רק עושה זה יהיה קדוש בכל מעשיו<verse eID="Jas.1.25"/>
+        <verse sID="Jas.1.26" osisID="Jas.1.26" n="26"/>אבל באם שאחד בכם מחשב לו שהוא עובד ה לאינו משמר את לשונו ברסן רק הסית לבבו זה השאירות<note type="explanation" placement="foot" n="18" osisRef="Jas.1.26" osisID="Jas.1.26!note.18">The aleph is a mater lectionis and is a Second Temple marker.</note> ה אינו טוב<verse eID="Jas.1.26"/>
+        <verse sID="Jas.1.27" osisID="Jas.1.27" n="27"/>והשאירות הטהור מבלי חסרון<note type="explanation" placement="foot" n="19" osisRef="Jas.1.27" osisID="Jas.1.27!note.19">Aramaic noun meaning, “lack.”</note> לפני ה האב זה הוא ההולך לבצר היתומים ואת־אלמנות בצערותיהם<verse eID="Jas.1.27"/>
+        <chapter eID="Jas.1"/>
+        <chapter sID="Jas.2" osisID="Jas.2" n="2"/>
+        <verse sID="Jas.2.1" osisID="Jas.2.1" n="1"/>אחים אהובים אל תחשבו שהאמונה בישו המשיח אדונינו שנושא פנים<verse eID="Jas.2.1"/>
+        <verse sID="Jas.2.2" osisID="Jas.2.2" n="2"/>כי באם שיבא אחד אצל הבית דין בטבעת זהב ובמלבושים נעים וגם אחד עני במלבושים רעים׃<verse eID="Jas.2.2"/>
+        <verse sID="Jas.2.3" osisID="Jas.2.3" n="3"/>אתם רואים על זה שנושה המלבושים נעים ואומרים לו שב לנו על הטוב ואומרים לעני עמוד שם או שב לרגלינו<verse eID="Jas.2.3"/>
+        <verse sID="Jas.2.4" osisID="Jas.2.4" n="4"/>ואינם משגיחים בטוב על זה רק התם שופטים ותעשו חילוק רע<verse eID="Jas.2.4"/>
+        <verse sID="Jas.2.5" osisID="Jas.2.5" n="5"/>שומעים לי אחים אהובים הלא ה֔ בחר בעניים בעולם הזה־העושרים באמונה ויורשים מהבטחה שהבטיח לאלה שאהוב אותו<verse eID="Jas.2.5"/>
+        <verse sID="Jas.2.6" osisID="Jas.2.6" n="6"/>אבל אתם תעשו ביוש לעני והעשירים הלא המה שעושים הכל בחוזק עמכם ומוציאם אתכם ומשפט<verse eID="Jas.2.6"/>
+        <verse sID="Jas.2.7" osisID="Jas.2.7" n="7"/>והלא המה מחרפים ומגדפים השם הטוב מזה שאתם תקראו<verse eID="Jas.2.7"/>
+        <verse sID="Jas.2.8" osisID="Jas.2.8" n="8"/>באם שאתם תעשו הדת כפי שכתוב בתורה ואהבת לרעיך כמוך תעשו טוב<verse eID="Jas.2.8"/>
+        <verse sID="Jas.2.9" osisID="Jas.2.9" n="9"/>אבל באם שאתם רואים על האדם תעש וחטא ותענוש מדת כמו העוברים<verse eID="Jas.2.9"/>
+        <verse sID="Jas.2.10" osisID="Jas.2.10" n="10"/>כי באם שאחד מקיים כל התורה כולה וחוטא באחד הוא חייב בכל<verse eID="Jas.2.10"/>
+        <verse sID="Jas.2.11" osisID="Jas.2.11" n="11"/>כי זה שאמר לא תנאף גם הלא אמר לא תרצח ובאם שאתה אינו מנאף אבל תעשה רציחה אתה עובר על הדת<verse eID="Jas.2.11"/>
+        <verse sID="Jas.2.12" osisID="Jas.2.12" n="12"/>כשכיל זה תדברו ותעשו כמו אלו שנשפטו ע״י הדת בשמחה<verse eID="Jas.2.12"/>
+        <verse sID="Jas.2.13" osisID="Jas.2.13" n="13"/>אבל יבא משפט רע על זה שלא עשה רחמים והרחמים מתפאר כצד המשפט<verse eID="Jas.2.13"/>
+        <verse sID="Jas.2.14" osisID="Jas.2.14" n="14"/>ומה תועלת יש אחים אהובים באם שאחד אמר שיש לו האמונה ולא יש לו המעשים ולהאמונה לא יש יכולת לקדש אותו<verse eID="Jas.2.14"/>
+        <verse sID="Jas.2.15" osisID="Jas.2.15" n="15" subType="x-alt-2.15-16"/>ובאם שיש אחד אח או אחות שחסר להם לפרנס כל יום ויום ואחד מכם תאמר להם דברי נחמה ה יתן לכם לשובע והוא לא יתן להם שום דבר לתועלת הגופ מה תועלת יש להם בזה הדברים<verse eID="Jas.2.15"/>
+        <verse sID="Jas.2.16" osisID="Jas.2.16" n="16" subType="x-alt-2.17"/>כך האמונה באם שלא יש לו המעשים<verse eID="Jas.2.16"/>
+        <verse sID="Jas.2.17" osisID="Jas.2.17" n="17" subType="x-alt-2.18"/>אבל יוכל אחד לאמר לך יש האמונה ולי המעשים העיד לי אמונתך עם מעשיך גם אני מעיד לך אמונתי ומעשים שלי<verse eID="Jas.2.17"/>
+        <verse sID="Jas.2.18" osisID="Jas.2.18" n="18" subType="x-alt-2.19"/>אתה תאמין שה אחד אתה עושה טוב השטנים גם כן מאמינים ורעדים<verse eID="Jas.2.18"/>
+        <verse sID="Jas.2.19" osisID="Jas.2.19" n="19" subType="x-alt-2.20"/>אבל רוצה אתה לידע שהאמונה בלי מעשים מת הוא<verse eID="Jas.2.19"/>
+        <verse sID="Jas.2.20" osisID="Jas.2.20" n="20" subType="x-alt-2.21"/>הלא אבותינו אברהם נצטדק ע מעשיו שהביא את בנו לקרבן על המזבח<verse eID="Jas.2.20"/>
+        <verse sID="Jas.2.21" osisID="Jas.2.21" n="21" subType="x-alt-2.22"/>ובזה תוכל אתה לראות שהאמונה פעל במעשיו ועל יד המעשים נעשה האמונה במלואה<verse eID="Jas.2.21"/>
+        <verse sID="Jas.2.22" osisID="Jas.2.22" n="22" subType="x-alt-2.23"/>ובזה ממלא התורה שנאמר ואברהם האמין בה ויחשבה לו צדקה<verse eID="Jas.2.22"/>
+        <verse sID="Jas.2.23" osisID="Jas.2.23" n="23" subType="x-alt-2.24"/>ועגשיו יכולים אתם לראות שהאדם נצטדק על יד המעשים ולא לבד ע האמונה<verse eID="Jas.2.23"/>
+        <verse sID="Jas.2.24" osisID="Jas.2.24" n="24" subType="x-alt-2.25"/>וכדומה לזה רחב הזונה הלא היא נצטדק ע המעשים כיון שלקחתה המרגלים ותטמנם<verse eID="Jas.2.24"/>
+        <verse sID="Jas.2.25" osisID="Jas.2.25" n="25" subType="x-alt-2.26"/>כי כמו שהגוף בלי רוח הוא מת כך האמונה בלי מעשים הוא מת<verse eID="Jas.2.25"/>
+        <chapter eID="Jas.2"/>
+        <chapter sID="Jas.3" osisID="Jas.3" n="3"/>
+        <verse sID="Jas.3.1" osisID="Jas.3.1" n="1"/>אחים אהובים אל תהיו כל אחד בעל מלמד ודעו שהעונש יהיה יותר גדול<verse eID="Jas.3.1"/>
+        <verse sID="Jas.3.2" osisID="Jas.3.2" n="2"/>כי אנו חוטאים בהרבה דברים ומי שלא חטא בשום דבר הוא איש קדוש ויוכל לרסת את כל הגוף<verse eID="Jas.3.2"/>
+        <verse sID="Jas.3.3" osisID="Jas.3.3" n="3"/>וראה שאנו מנהגים את הסוסים ברסן כדי להנהיג אותם כרצונינו<verse eID="Jas.3.3"/>
+        <verse sID="Jas.3.4" osisID="Jas.3.4" n="4"/>וגם הספינות אע״פ שהמה גדולים והולכים בחוזק כרוח אע״פ כ״ מנהגים ע״י הגא קטנה שהיא ביד המלאך<verse eID="Jas.3.4"/>
+        <verse sID="Jas.3.5" osisID="Jas.3.5" n="5"/>כך הלשון היא איבר קטנה ופועלת דברים גדולים ראה אש קטן מבער יער גדול<verse eID="Jas.3.5"/>
+        <verse sID="Jas.3.6" osisID="Jas.3.6" n="6"/>וגם הלשון היא כמו אש עולם מלואה כ עוולות כך הלשון באיברותינו ומחטיא את כל הגיפ ומבהיר אותנו בהליכתינו באם שהיא נבהר מגיהנם<verse eID="Jas.3.6"/>
+        <verse sID="Jas.3.7" osisID="Jas.3.7" n="7"/>כי הטבע מכל הבהמות והעופות והנחשים שהמה ביבשה או בים היא כמו הטבע של האדם<verse eID="Jas.3.7"/>
+        <verse sID="Jas.3.8" osisID="Jas.3.8" n="8"/>אבל הלשון לא יוכל שום אדם לרסת כי היא רע ומלואה בסם המות<verse eID="Jas.3.8"/>
+        <verse sID="Jas.3.9" osisID="Jas.3.9" n="9"/>ע״י הלשון משבחים אנו לה האב וע יז מקללים אנו להאדם שהוא בצלם אלהים<verse eID="Jas.3.9"/>
+        <verse sID="Jas.3.10" osisID="Jas.3.10" n="10"/>מפי אחד צא שבח וקללות ואל תהיה כך אחים אהובים<verse eID="Jas.3.10"/>
+        <verse sID="Jas.3.11" osisID="Jas.3.11" n="11"/>וכי יש מעיין שיש בה מים מלוחים ומתיקים<verse eID="Jas.3.11"/>
+        <verse sID="Jas.3.12" osisID="Jas.3.12" n="12"/>או יוכל עץ של תאנים ליתן שמן או גפן תאנים כך המעיין לא יוכל ליתן מים מלוחים ומתוקים<verse eID="Jas.3.12"/>
+        <verse sID="Jas.3.13" osisID="Jas.3.13" n="13"/>מי שהוא חכם ונבון בכם מראה לי הליכתו הטוב בחכמה<verse eID="Jas.3.13"/>
+        <verse sID="Jas.3.14" osisID="Jas.3.14" n="14"/>אבל באם שיש בלבבכם קנאה ושנאה אל תתפארו ואל תשקרו כעד האמת<verse eID="Jas.3.14"/>
+        <verse sID="Jas.3.15" osisID="Jas.3.15" n="15"/>כי זה אינו חכמה שבא מלמעלה רק מהאדמה מהאדם ומהשטנים<verse eID="Jas.3.15"/>
+        <verse sID="Jas.3.16" osisID="Jas.3.16" n="16"/>כי במי שיש קנאה ושנאה בזה יש הרבה דברים רעים<verse eID="Jas.3.16"/>
+        <verse sID="Jas.3.17" osisID="Jas.3.17" n="17"/>אבל החכמה מלמעלה היא להתחילה נקי ואח כ שלום ובנחת ויוכל לפייסה המהיר לשמוע מלא רחמים ואחרית לטובה ולא משאוי פנים וחניפות<verse eID="Jas.3.17"/>
+        <verse sID="Jas.3.18" osisID="Jas.3.18" n="18"/>אבל הפירות מהצדקות נזרעת בשלום לאילה המקיימים השלום<verse eID="Jas.3.18"/>
+        <chapter eID="Jas.3"/>
+        <chapter sID="Jas.4" osisID="Jas.4" n="4"/>
+        <verse sID="Jas.4.1" osisID="Jas.4.1" n="1"/>ובשביל מה בא מלחמה בתוכיכם הלא בשביל המדתיכם הלוחמים באיברותיכם<verse eID="Jas.4.1"/>
+        <verse sID="Jas.4.2" osisID="Jas.4.2" n="2"/>ואתם מתאויים ואינו מקבלים ונוקם ונוטר ואינו מרוויח בזה והכל בשביל מה מפני שאתם אינו מתפללים<verse eID="Jas.4.2"/>
+        <verse sID="Jas.4.3" osisID="Jas.4.3" n="3"/>ואתם עושים תפילה ולא נענה בשביל שאתם מתפללים ברעה<verse eID="Jas.4.3"/>
+        <verse sID="Jas.4.4" osisID="Jas.4.4" n="4"/>הנואף והנואפת הלא אתם יודעים שמי שאוהב עולם הזה הוא שונא מה ומי שרוצה להיות אוהב לעולם הזה יהיה שונא לה<verse eID="Jas.4.4"/>
+        <verse sID="Jas.4.5" osisID="Jas.4.5" n="5"/>אז אתם מחשבתם שהתורה אמר בחנם הרוח שדר בתויכם היא מתאוה כנגד הציוות ה<verse eID="Jas.4.5"/>
+        <verse sID="Jas.4.6" osisID="Jas.4.6" n="6"/>ונותן הרבה חסד כיון שהתורה אמר שה מגביה את השפלים ומשפיל את הרמים<verse eID="Jas.4.6"/>
+        <verse sID="Jas.4.7" osisID="Jas.4.7" n="7"/>ועכשיו תהיו מוכנעים לה ותלחמו כנגד השטנים תברחו ממכם<verse eID="Jas.4.7"/>
+        <verse sID="Jas.4.8" osisID="Jas.4.8" n="8"/>ומקרבים אתכם לה וקרב הוא לכם ותטהרו את ידיכם החוטאים ותעשו לבבכם נקי<verse eID="Jas.4.8"/>
+        <verse sID="Jas.4.9" osisID="Jas.4.9" n="9"/>ותנשאו סבלות ובכו ותצוקיכם תתהפך לבכיה ושמחתיכם ליגון<verse eID="Jas.4.9"/>
+        <verse sID="Jas.4.10" osisID="Jas.4.10" n="10"/>מכניעים אתכם לפני ה ישמע הוא לכם<verse eID="Jas.4.10"/>
+        <verse sID="Jas.4.11" osisID="Jas.4.11" n="11"/>אחים אהובים אל תלכו רכיל בניכם כי מי שהולך רכיל באחיו הוא רכיל בדת ואם אתה תעשה כן אין אתה מקיים את הדת<verse eID="Jas.4.11"/>
+        <verse sID="Jas.4.12" osisID="Jas.4.12" n="12"/>ויש לבד אחר שנותן הדת שיוכל לענוש ולמחול אבל מי אתה לשפוט את האחרים<verse eID="Jas.4.12"/>
+        <verse sID="Jas.4.13" osisID="Jas.4.13" n="13"/>ועכשיו האם שאתם אומרים היום או מחר רוצים אנו לילך למקים או לעיר הזאת ורוצים אנו לעמוד שם אחד שנה ולעשות משא ומתן<verse eID="Jas.4.13"/>
+        <verse sID="Jas.4.14" osisID="Jas.4.14" n="14"/>ואתם לא יודעים מה שיוכל להיות למחר כי מה יש חייותיכם הלא רוח הוא לזמן מועט ואחר כך הוא הולך<verse eID="Jas.4.14"/>
+        <verse sID="Jas.4.15" osisID="Jas.4.15" n="15"/>ואנו ואתם צריכים לומר באם שירצה ה חיים רוצים אנו לעשות זאת<verse eID="Jas.4.15"/>
+        <verse sID="Jas.4.16" osisID="Jas.4.16" n="16"/>אבל עכשיו אתם מתפארים ב גאותיכם וזאת היא לרעה<verse eID="Jas.4.16"/>
+        <verse sID="Jas.4.17" osisID="Jas.4.17" n="17"/>כי מי שיודע לעשות טוב ואינה עושה לזה נחשב לחטא<verse eID="Jas.4.17"/>
+        <chapter eID="Jas.4"/>
+        <chapter sID="Jas.5" osisID="Jas.5" n="5"/>
+        <verse sID="Jas.5.1" osisID="Jas.5.1" n="1"/>ועכשיו העשירים צעקו ובכו על הרעה שיבא עליכם<verse eID="Jas.5.1"/>
+        <verse sID="Jas.5.2" osisID="Jas.5.2" n="2"/>עשירתיכם רקב ושמלתיכם היתה למאכל כעש<verse eID="Jas.5.2"/>
+        <verse sID="Jas.5.3" osisID="Jas.5.3" n="3"/>וכספיכם וזהביכם יחלוד וזה יהיה לכם לעדות ויאכל את בשרכם כמו אש ואתם תקבלו עשירות באחרית הימים<verse eID="Jas.5.3"/>
+        <verse sID="Jas.5.4" osisID="Jas.5.4" n="4"/>ראה פעולת שכיר שתלין אצליך צועק לפני וצעקותיהם בא לפני אזנים מהאדון צבאות<verse eID="Jas.5.4"/>
+        <verse sID="Jas.5.5" osisID="Jas.5.5" n="5"/>והיה לכם תאוות עולם הזה ושמחו לקול עוגב<verse eID="Jas.5.5"/>
+        <verse sID="Jas.5.6" osisID="Jas.5.6" n="6"/>ואתם מחייבים להצדק ותמיתו אותו והוא לא מיחה לכם<verse eID="Jas.5.6"/>
+        <verse sID="Jas.5.7" osisID="Jas.5.7" n="7"/>ועכשיו אחים אהובים תהיה לכם תקוה על העתיד מהאדון ראה בעל השדה מצפה על הפירות הארץ ותקותו הוא על היורה ומלקוש<verse eID="Jas.5.7"/>
+        <verse sID="Jas.5.8" osisID="Jas.5.8" n="8"/>ואף אתם חזקו חזקו לבבכם כי שעתיד מהאדון קרובה<verse eID="Jas.5.8"/>
+        <verse sID="Jas.5.9" osisID="Jas.5.9" n="9"/>אל תאנחו כנגדיכם אחים אחובים כדי שלא תבואו לידי תקלה כי השופט עומד לפני הפתח<verse eID="Jas.5.9"/>
+        <verse sID="Jas.5.10" osisID="Jas.5.10" n="10"/>אחים אהובים קחו לכם למשל הצערות והסיבות מהנביאים שדברו לכם בשם האדון<verse eID="Jas.5.10"/>
+        <verse sID="Jas.5.11" osisID="Jas.5.11" n="11"/>וכי יש מעיין שיש בה מים מלוחים ומתיקים<verse eID="Jas.5.11"/>
+        <verse sID="Jas.5.12" osisID="Jas.5.12" n="12"/>אבל מקודם כל אחים אחובים אל תשבעו לא בשמים ולא בארץ או בשום שבועה אבל דיבורתיכם תהיה הן הן ולא לא כדי שלא תכשלו<verse eID="Jas.5.12"/>
+        <verse sID="Jas.5.13" osisID="Jas.5.13" n="13"/>ואם אחד בכם סובל איזה דבר הוא צריך לתפלל ואם אחד בכם בטוב לב זה צריך לזמר תהילים<verse eID="Jas.5.13"/>
+        <verse sID="Jas.5.14" osisID="Jas.5.14" n="14"/>ואם אחד חולה צריך לקרוא לו הזקינים מהעדה והם תעשו תפילה בשבילו ומושחים אותו בשמן בשם האדין<verse eID="Jas.5.14"/>
+        <verse sID="Jas.5.15" osisID="Jas.5.15" n="15"/>והתפילה מהאמונה יעזור להחולה והאדון יקום אותו ואם שחטא ימחול לו החטאים<verse eID="Jas.5.15"/>
+        <verse sID="Jas.5.16" osisID="Jas.5.16" n="16"/>והתודו את חטאתם אחד לאחד וכל אחד יעשה תפילה בשביל חבירו כי קרוב ה לכל קראיו לכל אשר יקראהו באמת<verse eID="Jas.5.16"/>
+        <verse sID="Jas.5.17" osisID="Jas.5.17" n="17"/>וגם אליהו הנביא היה אדם כמונו ועשה תפילה שלא יבא גשם ולא בא גשם על הארץ שלשה שנים חצי<verse eID="Jas.5.17"/>
+        <verse sID="Jas.5.18" osisID="Jas.5.18" n="18"/>ו ואח֜כ֜ עשה תפילה שיבא גשם ונתן השמים את מימם והארץ את פריה<verse eID="Jas.5.18"/>
+        <verse sID="Jas.5.19" osisID="Jas.5.19" n="19"/>אחים באם שאחד בכם ילך מדרך הטוב לרע ואחד מונע אותו<verse eID="Jas.5.19"/>
+        <verse sID="Jas.5.20" osisID="Jas.5.20" n="20"/>דעו מי שמהפך אותו מרשעתו זה מציל נשמה אחד מהמות ומכפר להרבה עוונות<verse eID="Jas.5.20"/>
+        <chapter eID="Jas.5"/>
+      </div>
+  </osisText>
+</osis>
