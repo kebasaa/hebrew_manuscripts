@@ -1,9 +1,9 @@
 """Builds the manifest Milah reads to offer manuscripts for download.
 
-Reads the OSIS files in ``manuscripts/`` and writes ``manuscripts/manifest.json``
-beside them, so Milah can list what is available without downloading anything
-first. Beside them rather than at the root on purpose: the catalogue and the
-texts it describes are then one folder, and Milah needs one address for both.
+Reads the OSIS files in ``manuscripts/`` and writes ``manifest_manuscripts.json``
+at the root of this repository, so Milah can list what is available without
+downloading anything first. Each entry names a file, not a path: the folder the
+texts live in is Milah's to know, so moving them does not rewrite every entry.
 The defaults are relative to this file, so it needs no arguments::
 
     python src/build_manifest.py
@@ -147,13 +147,17 @@ def build(source: Path) -> list[dict]:
     return entries
 
 
-#: Where the texts and their catalogue live, relative to this file: src/ sits at
-#: the repository root, so they are one level up rather than two. Named rather
-#: than inlined so a test can assert the no-argument run still points somewhere
-#: real — the defaults are the whole interface, since nobody passes --source in
-#: practice, and one pointing at a folder that has been renamed is a generator
-#: that quietly does nothing.
-MANUSCRIPTS = Path(__file__).resolve().parents[1] / "manuscripts"
+#: src/ sits at the repository root, so the texts are one level up, not two.
+#: Named rather than inlined so a test can assert the no-argument run still
+#: points somewhere real — the defaults are the whole interface, since nobody
+#: passes --source in practice, and one pointing at a folder that has been
+#: renamed is a generator that quietly does nothing.
+REPOSITORY = Path(__file__).resolve().parents[1]
+MANUSCRIPTS = REPOSITORY / "manuscripts"
+#: At the root rather than among the texts, and named for what it catalogues
+#: rather than just "manifest", so it reads as a repository-level index and
+#: leaves room for a second one later.
+MANIFEST = REPOSITORY / "manifest_manuscripts.json"
 
 
 def parser() -> argparse.ArgumentParser:
@@ -167,9 +171,8 @@ def parser() -> argparse.ArgumentParser:
     parsed.add_argument(
         "--out",
         type=Path,
-        # Written into the same folder it describes. The glob only takes
-        # *.osis, so the manifest never lists itself.
-        default=MANUSCRIPTS / "manifest.json",
+        default=MANIFEST,
+        help="Where to write the catalogue.",
     )
     return parsed
 

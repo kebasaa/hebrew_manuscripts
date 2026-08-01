@@ -9,17 +9,36 @@ download.
 | path | what |
 |---|---|
 | `manuscripts/*.osis` | the texts |
-| `manuscripts/manifest.json` | the catalogue Milah reads |
+| `manifest_manuscripts.json` | the catalogue Milah reads |
 | `src/build_manifest.py` | writes the catalogue from the OSIS headers |
 | `tests/` | checks on the generator |
 
-The catalogue lives beside the texts it describes rather than at the root, so
-Milah needs one address for both and the manifest cannot drift into describing a
-different folder than the one it sits in.
+Each manifest entry names a **file, not a path** — where the texts are kept is
+Milah's to know. Moving the folder is then one constant in the app rather than a
+rewrite of every entry.
 
-Filenames are `BOOK_Witness_kind.osis`. A name ending `_translation` is loaded by
-Milah as a translation rather than as a witness — the manifest states this
-explicitly, because "not Hebrew" is not an honest test.
+### File format
+
+Every text is [OSIS](https://www.bibletechnologies.net/) XML, validated against
+`osisCore.2.1.1.xsd`: verses are marked with paired `<verse sID.../>` /
+`<verse eID.../>` milestones, editorial remarks are `<note>` elements inline in
+the text, and a `<header>` carries the bibliographic and provenance metadata
+(title, contributor, shelfmark, repository, date, rights, coverage, …) that
+`build_manifest.py` reads to build the catalogue.
+
+### Filenames
+
+Filenames are `BOOK_Witness_kind.osis`, where `kind` is one of:
+
+| suffix | contents | manifest role |
+|---|---|---|
+| `_hebrew_commented.osis` | the Hebrew transcription of the witness — full text with footnotes on textual and grammatical peculiarities (irregular pointing, variant forms, etc.) | `manuscript` |
+| `_translation.osis` | the accompanying English translation, same verse structure | `translation` |
+
+`build_manifest.py` derives the role from this suffix rather than from the
+declared `xml:lang`, and warns if a `_translation`-named file declares Hebrew —
+the filename is the explicit signal, because "not Hebrew" is not an honest
+test.
 
 ## After adding or correcting a text
 
@@ -46,5 +65,6 @@ python -m unittest discover tests
 
 ## Licence
 
-GPL-3.0. Individual transcriptions may carry their own attribution and copyright
-in their OSIS headers; read them before redistributing.
+[CC BY-NC-SA 4.0](LICENSE) (Attribution-NonCommercial-ShareAlike). Individual
+transcriptions may carry their own attribution and copyright in their OSIS
+headers; read them before redistributing.

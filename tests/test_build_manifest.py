@@ -98,29 +98,44 @@ class RegeneratingReproducesTheManifest(unittest.TestCase):
     nothing.
     """
 
-    #: Where the texts and their catalogue live. Asserted rather than skipped
-    #: around: these are fixed parts of the repository, and a suite that goes
-    #: quietly green when they move is worse than no suite — that is exactly
-    #: what happened when the texts went from `data/` to `manuscripts/`.
-    MANUSCRIPTS = Path(__file__).resolve().parents[1] / "manuscripts"
+    #: Where the texts and their catalogue live. Spelled out here rather than
+    #: read back from the generator, which would only assert the module against
+    #: itself. These are also asserted rather than skipped around: they are
+    #: fixed parts of the repository, and a suite that goes quietly green when
+    #: they move is worse than no suite — which is exactly what happened when
+    #: the texts went from `data/` to `manuscripts/`.
+    REPOSITORY = Path(__file__).resolve().parents[1]
+    MANUSCRIPTS = REPOSITORY / "manuscripts"
+    MANIFEST = REPOSITORY / "manifest_manuscripts.json"
 
     def test_the_published_manifest_is_current(self) -> None:
         import json
 
-        published = self.MANUSCRIPTS / "manifest.json"
-        self.assertTrue(published.is_file(), f"no manifest at {published}")
+        self.assertTrue(self.MANIFEST.is_file(), f"no manifest at {self.MANIFEST}")
 
         entries = build_manifest.build(self.MANUSCRIPTS)
         self.assertTrue(entries, f"no .osis files in {self.MANUSCRIPTS}")
 
-        held = json.loads(published.read_text(encoding="utf-8"))
+        held = json.loads(self.MANIFEST.read_text(encoding="utf-8"))
         # Compared as data rather than as bytes: this is asserting that the
         # manifest is not stale, not that json.dumps formats identically.
         self.assertEqual(
             held["manuscripts"],
             entries,
-            "manifest.json is out of date — re-run src/build_manifest.py",
+            f"{self.MANIFEST.name} is out of date — re-run src/build_manifest.py",
         )
+
+    def test_entries_name_a_file_not_a_path(self) -> None:
+        """The manifest must stay indifferent to where the texts are kept.
+
+        Now that the catalogue sits at the root and the texts do not, an entry
+        carrying `manuscripts/NAME.osis` would be a path stated twice — once
+        here and once in Milah — and moving the folder would mean rewriting
+        every entry rather than one constant.
+        """
+        for entry in build_manifest.build(self.MANUSCRIPTS):
+            self.assertNotIn("/", entry["file"])
+            self.assertEqual(entry["file"], Path(entry["file"]).name)
 
     def test_the_generator_defaults_here(self) -> None:
         """The no-argument run must read and write where Milah looks.
@@ -131,7 +146,7 @@ class RegeneratingReproducesTheManifest(unittest.TestCase):
         """
         defaults = build_manifest.parser().parse_args([])
         self.assertEqual(defaults.source, self.MANUSCRIPTS)
-        self.assertEqual(defaults.out, self.MANUSCRIPTS / "manifest.json")
+        self.assertEqual(defaults.out, self.MANIFEST)
         self.assertTrue(defaults.source.is_dir(), f"no {defaults.source}")
 
     def test_two_builds_agree(self) -> None:
