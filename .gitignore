@@ -3,3 +3,4 @@
 *.gcno
 *.gcda
 *.gcov
+/tests/__pycache__

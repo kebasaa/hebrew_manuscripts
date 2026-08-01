@@ -98,16 +98,20 @@ class RegeneratingReproducesTheManifest(unittest.TestCase):
     nothing.
     """
 
-    def test_the_published_manifest_is_current(self) -> None:
-        repository = Path(__file__).resolve().parents[1]
-        published = repository / "manifest.json"
-        if not published.is_file():
-            self.skipTest("no manifest.json to compare against")
+    #: Where the texts and their catalogue live. Asserted rather than skipped
+    #: around: these are fixed parts of the repository, and a suite that goes
+    #: quietly green when they move is worse than no suite — that is exactly
+    #: what happened when the texts went from `data/` to `manuscripts/`.
+    MANUSCRIPTS = Path(__file__).resolve().parents[1] / "manuscripts"
 
+    def test_the_published_manifest_is_current(self) -> None:
         import json
 
-        entries = build_manifest.build(repository / "data")
-        self.assertTrue(entries, "no .osis files found in data/")
+        published = self.MANUSCRIPTS / "manifest.json"
+        self.assertTrue(published.is_file(), f"no manifest at {published}")
+
+        entries = build_manifest.build(self.MANUSCRIPTS)
+        self.assertTrue(entries, f"no .osis files in {self.MANUSCRIPTS}")
 
         held = json.loads(published.read_text(encoding="utf-8"))
         # Compared as data rather than as bytes: this is asserting that the
@@ -115,15 +119,26 @@ class RegeneratingReproducesTheManifest(unittest.TestCase):
         self.assertEqual(
             held["manuscripts"],
             entries,
-            "manifest.json does not match data/ — re-run src/build_manifest.py",
+            "manifest.json is out of date — re-run src/build_manifest.py",
         )
 
+    def test_the_generator_defaults_here(self) -> None:
+        """The no-argument run must read and write where Milah looks.
+
+        The defaults are the whole interface: nobody passes --source in
+        practice, so one pointing at a folder that has since been renamed is a
+        generator that quietly does nothing.
+        """
+        defaults = build_manifest.parser().parse_args([])
+        self.assertEqual(defaults.source, self.MANUSCRIPTS)
+        self.assertEqual(defaults.out, self.MANUSCRIPTS / "manifest.json")
+        self.assertTrue(defaults.source.is_dir(), f"no {defaults.source}")
+
     def test_two_builds_agree(self) -> None:
-        repository = Path(__file__).resolve().parents[1]
-        source = repository / "data"
-        if not source.is_dir():
-            self.skipTest("no data/ folder")
-        self.assertEqual(build_manifest.build(source), build_manifest.build(source))
+        self.assertEqual(
+            build_manifest.build(self.MANUSCRIPTS),
+            build_manifest.build(self.MANUSCRIPTS),
+        )
 
 
 if __name__ == "__main__":

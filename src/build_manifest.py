@@ -1,9 +1,10 @@
 """Builds the manifest Milah reads to offer manuscripts for download.
 
-Reads the OSIS files in ``data/`` and writes ``manifest.json`` at the root of
-this repository, so Milah can list what is available without downloading
-anything first. The defaults are relative to this file, so it needs no
-arguments::
+Reads the OSIS files in ``manuscripts/`` and writes ``manuscripts/manifest.json``
+beside them, so Milah can list what is available without downloading anything
+first. Beside them rather than at the root on purpose: the catalogue and the
+texts it describes are then one folder, and Milah needs one address for both.
+The defaults are relative to this file, so it needs no arguments::
 
     python src/build_manifest.py
 
@@ -146,23 +147,35 @@ def build(source: Path) -> list[dict]:
     return entries
 
 
-def main() -> int:
-    # This file lives in src/ at the repository root, so the texts are one
-    # level up rather than two.
-    repository = Path(__file__).resolve().parents[1]
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
+#: Where the texts and their catalogue live, relative to this file: src/ sits at
+#: the repository root, so they are one level up rather than two. Named rather
+#: than inlined so a test can assert the no-argument run still points somewhere
+#: real — the defaults are the whole interface, since nobody passes --source in
+#: practice, and one pointing at a folder that has been renamed is a generator
+#: that quietly does nothing.
+MANUSCRIPTS = Path(__file__).resolve().parents[1] / "manuscripts"
+
+
+def parser() -> argparse.ArgumentParser:
+    parsed = argparse.ArgumentParser(description=__doc__)
+    parsed.add_argument(
         "--source",
         type=Path,
-        default=repository / "data",
+        default=MANUSCRIPTS,
         help="Folder of published .osis files.",
     )
-    parser.add_argument(
+    parsed.add_argument(
         "--out",
         type=Path,
-        default=repository / "manifest.json",
+        # Written into the same folder it describes. The glob only takes
+        # *.osis, so the manifest never lists itself.
+        default=MANUSCRIPTS / "manifest.json",
     )
-    args = parser.parse_args()
+    return parsed
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parser().parse_args(argv)
 
     if not args.source.is_dir():
         print(f"No such folder: {args.source}")
