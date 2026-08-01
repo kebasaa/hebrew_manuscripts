@@ -79,8 +79,10 @@ class TheHashIsStableAcrossLineEndings(unittest.TestCase):
             before.write_bytes(OSIS.encode("utf-8"))
             # Same length, one character different — the case a size cannot see,
             # and the reason the manifest carries a checksum at all. The real
-            # instance is a shelfmark reading "Sloane MS 237" in one place and
-            # "MS Sloane 273" in another.
+            # instance was a shelfmark reading "Sloane MS 237" in one place and
+            # "MS Sloane 273" in another; 237 is the British Library's own
+            # reading, and the files now say so throughout. The mutation here
+            # runs the other way only because it is the shorter thing to write.
             after.write_bytes(OSIS.replace("237", "273").encode("utf-8"))
 
             first = build_manifest.describe(before)

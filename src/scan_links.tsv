@@ -12,9 +12,73 @@
 # width  pixels wide to request, default 1024. Honoured only where the library
 #        lets a size be asked for: Cambridge serves any width but caps delivery
 #        at 2000, while OPenn publishes fixed derivatives and chooses for you.
+# folios the part of a codex this row offers, as two of the labels the library
+#        itself uses, written 1r..21v. Endpoints are found by position in the
+#        page list, never by arithmetic on the folio number: Cambridge's first
+#        image is the front cover, so 1r is image 3 in this codex and image
+#        something else in the next. Written with .. rather than a hyphen,
+#        because OPenn labels endleaves i-r, where the hyphen is part of the
+#        label. Empty is the whole codex, which is what every row was before
+#        this column existed.
+#
+# Rows may name one address as often as they like: the library's record is read
+# once per run and each row takes its own slice of it.
 #
 # Regenerate after editing:  python src/build_scan_manifest.py
-url	title	book	width
+url	title	book	width	folios
+# Cambridge MS Oo.1.32 — one binding of 328 images holding twenty-six New
+# Testament books, so one row per book rather than one entry nobody can choose
+# Mark out of. The whole codex is kept as well, first, because a reader may want
+# to page through the binding itself and because that entry's id is the one
+# already published. The ranges are the catalogue's own, copied from its record
+# and not interpolated: assuming 1 Corinthians begins where Romans ends is
+# exactly the "nearly always" that build_scan_manifest.py refuses. Note that the
+# book codes follow the OSIS filename prefixes in manuscripts/, which is why John
+# is JOH and not the JHN a Paratext list would give.
 https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Matthew (Cambridge, MS Oo.1.32)	MAT		1r..21v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Mark (Cambridge, MS Oo.1.32)	MRK		22r..33v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Luke (Cambridge, MS Oo.1.32)	LUK		34r..48v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	John (Cambridge, MS Oo.1.32)	JOH		49r..70v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Acts (Cambridge, MS Oo.1.32)	ACT		71r..94v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Romans (Cambridge, MS Oo.1.32)	ROM		95r..105r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	1 Corinthians (Cambridge, MS Oo.1.32)	1CO		105v..116r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	2 Corinthians (Cambridge, MS Oo.1.32)	2CO		116v..123r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Galatians (Cambridge, MS Oo.1.32)	GAL		123v..127r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Ephesians (Cambridge, MS Oo.1.32)	EPH		127v..131r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Philippians (Cambridge, MS Oo.1.32)	PHP		131v..134r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Colossians (Cambridge, MS Oo.1.32)	COL		134v..136r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	1 Thessalonians (Cambridge, MS Oo.1.32)	1TH		137r..138v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	2 Thessalonians (Cambridge, MS Oo.1.32)	2TH		139r..140r
+# 1 Timothy opens on the leaf 2 Thessalonians ends on, and 2 Timothy on the leaf
+# 1 Timothy ends on. The catalogue says so; the overlap is the manuscript's.
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	1 Timothy (Cambridge, MS Oo.1.32)	1TI		140r..142v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	2 Timothy (Cambridge, MS Oo.1.32)	2TI		142v..144r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Titus (Cambridge, MS Oo.1.32)	TIT		144v..145v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Philemon (Cambridge, MS Oo.1.32)	PHM		145v..146r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	1 Peter (Cambridge, MS Oo.1.32)	1PE		146r..148v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	2 Peter (Cambridge, MS Oo.1.32)	2PE		148v..150r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	1 John (Cambridge, MS Oo.1.32)	1JO		150r..152v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	2 John (Cambridge, MS Oo.1.32)	2JO		152v..153r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	3 John (Cambridge, MS Oo.1.32)	3JO		153r..153v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Hebrews (Cambridge, MS Oo.1.32)	HEB		153v..158r
+# The book JAS_CochinOo.1.32_hebrew_commented.osis transcribes.
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	James (Cambridge, MS Oo.1.32)	JAS		158r..160r
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Jude (Cambridge, MS Oo.1.32)	JUD		160r..160v
 # Revelation, and the manuscript REV_Sloane237_hebrew_commented.osis transcribes.
 https://openn.library.upenn.edu/Data/0047/html/sloane_ms_237.html		REV
+#
+# The du Tillet Matthew, a witness of its own: obtained from the Jews of Rome in
+# 1553 and independent of both the Cochin and the Shem Tov traditions. Gallica
+# publishes no record beyond its IIIF manifest, so most of this entry's fields
+# come back empty and its title is given here rather than taken. Every one of its
+# forty-nine canvases is labelled NP — non paginé — which is why it carries no
+# folios range: there are no folio labels here to name one with.
+https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json	Matthew (Paris, BnF Hébreu 132)	MAT
+#
+# Shem Tov's Hebrew Matthew, in the Even Bohan, is the oldest of the three and is
+# deliberately absent. Its best witness is British Library Add MS 26964, and the
+# British Library has not served a manuscript since the 2023 cyberattack: its
+# IIIF endpoint does not resolve and its catalogue answers 500. The other
+# witnesses — Bodleian MS. Mich. 119, Leiden MS. Heb. 28, JTS MS. 2426 — are
+# worth trying for a IIIF manifest before this is written off.

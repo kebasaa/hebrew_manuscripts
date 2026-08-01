@@ -120,8 +120,8 @@
    "language": "he",
    "date": "between 1500 and 1699",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
-   "bytes": 17217,
-   "sha256": "f4488033fb19b7ab0b65731d96c18ec0ff8ab6c4532d61c40d8ec2354d059172"
+   "bytes": 17484,
+   "sha256": "9be0e0dbd522f8c09e9ec61ae06195dbf4c1b6a7ead21a39bb1afa67042a4d1f"
   },
   {
    "file": "REV_Sloane237_translation.osis",
@@ -131,8 +131,8 @@
    "language": "en",
    "date": "2017",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
-   "bytes": 12787,
-   "sha256": "212269d21047923d44339ff3239fc87b1fb9ae616ac113bb5d43c6ef8e189573"
+   "bytes": 13054,
+   "sha256": "6e3337851b7020d7b21b839c3a68be05053c67aa4e94d0a6b95a8a62378e5c60"
   }
  ]
 }

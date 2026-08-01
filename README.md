@@ -56,8 +56,8 @@ python src/build_manifest.py
 No arguments needed. Commit the result: the manifest is what Milah reads, so a
 stale one hides a manuscript sitting right beside it. It carries a `sha256` per
 file, which is how Milah tells a reader that a text they downloaded has since
-been corrected — a size cannot, because fixing `Sloane MS 237` to
-`MS Sloane 273` moves not one byte.
+been corrected — a size cannot, because correcting `MS Sloane 273` to
+`Sloane MS 237` moves not one byte.
 
 Sizes and checksums are taken over the LF form of each file, which is what
 GitHub serves and therefore what Milah downloads. Measuring the working copy
@@ -86,10 +86,51 @@ rather than being assumed to match this repository's own licence.
 
 Only `url` is required in a row. `title` overrides a library record that names a
 whole codex where only part of it is being transcribed, `book` groups a scan that
-is of one book, and `width` asks for a different image size — honoured only where
-the library lets a size be asked for. Cambridge serves any width but caps
-delivery at 2000px; OPenn publishes fixed derivatives and chooses for you, and
-says so when a row asks anyway.
+is of one book, `folios` offers one part of a codex rather than all of it, and
+`width` asks for a different image size — honoured only where the library lets a
+size be asked for. Cambridge serves any width but caps delivery at 2000px; OPenn
+publishes fixed derivatives and chooses for you, and says so when a row asks
+anyway.
+
+### One codex, many books
+
+Cambridge MS Oo.1.32 is one binding of 328 images holding twenty-six New
+Testament books, and a single entry of 328 images is not something anybody can
+choose Mark out of. `folios` says which part of a codex a row offers, written as
+two of the labels the library itself uses:
+
+```
+url	title	book	width	folios
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Matthew (Cambridge, MS Oo.1.32)	MAT		1r..21v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Mark (Cambridge, MS Oo.1.32)	MRK		22r..33v
+```
+
+Rows may name one address as often as they like: the library's record is read
+**once per run** and each row takes its own slice of it. Cambridge rate-limits
+and bot-filters, so twenty-six readings of one record is a build that gets itself
+blocked halfway through.
+
+Endpoints are matched against the library's own labels and resolved by position
+in the page list — never by arithmetic on the folio number, because Cambridge's
+first image is the front cover, so folio 1r is image 3 here and image something
+else in the next codex; and never by sorting, because `10r` sorts before `2r`.
+They are written with `..` rather than a hyphen because OPenn labels endleaves
+`i-r`, where the hyphen is part of the label. The dashes a catalogue prints are
+accepted too, since `ff. 1r–21v` is what gets pasted out of one.
+
+A label that is not in the record leaves that row out of the manifest with a
+message saying what the labels there do look like. It is not rounded to the
+nearest page: an entry titled Mark that opens on Matthew is wrong in a way nobody
+notices until somebody is transcribing from it.
+
+Each sliced entry gets its own id — the codex's, with its two folios on the end,
+`MS-OO-00001-00032-1r-21v` — and keeps the page numbers the library gave, so `n`
+is still the number in Cambridge's own viewer and not a count from 1 inside the
+slice. A row with no range keeps the id it has always had.
+
+`book` is what groups the two catalogues together, so the codes here are the OSIS
+filename prefixes used in `manuscripts/` — which is why John is `JOH` and not the
+`JHN` a Paratext list would give.
 
 `build_scan_manifest.py` knows three kinds of source:
 

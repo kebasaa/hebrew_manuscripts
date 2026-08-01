@@ -17,6 +17,8 @@ rather than regenerated.
 
 from __future__ import annotations
 
+import contextlib
+import io
 import json
 import sys
 import unittest
@@ -126,6 +128,41 @@ OPENN_TEI = """<?xml version='1.0' encoding='UTF-8'?>
  </facsimile>
 </TEI>
 """
+
+#: A codex big enough to slice, carrying every shape a range has to step over:
+#: covers at each end that are not folios at all, labels with a space in them,
+#: and folios a string sort would put in the wrong order — "10r" before "2r".
+#: The numbers are Cambridge's own, which is why 1r is 3 and not 1.
+CODEX = [
+    {"n": number, "label": label, "image": f"https://img.example/{number}.jpg"}
+    for number, label in enumerate(
+        [
+            "front cover",
+            "inside front cover",
+            "1r",
+            "1v",
+            "2r",
+            "2v",
+            "9r",
+            "9v",
+            "10r",
+            "10v",
+            "back cover",
+        ],
+        start=1,
+    )
+]
+
+#: The shape OPenn gives, which is why a hyphen cannot separate a range and why
+#: the end of one is searched forward from its start: i-r and i-v label an
+#: endleaf at each end of the codex, so the labels repeat.
+ENDLEAVES = [
+    {"n": number, "label": label, "image": f"https://img.example/{number}.jpg"}
+    for number, label in enumerate(
+        ["front", "front-i", "i-r", "i-v", "1r", "1v", "i-r", "i-v", "back"],
+        start=1,
+    )
+]
 
 IIIF_V2 = {
     "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -451,6 +488,242 @@ class BothIIIFVersionsAreRead(unittest.TestCase):
         self.assertIsNone(self._scan({}))
 
 
+class ACodexCanBeOfferedAsItsBooks(unittest.TestCase):
+    """One binding is twenty-six books, and a range says which of them a row is.
+
+    Every test here is a way of getting a range slightly wrong, and a range
+    slightly wrong is an entry that looks perfectly well formed and opens on the
+    wrong folio in front of somebody transcribing.
+    """
+
+    def test_no_range_is_the_whole_codex(self) -> None:
+        # What every row was before this column existed, and what most still are.
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "")
+        self.assertEqual(complaint, "")
+        self.assertEqual(pages, CODEX)
+
+    def test_a_range_is_taken_by_label(self) -> None:
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "1r..2v")
+        self.assertEqual(complaint, "")
+        self.assertEqual([page["label"] for page in pages], ["1r", "1v", "2r", "2v"])
+
+    def test_a_range_is_not_taken_by_sorting_the_labels(self) -> None:
+        # "10r" sorts before "2r" in any string comparison. Folio labels are not
+        # numbers and cannot be ordered as either.
+        pages, _ = build_scan_manifest.folio_range(CODEX, "2r..10v")
+        self.assertEqual(
+            [page["label"] for page in pages], ["2r", "2v", "9r", "9v", "10r", "10v"]
+        )
+
+    def test_a_range_is_not_taken_by_counting_folios(self) -> None:
+        # Folio 1r is the third image: the covers come first, and how many of
+        # them there are differs from one codex to the next.
+        pages, _ = build_scan_manifest.folio_range(CODEX, "1r..1r")
+        self.assertEqual(pages[0]["n"], 3)
+
+    def test_the_pages_keep_the_numbers_the_library_gave_them(self) -> None:
+        # n is the number in Cambridge's own viewer address, which is what a
+        # transcriber quotes when checking a reading. Renumbering from 1 would
+        # give every book a page 1 that is a different picture.
+        pages, _ = build_scan_manifest.folio_range(CODEX, "9r..10v")
+        self.assertEqual([page["n"] for page in pages], [7, 8, 9, 10])
+
+    def test_a_single_label_is_a_range_of_one_page(self) -> None:
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "9r")
+        self.assertEqual(complaint, "")
+        self.assertEqual([page["label"] for page in pages], ["9r"])
+
+    def test_a_catalogue_dash_separates_too(self) -> None:
+        # "ff. 1r–21v" is what gets pasted out of a catalogue record.
+        for written in ("1r–2r", "1r—2r"):
+            pages, complaint = build_scan_manifest.folio_range(CODEX, written)
+            self.assertEqual(complaint, "", written)
+            self.assertEqual([page["label"] for page in pages], ["1r", "1v", "2r"])
+
+    def test_a_hyphen_does_not_separate_because_labels_contain_one(self) -> None:
+        # OPenn labels endleaves i-r and front-i. Splitting on the hyphen would
+        # read "i-r..i-v" as beginning at "i", which is no label at all.
+        pages, complaint = build_scan_manifest.folio_range(ENDLEAVES, "i-r..i-v")
+        self.assertEqual(complaint, "")
+        self.assertEqual([page["label"] for page in pages], ["i-r", "i-v"])
+
+    def test_a_repeated_label_is_found_forward_from_the_start(self) -> None:
+        # i-r and i-v label an endleaf at each end of the codex. A range running
+        # from the text to a back endleaf has to reach the second one.
+        pages, complaint = build_scan_manifest.folio_range(ENDLEAVES, "1r..i-v")
+        self.assertEqual(complaint, "")
+        self.assertEqual(
+            [page["label"] for page in pages], ["1r", "1v", "i-r", "i-v"]
+        )
+
+    def test_an_endpoint_that_is_not_a_label_is_refused_not_rounded(self) -> None:
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "1x..2v")
+        self.assertEqual(pages, [])
+        self.assertIn("1x", complaint)
+
+    def test_the_refusal_says_what_the_labels_here_look_like(self) -> None:
+        # The usual mistake is a guess at the form — "f. 22r", "22", "22R" — and
+        # the words "not found" alone do not correct it.
+        _, complaint = build_scan_manifest.folio_range(CODEX, "f. 1r..2v")
+        self.assertIn("front cover", complaint)
+        self.assertIn("1r", complaint)
+
+    def test_a_range_that_ends_before_it_begins_is_refused(self) -> None:
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "10v..1r")
+        self.assertEqual(pages, [])
+        self.assertIn("ends before it begins", complaint)
+
+    def test_half_a_range_is_refused(self) -> None:
+        # Otherwise the missing end looks for a label of "", which reads as a
+        # page carrying no label at all.
+        for written in ("1r..", "..2v"):
+            pages, complaint = build_scan_manifest.folio_range(CODEX, written)
+            self.assertEqual(pages, [], written)
+            self.assertIn("missing an end", complaint)
+
+    def test_more_than_two_ends_is_refused(self) -> None:
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "1r..2r..9r")
+        self.assertEqual(pages, [])
+        self.assertIn("rather than two", complaint)
+
+    def test_the_pages_are_copies_not_the_records_own(self) -> None:
+        # Several rows slice one fetched record. A page dict shared between two
+        # entries makes a correction to one of them silently a correction to the
+        # other.
+        pages, _ = build_scan_manifest.folio_range(CODEX, "1r..1v")
+        pages[0]["label"] = "meddled with"
+        self.assertEqual(CODEX[2]["label"], "1r")
+
+    def test_a_label_a_codex_does_not_have_is_refused_even_when_it_is_a_prefix(
+        self,
+    ) -> None:
+        # "1" is the beginning of "1r" and "10r" and nothing in itself.
+        pages, complaint = build_scan_manifest.folio_range(CODEX, "1..2")
+        self.assertEqual(pages, [])
+        self.assertTrue(complaint)
+
+
+class OneRecordServesEveryRowThatNamesIt(unittest.TestCase):
+    """Twenty-six rows, one reading.
+
+    Cambridge rate-limits and bot-filters unidentified clients, which is why this
+    generator names its User-Agent at all. Twenty-six fetches of one record is a
+    build that gets itself blocked halfway through.
+    """
+
+    ROW = "https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1"
+
+    def setUp(self) -> None:
+        self.readings: list[tuple[str, int]] = []
+        self._real = build_scan_manifest.cudl_scan
+        build_scan_manifest.cudl_scan = self._record
+
+    def tearDown(self) -> None:
+        build_scan_manifest.cudl_scan = self._real
+
+    def _record(self, item: str, width: int) -> dict:
+        self.readings.append((item, width))
+        return {
+            "id": item,
+            "title": "Hebrew translation of the New Testament",
+            "shelfmark": "MS Oo.1.32",
+            "repository": "Cambridge University Library",
+            "origin": "Kochi",
+            "date": "Eighteenth century",
+            "language": "Hebrew",
+            "material": "Paper",
+            "provenance": "Presented in 1809",
+            "attribution": "Provided by Cambridge University Library",
+            "licence": "… (CC BY-NC 3.0)",
+            "pages": [dict(page) for page in CODEX],
+        }
+
+    def _build(self, rows: list[dict]) -> list[dict]:
+        """build() with its progress lines caught, so a passing run stays quiet."""
+        noise = io.StringIO()
+        with contextlib.redirect_stdout(noise):
+            entries = build_scan_manifest.build(rows)
+        self.said = noise.getvalue()
+        return entries
+
+    def _rows(self, *folios: str) -> list[dict]:
+        return [{"url": self.ROW, "title": f"Book {n}", "folios": f}
+                for n, f in enumerate(folios, start=1)]
+
+    def test_the_record_is_read_once_however_many_books_ask_for_it(self) -> None:
+        self._build(self._rows("1r..1v", "2r..2v", "9r..10v"))
+        self.assertEqual(len(self.readings), 1)
+
+    def test_each_book_is_an_entry_of_its_own(self) -> None:
+        entries = self._build(self._rows("1r..1v", "9r..10v"))
+        self.assertEqual(len(entries), 2)
+        self.assertEqual([page["label"] for page in entries[0]["pages"]], ["1r", "1v"])
+        self.assertEqual(
+            [page["label"] for page in entries[1]["pages"]], ["9r", "9v", "10r", "10v"]
+        )
+
+    def test_no_two_books_share_an_id(self) -> None:
+        entries = self._build(self._rows("1r..1v", "2r..2v"))
+        self.assertEqual(len({entry["id"] for entry in entries}), 2)
+        self.assertEqual(entries[0]["id"], "MS-OO-00001-00032-1r-1v")
+
+    def test_a_row_with_no_range_keeps_the_id_it_has_always_had(self) -> None:
+        # The whole-codex entry is already published under this id; anything in
+        # Milah holding it must go on resolving.
+        entries = self._build([{"url": self.ROW}])
+        self.assertEqual(entries[0]["id"], "MS-OO-00001-00032")
+        self.assertEqual(entries[0]["folios"], "")
+
+    def test_a_title_given_to_one_book_is_not_given_to_the_others(self) -> None:
+        # The record behind them is shared, so writing into it rather than into a
+        # copy would retitle every book at once.
+        entries = self._build(
+            [
+                {"url": self.ROW, "title": "Matthew", "folios": "1r..1v"},
+                {"url": self.ROW, "folios": "2r..2v"},
+            ]
+        )
+        self.assertEqual(entries[0]["title"], "Matthew")
+        self.assertEqual(entries[1]["title"], "Hebrew translation of the New Testament")
+
+    def test_the_pages_of_one_book_are_not_the_pages_of_another(self) -> None:
+        entries = self._build(self._rows("1r..1v", "2r..2v"))
+        entries[0]["pages"][0]["label"] = "meddled with"
+        self.assertEqual(entries[1]["pages"][0]["label"], "2r")
+
+    def test_a_different_width_is_a_different_reading(self) -> None:
+        # Width is part of every image address, so two widths are two records.
+        self._build(
+            [
+                {"url": self.ROW, "folios": "1r..1v"},
+                {"url": self.ROW, "folios": "1r..1v", "width": "2000"},
+            ]
+        )
+        self.assertEqual(len(self.readings), 2)
+
+    def test_the_folio_list_is_the_last_key_of_every_entry(self) -> None:
+        # It is hundreds of lines long, and anything after it would be unreadable
+        # in a file people do open to see what is offered.
+        for entry in self._build(self._rows("1r..1v", "2r..2v")):
+            self.assertEqual(list(entry)[-1], "pages")
+
+    def test_a_row_whose_range_cannot_be_resolved_is_left_out_and_said(self) -> None:
+        entries = self._build(self._rows("1r..1v", "22x..33v"))
+        self.assertEqual(len(entries), 1)
+        self.assertIn("skipped", self.said)
+        self.assertIn("22x", self.said)
+
+    def test_a_row_repeating_another_rows_range_is_left_out(self) -> None:
+        entries = self._build(self._rows("1r..1v", "1r..1v"))
+        self.assertEqual(len(entries), 1)
+        self.assertIn("already", self.said)
+
+    def test_the_same_range_written_two_ways_is_one_entry(self) -> None:
+        # The id is built from the resolved labels, not from the cell as typed.
+        entries = self._build(self._rows("1r..1v", "1r–1v"))
+        self.assertEqual(len(entries), 1)
+
+
 class TheLinkListIsReadAsWritten(unittest.TestCase):
     """It is edited by hand, so it has to tolerate being annotated."""
 
@@ -461,6 +734,17 @@ class TheLinkListIsReadAsWritten(unittest.TestCase):
         self.assertTrue(rows, f"no rows read from {self.LINKS}")
         for row in rows:
             self.assertTrue(row.get("url", "").startswith("http"), row)
+
+    def test_every_range_in_the_list_names_two_ends(self) -> None:
+        # Whether the labels exist needs Cambridge; whether the cell is even the
+        # right shape does not, and a hyphen or a stray dot is caught here.
+        for row in build_scan_manifest.read_links(self.LINKS):
+            folios = (row.get("folios") or "").strip()
+            if not folios:
+                continue
+            ends = build_scan_manifest.FOLIO_SEPARATOR.split(folios)
+            self.assertLessEqual(len(ends), 2, folios)
+            self.assertTrue(all(part.strip() for part in ends), folios)
 
     def test_the_generator_defaults_here(self) -> None:
         # The defaults are the whole interface — nobody passes --links — so one
@@ -496,6 +780,22 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
             self.assertTrue(scan["id"], scan)
             self.assertTrue(scan["title"], scan["id"])
             self.assertTrue(scan["pages"], scan["id"])
+
+    def test_no_two_scans_share_an_id(self) -> None:
+        # Two entries under one id is a catalogue Milah cannot key: it shows one
+        # of them twice and loses the other. Twenty-six of these entries are
+        # slices of one codex and differ only by their folios, so this is the
+        # invariant the whole id scheme exists to hold.
+        ids = [scan["id"] for scan in self.document["scans"]]
+        self.assertEqual(len(ids), len(set(ids)), sorted(ids))
+
+    def test_every_book_a_scan_names_is_one_the_texts_would_recognise(self) -> None:
+        # book is what groups the two catalogues together, so a scan filed under
+        # JHN beside a text filed under JOH is two lists that never meet.
+        for scan in self.document["scans"]:
+            book = scan.get("book", "")
+            if book:
+                self.assertRegex(book, r"^[1-3]?[A-Z]{2,3}$", scan["id"])
 
     def test_every_folio_has_somewhere_to_be_fetched_from(self) -> None:
         for scan in self.document["scans"]:

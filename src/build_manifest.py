@@ -129,9 +129,10 @@ def describe(path: Path) -> dict | None:
         "covers": coverage(work),
         "bytes": len(content),
         # What tells Milah that a text it already holds has been corrected.
-        # Length cannot: fixing "Sloane MS 237" to "MS Sloane 273" moves not one
-        # byte, and that particular correction is outstanding in this very
-        # repository.
+        # Length cannot: correcting "MS Sloane 273" to "Sloane MS 237" moves not
+        # one byte, and that particular correction has been made in this very
+        # repository — the edition this transcribes misnames the manuscript on
+        # its own title page.
         "sha256": hashlib.sha256(content).hexdigest(),
     }
 

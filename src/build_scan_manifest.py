@@ -29,6 +29,24 @@ wrong silently, in the app, in front of somebody transcribing. Writing the list
 also keeps every library's quirks here rather than in Milah, which then only ever
 sees a list of URLs.
 
+Offering a codex as its books
+-----------------------------
+
+A row may name a folio range in ``folios``, and then it offers that range rather
+than the whole codex. MS Oo.1.32 is one binding of 328 images holding twenty-six
+New Testament books, and a single entry of 328 images is not something anybody
+can choose Mark out of. Many rows may name one address: the record behind it is
+read once for the whole run, and each row keeps the slice it asked for.
+
+The endpoints are labels the library itself wrote — ``1r``, ``21v`` — and are
+found by position in the page list. Not by arithmetic: Cambridge's first image is
+the front cover, so folio 22r is image 45 in this codex and image something else
+in the next. Not by sorting either, because ``10r`` sorts before ``2r`` in any
+string comparison and folio labels are not numbers. A label that is not there
+stops the row with a message rather than quietly producing a shorter entry: an
+entry titled Mark that opens on Matthew is the silent kind of wrong this file
+exists to avoid.
+
 Adding a library
 ----------------
 
@@ -93,6 +111,18 @@ TEI_NS = {"t": "http://www.tei-c.org/ns/1.0"}
 
 _TAGS = re.compile(r"<[^>]+>")
 _SPACE = re.compile(r"\s+")
+
+#: What separates the two ends of a folio range. Not the hyphen, however
+#: naturally "22r-33v" reads: OPenn labels Sloane MS 237's endleaves "i-r" and
+#: "front-i", so a hyphen is a character inside a label here, and splitting on it
+#: would read "i-r..i-v" as beginning at "i". The dashes a catalogue prints are
+#: taken as well, because "ff. 1r–21v" is what gets copied out of one.
+FOLIO_SEPARATOR = re.compile(r"\.\.|–|—")
+
+#: Anything that cannot go in an identifier unquoted. Cambridge labels its covers
+#: "front cover" and "inside front cover", and an id with a space in it is an id
+#: that has to be quoted everywhere it is used.
+_NOT_ID = re.compile(r"[^A-Za-z0-9]+")
 
 
 def fetch(url: str) -> bytes:
@@ -488,8 +518,94 @@ def read_links(path: Path) -> list[dict]:
     return [dict(row) for row in csv.DictReader(lines, delimiter="\t")]
 
 
+def page_id(label: str) -> str:
+    """A folio label as a piece of an identifier.
+
+    Cambridge labels its covers "front cover" and "inside front cover", and an id
+    with a space in it is an id that has to be quoted everywhere it is used — in
+    an address, in a filename, in a log line.
+    """
+    return _NOT_ID.sub("-", label).strip("-").lower()
+
+
+def label_sample(labels: list[str]) -> str:
+    """A few of a codex's labels, to say what shape they are.
+
+    The usual mistake is not a typo but a guess at the form — "f. 22r", "22",
+    "22R" for a codex that says "22r" — and four real labels correct that where
+    the words "not found" do not.
+    """
+    if len(labels) <= 5:
+        return ", ".join(f'"{label}"' for label in labels)
+    shown = ", ".join(f'"{label}"' for label in labels[:4])
+    return f'{shown} … "{labels[-1]}"'
+
+
+def folio_range(pages: list[dict], folios: str) -> tuple[list[dict], str]:
+    """The pages a ``folios`` cell names, and what is wrong with it if anything.
+
+    An empty cell is the whole codex, returned unchanged: that is what every row
+    was before this existed, and what most rows still are.
+
+    Both endpoints are matched against the labels the library itself gave, and
+    the slice is taken by position. Folio labels cannot be sorted — "10r" comes
+    before "2r" in any string comparison — and their numbers cannot be done
+    arithmetic on either, because the sequence number counts images while the
+    label counts folios: MS Oo.1.32 opens with a cover and an inside cover, so
+    folio 1r is image 3 there and image something else in the next manuscript.
+
+    A cell that cannot be resolved comes back with no pages and a reason to
+    print. It deliberately does not fall back to the whole codex, nor to the
+    nearest label: an entry of 328 images titled "Mark", or one that begins a
+    folio early, is wrong in a way nobody notices until somebody is transcribing
+    from it — which is the whole reason the page list is written out at all.
+    """
+    if not folios:
+        return pages, ""
+
+    ends = [part.strip() for part in FOLIO_SEPARATOR.split(folios)]
+    if len(ends) > 2:
+        return [], f'folios "{folios}" names {len(ends)} ends rather than two'
+    if not all(ends):
+        # "1r.." and "..21v" — half a range, which would otherwise look for a
+        # label of "" and read as a page carrying no label at all.
+        return [], f'folios "{folios}" is missing an end'
+    start, end = ends[0], ends[-1]
+
+    labels = [str(page.get("label", "")) for page in pages]
+    if start not in labels:
+        return [], f'no page is labelled "{start}" — here they read {label_sample(labels)}'
+
+    first = labels.index(start)
+    # The end is searched forward from the start rather than from the beginning
+    # of the codex, because a label is not a key: OPenn repeats "i-r", "i-v",
+    # "ii-r" and "ii-v" at both ends of Sloane MS 237, and a range running from
+    # the text to a back endleaf has to find the second one.
+    if end not in labels[first:]:
+        if end in labels:
+            return [], f'folios "{folios}" ends before it begins'
+        return [], f'no page is labelled "{end}" — here they read {label_sample(labels)}'
+    last = labels.index(end, first)
+
+    # Copied, not aliased. Several rows slice one fetched record, and a page dict
+    # shared between two entries makes a correction to one of them silently a
+    # correction to the other.
+    return [dict(page) for page in pages[first : last + 1]], ""
+
+
 def build(rows: list[dict]) -> list[dict]:
     entries = []
+    # One reading per record per width, however many rows slice it. Twenty-six
+    # rows name MS Oo.1.32 — one per New Testament book — and twenty-six fetches
+    # of one record is how a build gets itself blocked halfway through: Cambridge
+    # rate-limits and bot-filters unidentified clients, which is why USER_AGENT
+    # exists at all. Width is part of the key because it is part of every image
+    # address, so two widths are genuinely two records.
+    fetched: dict[tuple[str, str, int], dict | None] = {}
+    # Ids already handed out. Two entries under one id is a catalogue Milah
+    # cannot key: it shows one of them twice and loses the other.
+    given: set[str] = set()
+
     for row in rows:
         url = (row.get("url") or "").strip()
         if not url:
@@ -506,14 +622,44 @@ def build(rows: list[dict]) -> list[dict]:
             print(f"  {url}: width is not a number, using {DEFAULT_WIDTH}")
             width = DEFAULT_WIDTH
 
-        print(f"  reading {url}")
-        readers = {"cudl": cudl_scan, "openn": openn_scan, "iiif": iiif_scan}
-        entry = readers[source](identifier, width)
-        if entry is None:
+        folios = (row.get("folios") or "").strip()
+        key = (source, identifier, width)
+        if key in fetched:
+            # Said rather than passed over in silence, so that a run of
+            # twenty-six rows does not read as twenty-six fetches of a
+            # rate-limited library.
+            print(f"  {url}: {folios or 'the whole codex'}, from the record already read")
+        else:
+            print(f"  reading {url}")
+            readers = {"cudl": cudl_scan, "openn": openn_scan, "iiif": iiif_scan}
+            fetched[key] = readers[source](identifier, width)
+        record = fetched[key]
+
+        if record is None:
             continue
-        if not entry.get("pages"):
+        if not record.get("pages"):
             print(f"  skipped (the record names no images): {url}")
             continue
+
+        pages, complaint = folio_range(record["pages"], folios)
+        if complaint:
+            print(f"  skipped ({complaint}): {url}")
+            continue
+
+        # Copied before anything is written into it, because the record behind it
+        # is shared with every other row naming this codex: overriding the title
+        # for Matthew would otherwise retitle Mark, Luke and John as well.
+        entry = dict(record)
+        if folios:
+            # The resolved labels rather than the cell as it was typed, so that
+            # "1r..21v" and "1r–21v" are one entry and not two.
+            entry["id"] = (
+                f"{entry['id']}-{page_id(pages[0]['label'])}-{page_id(pages[-1]['label'])}"
+            )
+        if entry["id"] in given:
+            print(f"  skipped (another row is already {entry['id']}): {url}")
+            continue
+        given.add(entry["id"])
 
         # What the library calls it, unless the link list says otherwise. An
         # override is not second-guessing the library: a record may name a
@@ -521,12 +667,21 @@ def build(rows: list[dict]) -> list[dict]:
         title = (row.get("title") or "").strip()
         if title:
             entry["title"] = title
+        elif folios:
+            # Twenty-six entries all called "Hebrew translation of the New
+            # Testament" is a list nobody can choose a book out of.
+            print(f"  warning: {url} {folios} has no title of its own, so it takes the codex's")
+
         # Lifted out and put back so the folio list stays the last key of the
         # entry. It is hundreds of lines long, and anything after it would be
         # unreadable in a file people do open to see what is offered.
-        pages = entry.pop("pages")
+        entry.pop("pages")
         entry["book"] = (row.get("book") or "").strip()
         entry["source"] = url
+        # Which part of the codex this is, said outright: several sliced entries
+        # share a shelfmark, a date and a repository, and the first thing anyone
+        # reading the file needs is which folios each one covers.
+        entry["folios"] = folios
         entry["pages"] = pages
 
         if not entry["title"]:
@@ -591,8 +746,11 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(document, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
 
+    # Offered, not held: a codex sliced into its books offers each of its images
+    # once per book that covers it, so this counts higher than the number of
+    # pictures on the library's server, and is meant to.
     folios = sum(len(entry["pages"]) for entry in entries)
-    print(f"{len(entries)} scans, {folios} folios -> {args.out}")
+    print(f"{len(entries)} scans, {folios} folios offered -> {args.out}")
     return 0
 
 
