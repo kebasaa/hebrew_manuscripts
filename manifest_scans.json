@@ -1,0 +1,1920 @@
+{
+ "version": 1,
+ "about": "Published manuscript scans Milah can transcribe from, generated from the holding libraries' own records by src/build_scan_manifest.py in this repository. Do not edit by hand: regenerate it whenever src/scan_links.tsv changes. The images are linked, not copied — each scan stays on its library's server under the terms that library states, which are recorded with it.",
+ "scans": [
+  {
+   "id": "MS-OO-00001-00032",
+   "title": "Hebrew translation of the New Testament",
+   "shelfmark": "MS Oo.1.32",
+   "repository": "Cambridge University Library",
+   "origin": "Kochi",
+   "date": "Eighteenth century",
+   "language": "Hebrew",
+   "material": "Paper",
+   "provenance": "Presented in 1809 by the Revd Claudius Buchanan, who acquired it in India in 1806",
+   "attribution": "Provided by Cambridge University Library",
+   "licence": "Images made available for download are licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0)",
+   "book": "",
+   "source": "https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1",
+   "pages": [
+    {
+     "n": 1,
+     "label": "front cover",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00001.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 2,
+     "label": "inside front cover",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00002.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 3,
+     "label": "1r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00003.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 4,
+     "label": "1v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00004.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 5,
+     "label": "2r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00005.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 6,
+     "label": "2v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00006.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 7,
+     "label": "3r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00007.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 8,
+     "label": "3v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00008.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 9,
+     "label": "4r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00009.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 10,
+     "label": "4v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00010.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 11,
+     "label": "5r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00011.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 12,
+     "label": "5v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00012.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 13,
+     "label": "6r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00013.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 14,
+     "label": "6v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00014.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 15,
+     "label": "7r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00015.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 16,
+     "label": "7v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00016.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 17,
+     "label": "8r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00017.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 18,
+     "label": "8v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00018.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 19,
+     "label": "9r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00019.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 20,
+     "label": "9v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00020.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 21,
+     "label": "10r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00021.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 22,
+     "label": "10v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00022.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 23,
+     "label": "11r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00023.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 24,
+     "label": "11v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00024.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 25,
+     "label": "12r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00025.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 26,
+     "label": "12v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00026.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 27,
+     "label": "13r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00027.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 28,
+     "label": "13v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00028.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 29,
+     "label": "14r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00029.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 30,
+     "label": "14v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00030.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 31,
+     "label": "15r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00031.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 32,
+     "label": "15v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00032.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 33,
+     "label": "16r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00033.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 34,
+     "label": "16v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00034.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 35,
+     "label": "17r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00035.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 36,
+     "label": "17v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00036.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 37,
+     "label": "18r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00037.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 38,
+     "label": "18v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00038.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 39,
+     "label": "19r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00039.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 40,
+     "label": "19v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00040.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 41,
+     "label": "20r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00041.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 42,
+     "label": "20v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00042.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 43,
+     "label": "21r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00043.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 44,
+     "label": "21v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00044.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 45,
+     "label": "22r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00045.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 46,
+     "label": "22v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00046.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 47,
+     "label": "23r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00047.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 48,
+     "label": "23v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00048.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 49,
+     "label": "24r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00049.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 50,
+     "label": "24v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00050.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 51,
+     "label": "25r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00051.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 52,
+     "label": "25v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00052.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 53,
+     "label": "26r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00053.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 54,
+     "label": "26v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00054.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 55,
+     "label": "27r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00055.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 56,
+     "label": "27v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00056.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 57,
+     "label": "28r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00057.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 58,
+     "label": "28v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00058.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 59,
+     "label": "29r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00059.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 60,
+     "label": "29v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00060.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 61,
+     "label": "30r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00061.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 62,
+     "label": "30v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00062.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 63,
+     "label": "31r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00063.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 64,
+     "label": "31v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00064.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 65,
+     "label": "32r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00065.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 66,
+     "label": "32v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00066.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 67,
+     "label": "33r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00067.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 68,
+     "label": "33v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00068.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 69,
+     "label": "34r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00069.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 70,
+     "label": "34v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00070.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 71,
+     "label": "35r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00071.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 72,
+     "label": "35v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00072.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 73,
+     "label": "36r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00073.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 74,
+     "label": "36v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00074.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 75,
+     "label": "37r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00075.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 76,
+     "label": "37v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00076.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 77,
+     "label": "38r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00077.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 78,
+     "label": "38v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00078.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 79,
+     "label": "39r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00079.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 80,
+     "label": "39v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00080.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 81,
+     "label": "40r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00081.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 82,
+     "label": "40v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00082.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 83,
+     "label": "41r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00083.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 84,
+     "label": "41v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00084.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 85,
+     "label": "42r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00085.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 86,
+     "label": "42v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00086.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 87,
+     "label": "43r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00087.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 88,
+     "label": "43v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00088.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 89,
+     "label": "44r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00089.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 90,
+     "label": "44v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00090.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 91,
+     "label": "45r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00091.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 92,
+     "label": "45v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00092.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 93,
+     "label": "46r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00093.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 94,
+     "label": "46v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00094.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 95,
+     "label": "47r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00095.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 96,
+     "label": "47v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00096.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 97,
+     "label": "48r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00097.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 98,
+     "label": "48v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00098.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 99,
+     "label": "49r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00099.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 100,
+     "label": "49v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00100.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 101,
+     "label": "50r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00101.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 102,
+     "label": "50v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00102.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 103,
+     "label": "51r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00103.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 104,
+     "label": "51v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00104.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 105,
+     "label": "52r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00105.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 106,
+     "label": "52v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00106.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 107,
+     "label": "53r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00107.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 108,
+     "label": "53v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00108.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 109,
+     "label": "54r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00109.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 110,
+     "label": "54v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00110.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 111,
+     "label": "55r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00111.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 112,
+     "label": "55v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00112.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 113,
+     "label": "56r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00113.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 114,
+     "label": "56v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00114.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 115,
+     "label": "57r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00115.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 116,
+     "label": "57v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00116.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 117,
+     "label": "58r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00117.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 118,
+     "label": "58v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00118.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 119,
+     "label": "59r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00119.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 120,
+     "label": "59v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00120.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 121,
+     "label": "60r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00121.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 122,
+     "label": "60v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00122.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 123,
+     "label": "61r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00123.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 124,
+     "label": "61v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00124.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 125,
+     "label": "62r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00125.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 126,
+     "label": "62v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00126.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 127,
+     "label": "63r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00127.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 128,
+     "label": "63v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00128.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 129,
+     "label": "64r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00129.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 130,
+     "label": "64v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00130.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 131,
+     "label": "65r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00131.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 132,
+     "label": "65v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00132.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 133,
+     "label": "66r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00133.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 134,
+     "label": "66v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00134.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 135,
+     "label": "67r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00135.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 136,
+     "label": "67v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00136.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 137,
+     "label": "68r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00137.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 138,
+     "label": "68v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00138.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 139,
+     "label": "69r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00139.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 140,
+     "label": "69v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00140.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 141,
+     "label": "70r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00141.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 142,
+     "label": "70v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00142.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 143,
+     "label": "71r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00143.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 144,
+     "label": "71v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00144.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 145,
+     "label": "72r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00145.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 146,
+     "label": "72v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00146.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 147,
+     "label": "73r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00147.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 148,
+     "label": "73v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00148.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 149,
+     "label": "74r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00149.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 150,
+     "label": "74v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00150.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 151,
+     "label": "75r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00151.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 152,
+     "label": "75v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00152.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 153,
+     "label": "76r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00153.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 154,
+     "label": "76v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00154.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 155,
+     "label": "77r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00155.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 156,
+     "label": "77v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00156.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 157,
+     "label": "78r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00157.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 158,
+     "label": "78v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00158.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 159,
+     "label": "79r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00159.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 160,
+     "label": "79v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00160.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 161,
+     "label": "80r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00161.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 162,
+     "label": "80v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00162.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 163,
+     "label": "81r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00163.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 164,
+     "label": "81v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00164.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 165,
+     "label": "82r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00165.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 166,
+     "label": "82v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00166.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 167,
+     "label": "83r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00167.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 168,
+     "label": "83v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00168.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 169,
+     "label": "84r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00169.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 170,
+     "label": "84v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00170.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 171,
+     "label": "85r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00171.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 172,
+     "label": "85v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00172.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 173,
+     "label": "86r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00173.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 174,
+     "label": "86v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00174.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 175,
+     "label": "87r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00175.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 176,
+     "label": "87v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00176.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 177,
+     "label": "88r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00177.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 178,
+     "label": "88v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00178.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 179,
+     "label": "89r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00179.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 180,
+     "label": "89v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00180.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 181,
+     "label": "90r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00181.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 182,
+     "label": "90v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00182.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 183,
+     "label": "91r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00183.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 184,
+     "label": "91v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00184.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 185,
+     "label": "92r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00185.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 186,
+     "label": "92v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00186.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 187,
+     "label": "93r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00187.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 188,
+     "label": "93v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00188.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 189,
+     "label": "94r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00189.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 190,
+     "label": "94v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00190.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 191,
+     "label": "95r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00191.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 192,
+     "label": "95v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00192.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 193,
+     "label": "96r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00193.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 194,
+     "label": "96v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00194.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 195,
+     "label": "97r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00195.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 196,
+     "label": "97v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00196.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 197,
+     "label": "98r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00197.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 198,
+     "label": "98v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00198.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 199,
+     "label": "99r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00199.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 200,
+     "label": "99v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00200.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 201,
+     "label": "100r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00201.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 202,
+     "label": "100v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00202.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 203,
+     "label": "101r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00203.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 204,
+     "label": "101v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00204.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 205,
+     "label": "102r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00205.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 206,
+     "label": "102v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00206.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 207,
+     "label": "103r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00207.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 208,
+     "label": "103v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00208.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 209,
+     "label": "104r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00209.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 210,
+     "label": "104v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00210.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 211,
+     "label": "105r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00211.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 212,
+     "label": "105v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00212.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 213,
+     "label": "106r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00213.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 214,
+     "label": "106v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00214.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 215,
+     "label": "107r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00215.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 216,
+     "label": "107v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00216.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 217,
+     "label": "108r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00217.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 218,
+     "label": "108v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00218.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 219,
+     "label": "109r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00219.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 220,
+     "label": "109v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00220.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 221,
+     "label": "110r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00221.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 222,
+     "label": "110v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00222.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 223,
+     "label": "111r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00223.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 224,
+     "label": "111v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00224.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 225,
+     "label": "112r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00225.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 226,
+     "label": "112v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00226.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 227,
+     "label": "113r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00227.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 228,
+     "label": "113v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00228.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 229,
+     "label": "114r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00229.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 230,
+     "label": "114v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00230.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 231,
+     "label": "115r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00231.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 232,
+     "label": "115v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00232.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 233,
+     "label": "116r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00233.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 234,
+     "label": "116v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00234.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 235,
+     "label": "117r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00235.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 236,
+     "label": "117v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00236.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 237,
+     "label": "118r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00237.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 238,
+     "label": "118v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00238.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 239,
+     "label": "119r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00239.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 240,
+     "label": "119v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00240.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 241,
+     "label": "120r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00241.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 242,
+     "label": "120v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00242.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 243,
+     "label": "121r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00243.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 244,
+     "label": "121v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00244.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 245,
+     "label": "122r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00245.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 246,
+     "label": "122v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00246.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 247,
+     "label": "123r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00247.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 248,
+     "label": "123v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00248.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 249,
+     "label": "124r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00249.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 250,
+     "label": "124v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00250.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 251,
+     "label": "125r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00251.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 252,
+     "label": "125v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00252.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 253,
+     "label": "126r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00253.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 254,
+     "label": "126v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00254.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 255,
+     "label": "127r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00255.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 256,
+     "label": "127v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00256.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 257,
+     "label": "128r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00257.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 258,
+     "label": "128v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00258.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 259,
+     "label": "129r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00259.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 260,
+     "label": "129v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00260.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 261,
+     "label": "130r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00261.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 262,
+     "label": "130v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00262.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 263,
+     "label": "131r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00263.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 264,
+     "label": "131v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00264.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 265,
+     "label": "132r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00265.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 266,
+     "label": "132v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00266.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 267,
+     "label": "133r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00267.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 268,
+     "label": "133v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00268.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 269,
+     "label": "134r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00269.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 270,
+     "label": "134v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00270.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 271,
+     "label": "135r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00271.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 272,
+     "label": "135v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00272.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 273,
+     "label": "136r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00273.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 274,
+     "label": "136v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00274.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 275,
+     "label": "137r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00275.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 276,
+     "label": "137v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00276.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 277,
+     "label": "138r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00277.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 278,
+     "label": "138v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00278.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 279,
+     "label": "139r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00279.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 280,
+     "label": "139v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00280.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 281,
+     "label": "140r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00281.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 282,
+     "label": "140v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00282.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 283,
+     "label": "141r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00283.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 284,
+     "label": "141v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00284.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 285,
+     "label": "142r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00285.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 286,
+     "label": "142v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00286.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 287,
+     "label": "143r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00287.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 288,
+     "label": "143v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00288.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 289,
+     "label": "144r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00289.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 290,
+     "label": "144v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00290.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 291,
+     "label": "145r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00291.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 292,
+     "label": "145v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00292.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 293,
+     "label": "146r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00293.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 294,
+     "label": "146v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00294.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 295,
+     "label": "147r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00295.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 296,
+     "label": "147v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00296.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 297,
+     "label": "148r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00297.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 298,
+     "label": "148v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00298.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 299,
+     "label": "149r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00299.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 300,
+     "label": "149v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00300.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 301,
+     "label": "150r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00301.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 302,
+     "label": "150v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00302.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 303,
+     "label": "151r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00303.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 304,
+     "label": "151v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00304.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 305,
+     "label": "152r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00305.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 306,
+     "label": "152v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00306.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 307,
+     "label": "153r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00307.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 308,
+     "label": "153v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00308.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 309,
+     "label": "154r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00309.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 310,
+     "label": "154v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00310.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 311,
+     "label": "155r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00311.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 312,
+     "label": "155v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00312.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 313,
+     "label": "156r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00313.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 314,
+     "label": "156v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00314.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 315,
+     "label": "157r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00315.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 316,
+     "label": "157v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00316.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 317,
+     "label": "158r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00317.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 318,
+     "label": "158v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00318.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 319,
+     "label": "159r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00319.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 320,
+     "label": "159v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00320.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 321,
+     "label": "160r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00321.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 322,
+     "label": "160v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00322.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 323,
+     "label": "161r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00323.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 324,
+     "label": "161v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00324.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 325,
+     "label": "162r",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00325.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 326,
+     "label": "162v",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00326.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 327,
+     "label": "inside back cover",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00327.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 328,
+     "label": "back cover",
+     "image": "https://images.lib.cam.ac.uk/iiif/MS-OO-00001-00032-000-00328.jp2/full/1024,/0/default.jpg"
+    }
+   ]
+  },
+  {
+   "id": "openn-0047-sloane_ms_237",
+   "title": "The Revelation of St John in Hebrew translation.",
+   "shelfmark": "Sloane MS 237",
+   "repository": "British Library",
+   "origin": "",
+   "date": "Between 1500 and 1699",
+   "language": "Hebrew",
+   "material": "Paper",
+   "provenance": "Acquisition: Sir Hans Sloane (b. 1660, d. 1753), baronet, physician and collector. Part of the Sloane bequest and incorporated into the newly founded British Museum in 1753.",
+   "attribution": "Provided by British Library, distributed by OPenn (University of Pennsylvania Libraries)",
+   "licence": "These images and the content of British Library Sloane MS 237: The Revelation of St John in Hebrew translation. are free of known copyright restrictions and in the public domain. See the Creative Commons Public Domain Mark page for usage details, http://creativecommons.org/publicdomain/mark/1.0/.",
+   "book": "REV",
+   "source": "https://openn.library.upenn.edu/Data/0047/html/sloane_ms_237.html",
+   "pages": [
+    {
+     "n": 1,
+     "label": "front",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0000_web.jpg"
+    },
+    {
+     "n": 2,
+     "label": "front-i",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0001_web.jpg"
+    },
+    {
+     "n": 3,
+     "label": "i-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0002_web.jpg"
+    },
+    {
+     "n": 4,
+     "label": "i-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0003_web.jpg"
+    },
+    {
+     "n": 5,
+     "label": "ii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0004_web.jpg"
+    },
+    {
+     "n": 6,
+     "label": "ii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0005_web.jpg"
+    },
+    {
+     "n": 7,
+     "label": "1r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0006_web.jpg"
+    },
+    {
+     "n": 8,
+     "label": "1v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0007_web.jpg"
+    },
+    {
+     "n": 9,
+     "label": "2r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0008_web.jpg"
+    },
+    {
+     "n": 10,
+     "label": "2v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0009_web.jpg"
+    },
+    {
+     "n": 11,
+     "label": "3r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0010_web.jpg"
+    },
+    {
+     "n": 12,
+     "label": "3v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0011_web.jpg"
+    },
+    {
+     "n": 13,
+     "label": "4r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0012_web.jpg"
+    },
+    {
+     "n": 14,
+     "label": "4v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0013_web.jpg"
+    },
+    {
+     "n": 15,
+     "label": "i-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0014_web.jpg"
+    },
+    {
+     "n": 16,
+     "label": "i-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0015_web.jpg"
+    },
+    {
+     "n": 17,
+     "label": "ii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0016_web.jpg"
+    },
+    {
+     "n": 18,
+     "label": "ii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0017_web.jpg"
+    },
+    {
+     "n": 19,
+     "label": "iii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0018_web.jpg"
+    },
+    {
+     "n": 20,
+     "label": "iii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0019_web.jpg"
+    },
+    {
+     "n": 21,
+     "label": "iv-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0020_web.jpg"
+    },
+    {
+     "n": 22,
+     "label": "iv-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0021_web.jpg"
+    },
+    {
+     "n": 23,
+     "label": "v-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0022_web.jpg"
+    },
+    {
+     "n": 24,
+     "label": "v-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0023_web.jpg"
+    },
+    {
+     "n": 25,
+     "label": "vi-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0024_web.jpg"
+    },
+    {
+     "n": 26,
+     "label": "vi-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0025_web.jpg"
+    },
+    {
+     "n": 27,
+     "label": "vii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0026_web.jpg"
+    },
+    {
+     "n": 28,
+     "label": "vii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0027_web.jpg"
+    },
+    {
+     "n": 29,
+     "label": "viii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0028_web.jpg"
+    },
+    {
+     "n": 30,
+     "label": "viii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0029_web.jpg"
+    },
+    {
+     "n": 31,
+     "label": "ix-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0030_web.jpg"
+    },
+    {
+     "n": 32,
+     "label": "ix-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0031_web.jpg"
+    },
+    {
+     "n": 33,
+     "label": "x-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0032_web.jpg"
+    },
+    {
+     "n": 34,
+     "label": "xi-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0033_web.jpg"
+    },
+    {
+     "n": 35,
+     "label": "xi-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0034_web.jpg"
+    },
+    {
+     "n": 36,
+     "label": "xii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0035_web.jpg"
+    },
+    {
+     "n": 37,
+     "label": "xii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0036_web.jpg"
+    },
+    {
+     "n": 38,
+     "label": "xiii-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0037_web.jpg"
+    },
+    {
+     "n": 39,
+     "label": "xiii-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0038_web.jpg"
+    },
+    {
+     "n": 40,
+     "label": "xiv-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0039_web.jpg"
+    },
+    {
+     "n": 41,
+     "label": "xiv-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0040_web.jpg"
+    },
+    {
+     "n": 42,
+     "label": "xv-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0041_web.jpg"
+    },
+    {
+     "n": 43,
+     "label": "xv-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0042_web.jpg"
+    },
+    {
+     "n": 44,
+     "label": "xvi-r",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0043_web.jpg"
+    },
+    {
+     "n": 45,
+     "label": "xvi-v",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0044_web.jpg"
+    },
+    {
+     "n": 46,
+     "label": "back-i",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0045_web.jpg"
+    },
+    {
+     "n": 47,
+     "label": "back",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0046_web.jpg"
+    },
+    {
+     "n": 48,
+     "label": "spine",
+     "image": "https://openn.library.upenn.edu/Data/0047/sloane_ms_237/data/web/13561_0047_web.jpg"
+    }
+   ]
+  }
+ ]
+}

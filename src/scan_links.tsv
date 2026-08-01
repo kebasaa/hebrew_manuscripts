@@ -1,0 +1,20 @@
+# Published manuscript scans Milah offers for transcription.
+#
+# One row per manuscript, tab-separated. Only `url` is required: everything else
+# is read from the holding library's own record. Blank lines and lines opening
+# with # are ignored, so a manuscript can be annotated with why it is here.
+#
+# url    the address as copied from the library's viewer
+# title  overrides the library's own title, which sometimes names a whole codex
+#        where only a part of it is being transcribed
+# book   the OSIS book code, where the scan is of one book; only used to group
+#        the list, and empty for a codex covering many
+# width  pixels wide to request, default 1024. Honoured only where the library
+#        lets a size be asked for: Cambridge serves any width but caps delivery
+#        at 2000, while OPenn publishes fixed derivatives and chooses for you.
+#
+# Regenerate after editing:  python src/build_scan_manifest.py
+url	title	book	width
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1
+# Revelation, and the manuscript REV_Sloane237_hebrew_commented.osis transcribes.
+https://openn.library.upenn.edu/Data/0047/html/sloane_ms_237.html		REV
