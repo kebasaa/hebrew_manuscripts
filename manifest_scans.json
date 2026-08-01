@@ -1662,7 +1662,7 @@
   },
   {
    "id": "MS-OO-00001-00032-1r-21v",
-   "title": "Matthew (Cambridge, MS Oo.1.32)",
+   "title": "Matthew",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -1890,7 +1890,7 @@
   },
   {
    "id": "MS-OO-00001-00032-22r-33v",
-   "title": "Mark (Cambridge, MS Oo.1.32)",
+   "title": "Mark",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2028,7 +2028,7 @@
   },
   {
    "id": "MS-OO-00001-00032-34r-48v",
-   "title": "Luke (Cambridge, MS Oo.1.32)",
+   "title": "Luke",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2196,7 +2196,7 @@
   },
   {
    "id": "MS-OO-00001-00032-49r-70v",
-   "title": "John (Cambridge, MS Oo.1.32)",
+   "title": "John",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2434,7 +2434,7 @@
   },
   {
    "id": "MS-OO-00001-00032-71r-94v",
-   "title": "Acts (Cambridge, MS Oo.1.32)",
+   "title": "Acts",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2692,7 +2692,7 @@
   },
   {
    "id": "MS-OO-00001-00032-95r-105r",
-   "title": "Romans (Cambridge, MS Oo.1.32)",
+   "title": "Romans",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2815,7 +2815,7 @@
   },
   {
    "id": "MS-OO-00001-00032-105v-116r",
-   "title": "1 Corinthians (Cambridge, MS Oo.1.32)",
+   "title": "1 Corinthians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -2943,7 +2943,7 @@
   },
   {
    "id": "MS-OO-00001-00032-116v-123r",
-   "title": "2 Corinthians (Cambridge, MS Oo.1.32)",
+   "title": "2 Corinthians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3031,7 +3031,7 @@
   },
   {
    "id": "MS-OO-00001-00032-123v-127r",
-   "title": "Galatians (Cambridge, MS Oo.1.32)",
+   "title": "Galatians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3089,7 +3089,7 @@
   },
   {
    "id": "MS-OO-00001-00032-127v-131r",
-   "title": "Ephesians (Cambridge, MS Oo.1.32)",
+   "title": "Ephesians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3147,7 +3147,7 @@
   },
   {
    "id": "MS-OO-00001-00032-131v-134r",
-   "title": "Philippians (Cambridge, MS Oo.1.32)",
+   "title": "Philippians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3195,7 +3195,7 @@
   },
   {
    "id": "MS-OO-00001-00032-134v-136r",
-   "title": "Colossians (Cambridge, MS Oo.1.32)",
+   "title": "Colossians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3233,7 +3233,7 @@
   },
   {
    "id": "MS-OO-00001-00032-137r-138v",
-   "title": "1 Thessalonians (Cambridge, MS Oo.1.32)",
+   "title": "1 Thessalonians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3271,7 +3271,7 @@
   },
   {
    "id": "MS-OO-00001-00032-139r-140r",
-   "title": "2 Thessalonians (Cambridge, MS Oo.1.32)",
+   "title": "2 Thessalonians",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3304,7 +3304,7 @@
   },
   {
    "id": "MS-OO-00001-00032-140r-142v",
-   "title": "1 Timothy (Cambridge, MS Oo.1.32)",
+   "title": "1 Timothy",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3352,7 +3352,7 @@
   },
   {
    "id": "MS-OO-00001-00032-142v-144r",
-   "title": "2 Timothy (Cambridge, MS Oo.1.32)",
+   "title": "2 Timothy",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3390,7 +3390,7 @@
   },
   {
    "id": "MS-OO-00001-00032-144v-145v",
-   "title": "Titus (Cambridge, MS Oo.1.32)",
+   "title": "Titus",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3423,7 +3423,7 @@
   },
   {
    "id": "MS-OO-00001-00032-145v-146r",
-   "title": "Philemon (Cambridge, MS Oo.1.32)",
+   "title": "Philemon",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3451,7 +3451,7 @@
   },
   {
    "id": "MS-OO-00001-00032-146r-148v",
-   "title": "1 Peter (Cambridge, MS Oo.1.32)",
+   "title": "1 Peter",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3499,7 +3499,7 @@
   },
   {
    "id": "MS-OO-00001-00032-148v-150r",
-   "title": "2 Peter (Cambridge, MS Oo.1.32)",
+   "title": "2 Peter",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3537,7 +3537,7 @@
   },
   {
    "id": "MS-OO-00001-00032-150r-152v",
-   "title": "1 John (Cambridge, MS Oo.1.32)",
+   "title": "1 John",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3585,7 +3585,7 @@
   },
   {
    "id": "MS-OO-00001-00032-152v-153r",
-   "title": "2 John (Cambridge, MS Oo.1.32)",
+   "title": "2 John",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3613,7 +3613,7 @@
   },
   {
    "id": "MS-OO-00001-00032-153r-153v",
-   "title": "3 John (Cambridge, MS Oo.1.32)",
+   "title": "3 John",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3641,7 +3641,7 @@
   },
   {
    "id": "MS-OO-00001-00032-153v-158r",
-   "title": "Hebrews (Cambridge, MS Oo.1.32)",
+   "title": "Hebrews",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3709,7 +3709,7 @@
   },
   {
    "id": "MS-OO-00001-00032-158r-160r",
-   "title": "James (Cambridge, MS Oo.1.32)",
+   "title": "James",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -3752,7 +3752,7 @@
   },
   {
    "id": "MS-OO-00001-00032-160r-160v",
-   "title": "Jude (Cambridge, MS Oo.1.32)",
+   "title": "Jude",
    "shelfmark": "MS Oo.1.32",
    "repository": "Cambridge University Library",
    "origin": "Kochi",
@@ -4038,8 +4038,8 @@
   },
   {
    "id": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json",
-   "title": "Matthew (Paris, BnF Hébreu 132)",
-   "shelfmark": "",
+   "title": "Matthew",
+   "shelfmark": "BnF Hébreu 132",
    "repository": "",
    "origin": "",
    "date": "",
@@ -4296,6 +4296,4480 @@
      "n": 49,
      "label": "NP",
      "image": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/f49/full/1024,/0/default.jpg"
+    }
+   ]
+  },
+  {
+   "id": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json",
+   "title": "Even Bohan (Shem Tov's Hebrew Matthew, gate 12 from f. 171v)",
+   "shelfmark": "Bodleian, MS. Oppenheim Add. 4° 72",
+   "repository": "",
+   "origin": "",
+   "date": "",
+   "language": "",
+   "material": "",
+   "provenance": "",
+   "attribution": "Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0 . For more information, please see https://digital.bodleian.ox.ac.uk/terms/",
+   "licence": "Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.",
+   "book": "MAT",
+   "source": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json",
+   "folios": "",
+   "pages": [
+    {
+     "n": 1,
+     "label": "Upper cover",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7cf2ea51-255d-4842-aa95-5bcde9b73641/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 2,
+     "label": "Inside upper cover",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1bab977b-bcf6-491b-8b73-d6e81ee028c5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 3,
+     "label": "Upper flyleaf recto",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/343f60fc-c075-447e-bc2d-6488f0925901/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 4,
+     "label": "Upper flyleaf verso",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/81a28b53-f112-4a54-8b89-1677c466d811/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 5,
+     "label": "1r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/34b9e75f-860f-4ad3-afbd-f9649e108b9c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 6,
+     "label": "1v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/80c2ab71-6439-46da-98f4-818415f7e03a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 7,
+     "label": "2r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/99f771a6-834e-4e41-907f-377b55261aa5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 8,
+     "label": "2v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1a5eee6e-1ddb-4a94-b137-55dfad931361/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 9,
+     "label": "3r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2949a7dd-fff4-4ae6-89cf-75b01d9e53c2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 10,
+     "label": "3v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/017c9f6a-3046-4286-8097-f7ed87da41fa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 11,
+     "label": "4r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/826431f8-d85e-4d85-98f8-971993d32783/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 12,
+     "label": "4v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7be5c4d0-733b-4aff-94bb-51f72df08ea1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 13,
+     "label": "5r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/adedfada-eb3a-4e80-906a-18686209239b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 14,
+     "label": "5v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/06ced78f-0414-4b58-805e-5469c03a1d08/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 15,
+     "label": "6r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/21c663c9-7c90-4c4b-824a-d119498c36cf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 16,
+     "label": "6v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/dc0807fc-c625-4439-8f50-6c9557d3e7c2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 17,
+     "label": "7r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/74864bf1-964f-411d-823b-1fbe874ac1fa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 18,
+     "label": "7v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9f1e8b5a-0fc0-4b1a-be64-3140fd5fa249/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 19,
+     "label": "8r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4eed6ed0-056e-4179-a3b1-c426e71758ef/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 20,
+     "label": "8v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/edf422fe-1bed-45df-8b25-b6fe74e19d2d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 21,
+     "label": "9r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/922478f6-61b5-4892-920b-72e15a4c186a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 22,
+     "label": "9v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9e77847a-7b7a-4c1d-ac7d-2cd5c4a063c4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 23,
+     "label": "10r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/33feb5b7-1cc0-47a0-8225-c427fca51820/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 24,
+     "label": "10v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8edfe5b3-fc23-4bcf-a1dd-b664376b2443/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 25,
+     "label": "11r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f0386f22-ad1d-4eae-9512-1366af2fab2b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 26,
+     "label": "11v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0eaf06bb-b412-443b-b493-13746f87992f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 27,
+     "label": "12r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/75b876cf-bc0a-4d75-b87d-686a1b9999cb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 28,
+     "label": "12v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3e0cf8b4-0076-4fce-ad2f-f1c5d945fcfe/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 29,
+     "label": "13r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7d183f52-bdbb-45e0-9667-8f15ade60a73/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 30,
+     "label": "13v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c7675e0a-10ed-4470-9a51-51ffcc4e7367/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 31,
+     "label": "14r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/50c62551-6d22-47f8-a9ea-1694b3bd2666/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 32,
+     "label": "14v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a5b0bade-ddda-4906-94a6-9ddac1a80990/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 33,
+     "label": "15r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/451d2495-1037-4d6e-8e88-75329cf94e07/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 34,
+     "label": "15v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2113a05f-1786-4cd7-85ce-000aa6fa725d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 35,
+     "label": "16r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5d39942e-6632-40c4-81db-4549616ed8d9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 36,
+     "label": "16v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/dac1d79d-1958-4e1e-9c9b-eae51304d269/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 37,
+     "label": "17r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/39117af0-0d18-4b77-a1e6-8b001e2e7794/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 38,
+     "label": "17v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/28aeeefe-36b3-4fce-868f-fbe8e173cb2d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 39,
+     "label": "18r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c4f56e22-252f-49a2-9041-b5dfff4cb2f5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 40,
+     "label": "18v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4a861287-ad2e-4193-9fbb-ade0c1d8e8ea/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 41,
+     "label": "19r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c5716d04-d102-4c8e-96c6-e544a35ec6ea/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 42,
+     "label": "19v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f2fade69-8208-4fcf-a71a-b37c9f5e143f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 43,
+     "label": "20r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/bdebe1e8-42cc-40d2-a679-8d27ced2770e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 44,
+     "label": "20v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/36a73f3c-c51e-4998-ae18-beb2292e88ca/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 45,
+     "label": "21r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3590f196-c256-4600-a4fe-aee7d3cc77b9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 46,
+     "label": "21v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/59f89a1d-02ff-4912-b61d-83f3d7c79605/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 47,
+     "label": "22r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d99ff06e-ce6c-45f7-b9f4-ca48be5b5c90/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 48,
+     "label": "22v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8334e6b5-1258-464d-a02c-c6e1ec884c37/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 49,
+     "label": "23r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/48bb6448-90ee-4d3c-bbbe-0f6693311c26/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 50,
+     "label": "23v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/41673d72-7caf-4686-aef3-a52594a1fa06/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 51,
+     "label": "24r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4a26ab6f-bc7a-48ec-bacb-248698550209/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 52,
+     "label": "24v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/77c480b9-d2ee-4cb5-b9c5-6c2dd172352d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 53,
+     "label": "25r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/576c6389-8579-4dee-aa7f-776333745cb1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 54,
+     "label": "25v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/396755a6-0ad7-497a-a202-4f6efb30a96f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 55,
+     "label": "26r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8be3de7a-9ada-4a38-acc1-b39d24bfb318/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 56,
+     "label": "26v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a1956563-b4b5-4be7-8c6b-a609a3c1dc80/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 57,
+     "label": "27r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/713dcc03-c096-4149-9d9d-0f2321ea813e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 58,
+     "label": "27v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/cf73d230-a628-4c25-88fe-a2dda36e4608/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 59,
+     "label": "28r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c379ec07-5967-41af-9945-1c1c965cd76f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 60,
+     "label": "28v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e336809a-581c-4e6b-a631-e5791073992e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 61,
+     "label": "29r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1f22fa13-a7d5-4833-a489-b1146691e203/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 62,
+     "label": "29v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f9046884-b6a3-4f91-8769-310543efb76e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 63,
+     "label": "30r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/19fec889-5c0e-4b25-8117-bc78f84014f3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 64,
+     "label": "30v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/112b1c31-ab9f-4682-a49c-572ebff01a31/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 65,
+     "label": "31r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6c56f8c0-b9cc-486c-800a-88de51a050ea/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 66,
+     "label": "31v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4405438b-fd26-4dc1-9b08-695bd01a55e5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 67,
+     "label": "32r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5165805a-7d42-44cc-a60a-9e73aeb3cc3b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 68,
+     "label": "32v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b388d615-210f-4ef2-a275-d554cbbcbd6e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 69,
+     "label": "33r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6d0dbef1-d2b8-4599-8f70-30577ed25b30/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 70,
+     "label": "33v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/68c613c3-775c-4f5b-bb14-80643ea3dcb6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 71,
+     "label": "34r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a897d19e-9bc3-44bd-a712-9220dcfcdceb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 72,
+     "label": "34v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/127b7066-6639-479e-bf53-63a16124a6d9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 73,
+     "label": "35r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2480d752-c3d7-468a-8b1f-4227552f0c5c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 74,
+     "label": "35v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5fe0e433-57a9-42cd-854a-0acaadbf2dcd/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 75,
+     "label": "36r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/181a97a1-ae10-4f4c-8698-188e904464e4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 76,
+     "label": "36v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/16b13e77-a925-4e41-8881-85c5c1bb85d9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 77,
+     "label": "37r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b03f6ab9-ea28-4a1a-9774-a6557bae4cfd/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 78,
+     "label": "37v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c9c48787-e15d-4e45-a55b-5c8a7ac8167d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 79,
+     "label": "38r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e5adb5c8-8110-40cd-bf11-96bb864933a5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 80,
+     "label": "38v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/381b08d6-5ef9-40c4-b352-18a3e35a51b5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 81,
+     "label": "39r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/94c31846-c307-420e-925e-6fa2e8c67353/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 82,
+     "label": "39v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1455860e-8221-458a-aaa8-258ab8cff088/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 83,
+     "label": "40r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f3656d1b-d002-420b-8533-c9812c5426c6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 84,
+     "label": "40v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7e5ba5c5-6bd2-4f54-a45a-72db77a82e94/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 85,
+     "label": "41r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1ebab41a-bf6a-4ce4-bcc2-a7ecfd1ba0af/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 86,
+     "label": "41v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4ad8e4f0-322a-4d98-a26d-4cb6efaf5f74/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 87,
+     "label": "42r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4644f961-50de-4364-ae19-7b87aa281d42/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 88,
+     "label": "42v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/817d0014-9940-4cad-9a02-6ad8089aa80c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 89,
+     "label": "43r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/730af869-029e-48e2-a4b6-9e6e4136136b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 90,
+     "label": "43v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/970c2fde-79f8-4a46-b640-8f6b361d3f3a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 91,
+     "label": "44r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e933aba4-383d-43f2-912a-5ebbc01fe7cc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 92,
+     "label": "44v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a94acc68-3d4c-4c3d-9df9-f31a594376f8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 93,
+     "label": "45r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/54c3f973-2494-49af-9cc3-78922bed9daa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 94,
+     "label": "45v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/23e91638-2e9a-4a76-9ce5-f2a9d51bf5e6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 95,
+     "label": "46r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1d5fdee0-98db-45ab-a5ca-20a630557e50/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 96,
+     "label": "46v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ede9d4ce-4f2e-4400-b326-d08ab93e5433/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 97,
+     "label": "47r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/12c7fb38-df79-48cc-a026-a105a15e1e21/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 98,
+     "label": "47v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/14e72e6d-aca6-4ccb-bc15-7aa811cd018a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 99,
+     "label": "48r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/dd1462a5-5f79-4a54-9f65-7326320d3b3a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 100,
+     "label": "48v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f58adb4b-5ee4-4dc8-9e2b-bbe052caf98f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 101,
+     "label": "49r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ad2d6912-66da-4161-a159-6e564bed1dbb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 102,
+     "label": "49v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d19a6c1a-565e-4b52-b4a9-69cca1217167/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 103,
+     "label": "50r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/effc9a31-736e-471e-9eae-03a6a56fe6e0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 104,
+     "label": "50v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8383922c-232a-4fcc-8969-1348b137a532/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 105,
+     "label": "51r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/89aacb36-2ecc-4b68-856c-976fa70eef5a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 106,
+     "label": "51v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/cd69d4a0-e16a-44d1-a898-8ca749679b14/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 107,
+     "label": "52r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9e7f0953-f10f-43b0-b3e2-ec569865fca6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 108,
+     "label": "52v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/bfa94683-bb89-4f2d-8809-aa91b22db0a3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 109,
+     "label": "53r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/90fac58c-86af-4415-b97d-bf944ed070b7/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 110,
+     "label": "53v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/eb47904c-deb5-4ca6-bab3-12c21e62d735/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 111,
+     "label": "54r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f070f019-9a90-4a1c-bc92-1dbbe1beb486/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 112,
+     "label": "54v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e24d6a43-62cb-43bb-9270-915567dc6340/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 113,
+     "label": "55r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/053c5b7e-1dde-453e-bf01-dab7f0c4d3f9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 114,
+     "label": "55v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4fa6f7d5-0fe8-40e5-909b-09f5c0b1c768/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 115,
+     "label": "56r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3e5a2628-da75-4432-9025-ac9c8e71d400/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 116,
+     "label": "56v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6d69797c-5d04-4815-ab80-4d3d78e747d8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 117,
+     "label": "57r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2ff71c07-a1ac-42f8-9cb0-82a715cb8dbc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 118,
+     "label": "57v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/430a1e7e-7a41-4632-baa0-33d7fcf0f5ca/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 119,
+     "label": "58r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/30ffde32-bc80-4c2f-b3ce-1350710e2c62/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 120,
+     "label": "58v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0bd87493-a664-46f7-9bfa-e20196d3fcf0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 121,
+     "label": "59r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8ec174da-57f1-49fd-a3ae-3903ec7fcb82/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 122,
+     "label": "59v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/01e51948-682f-4fde-8f4e-161185aa6721/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 123,
+     "label": "60r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2290f515-3cad-4ee4-ac9b-a8849e29ad7c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 124,
+     "label": "60v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/16cc1f8e-f379-4a22-bb01-42dc88aace89/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 125,
+     "label": "61r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/de4959c6-7b78-46ce-92ed-5c6be152f75e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 126,
+     "label": "61v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7cc90ebe-94d8-4a93-8e37-6b0cb5425f2e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 127,
+     "label": "62r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/72fb3572-c4db-4dfe-af83-91bde0243269/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 128,
+     "label": "62v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/af424b12-4c24-49d4-a6a1-7cbb7fa5137a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 129,
+     "label": "63r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/fd629e54-b62f-4f40-8a69-00a7cc763ba6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 130,
+     "label": "63v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a7398117-2351-4d8b-a911-be959ffd9dc2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 131,
+     "label": "64r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/cd89e404-195e-4faa-b781-d0bda7d503f1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 132,
+     "label": "64v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c100d0c4-23e5-409d-a1fe-8ab24a36033d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 133,
+     "label": "65r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a31cd12b-306f-42a7-a922-c822abe7f654/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 134,
+     "label": "65v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/faa1a9c7-ac00-4d95-bd59-4fb631f45f27/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 135,
+     "label": "66r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/56d1bb8c-0bed-4855-a69a-5a0aee2d8736/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 136,
+     "label": "66v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0c8bc8bc-e4d6-494e-a3cc-f383a5de7b4a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 137,
+     "label": "67r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/255f5e25-d5ed-4439-9a44-b63071a9de9a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 138,
+     "label": "67v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b265537d-5442-4f1f-87a7-38a662aea7f5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 139,
+     "label": "68r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e9ed1fb2-4506-48be-a062-a538b6e78115/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 140,
+     "label": "68v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a021d72d-1494-4030-b535-88989aba4d47/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 141,
+     "label": "69r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8a5c59b0-a95e-4272-8fc6-4404cc14a356/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 142,
+     "label": "69v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/78b990d4-edb8-4e2c-8e7d-e368578914dc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 143,
+     "label": "70r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/af1dc3fa-27ca-45f6-8f35-b62f57b55454/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 144,
+     "label": "70v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/74228524-0305-42c5-9c50-8141681f7db4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 145,
+     "label": "71r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/97033d9e-eb7b-4b57-b6c2-c174c5a32718/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 146,
+     "label": "71v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/345db0b8-05b0-46e6-84d2-402866c8f248/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 147,
+     "label": "72r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/396e5d4b-23c8-4276-91c6-077a12230092/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 148,
+     "label": "72v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b8085651-2b63-4444-9fc6-f65f1e3f2468/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 149,
+     "label": "73r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0dcf2fe8-7f0b-4409-8112-1848e5e9595b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 150,
+     "label": "73v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/201ec481-ebd1-4dd8-a72c-9abc276fcbde/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 151,
+     "label": "74r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/050dfb4f-d1bf-42bb-86fc-1b604f1754b1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 152,
+     "label": "74v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4f1d7419-1f6b-4bd3-9a54-179626a7c6dc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 153,
+     "label": "75r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b91c1771-ff6c-438b-98da-83c316e989ad/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 154,
+     "label": "75v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6c77cca1-63df-4d3f-95dc-da973145e261/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 155,
+     "label": "76r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/75774d7d-1c18-45f5-b4ae-9d1e66fe0866/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 156,
+     "label": "76v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/53cae566-2742-45ce-8059-847fc3b8dfb0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 157,
+     "label": "77r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9884964a-3b40-4b45-8758-a989b0c14d01/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 158,
+     "label": "77v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/23cbb008-6b2c-46bf-b984-6e9c4795e637/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 159,
+     "label": "78r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/fa900ca8-31d5-4cc0-9631-9d80be25f72c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 160,
+     "label": "78v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/73b50e26-e4a5-45de-9a4b-14b7a2797077/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 161,
+     "label": "79r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/bd5fc689-9e78-4aa1-996d-4d4228f93f1d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 162,
+     "label": "79v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c259467a-f7ce-4710-9944-2ff5f8261389/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 163,
+     "label": "80r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0928ee68-438a-4181-9dde-2c19789b8d24/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 164,
+     "label": "80v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2912b59c-c9ea-448f-8cb6-2eb3ab3cbe40/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 165,
+     "label": "81r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/cfc5c196-0354-4bfc-8459-32df82050049/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 166,
+     "label": "81v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ae8d66bb-f4a6-477b-8f31-9ff73a80821e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 167,
+     "label": "82r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c109535f-9485-4150-ba98-bd1d7e3067a4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 168,
+     "label": "82v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f961b8dd-f68d-493b-941b-530d510f63a6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 169,
+     "label": "83r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0459c1ca-9990-4d20-b350-661eb2023e04/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 170,
+     "label": "83v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e18a7a58-a2b5-44b2-aba0-4828029bbf5d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 171,
+     "label": "84r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e4730175-305c-4d5c-b76a-86bfcfa53c00/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 172,
+     "label": "84v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/fbed7685-c5f0-4259-80b7-b5416fd83fcf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 173,
+     "label": "85r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/dc12d5b9-143f-4687-b508-a9e8d8d2b720/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 174,
+     "label": "85v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8bfecf35-48f5-4cfd-bc8e-afbf0a7377bf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 175,
+     "label": "86r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/43d3ab7e-6a30-4f9c-8d36-758071b8034c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 176,
+     "label": "86v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/cbbe56a8-d44f-4bbb-b545-68188d473f9a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 177,
+     "label": "87r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/91c98cb8-02e6-4d2c-b531-39d0206bc9fa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 178,
+     "label": "87v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2566eccb-2051-40a7-bb41-4f6ce4cb1709/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 179,
+     "label": "88r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e3955639-2711-4fb4-9920-648c947aaa1d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 180,
+     "label": "88v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/23659f9e-7d1b-4e37-b0df-320c5438c904/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 181,
+     "label": "89r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9e781d91-ff2f-444b-bbbe-9998042b5e1c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 182,
+     "label": "89v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/eb306f82-04c2-4438-89b5-e3efbe9c9aba/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 183,
+     "label": "90r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0fb9851f-4ff8-42c1-95a4-c435bafc5336/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 184,
+     "label": "90v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6b3841d3-bf30-4b98-8b47-33b38a24203a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 185,
+     "label": "91r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8c2e6064-a6d7-4148-b80a-08375e3311c5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 186,
+     "label": "91v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/47419029-171d-4875-80ca-1e57f3055026/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 187,
+     "label": "92r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/383fa77e-390b-4eea-91cc-797162524839/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 188,
+     "label": "92v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7aae8ba5-8707-4afd-89ec-376aff0e8043/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 189,
+     "label": "93r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/bfeb2778-5991-4814-9e92-d1e990333291/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 190,
+     "label": "93v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f5615818-6d31-4522-9fe5-f57dbada6ee6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 191,
+     "label": "94r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/922ce0d0-5cd6-4d11-a112-bdd332dbf28a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 192,
+     "label": "94v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3bcca5ac-962b-4547-9015-5c80b6880683/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 193,
+     "label": "95r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2b661b1b-c104-4402-ab34-58d36bff8dda/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 194,
+     "label": "95v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e6c01a6b-264f-4c63-9f98-f11a257615a9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 195,
+     "label": "96r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a3e3c2b0-5777-4634-a675-46729e3f133e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 196,
+     "label": "96v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8d3ab92a-63f9-4a4c-b79f-7f7f388e14a5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 197,
+     "label": "97r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1df2c4e3-acb3-423d-8ae6-415af1442122/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 198,
+     "label": "97v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1d543c6f-d3e3-4c22-a29f-2106c480f32c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 199,
+     "label": "98r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/be9d8a08-0935-4f4b-98a6-cbb0be478954/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 200,
+     "label": "98v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5e750761-0364-4db7-bf8f-1637a0815a50/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 201,
+     "label": "99r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/53157a9d-bf30-45f7-97bb-2f9592303a16/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 202,
+     "label": "99v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/51ce72f1-d19b-44aa-9406-4e2ffb8f27d7/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 203,
+     "label": "100r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/946bb2b2-eaac-42cc-9263-45660d4dabd6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 204,
+     "label": "100v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ab26c2bc-bdd7-4177-ac69-3c5b934694f4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 205,
+     "label": "101r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1f299cbc-91cd-4b32-9d1b-2cb9611e2640/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 206,
+     "label": "101v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a885f80a-da30-4e97-a56a-7890772c8085/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 207,
+     "label": "102r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/58685507-19eb-48fc-ae37-84c72403bb18/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 208,
+     "label": "102v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9035ecee-d324-49aa-9948-cd81591b96b9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 209,
+     "label": "103r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2d9e94e8-61ea-45b7-a445-820746037172/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 210,
+     "label": "103v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/123962ab-8c57-4db9-9776-e176dd5b0064/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 211,
+     "label": "104r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d5be8b6c-d2c8-4e80-8aff-e3dc8ca2de00/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 212,
+     "label": "104v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/69c28dec-8c51-4834-b656-b68bfb700f68/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 213,
+     "label": "105r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a92df01d-0990-4bb9-9150-bf7387e5a218/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 214,
+     "label": "105v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/51f7d649-4ff3-413f-bac9-8cc6db1439f6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 215,
+     "label": "106r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/68427383-0bc5-457d-8cfc-05a5b4f3f33b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 216,
+     "label": "106v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a863ec17-26f2-4347-8527-d0a356f844c8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 217,
+     "label": "107r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/14434e83-6555-4089-bbaa-c67e44f2fc79/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 218,
+     "label": "107v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/25bdc741-32e5-423e-8ee0-5a67389d6825/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 219,
+     "label": "108r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/70dfda97-8a5d-49a2-979a-c3abba4aa069/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 220,
+     "label": "108v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/84557e26-cf6f-43e8-895d-81d9b7cb5bd0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 221,
+     "label": "109r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/81c8ed33-d2e6-4252-9fbe-54835bf260e4/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 222,
+     "label": "109v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4a2d53aa-8eaa-4b68-8807-6f016d13d5a5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 223,
+     "label": "110r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/439496d0-f31a-453f-b465-89e1517ac0d0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 224,
+     "label": "110v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3106bf60-107e-4c93-962f-d59de83f0a29/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 225,
+     "label": "111r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d63be686-7aba-4b91-a211-95213490cdee/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 226,
+     "label": "111v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5a37f9a0-26c2-4733-b1bf-6b021873d718/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 227,
+     "label": "112r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/af7587bc-470c-4181-b251-ff69ca1e21e2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 228,
+     "label": "112v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/14af1c39-e0f9-4131-bea0-82ac465f8289/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 229,
+     "label": "113r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7af76ee0-36b4-4126-805f-080e9dce45d3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 230,
+     "label": "113v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d0a265a7-e322-41b6-a43b-3608e2d74291/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 231,
+     "label": "114r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b6a7f8b9-8605-49f8-9c54-2324980cf1a5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 232,
+     "label": "114v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8bce95a0-c7e8-42f2-85a8-8d98b47ca7c3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 233,
+     "label": "115r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5aabadea-03a9-4b44-b218-8cd4effe9026/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 234,
+     "label": "115v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/77ecc2e8-7a5e-4171-9702-fbc9d6f6ab23/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 235,
+     "label": "116r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1c78d57d-8a6d-48d1-856d-dfd140f00b19/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 236,
+     "label": "116v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a15e245f-b9b8-42f1-8148-4937f8c1ca2d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 237,
+     "label": "117r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d79097ac-1a3d-4539-9a59-d91affa260fa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 238,
+     "label": "117v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3fe98a80-7d6f-4110-9b99-9b4629f1d5b0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 239,
+     "label": "118r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ea204341-3573-467c-a5f9-7088fcca531c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 240,
+     "label": "118v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e45d4e0e-ab0f-4cf2-9232-dc9dd98180d9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 241,
+     "label": "119r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/586d10c8-7806-40f0-9b2f-0715cb1d5755/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 242,
+     "label": "119v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9ffa28e5-0310-4c0b-8325-ba718299e1a2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 243,
+     "label": "120r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b167ad15-d7e5-4bfa-822f-2b32e2381bef/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 244,
+     "label": "120v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/21f59d2b-6af0-4e2e-acb0-8c9288fc28f1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 245,
+     "label": "121r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3b9feb94-7dd2-4a4a-8d5e-a2c635d089ef/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 246,
+     "label": "121v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6c8e2367-e422-4c3a-9867-3c63232d2c24/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 247,
+     "label": "122r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/224350ba-00ef-4419-8e05-94ad12a99403/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 248,
+     "label": "122v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5e5b8045-925e-4f25-977e-bcfc45a20400/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 249,
+     "label": "123r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/54318dfd-ffd1-4e1c-ace2-013b52176d4a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 250,
+     "label": "123v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/fb7df517-71ff-4208-83c2-cbf8e1c20d96/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 251,
+     "label": "124r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c367e29d-13dc-4c4b-8718-9ac78b4eb1c8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 252,
+     "label": "124v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/43ba1781-0138-4cb7-a055-655a2c28779e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 253,
+     "label": "125r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c156249c-41d2-4672-aff5-80b51a443963/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 254,
+     "label": "125v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2d67685c-7359-46d6-8e8a-d8400c6b67ef/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 255,
+     "label": "126r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d74d363b-2126-49ca-ad8e-bdfef40c3e59/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 256,
+     "label": "126v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1f91f29b-8a9f-45f2-a81d-b383ade06e4e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 257,
+     "label": "127r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4a8e8d39-cf02-4384-838c-46ad5d234b83/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 258,
+     "label": "127v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/11323f3f-2fa7-4e1f-a3dc-a3fa0da47b6c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 259,
+     "label": "128r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e9485262-bb3d-43c4-99e3-ab97c38bcb89/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 260,
+     "label": "128v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ded42357-cf05-4765-a1af-e0be6a46df14/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 261,
+     "label": "129r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/0d1b5d36-1788-4c74-abb4-7ac4ce2f2848/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 262,
+     "label": "129v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b35f88c7-61cb-403b-b3e2-97f141e2a65e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 263,
+     "label": "130r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4413a340-fd58-4006-9a9b-2417591d3e60/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 264,
+     "label": "130v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/43de3a22-3d4f-4705-8da0-32df65f3a9c2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 265,
+     "label": "131r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a6fd8fc6-9b47-4ec6-b0ca-c2175e42f7c1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 266,
+     "label": "131v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b3cc1e9f-661b-4902-a008-ec117766358d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 267,
+     "label": "132r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d27fd276-a28b-4928-aa8c-49c6d4edecd3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 268,
+     "label": "132v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7428d402-6201-49a3-b01c-babdc72e52c3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 269,
+     "label": "133r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ad54f7cc-245d-4571-828a-b03714a13d8a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 270,
+     "label": "133v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4283a567-c3da-4254-96c2-9beb910aab8a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 271,
+     "label": "134r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/324b2fd9-fd91-4030-b6d8-697f51b79135/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 272,
+     "label": "134v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a5259d14-f047-42b2-ba54-f4130fbd23ca/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 273,
+     "label": "135r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5f6bd027-43c8-44a1-8bc2-7cca189228fb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 274,
+     "label": "135v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7f59340b-5493-498c-8af3-2efb3a7cc26d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 275,
+     "label": "136r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2e9a5bc3-3111-4e33-b3f0-08b39d3e7bc7/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 276,
+     "label": "136v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/90303f1b-b6cb-4766-8acf-ede4406f2bfa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 277,
+     "label": "137r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8142fd1a-58af-4851-88c4-c4f7fc804daf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 278,
+     "label": "137v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3d38d9d8-c68f-4061-9df2-b9fbf76c374f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 279,
+     "label": "138r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/72f99248-4e5c-4503-a866-50c0e0db08c1/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 280,
+     "label": "138v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6ea0d78f-2b83-4714-9965-de7504fb1dfb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 281,
+     "label": "139r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4ef3165d-f6c6-4e4d-82a1-5172942bd945/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 282,
+     "label": "139v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f3a058e2-af17-410a-ba76-209b2ee8ce5e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 283,
+     "label": "140r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4e74df7a-608d-46f7-9a54-a7621e94110a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 284,
+     "label": "140v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/37a94bcc-63bf-445b-883f-784a1142fa7b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 285,
+     "label": "141r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9f3eda65-9f3e-42c1-a8d0-decb9f636198/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 286,
+     "label": "141v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/05efe91f-560f-48b7-9fbb-7c2126c3129c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 287,
+     "label": "142r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1eecef18-e62b-47a1-8dda-e8850ecbec7e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 288,
+     "label": "142v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3ed44c7c-b5a6-428e-8e72-95026db1ce48/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 289,
+     "label": "143r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c32cc436-efed-4b68-98ad-071224dad96a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 290,
+     "label": "143v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a76bdefa-5d06-45e8-be6a-1b77f172f4bf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 291,
+     "label": "144r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7e894d52-f4b4-4cc6-b57a-61a35e8ad1c2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 292,
+     "label": "144v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ff49aa57-c0fe-4b24-ba8c-6ebc12f0b0fc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 293,
+     "label": "145r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6ed87ece-8d80-425d-8ae7-df541410897d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 294,
+     "label": "145v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/29106187-8083-40a3-9ee0-d93903063dfa/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 295,
+     "label": "146r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d56e814a-ee57-40cd-aee4-246dac4b1bfc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 296,
+     "label": "146v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/72882185-0ff2-4975-9a6d-f15e700f4a19/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 297,
+     "label": "147r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/269f33af-c8c3-4fa5-aa59-8badc856baa0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 298,
+     "label": "147v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e4490f0b-da87-4e67-81e3-264fd740e253/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 299,
+     "label": "148r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/31910d45-c52e-46b7-a0ae-48ccc35eb08b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 300,
+     "label": "148v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5e4640f3-3600-428d-bda2-b3c464b29782/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 301,
+     "label": "149r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6dfcbfde-5c33-4fd9-9fda-a741c2197f3b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 302,
+     "label": "149v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/286498a1-c4e2-4b69-9af4-1f99b9065142/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 303,
+     "label": "150r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/8dbced08-7630-4ee7-af22-45ec9efe0ad6/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 304,
+     "label": "150v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b47dd87a-1d4c-4daa-b4d3-a1d411e122bd/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 305,
+     "label": "151r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2fb7b2c5-682e-46b0-8807-b1c1c3f4fcaf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 306,
+     "label": "151v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c226f953-0793-4f02-a213-990ae6df237d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 307,
+     "label": "152r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c75c42f3-8d0e-44f2-a049-38132b4ffaf8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 308,
+     "label": "152v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5940a891-faf8-47bd-b050-39f46a59960d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 309,
+     "label": "153r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a03752d1-2c54-4c71-bcb7-674870d43b52/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 310,
+     "label": "153v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/9fd530d6-be0a-4e3b-87da-b0a6dd4642fc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 311,
+     "label": "154r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/76fe2ce0-d493-4f32-8bc4-633f00a15f8b/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 312,
+     "label": "154v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/a1069799-6910-4bbb-91b1-c4d2dc9aa786/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 313,
+     "label": "155r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7f33971a-b4c9-4203-9d6c-85a3e06fbfa9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 314,
+     "label": "155v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ad9e3491-2424-4462-ad29-36adf72676eb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 315,
+     "label": "156r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5fbf8f12-31de-49ae-b498-57ff5d3dc33f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 316,
+     "label": "156v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/753f999b-509f-4330-9289-dd9ba5d9fd8e/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 317,
+     "label": "157r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5a5d4d0d-a2a8-4288-8ca0-6ae57840690c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 318,
+     "label": "157v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/6b9b4ff5-f71e-4e4d-adf1-31c2a285f64f/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 319,
+     "label": "158r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/db2865a0-8c24-43fc-a720-e2a02f98da47/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 320,
+     "label": "158v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/1f76e0ef-a140-4dd0-845c-182b0802152c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 321,
+     "label": "159r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2341a19e-9d4b-44e7-b632-47a32db21278/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 322,
+     "label": "159v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e27580a9-b969-4c75-9266-6e4428317a03/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 323,
+     "label": "160r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/78fc05af-572d-44c1-b55c-70eb1122d3fb/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 324,
+     "label": "160v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/11aa9b69-9e54-47b3-ba93-5f2877cdb7a8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 325,
+     "label": "161r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e425cb53-6b0a-4c7d-8275-3f71e5e48769/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 326,
+     "label": "161v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d39dfba0-a049-45d4-8ab7-5aad26f13fbf/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 327,
+     "label": "162r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/ac104e2b-fa9d-420d-bcba-3a8a97379c30/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 328,
+     "label": "162v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5b3825bc-72e8-4a19-bdcf-ebda4e10e64c/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 329,
+     "label": "163r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/df2937d8-b8d4-44dd-b7df-19d8bfd97e38/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 330,
+     "label": "163v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/4c7901d1-b0a0-4546-ae4e-fab3f9852099/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 331,
+     "label": "164r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/3e68ad3a-406e-4e72-a095-27c6c4276bb8/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 332,
+     "label": "164v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/45bcde94-c6ef-436a-8603-0737af1c1b11/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 333,
+     "label": "165r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/f220d843-25de-4f15-b05c-aa1a09f30272/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 334,
+     "label": "165v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/be229605-dc6f-46cf-9ec5-78b4ab94baa9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 335,
+     "label": "166r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/aeb0f4b9-af72-47dc-b0ba-70fe2535f9ab/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 336,
+     "label": "166v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c6f3f438-4822-45f7-9d83-eb5bbb10d3a5/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 337,
+     "label": "167r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/2d68cbfd-7a94-4292-892d-db634c3d8924/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 338,
+     "label": "167v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/98bd5839-ef12-4d45-a2e8-ba01544d3504/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 339,
+     "label": "168r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b21537e4-afc3-44d1-8ad1-f7a97e17b190/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 340,
+     "label": "168v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/e76ef575-02e2-4dfa-a65e-1899e4e5794a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 341,
+     "label": "169r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7e74c5b7-2f75-4e7e-a106-af1dedc912ee/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 342,
+     "label": "169v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7381a397-b2ce-497e-a199-495a46d04536/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 343,
+     "label": "170r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/7d313c3c-00cd-455c-ac14-7dae2053ca19/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 344,
+     "label": "170v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5c96d919-a144-4253-9eaa-10f94d178ce0/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 345,
+     "label": "171r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/334e1ab8-2d4e-48fe-a47f-b24de352f026/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 346,
+     "label": "171v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/abf60976-2bfb-4756-aa6e-e0ca67488ba3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 347,
+     "label": "172r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/949d7689-eb48-4902-95fe-ef780d5342dc/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 348,
+     "label": "172v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d7210943-b665-45e0-a59b-ac7612caae4d/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 349,
+     "label": "173r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c32caddb-20ba-4c82-9199-c1a4e2db3681/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 350,
+     "label": "173v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/5fe37479-d051-40a6-b53d-670ae95ec5d3/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 351,
+     "label": "174r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/b1dc271e-680f-42f0-98d4-08fdff356589/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 352,
+     "label": "174v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/581a2706-09a0-4773-b544-ba3f03696504/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 353,
+     "label": "175r",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/bad6f70f-304f-4f22-bbfb-fc7790ee1cd9/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 354,
+     "label": "175v",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/537f32f5-f44e-4196-85b4-99d87f106486/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 355,
+     "label": "Lower flyleaf recto",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d51f8b83-e890-415a-822c-52693a4f4d36/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 356,
+     "label": "Lower flyleaf verso",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c5f6efab-c372-4cad-a415-7d2934913887/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 357,
+     "label": "Inside lower cover",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/c29ae788-8f9a-4852-998a-19374608770a/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 358,
+     "label": "Lower cover",
+     "image": "https://iiif.bodleian.ox.ac.uk/iiif/image/d064f84e-e6ca-4f48-a17c-eb4f5c6a058e/full/1024,/0/default.jpg"
+    }
+   ]
+  },
+  {
+   "id": "https://cdm21059.contentdm.oclc.org/iiif/plutei:318709/manifest.json",
+   "title": "Even Bohan (Shem Tov's Hebrew Matthew), copied 1385",
+   "shelfmark": "Laurenziana, Plut. 2.17",
+   "repository": "",
+   "origin": "",
+   "date": "",
+   "language": "",
+   "material": "",
+   "provenance": "",
+   "attribution": "Pubblico",
+   "licence": "Biblioteca Medicea Laurenziana. Diritti di accesso: Pubblico. The library states an access status and no terms of reuse.",
+   "book": "MAT",
+   "source": "https://cdm21059.contentdm.oclc.org/iiif/plutei:318709/manifest.json",
+   "folios": "",
+   "pages": [
+    {
+     "n": 1,
+     "label": "Color Chart",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318273/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 2,
+     "label": "Dorso",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318274/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 3,
+     "label": "Piatto anteriore",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318275/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 4,
+     "label": "Controguardia anteriore",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318276/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 5,
+     "label": "Guardia anteriore non numerata: [Ir]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318277/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 6,
+     "label": "Guardia anteriore non numerata: [Iv]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318278/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 7,
+     "label": "Guardia anteriore non numerata: [IIr]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318279/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 8,
+     "label": "Guardia anteriore non numerata: [IIv]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318280/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 9,
+     "label": "Guardia anteriore non numerata: [IIIr]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318281/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 10,
+     "label": "Guardia anteriore non numerata: [IIIv]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318282/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 11,
+     "label": "Carta: 1r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318283/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 12,
+     "label": "Carta: 1v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318284/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 13,
+     "label": "Carta: 2r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318285/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 14,
+     "label": "Carta: 2v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318286/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 15,
+     "label": "Carta: 3r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318287/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 16,
+     "label": "Carta: 3v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318288/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 17,
+     "label": "Carta: 4r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318289/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 18,
+     "label": "Carta: 4v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318290/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 19,
+     "label": "Carta: 5r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318291/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 20,
+     "label": "Carta: 5v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318292/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 21,
+     "label": "Carta: 6r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318293/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 22,
+     "label": "Carta: 6v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318294/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 23,
+     "label": "Carta: 7r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318295/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 24,
+     "label": "Carta: 7v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318296/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 25,
+     "label": "Carta: 8r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318297/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 26,
+     "label": "Carta: 8v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318298/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 27,
+     "label": "Carta: 9r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318299/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 28,
+     "label": "Carta: 9v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318300/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 29,
+     "label": "Carta: 10r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318301/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 30,
+     "label": "Carta: 10v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318302/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 31,
+     "label": "Carta: 11r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318303/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 32,
+     "label": "Carta: 11v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318304/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 33,
+     "label": "Carta: 12r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318305/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 34,
+     "label": "Carta: 12v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318306/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 35,
+     "label": "Carta: 13r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318307/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 36,
+     "label": "Carta: 13v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318308/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 37,
+     "label": "Carta: 14r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318309/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 38,
+     "label": "Carta: 14v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318310/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 39,
+     "label": "Carta: 15r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318311/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 40,
+     "label": "Carta: 15v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318312/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 41,
+     "label": "Carta: 16r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318313/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 42,
+     "label": "Carta: 16v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318314/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 43,
+     "label": "Carta: 17r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318315/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 44,
+     "label": "Carta: 17v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318316/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 45,
+     "label": "Carta: 18r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318317/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 46,
+     "label": "Carta: 18v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318318/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 47,
+     "label": "Carta: 19r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318319/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 48,
+     "label": "Carta: 19v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318320/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 49,
+     "label": "Carta: 20r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318321/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 50,
+     "label": "Carta: 20v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318322/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 51,
+     "label": "Carta: 21r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318323/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 52,
+     "label": "Carta: 21v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318324/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 53,
+     "label": "Carta: 22r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318325/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 54,
+     "label": "Carta: 22v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318326/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 55,
+     "label": "Carta: 23r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318327/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 56,
+     "label": "Carta: 23v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318328/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 57,
+     "label": "Carta: 24r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318329/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 58,
+     "label": "Carta: 24v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318330/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 59,
+     "label": "Carta: 25r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318331/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 60,
+     "label": "Carta: 25v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318332/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 61,
+     "label": "Carta: 26r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318333/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 62,
+     "label": "Carta: 26v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318334/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 63,
+     "label": "Carta: 27r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318335/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 64,
+     "label": "Carta: 27v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318336/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 65,
+     "label": "Carta: 28r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318337/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 66,
+     "label": "Carta: 28v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318338/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 67,
+     "label": "Carta: 29r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318339/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 68,
+     "label": "Carta: 29v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318340/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 69,
+     "label": "Carta: 30r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318341/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 70,
+     "label": "Carta: 30v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318342/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 71,
+     "label": "Carta: 31r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318343/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 72,
+     "label": "Carta: 31v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318344/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 73,
+     "label": "Carta: 32r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318345/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 74,
+     "label": "Carta: 32v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318346/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 75,
+     "label": "Carta: 33r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318347/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 76,
+     "label": "Carta: 33v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318348/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 77,
+     "label": "Carta: 34r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318349/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 78,
+     "label": "Carta: 34v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318350/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 79,
+     "label": "Carta: 35r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318351/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 80,
+     "label": "Carta: 35v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318352/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 81,
+     "label": "Carta: 36r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318353/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 82,
+     "label": "Carta: 36v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318354/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 83,
+     "label": "Carta: 37r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318355/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 84,
+     "label": "Carta: 37v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318356/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 85,
+     "label": "Carta: 38r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318357/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 86,
+     "label": "Carta: 38v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318358/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 87,
+     "label": "Carta: 39r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318359/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 88,
+     "label": "Carta: 39v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318360/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 89,
+     "label": "Carta: 40r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318361/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 90,
+     "label": "Carta: 40v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318362/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 91,
+     "label": "Carta: 41r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318363/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 92,
+     "label": "Carta: 41v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318364/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 93,
+     "label": "Carta: 42r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318365/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 94,
+     "label": "Carta: 42v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318366/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 95,
+     "label": "Carta: 43r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318367/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 96,
+     "label": "Carta: 43v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318368/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 97,
+     "label": "Carta: 44r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318369/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 98,
+     "label": "Carta: 44v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318370/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 99,
+     "label": "Carta: 45r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318371/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 100,
+     "label": "Carta: 45v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318372/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 101,
+     "label": "Carta: 46r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318373/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 102,
+     "label": "Carta: 46v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318374/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 103,
+     "label": "Carta: 47r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318375/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 104,
+     "label": "Carta: 47v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318376/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 105,
+     "label": "Carta: 48r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318377/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 106,
+     "label": "Carta: 48v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318378/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 107,
+     "label": "Carta: 49r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318379/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 108,
+     "label": "Carta: 49v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318380/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 109,
+     "label": "Carta: 50r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318381/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 110,
+     "label": "Carta: 50v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318382/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 111,
+     "label": "Carta: 51r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318383/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 112,
+     "label": "Carta: 51v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318384/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 113,
+     "label": "Carta: 52r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318385/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 114,
+     "label": "Carta: 52v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318386/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 115,
+     "label": "Carta: 53r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318387/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 116,
+     "label": "Carta: 53v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318388/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 117,
+     "label": "Carta: 54r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318389/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 118,
+     "label": "Carta: 54v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318390/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 119,
+     "label": "Carta: 55r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318391/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 120,
+     "label": "Carta: 55v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318392/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 121,
+     "label": "Carta: 56r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318393/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 122,
+     "label": "Carta: 56v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318394/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 123,
+     "label": "Carta: 57r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318395/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 124,
+     "label": "Carta: 57v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318396/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 125,
+     "label": "Carta: 58r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318397/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 126,
+     "label": "Carta: 58v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318398/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 127,
+     "label": "Carta: 59r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318399/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 128,
+     "label": "Carta: 59v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318400/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 129,
+     "label": "Carta: 60r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318401/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 130,
+     "label": "Carta: 60v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318402/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 131,
+     "label": "Carta: 61r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318403/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 132,
+     "label": "Carta: 61v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318404/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 133,
+     "label": "Carta: 62r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318405/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 134,
+     "label": "Carta: 62v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318406/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 135,
+     "label": "Carta: 63r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318407/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 136,
+     "label": "Carta: 63v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318408/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 137,
+     "label": "Carta: 64r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318409/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 138,
+     "label": "Carta: 64v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318410/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 139,
+     "label": "Carta: 65r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318411/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 140,
+     "label": "Carta: 65v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318412/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 141,
+     "label": "Carta: 66r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318413/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 142,
+     "label": "Carta: 66v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318414/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 143,
+     "label": "Carta: 67r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318415/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 144,
+     "label": "Carta: 67v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318416/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 145,
+     "label": "Carta: 68r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318417/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 146,
+     "label": "Carta: 68v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318418/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 147,
+     "label": "Carta: 69r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318419/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 148,
+     "label": "Carta: 69v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318420/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 149,
+     "label": "Carta: 70r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318421/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 150,
+     "label": "Carta: 70v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318422/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 151,
+     "label": "Carta: 71r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318423/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 152,
+     "label": "Carta: 71v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318424/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 153,
+     "label": "Carta: 72r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318425/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 154,
+     "label": "Carta: 72v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318426/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 155,
+     "label": "Carta: 73r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318427/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 156,
+     "label": "Carta: 73v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318428/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 157,
+     "label": "Carta: 74r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318429/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 158,
+     "label": "Carta: 74v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318430/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 159,
+     "label": "Carta: 75r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318431/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 160,
+     "label": "Carta: 75v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318432/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 161,
+     "label": "Carta: 76r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318433/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 162,
+     "label": "Carta: 76v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318434/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 163,
+     "label": "Carta: 77r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318435/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 164,
+     "label": "Carta: 77v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318436/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 165,
+     "label": "Carta: 78r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318437/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 166,
+     "label": "Carta: 78v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318438/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 167,
+     "label": "Carta: 79r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318439/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 168,
+     "label": "Carta: 79v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318440/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 169,
+     "label": "Carta: 80r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318441/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 170,
+     "label": "Carta: 80v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318442/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 171,
+     "label": "Carta: 81r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318443/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 172,
+     "label": "Carta: 81v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318444/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 173,
+     "label": "Carta: 82r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318445/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 174,
+     "label": "Carta: 82v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318446/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 175,
+     "label": "Carta: 83r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318447/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 176,
+     "label": "Carta: 83v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318448/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 177,
+     "label": "Carta: 84r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318449/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 178,
+     "label": "Carta: 84v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318450/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 179,
+     "label": "Carta: 85r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318451/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 180,
+     "label": "Carta: 85v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318452/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 181,
+     "label": "Carta: 86r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318453/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 182,
+     "label": "Carta: 86v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318454/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 183,
+     "label": "Carta: 87r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318455/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 184,
+     "label": "Carta: 87v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318456/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 185,
+     "label": "Carta: 88r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318457/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 186,
+     "label": "Carta: 88v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318458/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 187,
+     "label": "Carta: 89r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318459/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 188,
+     "label": "Carta: 89v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318460/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 189,
+     "label": "Carta: 90r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318461/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 190,
+     "label": "Carta: 90v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318462/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 191,
+     "label": "Carta: 91r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318463/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 192,
+     "label": "Carta: 91v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318464/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 193,
+     "label": "Carta: 92r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318465/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 194,
+     "label": "Carta: 92v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318466/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 195,
+     "label": "Carta: 93r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318467/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 196,
+     "label": "Carta: 93v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318468/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 197,
+     "label": "Carta: 94r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318469/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 198,
+     "label": "Carta: 94v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318470/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 199,
+     "label": "Carta: 95r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318471/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 200,
+     "label": "Carta: 95v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318472/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 201,
+     "label": "Carta: 96r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318473/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 202,
+     "label": "Carta: 96v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318474/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 203,
+     "label": "Carta: 97r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318475/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 204,
+     "label": "Carta: 97v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318476/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 205,
+     "label": "Carta: 98r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318477/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 206,
+     "label": "Carta: 98v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318478/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 207,
+     "label": "Carta: 99r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318479/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 208,
+     "label": "Carta: 99v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318480/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 209,
+     "label": "Carta: 100r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318481/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 210,
+     "label": "Carta: 100v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318482/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 211,
+     "label": "Carta: 101r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318483/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 212,
+     "label": "Carta: 101v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318484/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 213,
+     "label": "Carta: 102r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318485/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 214,
+     "label": "Carta: 102v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318486/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 215,
+     "label": "Carta: 103r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318487/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 216,
+     "label": "Carta: 103v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318488/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 217,
+     "label": "Carta: 104r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318489/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 218,
+     "label": "Carta: 104v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318490/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 219,
+     "label": "Carta: 105r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318491/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 220,
+     "label": "Carta: 105v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318492/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 221,
+     "label": "Carta: 106r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318493/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 222,
+     "label": "Carta: 106v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318494/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 223,
+     "label": "Carta: 107r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318495/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 224,
+     "label": "Carta: 107v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318496/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 225,
+     "label": "Carta: 108r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318497/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 226,
+     "label": "Carta: 108v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318498/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 227,
+     "label": "Carta: 109r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318499/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 228,
+     "label": "Carta: 109v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318500/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 229,
+     "label": "Carta: 110r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318501/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 230,
+     "label": "Carta: 110v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318502/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 231,
+     "label": "Carta: 111r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318503/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 232,
+     "label": "Carta: 111v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318504/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 233,
+     "label": "Carta: 112r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318505/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 234,
+     "label": "Carta: 112v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318506/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 235,
+     "label": "Carta: 113r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318507/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 236,
+     "label": "Carta: 113v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318508/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 237,
+     "label": "Carta: 114r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318509/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 238,
+     "label": "Carta: 114v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318510/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 239,
+     "label": "Carta: 115r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318511/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 240,
+     "label": "Carta: 115v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318512/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 241,
+     "label": "Carta: 116r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318513/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 242,
+     "label": "Carta: 116v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318514/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 243,
+     "label": "Carta: 117r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318515/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 244,
+     "label": "Carta: 117v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318516/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 245,
+     "label": "Carta: 118r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318517/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 246,
+     "label": "Carta: 118v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318518/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 247,
+     "label": "Carta: 119r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318519/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 248,
+     "label": "Carta: 119v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318520/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 249,
+     "label": "Carta: 120r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318521/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 250,
+     "label": "Carta: 120v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318522/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 251,
+     "label": "Carta: 121r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318523/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 252,
+     "label": "Carta: 121v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318524/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 253,
+     "label": "Carta: 122r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318525/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 254,
+     "label": "Carta: 122v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318526/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 255,
+     "label": "Carta: 123r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318527/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 256,
+     "label": "Carta: 123v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318528/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 257,
+     "label": "Carta: 124r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318529/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 258,
+     "label": "Carta: 124v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318530/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 259,
+     "label": "Carta: 125r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318531/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 260,
+     "label": "Carta: 125v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318532/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 261,
+     "label": "Carta: 126r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318533/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 262,
+     "label": "Carta: 126v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318534/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 263,
+     "label": "Carta: 127r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318535/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 264,
+     "label": "Carta: 127v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318536/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 265,
+     "label": "Carta: 128r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318537/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 266,
+     "label": "Carta: 128v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318538/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 267,
+     "label": "Carta: 129r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318539/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 268,
+     "label": "Carta: 129v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318540/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 269,
+     "label": "Carta: 130r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318541/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 270,
+     "label": "Carta: 130v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318542/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 271,
+     "label": "Carta: 131r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318543/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 272,
+     "label": "Carta: 131v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318544/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 273,
+     "label": "Carta: 132r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318545/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 274,
+     "label": "Carta: 132v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318546/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 275,
+     "label": "Carta: 133r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318547/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 276,
+     "label": "Carta: 133v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318548/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 277,
+     "label": "Carta: 134r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318549/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 278,
+     "label": "Carta: 134v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318550/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 279,
+     "label": "Carta: 135r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318551/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 280,
+     "label": "Carta: 135v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318552/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 281,
+     "label": "Carta: 136r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318553/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 282,
+     "label": "Carta: 136v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318554/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 283,
+     "label": "Carta: 137r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318555/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 284,
+     "label": "Carta: 137v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318556/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 285,
+     "label": "Carta: 138r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318557/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 286,
+     "label": "Carta: 138v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318558/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 287,
+     "label": "Carta: 139r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318559/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 288,
+     "label": "Carta: 139v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318560/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 289,
+     "label": "Carta: 140r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318561/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 290,
+     "label": "Carta: 140v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318562/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 291,
+     "label": "Carta: 141r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318563/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 292,
+     "label": "Carta: 141v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318564/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 293,
+     "label": "Carta: 142r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318565/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 294,
+     "label": "Carta: 142v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318566/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 295,
+     "label": "Carta: 143r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318567/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 296,
+     "label": "Carta: 143v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318568/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 297,
+     "label": "Carta: 144r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318569/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 298,
+     "label": "Carta: 144v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318570/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 299,
+     "label": "Carta: 145r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318571/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 300,
+     "label": "Carta: 145v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318572/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 301,
+     "label": "Carta: 146r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318573/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 302,
+     "label": "Carta: 146v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318574/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 303,
+     "label": "Carta: 147r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318575/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 304,
+     "label": "Carta: 147v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318576/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 305,
+     "label": "Carta: 148r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318577/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 306,
+     "label": "Carta: 148v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318578/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 307,
+     "label": "Carta: 149r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318579/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 308,
+     "label": "Carta: 149v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318580/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 309,
+     "label": "Carta: 150r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318581/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 310,
+     "label": "Carta: 150v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318582/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 311,
+     "label": "Carta: 151r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318583/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 312,
+     "label": "Carta: 151v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318584/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 313,
+     "label": "Carta: 152r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318585/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 314,
+     "label": "Carta: 152v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318586/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 315,
+     "label": "Carta: 153r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318587/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 316,
+     "label": "Carta: 153v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318588/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 317,
+     "label": "Carta: 154r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318589/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 318,
+     "label": "Carta: 154v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318590/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 319,
+     "label": "Carta: 155r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318591/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 320,
+     "label": "Carta: 155v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318592/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 321,
+     "label": "Carta: 156r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318593/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 322,
+     "label": "Carta: 156v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318594/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 323,
+     "label": "Carta: 157r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318595/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 324,
+     "label": "Carta: 157v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318596/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 325,
+     "label": "Carta: 158r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318597/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 326,
+     "label": "Carta: 158v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318598/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 327,
+     "label": "Carta: 159r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318599/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 328,
+     "label": "Carta: 159v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318600/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 329,
+     "label": "Carta: 160r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318601/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 330,
+     "label": "Carta: 160v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318602/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 331,
+     "label": "Carta: 161r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318603/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 332,
+     "label": "Carta: 161v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318604/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 333,
+     "label": "Carta: 162r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318605/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 334,
+     "label": "Carta: 162v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318606/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 335,
+     "label": "Carta: 163r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318607/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 336,
+     "label": "Carta: 163v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318608/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 337,
+     "label": "Carta: 164r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318609/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 338,
+     "label": "Carta: 164v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318610/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 339,
+     "label": "Carta: 165r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318611/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 340,
+     "label": "Carta: 165v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318612/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 341,
+     "label": "Carta: 166r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318613/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 342,
+     "label": "Carta: 166v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318614/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 343,
+     "label": "Carta: 167r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318615/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 344,
+     "label": "Carta: 167v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318616/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 345,
+     "label": "Carta: 168r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318617/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 346,
+     "label": "Carta: 168v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318618/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 347,
+     "label": "Carta: 169r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318619/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 348,
+     "label": "Carta: 169v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318620/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 349,
+     "label": "Carta: 170r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318621/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 350,
+     "label": "Carta: 170v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318622/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 351,
+     "label": "Carta: 171r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318623/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 352,
+     "label": "Carta: 171v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318624/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 353,
+     "label": "Carta: 172r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318625/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 354,
+     "label": "Carta: 172v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318626/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 355,
+     "label": "Carta: 173r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318627/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 356,
+     "label": "Carta: 173v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318628/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 357,
+     "label": "Carta: 174r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318629/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 358,
+     "label": "Carta: 174v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318630/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 359,
+     "label": "Carta: 175r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318631/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 360,
+     "label": "Carta: 175v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318632/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 361,
+     "label": "Carta: 176r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318633/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 362,
+     "label": "Carta: 176v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318634/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 363,
+     "label": "Carta: 177r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318635/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 364,
+     "label": "Carta: 177v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318636/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 365,
+     "label": "Carta: 178r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318637/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 366,
+     "label": "Carta: 178v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318638/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 367,
+     "label": "Carta: 179r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318639/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 368,
+     "label": "Carta: 179v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318640/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 369,
+     "label": "Carta: 180r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318641/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 370,
+     "label": "Carta: 180v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318642/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 371,
+     "label": "Carta: 181r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318643/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 372,
+     "label": "Carta: 181v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318644/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 373,
+     "label": "Carta: 182r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318645/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 374,
+     "label": "Carta: 182v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318646/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 375,
+     "label": "Carta: 183r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318647/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 376,
+     "label": "Carta: 183v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318648/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 377,
+     "label": "Carta: 184r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318649/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 378,
+     "label": "Carta: 184v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318650/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 379,
+     "label": "Carta: 185r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318651/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 380,
+     "label": "Carta: 185v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318652/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 381,
+     "label": "Carta: 186r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318653/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 382,
+     "label": "Carta: 186v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318654/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 383,
+     "label": "Carta: 187r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318655/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 384,
+     "label": "Carta: 187v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318656/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 385,
+     "label": "Carta: 188r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318657/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 386,
+     "label": "Carta: 188v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318658/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 387,
+     "label": "Carta: 189r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318659/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 388,
+     "label": "Carta: 189v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318660/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 389,
+     "label": "Carta: 190r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318661/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 390,
+     "label": "Carta: 190v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318662/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 391,
+     "label": "Carta: 191r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318663/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 392,
+     "label": "Carta: 191v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318664/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 393,
+     "label": "Carta: 192r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318665/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 394,
+     "label": "Carta: 192v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318666/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 395,
+     "label": "Carta: 193r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318667/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 396,
+     "label": "Carta: 193v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318668/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 397,
+     "label": "Carta: 194r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318669/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 398,
+     "label": "Carta: 194v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318670/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 399,
+     "label": "Carta: 195r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318671/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 400,
+     "label": "Carta: 195v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318672/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 401,
+     "label": "Carta: 196r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318673/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 402,
+     "label": "Carta: 196v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318674/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 403,
+     "label": "Carta: 197r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318675/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 404,
+     "label": "Carta: 197v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318676/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 405,
+     "label": "Carta: 198r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318677/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 406,
+     "label": "Carta: 198v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318678/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 407,
+     "label": "Carta: 199r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318679/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 408,
+     "label": "Carta: 199v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318680/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 409,
+     "label": "Carta: 200r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318681/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 410,
+     "label": "Carta: 200v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318682/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 411,
+     "label": "Carta: 201r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318683/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 412,
+     "label": "Carta: 201v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318684/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 413,
+     "label": "Carta: 202r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318685/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 414,
+     "label": "Carta: 202v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318686/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 415,
+     "label": "Carta: 203r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318687/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 416,
+     "label": "Carta: 203v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318688/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 417,
+     "label": "Carta: 204r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318689/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 418,
+     "label": "Carta: 204v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318690/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 419,
+     "label": "Carta: 205r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318691/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 420,
+     "label": "Carta: 205v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318692/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 421,
+     "label": "Carta: 206r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318693/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 422,
+     "label": "Carta: 206v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318694/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 423,
+     "label": "Carta: 207r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318695/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 424,
+     "label": "Carta: 207v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318696/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 425,
+     "label": "Carta: 208r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318697/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 426,
+     "label": "Carta: 208v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318698/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 427,
+     "label": "Carta: 209r",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318699/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 428,
+     "label": "Carta: 209v",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318700/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 429,
+     "label": "Guardia posteriore non numerata: [I'r]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318701/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 430,
+     "label": "Guardia posteriore non numerata: [I'v]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318702/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 431,
+     "label": "Guardia posteriore non numerata: [II'r]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318703/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 432,
+     "label": "Guardia posteriore non numerata: [II'v]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318704/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 433,
+     "label": "Guardia posteriore non numerata: [III'r]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318705/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 434,
+     "label": "Guardia posteriore non numerata: [III'v]",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318706/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 435,
+     "label": "Controguardia posteriore",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318707/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 436,
+     "label": "Piatto posteriore",
+     "image": "https://cdm21059.contentdm.oclc.org/iiif/2/plutei:318708/full/1024,/0/default.jpg"
+    }
+   ]
+  },
+  {
+   "id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json",
+   "title": "Hebrew Matthew, ascribed to Shem Tov's Even Bohan",
+   "shelfmark": "Vat. ebr. 101",
+   "repository": "",
+   "origin": "",
+   "date": "",
+   "language": "",
+   "material": "",
+   "provenance": "",
+   "attribution": "Images Copyright Biblioteca Apostolica Vaticana",
+   "licence": "Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.",
+   "book": "MAT",
+   "source": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json",
+   "folios": "",
+   "pages": [
+    {
+     "n": 1,
+     "label": "piatto.anteriore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0001_al_piatto.anteriore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 2,
+     "label": "risguardia.anteriore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0002_ba_risguardia.anteriore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 3,
+     "label": "1r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0003_cy_0001r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 4,
+     "label": "1v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0004_cy_0001v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 5,
+     "label": "Ir",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0005_cr_0001r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 6,
+     "label": "Iv",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0006_cr_0001v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 7,
+     "label": "IIr",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0007_cr_0002r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 8,
+     "label": "IIv",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0008_cr_0002v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 9,
+     "label": "IIIr",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0009_cr_0003r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 10,
+     "label": "IIIv",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0010_cr_0003v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 11,
+     "label": "IVr",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0011_cr_0004r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 12,
+     "label": "IVv",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0012_cr_0004v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 13,
+     "label": "1r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0013_fa_0001r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 14,
+     "label": "1v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0014_fa_0001v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 15,
+     "label": "2r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0015_fa_0002r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 16,
+     "label": "2v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0016_fa_0002v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 17,
+     "label": "3r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0017_fa_0003r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 18,
+     "label": "3v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0018_fa_0003v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 19,
+     "label": "4r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0019_fa_0004r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 20,
+     "label": "4v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0020_fa_0004v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 21,
+     "label": "5r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0021_fa_0005r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 22,
+     "label": "5v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0022_fa_0005v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 23,
+     "label": "6r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0023_fa_0006r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 24,
+     "label": "6v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0024_fa_0006v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 25,
+     "label": "7r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0025_fa_0007r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 26,
+     "label": "7v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0026_fa_0007v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 27,
+     "label": "8r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0027_fa_0008r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 28,
+     "label": "8v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0028_fa_0008v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 29,
+     "label": "9r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0029_fa_0009r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 30,
+     "label": "9v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0030_fa_0009v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 31,
+     "label": "10r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0031_fa_0010r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 32,
+     "label": "10v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0032_fa_0010v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 33,
+     "label": "11r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0033_fa_0011r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 34,
+     "label": "11v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0034_fa_0011v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 35,
+     "label": "12r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0035_fa_0012r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 36,
+     "label": "12v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0036_fa_0012v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 37,
+     "label": "13r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0037_fa_0013r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 38,
+     "label": "13v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0038_fa_0013v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 39,
+     "label": "14r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0039_fa_0014r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 40,
+     "label": "14v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0040_fa_0014v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 41,
+     "label": "15r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0041_fa_0015r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 42,
+     "label": "15v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0042_fa_0015v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 43,
+     "label": "16r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0043_fa_0016r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 44,
+     "label": "16v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0044_fa_0016v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 45,
+     "label": "17r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0045_fa_0017r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 46,
+     "label": "17v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0046_fa_0017v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 47,
+     "label": "18r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0047_fa_0018r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 48,
+     "label": "18v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0048_fa_0018v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 49,
+     "label": "19r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0049_fa_0019r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 50,
+     "label": "19v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0050_fa_0019v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 51,
+     "label": "20r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0051_fa_0020r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 52,
+     "label": "20v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0052_fa_0020v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 53,
+     "label": "21r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0053_fa_0021r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 54,
+     "label": "21v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0054_fa_0021v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 55,
+     "label": "22r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0055_fa_0022r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 56,
+     "label": "22v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0056_fa_0022v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 57,
+     "label": "23r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0057_fa_0023r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 58,
+     "label": "23v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0058_fa_0023v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 59,
+     "label": "24r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0059_fa_0024r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 60,
+     "label": "24v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0060_fa_0024v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 61,
+     "label": "25r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0061_fa_0025r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 62,
+     "label": "25v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0062_fa_0025v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 63,
+     "label": "26r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0063_fa_0026r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 64,
+     "label": "26v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0064_fa_0026v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 65,
+     "label": "27r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0065_fa_0027r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 66,
+     "label": "27v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0066_fa_0027v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 67,
+     "label": "28r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0067_fa_0028r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 68,
+     "label": "28v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0068_fa_0028v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 69,
+     "label": "29r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0069_fa_0029r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 70,
+     "label": "29v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0070_fa_0029v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 71,
+     "label": "30r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0071_fa_0030r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 72,
+     "label": "30v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0072_fa_0030v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 73,
+     "label": "31r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0073_fa_0031r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 74,
+     "label": "31v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0074_fa_0031v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 75,
+     "label": "32r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0075_fa_0032r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 76,
+     "label": "32v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0076_fa_0032v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 77,
+     "label": "1r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0077_sy_0001r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 78,
+     "label": "1v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0078_sy_0001v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 79,
+     "label": "2r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0079_sy_0002r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 80,
+     "label": "2v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0080_sy_0002v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 81,
+     "label": "3r",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0081_sy_0003r.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 82,
+     "label": "3v",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0082_sy_0003v.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 83,
+     "label": "risguardia.posteriore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0083_ye_risguardia.posteriore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 84,
+     "label": "dorso",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0084_yh_dorso.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 85,
+     "label": "taglio.centrale",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0085_yl_taglio.centrale.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 86,
+     "label": "taglio.inferiore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0086_yn_taglio.inferiore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 87,
+     "label": "taglio.superiore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0087_yp_taglio.superiore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 88,
+     "label": "piatto.posteriore",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0088_za_piatto.posteriore.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 89,
+     "label": "colorchecker",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0089_zx_colorchecker.jp2/full/1024,/0/default.jpg"
+    },
+    {
+     "n": 90,
+     "label": "scala.millimetrica",
+     "image": "https://digi.vatlib.it/iiifimage/MSS_Vat.ebr.101/Vat.ebr.101_0090_zz_scala.millimetrica.jp2/full/1024,/0/default.jpg"
     }
    ]
   }

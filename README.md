@@ -85,12 +85,22 @@ for instance, are CC BY-NC 3.0 — which is why the terms travel with the entry
 rather than being assumed to match this repository's own licence.
 
 Only `url` is required in a row. `title` overrides a library record that names a
-whole codex where only part of it is being transcribed, `book` groups a scan that
-is of one book, `folios` offers one part of a codex rather than all of it, and
-`width` asks for a different image size — honoured only where the library lets a
-size be asked for. Cambridge serves any width but caps delivery at 2000px; OPenn
-publishes fixed derivatives and chooses for you, and says so when a row asks
-anyway.
+whole codex where only part of it is being transcribed, `shelfmark` overrides one
+that states none at all, `book` groups a scan that is of one book, `folios`
+offers one part of a codex rather than all of it, and `width` asks for a
+different image size — honoured only where the library lets a size be asked for.
+Cambridge serves any width but caps delivery at 2000px; OPenn publishes fixed
+derivatives and chooses for you, and says so when a row asks anyway.
+
+A bare IIIF manifest carries no shelfmark — Gallica states only a title — which
+is why `shelfmark` exists: it is what tells two manuscripts of the same book
+apart, and what Milah heads a manuscript's books with.
+
+`licence` is for the same gap in the field a scan may not be used without. The
+Bodleian states its terms in the manifest's attribution line and leaves
+`license` unset, so they are copied into the row. It records what a library
+says, never what it might have said: a scan whose terms are unclear is one
+nobody may use, and writing a licence into a row does not grant one.
 
 ### One codex, many books
 
@@ -100,10 +110,14 @@ choose Mark out of. `folios` says which part of a codex a row offers, written as
 two of the labels the library itself uses:
 
 ```
-url	title	book	width	folios
-https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Matthew (Cambridge, MS Oo.1.32)	MAT		1r..21v
-https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Mark (Cambridge, MS Oo.1.32)	MRK		22r..33v
+url	title	book	width	folios	shelfmark
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Matthew	MAT		1r..21v
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Mark	MRK		22r..33v
 ```
+
+The titles are the book alone rather than "Mark (Cambridge, MS Oo.1.32)". The
+shelfmark is a field of its own, and Milah shows it above the books it holds, so
+naming the manuscript again in every title prints it twice.
 
 Rows may name one address as often as they like: the library's record is read
 **once per run** and each row takes its own slice of it. Cambridge rate-limits

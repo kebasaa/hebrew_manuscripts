@@ -487,6 +487,37 @@ class BothIIIFVersionsAreRead(unittest.TestCase):
     def test_a_manifest_that_could_not_be_read_is_not_an_entry(self) -> None:
         self.assertIsNone(self._scan({}))
 
+    def test_terms_given_as_a_list_are_not_printed_as_one(self) -> None:
+        # The Laurenziana sends ["", "Pubblico"]. Passed through str() that
+        # reaches a reader as ['', 'Pubblico'] — brackets, quotes and a stray
+        # comma — shown in a sidebar as though it were the library's wording.
+        # The empty first entry is dropped rather than joined, because a line
+        # opening "; " is not a statement of terms either.
+        entry = self._scan(
+            {
+                **IIIF_V2,
+                "attribution": ["", "Pubblico"],
+                "license": ["https://example.org/terms", ""],
+            }
+        )
+        self.assertEqual(entry["attribution"], "Pubblico")
+        self.assertEqual(entry["licence"], "https://example.org/terms")
+
+    def test_terms_given_as_a_language_map_are_read(self) -> None:
+        entry = self._scan({**IIIF_V2, "attribution": {"en": ["Provided by Somewhere"]}})
+        self.assertEqual(entry["attribution"], "Provided by Somewhere")
+
+    def test_terms_that_are_absent_are_empty_rather_than_none(self) -> None:
+        # str(None) is "None", which reads as a licence saying None.
+        entry = self._scan({key: value for key, value in IIIF_V2.items()
+                            if key != "attribution"})
+        self.assertEqual(entry["attribution"], "")
+        self.assertEqual(entry["licence"], "")
+
+    def test_a_title_given_as_a_list_is_not_printed_as_one(self) -> None:
+        entry = self._scan({**IIIF_V2, "label": ["Eben bochen", "Lapis discernens"]})
+        self.assertEqual(entry["title"], "Eben bochen; Lapis discernens")
+
 
 class ACodexCanBeOfferedAsItsBooks(unittest.TestCase):
     """One binding is twenty-six books, and a range says which of them a row is.

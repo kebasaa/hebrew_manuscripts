@@ -438,7 +438,9 @@ def iiif_scan(manifest_url: str, width: int) -> dict | None:
 
     return {
         "id": manifest_url,
-        "title": _v3_label(manifest.get("label")),
+        # Through the same reader as the terms: a title arrives in every shape
+        # they do, and a codex called "['', 'Pubblico']" would be no better.
+        "title": iiif_text(manifest.get("label")),
         "shelfmark": "",
         "repository": "",
         "origin": "",
@@ -446,8 +448,8 @@ def iiif_scan(manifest_url: str, width: int) -> dict | None:
         "language": "",
         "material": "",
         "provenance": "",
-        "attribution": strip_html(str(manifest.get("attribution", ""))),
-        "licence": strip_html(str(manifest.get("license", manifest.get("rights", "")))),
+        "attribution": iiif_text(manifest.get("attribution")),
+        "licence": iiif_text(manifest.get("license") or manifest.get("rights")),
         "pages": pages,
     }
 
@@ -483,6 +485,28 @@ def _v3_service(canvas: dict) -> str:
                     if identifier:
                         return str(identifier)
     return ""
+
+
+def iiif_text(value: object) -> str:
+    """A IIIF metadata value as one readable line, whatever shape it arrives in.
+
+    The specification lets attribution and rights be a string, a language map,
+    or an array of either, and libraries use all of them: the Laurenziana sends
+    ``["", "Pubblico"]``, which ``str()`` renders as ``['', 'Pubblico']`` —
+    brackets, quotes and a stray comma, shown to a reader in a sidebar as though
+    that were the library's own wording.
+
+    Empty parts are dropped rather than joined, because that array's first entry
+    is one and a line beginning "; " is not a statement of terms.
+    """
+    if isinstance(value, list):
+        parts = [iiif_text(item) for item in value]
+        return "; ".join(part for part in parts if part)
+    if isinstance(value, dict):
+        return _v3_label(value)
+    if value is None:
+        return ""
+    return strip_html(str(value))
 
 
 def _v3_label(label: object) -> str:
@@ -671,6 +695,24 @@ def build(rows: list[dict]) -> list[dict]:
             # Twenty-six entries all called "Hebrew translation of the New
             # Testament" is a list nobody can choose a book out of.
             print(f"  warning: {url} {folios} has no title of its own, so it takes the codex's")
+
+        # Given where the record does not carry one. A bare IIIF manifest states
+        # no shelfmark at all — Gallica's says only "BnF. Département des
+        # Manuscrits. Hébreu 132", as a title — and a scan with no shelfmark is
+        # one a reader cannot file: it is what tells two manuscripts of the same
+        # book apart, and what the picker heads a manuscript's books with.
+        shelfmark = (row.get("shelfmark") or "").strip()
+        if shelfmark:
+            entry["shelfmark"] = shelfmark
+
+        # Where a library states its terms somewhere a manifest has no field
+        # for. The Bodleian puts them in the attribution line and leaves
+        # `license` unset; the Laurenziana states an access status and no terms
+        # at all. This is for copying out what the library says — not for
+        # deciding what it ought to have said, which is nobody's to decide here.
+        licence = (row.get("licence") or "").strip()
+        if licence:
+            entry["licence"] = licence
 
         # Lifted out and put back so the folio list stays the last key of the
         # entry. It is hundreds of lines long, and anything after it would be
