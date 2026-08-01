@@ -4037,7 +4037,7 @@
    ]
   },
   {
-   "id": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json",
+   "id": "gallica-bnf-fr-iiif-ark-12148-btv1b10720220s",
    "title": "Matthew",
    "shelfmark": "BnF Hébreu 132",
    "repository": "",
@@ -4300,7 +4300,7 @@
    ]
   },
   {
-   "id": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json",
+   "id": "iiif-bodleian-ox-ac-uk-iiif-manifest-44cd9a82-b931-4187-a114-3d3a044feac6",
    "title": "Even Bohan (Shem Tov's Hebrew Matthew, gate 12 from f. 171v)",
    "shelfmark": "Bodleian, MS. Oppenheim Add. 4° 72",
    "repository": "",
@@ -6108,7 +6108,7 @@
    ]
   },
   {
-   "id": "https://cdm21059.contentdm.oclc.org/iiif/plutei:318709/manifest.json",
+   "id": "cdm21059-contentdm-oclc-org-iiif-plutei-318709",
    "title": "Even Bohan (Shem Tov's Hebrew Matthew), copied 1385",
    "shelfmark": "Laurenziana, Plut. 2.17",
    "repository": "",
@@ -8306,7 +8306,7 @@
    ]
   },
   {
-   "id": "https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json",
+   "id": "digi-vatlib-it-iiif-mss-vat-ebr-101",
    "title": "Hebrew Matthew, ascribed to Shem Tov's Even Bohan",
    "shelfmark": "Vat. ebr. 101",
    "repository": "",

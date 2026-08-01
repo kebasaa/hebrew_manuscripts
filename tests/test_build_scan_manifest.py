@@ -487,6 +487,39 @@ class BothIIIFVersionsAreRead(unittest.TestCase):
     def test_a_manifest_that_could_not_be_read_is_not_an_entry(self) -> None:
         self.assertIsNone(self._scan({}))
 
+    def test_the_address_becomes_an_id_that_can_be_a_filename(self) -> None:
+        # The library names nothing, so the address has to serve — but not as
+        # it stands: "images/https://gallica.bnf.fr/…-0001.jpg" is refused by
+        # Milah's archive writer, which pinned a transcriber to folio one.
+        identifier = build_scan_manifest.iiif_id(
+            "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json"
+        )
+        self.assertEqual(identifier, "gallica-bnf-fr-iiif-ark-12148-btv1b10720220s")
+
+    def test_two_manuscripts_at_one_library_keep_their_own_ids(self) -> None:
+        # The whole address is folded in rather than whichever part looks
+        # distinctive: "looks distinctive" is a guess, and two manuscripts that
+        # agreed on the guess would come back as one manuscript.
+        first = build_scan_manifest.iiif_id("https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json")
+        second = build_scan_manifest.iiif_id("https://digi.vatlib.it/iiif/MSS_Vat.ebr.102/manifest.json")
+        self.assertNotEqual(first, second)
+
+    def test_an_address_with_no_manifest_suffix_is_still_an_id(self) -> None:
+        self.assertEqual(
+            build_scan_manifest.iiif_id("https://example.org/iiif/codex-7"),
+            "example-org-iiif-codex-7",
+        )
+
+    def test_a_manifest_named_for_its_manuscript_does_not_trail_the_word_json(self) -> None:
+        # The Bodleian ends with the manuscript's own uuid and ".json" rather
+        # than with "/manifest.json", so stripping only the latter left an id
+        # ending "-json".
+        identifier = build_scan_manifest.iiif_id(
+            "https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931.json"
+        )
+        self.assertFalse(identifier.endswith("json"), identifier)
+        self.assertTrue(identifier.endswith("44cd9a82-b931"), identifier)
+
     def test_terms_given_as_a_list_are_not_printed_as_one(self) -> None:
         # The Laurenziana sends ["", "Pubblico"]. Passed through str() that
         # reaches a reader as ['', 'Pubblico'] — brackets, quotes and a stray
@@ -811,6 +844,21 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
             self.assertTrue(scan["id"], scan)
             self.assertTrue(scan["title"], scan["id"])
             self.assertTrue(scan["pages"], scan["id"])
+
+    def test_every_id_can_be_a_name_inside_an_archive(self) -> None:
+        # An id is not only a key. Milah writes it into the name of every folio
+        # inside a saved transcription, and a name carrying "https://" is
+        # refused by the archive writer — the doubled slash does not survive
+        # being cleaned. That refusal cost a transcriber the whole manuscript:
+        # a folio is committed on the way off it, so a file that cannot be
+        # written is a page that cannot be turned.
+        for scan in self.document["scans"]:
+            for forbidden in ("/", "\\", ":", " ", ".."):
+                self.assertNotIn(
+                    forbidden,
+                    scan["id"],
+                    f"{scan['id']} cannot be part of an archive entry name",
+                )
 
     def test_no_two_scans_share_an_id(self) -> None:
         # Two entries under one id is a catalogue Milah cannot key: it shows one

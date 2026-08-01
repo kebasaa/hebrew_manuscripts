@@ -437,7 +437,7 @@ def iiif_scan(manifest_url: str, width: int) -> dict | None:
                 )
 
     return {
-        "id": manifest_url,
+        "id": iiif_id(manifest_url),
         # Through the same reader as the terms: a title arrives in every shape
         # they do, and a codex called "['', 'Pubblico']" would be no better.
         "title": iiif_text(manifest.get("label")),
@@ -550,6 +550,37 @@ def page_id(label: str) -> str:
     an address, in a filename, in a log line.
     """
     return _NOT_ID.sub("-", label).strip("-").lower()
+
+
+def iiif_id(manifest_url: str) -> str:
+    """An identifier for a manuscript a library gives no identifier for.
+
+    Cambridge and OPenn name their manuscripts and those names become the ids;
+    a bare IIIF manifest names nothing, so the address has to serve. It cannot
+    serve as it stands: an id is not only a key. Milah writes it into the name
+    of every folio inside a saved transcription, and an address makes a name
+    with "https://" in it, which the archive refuses — the double slash does
+    not survive being cleaned, so the file cannot be written, and because a
+    folio is committed on the way off it, the page cannot be turned either.
+    A transcriber is left on folio one with a message about unsafe paths.
+
+    The whole address is folded in rather than whichever part looks
+    distinctive, because "looks distinctive" is a guess and two manuscripts
+    that agreed on the guess would come back as one manuscript. Nothing is
+    lost by the length: this is read by a program, and by anyone who opens a
+    transcription to see which leaf an entry is.
+    """
+    address = manifest_url.split("://", 1)[-1]
+    # Both endings, in this order, because libraries split between them:
+    # Gallica and the Vatican end "/manifest.json", while the Bodleian names the
+    # file for the manuscript's own uuid and ends "<uuid>.json". Stripping only
+    # the first left the Bodleian's id trailing the word "json"; stripping only
+    # the second left the others trailing "manifest". Neither word says which
+    # manuscript this is, and no two manifests differ only by them.
+    for ending in (".json", "/manifest"):
+        if address.endswith(ending):
+            address = address[: -len(ending)]
+    return page_id(address)
 
 
 def label_sample(labels: list[str]) -> str:
