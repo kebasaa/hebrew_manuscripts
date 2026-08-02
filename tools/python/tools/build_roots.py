@@ -31,10 +31,10 @@ all. So:
 * an entry that is its own root is omitted, since it tells the scorer nothing
   the Strong's number did not already.
 
-Usage::
+Usage, run from a milah checkout with this repository beside it::
 
-    python tools/python/tools/build_roots.py
-    python tools/python/tools/build_roots.py --max-hops 1 --max-root-bucket 20
+    python ../hebrew_manuscripts/tools/python/tools/build_roots.py \\
+        --lexicon app/data/hebrew_lexicon.json --output app/data/hebrew_roots.json
 """
 
 from __future__ import annotations
@@ -126,14 +126,12 @@ def build_roots(
 
 
 def main() -> int:
-    repository = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--lexicon", type=Path, default=repository / "app/data/hebrew_lexicon.json"
-    )
-    parser.add_argument(
-        "--output", type=Path, default=repository / "app/data/hebrew_roots.json"
-    )
+    # No default: the lexicon and the app that reads it live in a different
+    # repository from this generator, so there is no relative path to it that
+    # would be correct for every checkout.
+    parser.add_argument("--lexicon", type=Path, required=True)
+    parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--max-hops", type=int, default=DEFAULT_MAX_HOPS)
     parser.add_argument(
         "--max-root-bucket", type=int, default=DEFAULT_MAX_ROOT_BUCKET

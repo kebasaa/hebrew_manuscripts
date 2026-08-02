@@ -27,7 +27,7 @@ from pdf2osis.validate import STRICT_SCHEMA, validate_sloane_records
 
 NS = {"osis": OSIS_NS}
 ROOT = Path(__file__).resolve().parents[1]
-PDF = SLOANE_REV.default_path(ROOT / "tools" / "data" / "00_source_files")
+PDF = SLOANE_REV.default_path(ROOT / "data" / "00_source_files")
 EXPECTED = json.loads(
     (Path(__file__).with_name("fixtures") / "sloane237_expected.json").read_text(
         encoding="utf-8"

@@ -12,7 +12,7 @@ from pdf2osis.osis import OSIS_NS
 from pdf2osis.profiles import JAS, MAT, REV
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "tools" / "data" / "00_source_files"
+SOURCE = ROOT / "data" / "00_source_files"
 
 
 @pytest.mark.parametrize(

@@ -17,9 +17,10 @@ plain-text API serves such a version by default. So this reads the export
 bucket, where the version is a path segment and every file carries its own
 ``license`` field, and it **refuses** any version that is not clearly free.
 
-Usage::
+Usage, run from a milah checkout with this repository beside it::
 
-    python tools/python/tools/build_wordlist.py --out app/data/rabbinic.words.txt
+    python ../hebrew_manuscripts/tools/python/tools/build_wordlist.py \\
+        --out app/data/rabbinic.words.txt
 """
 
 from __future__ import annotations

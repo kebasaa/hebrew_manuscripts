@@ -26,7 +26,7 @@ from pdf2osis.validate import STRICT_SCHEMA, validate_multibook_records
 
 NS = {"osis": OSIS_NS}
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = BSI_HNT.default_path(ROOT / "tools" / "data" / "00_source_files")
+CACHE = BSI_HNT.default_path(ROOT / "data" / "00_source_files")
 
 pytestmark = pytest.mark.skipif(not CACHE.is_file(), reason=f"missing {CACHE}")
 

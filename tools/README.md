@@ -3,9 +3,10 @@
 A reproducible converter turning Hebrew New Testament manuscript PDFs into
 OSIS, and the generators that build the data files Milah reads at run time.
 
-Nothing here is needed to build or run [Milah](../README.md). The editor reads
-this corpus but does not depend on the converter, and the two are developed
-independently.
+Nothing here is needed to build or run Milah, which lives in a sibling
+repository, `milah` (`../../milah` relative to this file, if the two are
+checked out side by side). The editor reads this corpus but does not depend
+on the converter, and the two are developed independently.
 
 ```
 tools/
@@ -64,10 +65,11 @@ manuscript, as in `Rev_CochinOo.1.16.2_hebrew_commented.osis` or
 that names the book's `<div type="book" osisID="…">` and every verse inside it
 (`Rev`, `Jas`, `Matt`, `Luke`, `John`, …), or `NT` for a source spanning the
 whole New Testament in one file. This is *not* USFM: USFM's own 3-letter codes
-are uppercase and fixed-width (`REV`, `JHN`), which is what the C++ app's own
-`libraryFileName()`/`usfmCode()` (`app/src/core/books.cpp`) uses when *it*
-names a file — a deliberate difference between the two tools, not an
-oversight. `<variant>` is `hebrew`, `hebrew_commented` or `translation`. Every
+are uppercase and fixed-width (`REV`, `JHN`), which is what the Milah app's own
+`libraryFileName()`/`usfmCode()` (`app/src/core/books.cpp` in the sibling
+`milah` repository) uses when *it* names a file — a deliberate difference
+between the two tools, not an oversight. `<variant>` is `hebrew`,
+`hebrew_commented` or `translation`. Every
 filename derives from `BookProfile.stem`, so that field is the single place
 the convention lives.
 
@@ -306,14 +308,17 @@ from the publisher.
 
 ## Data-file generators
 
-`tools/python/tools/` builds the files Milah reads from `app/data/` at run time.
-They are run rarely and their output is committed, so a normal build never
-needs them.
+`tools/python/tools/` builds the files Milah reads from its own `app/data/` at
+run time. Milah lives in the sibling `milah` repository, so these write across
+a repo boundary — every command below is run from this repository's root and
+assumes `milah` is checked out beside it, reachable as `../milah` from there.
+They are run rarely and their output is committed to `milah`, so a normal
+Milah build never needs them.
 
 ```powershell
-python tools/python/tools/build_lexicon.py --strongs <…> --wlc <…> --tbesh <…> --out app/data/hebrew_lexicon.json
-python tools/python/tools/build_wordlist.py --out app/data/rabbinic.words.txt
-python tools/python/tools/build_roots.py
+python tools/python/tools/build_lexicon.py --strongs <…> --wlc <…> --tbesh <…> --out ../milah/app/data/hebrew_lexicon.json
+python tools/python/tools/build_wordlist.py --out ../milah/app/data/rabbinic.words.txt
+python tools/python/tools/build_roots.py --lexicon ../milah/app/data/hebrew_lexicon.json --output ../milah/app/data/hebrew_roots.json
 ```
 
 - `build_lexicon.py` — Strong's numbers and the inflected forms they appear as
@@ -321,10 +326,10 @@ python tools/python/tools/build_roots.py
   that is not public domain, CC0 or CC-BY
 - `build_roots.py` — the root index the suggestion checks consult
 
-`build_lexicon.py` mirrors `comparisonKey()` from
-[`app/src/core/tokenize.cpp`](../app/src/core/tokenize.cpp) character for
-character; the two are a join key and must not drift.
+`build_lexicon.py` mirrors `comparisonKey()` from `app/src/core/tokenize.cpp`
+in the `milah` repository character for character; the two are a join key and
+must not drift.
 
 **Sources, licences and what each file covers are documented in
-[`app/data/README.md`](../app/data/README.md)** — including the attribution that
-CC-BY requires and that travels with every build.
+`milah`'s `app/data/README.md`** — including the attribution that CC-BY
+requires and that travels with every build.

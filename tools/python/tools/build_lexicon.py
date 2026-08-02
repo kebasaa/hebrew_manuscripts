@@ -15,9 +15,9 @@ The result is committed as ``app/data/hebrew_lexicon.json`` and compiled into
 the binary as a Qt resource; the raw downloads are not kept. Run it again only
 when the upstream data changes.
 
-Usage::
+Usage, run from a milah checkout with this repository beside it::
 
-    python tools/python/tools/build_lexicon.py \\
+    python ../hebrew_manuscripts/tools/python/tools/build_lexicon.py \\
         --strongs  <dir>/strongs-hebrew-dictionary.js \\
         --wlc      <dir>/wlc \\
         --tbesh    <dir>/tbesh.txt \\
