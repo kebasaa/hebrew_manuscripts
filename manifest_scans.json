@@ -12473,7 +12473,7 @@
    "book": "MAT",
    "source": "https://searcharchives.bl.uk/catalog/032-003313863",
    "folios": "",
-   "unavailable": "Even Bohan by Shem Ṭov Ibn Shapruṭ, 1696, 206 ff. The British Library's own catalogue records the surrogate as \"digital images currently unavailable\" since the 2023 cyberattack — not confirmed never digitised, only not servable now.",
+   "unavailable": "Even Bohan by Shem Ṭov Ibn Shapruṭ, 1696, 206 ff. Digitised and viewable on the British Library's old site as of December 2019 (Wayback Machine snapshot of the viewer link); the Library's own catalogue now records the surrogate as \"digital images currently unavailable\" since the 2023 cyberattack, and its new IIIF platform (bl.digirati.io) does not yet list it. Worth rechecking as the Library's infrastructure recovers.",
    "pages": []
   },
   {

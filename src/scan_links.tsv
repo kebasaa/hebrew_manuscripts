@@ -178,7 +178,7 @@ https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac
 # images currently unavailable" — true as of the 2023 cyberattack, and worth
 # rechecking, since a library recovering its infrastructure is not the same as
 # a manuscript that was never photographed.
-https://searcharchives.bl.uk/catalog/032-003313863	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Add MS 26964		British Library	unavailable	Even Bohan by Shem Ṭov Ibn Shapruṭ, 1696, 206 ff. The British Library's own catalogue records the surrogate as "digital images currently unavailable" since the 2023 cyberattack — not confirmed never digitised, only not servable now.
+https://searcharchives.bl.uk/catalog/032-003313863	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Add MS 26964		British Library	unavailable	Even Bohan by Shem Ṭov Ibn Shapruṭ, 1696, 206 ff. Digitised and viewable on the British Library's old site as of December 2019 (Wayback Machine snapshot of the viewer link); the Library's own catalogue now records the surrogate as "digital images currently unavailable" since the 2023 cyberattack, and its new IIIF platform (bl.digirati.io) does not yet list it. Worth rechecking as the Library's infrastructure recovers.
 # Digital Bodleian lists no record at all under this shelfmark or under "Even
 # Bohan" / "Ibn Shaprut" — a search that does find the Bodleian's other
 # witness, Opp. Add. 4° 72, above.
