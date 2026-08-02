@@ -28,6 +28,19 @@
 #        leaves `license` unset. Copy what the library says. It is not a place
 #        to decide what terms a scan ought to have — a scan whose terms are
 #        unclear is one nobody may use, and inventing them does not change that.
+# repository  overrides a record that states none — every bare IIIF manifest
+#        below leaves "Held at" blank without it.
+# status   empty (normal — url is read as above) or `unavailable`. A manuscript
+#        known to exist but never photographed, or not currently reachable:
+#        Cambridge MS Oo.1.16 has no viewer to copy a link from, and the
+#        British Library's own catalogue calls Add MS 26964's images "currently
+#        unavailable". `url` may be blank, or may hold a plain catalogue page to
+#        learn more from — either way nothing is fetched from it. `title`,
+#        `shelfmark`, `repository` and `note` are supplied by hand, since there
+#        is no record to read them from.
+# note     why an `unavailable` row has nothing to open. Shown to a reader
+#        before they can wonder why the entry is greyed out; a row with none
+#        prints a warning when this file is regenerated.
 #
 # Rows may name one address as often as they like: the library's record is read
 # once per run and each row takes its own slice of it.
@@ -37,7 +50,7 @@
 # holds, so naming the manuscript again in every title prints it twice.
 #
 # Regenerate after editing:  python src/build_scan_manifest.py
-url	title	book	width	folios	shelfmark	licence
+url	title	book	width	folios	shelfmark	licence	repository	status	note
 # Cambridge MS Oo.1.32 — one binding of 328 images holding twenty-six New
 # Testament books, so one row per book rather than one entry nobody can choose
 # Mark out of. The whole codex is kept as well, first, because a reader may want
@@ -80,13 +93,67 @@ https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Jude	JUD		160r..160v
 # Revelation, and the manuscript REV_Sloane237_hebrew_commented.osis transcribes.
 https://openn.library.upenn.edu/Data/0047/html/sloane_ms_237.html		REV
 #
+# Vat. ebr. 530, part 1, fragment 11 — folios 1r–2v of a 327-canvas composite
+# volume of unrelated fragments bound together, offered as this one fragment
+# and not the whole: the manuscript LUK_Ebr530_hebrew_commented.osis and
+# JOH_Ebr530_hebrew_commented.osis transcribe. Canvas labels here carry the
+# fragment number in brackets — "1r.[11.fs.0000]" — which is what tells
+# fragment 11's four pages from the identically-numbered "1r" of every other
+# fragment in the volume. The Vatican states no reuse licence, the same as
+# Vat. ebr. 101 above.
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.1/manifest.json	Luke 1:1–35; John 1:1–13 (fragment 11)			1r.[11.fs.0000]..2v.[11.fs.0000]	Vat. ebr. 530	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+#
+# Gaster Hebrew MS 1616 (The John Rylands Library, Manchester) — a second full
+# witness of the same family as MS Oo.1.32: Thomas Yeates's exact copy of it,
+# made in 1810 in clean square script rather than Oo.1.32's harder cursive
+# hand. Ranges are the manuscript's own table of contents (Manchester's record
+# calls it "logicalStructures"), checked against the page list position by
+# position, not interpolated. Revelation is included — item 30 of 29 named
+# items, "these mysteries revealed by John" — and so, per the digitised
+# structure, are Acts through Ephesians (items 7–12). This directly
+# contradicts a pencil note on f. [427] in Gaster's own handlist claiming
+# those books "here omitted"; the note is recorded, not resolved, but a
+# transcriber works from the images actually on screen, which is what this
+# offers.
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Matthew	MAT		1..64	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Mark	MRK		65..103	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Luke	LUK		104..171	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	John	JOH		172..228	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Acts	ACT		[229]..[312]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Romans	ROM		[313]..[343]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	1 Corinthians	1CO		[345]..[377]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	2 Corinthians	2CO		[378]..[401]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Galatians	GAL		[403]..[414]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Ephesians	EPH		[415]..[425]	Gaster Hebrew MS 1616
+# [429] is a one-page index to the remaining epistles, not a book of its own.
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Philippians	PHP		[431]..[438]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Colossians	COL		[438]..[444]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	1 Thessalonians	1TH		[444]..[450]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	2 Thessalonians	2TH		[451]..[454]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	1 Timothy	1TI		[454]..[462]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	2 Timothy	2TI		[462]..[468]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Titus	TIT		[469]..[472]	Gaster Hebrew MS 1616
+# Philemon ends and Hebrews begins on the same leaf, [473], as 1 Timothy and 2
+# Thessalonians do in MS Oo.1.32 above. The overlap is the manuscript's.
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Philemon	PHM		[473]..[474]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Hebrews	HEB		[473]..[495]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	James	JAS		[496]..[503]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	1 Peter	1PE		[504]..[512]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	2 Peter	2PE		[512]..[517]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	1 John	1JO		[518]..[526]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	2 John	2JO		[527]..[528]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	3 John	3JO		[528]..[529]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Jude	JUD		[529]..[531]	Gaster Hebrew MS 1616
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Revelation	REV		[531]..[563]	Gaster Hebrew MS 1616
+#
 # The du Tillet Matthew, a witness of its own: obtained from the Jews of Rome in
 # 1553 and independent of both the Cochin and the Shem Tov traditions. Gallica
 # publishes no record beyond its IIIF manifest, so most of this entry's fields
 # come back empty and its title and shelfmark are given here rather than taken.
 # Every one of its forty-nine canvases is labelled NP — non paginé — which is why
 # it carries no folios range: there are no folio labels here to name one with.
-https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json	Matthew	MAT			BnF Hébreu 132
+https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json	Matthew	MAT			BnF Hébreu 132		Bibliothèque nationale de France
 #
 # Shem Tov's Hebrew Matthew, the oldest of the three, in the twelfth gate of the
 # Even Bohan. Gate 12 begins on f. 171v of this copy, so the whole codex is
@@ -96,17 +163,34 @@ https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json	Matthew	MAT	
 # The Bodleian states its terms in the manifest's attribution line and leaves
 # `license` unset, which is why they are given here — copied from that line, not
 # decided.
-https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json	Even Bohan (Shem Tov's Hebrew Matthew, gate 12 from f. 171v)	MAT			Bodleian, MS. Oppenheim Add. 4° 72	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.
+https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json	Even Bohan (Shem Tov's Hebrew Matthew, gate 12 from f. 171v)	MAT			Bodleian, MS. Oppenheim Add. 4° 72	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
 #
-# Not here, and why — so that nobody spends an afternoon rediscovering it.
-# British Library Add MS 26964 is the best witness and is out of copyright, but
-# the British Library has served no manuscript since the 2023 cyberattack: its
-# IIIF endpoint does not resolve and its catalogue answers 500. Bodleian MS.
-# Michael 119 is not digitised at all. Leiden's Even Bohan is Or. 4766 (Warner
-# 28), not the Or. 4728 some lists give — that is a translation of al-Zahrawi's
-# surgery by Shem Tov ben Isaac of Tortosa, a different man — and its manifest
-# is valid but carries no images. JTS MS. 2426 is catalogued but has no public
-# IIIF endpoint.
+# Known but with nothing to open — offered anyway, so a transcriber sees these
+# exist rather than having to already know to look for them. Each is the best
+# remaining Even Bohan witness after the four above; none is guessed at, and
+# each note below is what its own library or record states, not an inference.
+# Columns from here on: url title book width folios shelfmark licence
+# repository status note.
+#
+# The best witness of all, and out of copyright: 206 folios, dated 1696, one
+# of the four purest texts and Howard's base manuscript for 1:1–23:22. The
+# British Library's own catalogue record states its surrogate is "digital
+# images currently unavailable" — true as of the 2023 cyberattack, and worth
+# rechecking, since a library recovering its infrastructure is not the same as
+# a manuscript that was never photographed.
+https://searcharchives.bl.uk/catalog/032-003313863	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Add MS 26964		British Library	unavailable	Even Bohan by Shem Ṭov Ibn Shapruṭ, 1696, 206 ff. The British Library's own catalogue records the surrogate as "digital images currently unavailable" since the 2023 cyberattack — not confirmed never digitised, only not servable now.
+# Digital Bodleian lists no record at all under this shelfmark or under "Even
+# Bohan" / "Ibn Shaprut" — a search that does find the Bodleian's other
+# witness, Opp. Add. 4° 72, above.
+	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			MS. Michael 119		Bodleian Libraries, University of Oxford	unavailable	Not digitised. Digital Bodleian's Hebrew collection and a manuscript search return no record under this shelfmark, Even Bohan, or Ibn Shaprut.
+# The NLI/Ktiv manifest for this shelfmark resolves and is valid IIIF, which is
+# why it is not simply absent the way Michael 119 is: it names the manuscript
+# ("אבן בחן") and states zero canvases — a published record of nothing to
+# fetch, not the absence of a record.
+https://iiif.nli.org.il/IIIFv21/DOCID/PNX_MANUSCRIPTS990000883540205171/manifest	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Or. 4766 (Warner 28)		Leiden University Library	unavailable	NLI/Ktiv catalogues this as Leiden Or. 4766 = Ms. Warn. 28, with the Gospel portion at pp. 413–463, but its own IIIF manifest publishes zero canvases. Leiden's own Digital Collections has no separate record for it.
+# Marx's description survives in JTS's own finding aid; Howard used this
+# manuscript for the part Add MS 26964 lacks, Mt 23:23–28:20.
+	Even Bohan (Shem Tov's Hebrew Matthew), Mt 23:23–28:20	MAT			MS. 2426		Jewish Theological Seminary	unavailable	Catalogued in JTS's Primo discovery layer alongside MSS 2209, 2234, 2279, 2451 and 2228, with a full Marx description, but no delivery link and no public IIIF endpoint.
 #
 # Two further copies, both with terms weaker than the Bodleian's. What each
 # library states is recorded verbatim below, restrictions included: the licence
@@ -116,14 +200,23 @@ https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac
 # Plut. 2.17 was copied in Tortona in 1385 and is the oldest of them, rated by
 # Niclós above the base text of Howard's edition. Its record states an access
 # status and no terms of reuse at all.
-https://cdm21059.contentdm.oclc.org/iiif/plutei:318709/manifest.json	Even Bohan (Shem Tov's Hebrew Matthew), copied 1385	MAT			Laurenziana, Plut. 2.17	Biblioteca Medicea Laurenziana. Diritti di accesso: Pubblico. The library states an access status and no terms of reuse.
+https://cdm21059.contentdm.oclc.org/iiif/plutei:318709/manifest.json	Even Bohan (Shem Tov's Hebrew Matthew), copied 1385	MAT			Laurenziana, Plut. 2.17	Biblioteca Medicea Laurenziana. Diritti di accesso: Pubblico. The library states an access status and no terms of reuse.	Biblioteca Medicea Laurenziana
 # Ascribed rather than named: the manuscript is certainly a Hebrew Matthew — Mt
 # 17:22–18:1 reads plainly on f. 17v — but the Vatican's own record calls it
 # only "Biblia. N.T. Evang. sec. Matthaeum. Ebraico" and names neither Shem Tov
 # nor the Even Bohan. The attribution to Shem Tov is the literature's, not the
 # library's, and the title says so rather than quietly asserting it.
-https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json	Hebrew Matthew, ascribed to Shem Tov's Even Bohan	MAT			Vat. ebr. 101	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json	Hebrew Matthew, ascribed to Shem Tov's Even Bohan	MAT			Vat. ebr. 101	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
 #
 # Beware also of three unrelated works of the same title, all with manifests:
 # Bodleian Opp. Add. 8° 28 and Munich Cod.hebr. 338 are Kalonymos ben
 # Kalonymos's satire, and Munich Cod.hebr. 55 is a grammar.
+#
+# Cambridge MS Oo.1.16 — the manuscript REV_CochinOo.1.16.2_hebrew_commented.osis
+# transcribes, and the second half of the Buchanan acquisition alongside MS
+# Oo.1.32, above. It is not on Cambridge Digital Library: searching CUDL for
+# "Oo.1.16" returns exactly one result, and that one — MS Add. 4541 — is an
+# unrelated 12th-century Greek Matthew fragment reused as parchment scrap in
+# this manuscript's own binding, not Oo.1.16 itself. Described only in print
+# (Reif 1997, no. 917; Schechter, JQR 6 (1893), 144–145).
+	Revelation	REV			MS Oo.1.16		Cambridge University Library	unavailable	Not on Cambridge Digital Library. A CUDL search for "Oo.1.16" finds only MS Add. 4541 — a Greek Matthew fragment from its own binding waste, not the manuscript. Described in print: Reif, Hebrew Manuscripts at Cambridge University Library (1997), no. 917.

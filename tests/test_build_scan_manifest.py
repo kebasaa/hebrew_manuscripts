@@ -63,6 +63,28 @@ CUDL_RECORD = {
     ],
 }
 
+#: Cut from the real answer for Gaster Hebrew MS 1616 — the same shape as
+#: CUDL_RECORD but for a different host, which is the whole point of the class
+#: this fixture serves: proof that one reader was always going to be enough.
+MANCHESTER_RECORD = {
+    "descriptiveMetadata": [
+        {
+            "title": {"displayForm": "New Testament in Hebrew translation"},
+            "shelfLocator": {"displayForm": "Gaster Hebrew MS 1616"},
+            "physicalLocation": {"displayForm": "The John Rylands Library"},
+            "material": {"displayForm": "Paper"},
+            "languages": ["Hebrew"],
+            "creations": {
+                "value": [{"dateDisplay": {"displayForm": "1810"}}]
+            },
+            "downloadImageRights": "… (CC BY-NC 3.0)",
+        }
+    ],
+    "pages": [
+        {"sequence": 1, "label": "Front_cover", "IIIFImageURL": "MS-GASTER-HEBREW-01616-000-00001"},
+    ],
+}
+
 #: Cut from the real TEI for Sloane MS 237, keeping every shape that has caught
 #: a parser out: a title element that describes the record rather than the
 #: manuscript, an origin date carrying only attributes, no origin place at all,
@@ -365,6 +387,45 @@ class TheCambridgeRecordIsReadIntoAnEntry(unittest.TestCase):
         build_scan_manifest.fetch_json = lambda url: CUDL_RECORD
         wider = build_scan_manifest.cudl_scan("MS-OO-00001-00032", 2000)
         self.assertIn("/full/2000,/", wider["pages"][0]["image"])
+
+
+class ManchesterIsReadByTheSameReaderAsCambridge(unittest.TestCase):
+    """Discovered rather than assumed: the two turned out to run one platform.
+
+    Not a second copy of TheCambridgeRecordIsReadIntoAnEntry — that class is
+    the proof the shared reader still behaves exactly as it did before it had
+    a second caller. This one is the proof that a *different* host reaches it.
+    """
+
+    def setUp(self) -> None:
+        self._real = build_scan_manifest.fetch_json
+        build_scan_manifest.fetch_json = lambda url: MANCHESTER_RECORD
+        self.entry = build_scan_manifest.manchester_scan("MS-GASTER-HEBREW-01616", 1024)
+
+    def tearDown(self) -> None:
+        build_scan_manifest.fetch_json = self._real
+
+    def test_the_plain_fields_read_the_same_shape(self) -> None:
+        self.assertEqual(self.entry["title"], "New Testament in Hebrew translation")
+        self.assertEqual(self.entry["shelfmark"], "Gaster Hebrew MS 1616")
+        self.assertEqual(self.entry["repository"], "The John Rylands Library")
+
+    def test_the_image_host_is_manchesters_own(self) -> None:
+        # The one place the two platforms actually differ: Manchester's image
+        # host is singular, "image", not the "images" Cambridge answers to.
+        self.assertEqual(
+            self.entry["pages"][0]["image"],
+            "https://image.digitalcollections.manchester.ac.uk/iiif/"
+            "MS-GASTER-HEBREW-01616-000-00001.jp2/full/1024,/0/default.jpg",
+        )
+
+    def test_a_manchester_viewer_link_is_recognised(self) -> None:
+        source, item = build_scan_manifest.parse_link(
+            "https://www.digitalcollections.manchester.ac.uk/view/"
+            "MS-GASTER-HEBREW-01616/1"
+        )
+        self.assertEqual(source, "manchester")
+        self.assertEqual(item, "MS-GASTER-HEBREW-01616")
 
 
 class TheOpennDescriptionIsReadIntoAnEntry(unittest.TestCase):
@@ -788,6 +849,93 @@ class OneRecordServesEveryRowThatNamesIt(unittest.TestCase):
         self.assertEqual(len(entries), 1)
 
 
+class AManuscriptWithNothingToFetchIsOfferedAnyway(unittest.TestCase):
+    """A row may say ``unavailable`` instead of naming an address.
+
+    Cambridge MS Oo.1.16 has no viewer to copy a link from. Nothing here is
+    resolved, so these tests never touch ``fetch_json`` — the point is what
+    ``build()`` does with a row that has no url at all.
+    """
+
+    def _build(self, rows: list[dict]) -> list[dict]:
+        noise = io.StringIO()
+        with contextlib.redirect_stdout(noise):
+            entries = build_scan_manifest.build(rows)
+        self.said = noise.getvalue()
+        return entries
+
+    def test_a_shelfmark_alone_is_enough_to_be_offered(self) -> None:
+        entries = self._build(
+            [{"status": "unavailable", "shelfmark": "MS Oo.1.16", "note": "Not on CUDL."}]
+        )
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]["shelfmark"], "MS Oo.1.16")
+        # Falls back to the shelfmark: nothing else names the manuscript.
+        self.assertEqual(entries[0]["title"], "MS Oo.1.16")
+
+    def test_it_carries_no_pages_and_says_why(self) -> None:
+        entry = self._build(
+            [{"status": "unavailable", "title": "Even Bohan", "note": "Not digitised."}]
+        )[0]
+        self.assertEqual(entry["pages"], [])
+        self.assertEqual(entry["unavailable"], "Not digitised.")
+
+    def test_nothing_with_neither_a_title_nor_a_shelfmark_can_be_shown(self) -> None:
+        entries = self._build([{"status": "unavailable", "note": "Not digitised."}])
+        self.assertEqual(entries, [])
+        self.assertIn("skipped", self.said)
+
+    def test_a_url_is_kept_as_something_to_learn_more_from_not_fetched(self) -> None:
+        real = build_scan_manifest.fetch_json
+        build_scan_manifest.fetch_json = lambda url: (_ for _ in ()).throw(
+            AssertionError("an unavailable row must never be fetched")
+        )
+        try:
+            entry = self._build(
+                [
+                    {
+                        "status": "unavailable",
+                        "shelfmark": "Add MS 26964",
+                        "url": "https://searcharchives.bl.uk/catalog/032-003313863",
+                        "note": "Images currently unavailable.",
+                    }
+                ]
+            )[0]
+        finally:
+            build_scan_manifest.fetch_json = real
+        self.assertEqual(entry["source"], "https://searcharchives.bl.uk/catalog/032-003313863")
+
+    def test_a_note_missing_is_a_warning_not_a_refusal(self) -> None:
+        entries = self._build([{"status": "unavailable", "shelfmark": "MS Oo.1.16"}])
+        self.assertEqual(len(entries), 1)
+        self.assertIn("warning", self.said)
+        self.assertIn("no note", self.said)
+
+    def test_two_unavailable_rows_naming_the_same_manuscript_are_one_entry(self) -> None:
+        entries = self._build(
+            [
+                {"status": "unavailable", "shelfmark": "MS Oo.1.16", "note": "First."},
+                {"status": "unavailable", "shelfmark": "MS Oo.1.16", "note": "Second."},
+            ]
+        )
+        self.assertEqual(len(entries), 1)
+
+    def test_an_unavailable_id_cannot_collide_with_an_ordinary_scans(self) -> None:
+        # A resolved scan and a hand-written stub must not be able to share an
+        # id even if a shelfmark happened to match a real one's identifier.
+        entry = self._build(
+            [{"status": "unavailable", "shelfmark": "x", "note": "n"}]
+        )[0]
+        self.assertTrue(entry["id"].startswith("unavailable-"))
+
+    def test_status_is_read_case_and_space_insensitively(self) -> None:
+        for written in ("unavailable", "Unavailable", " UNAVAILABLE "):
+            entries = self._build(
+                [{"status": written, "shelfmark": "x", "note": "n"}]
+            )
+            self.assertEqual(len(entries), 1, written)
+
+
 class TheLinkListIsReadAsWritten(unittest.TestCase):
     """It is edited by hand, so it has to tolerate being annotated."""
 
@@ -797,6 +945,10 @@ class TheLinkListIsReadAsWritten(unittest.TestCase):
         rows = build_scan_manifest.read_links(self.LINKS)
         self.assertTrue(rows, f"no rows read from {self.LINKS}")
         for row in rows:
+            # An unavailable row is the one kind that legitimately has no
+            # address: there is nothing to fetch, only a manuscript to name.
+            if (row.get("status") or "").strip().lower() == "unavailable":
+                continue
             self.assertTrue(row.get("url", "").startswith("http"), row)
 
     def test_every_range_in_the_list_names_two_ends(self) -> None:
@@ -843,7 +995,12 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
         for scan in self.document["scans"]:
             self.assertTrue(scan["id"], scan)
             self.assertTrue(scan["title"], scan["id"])
-            self.assertTrue(scan["pages"], scan["id"])
+            # Empty pages is refused everywhere except the one place it is the
+            # point: a manuscript recorded as unavailable, which says so.
+            self.assertTrue(
+                scan["pages"] or scan.get("unavailable"),
+                f"{scan['id']} has no pages and does not say why",
+            )
 
     def test_every_id_can_be_a_name_inside_an_archive(self) -> None:
         # An id is not only a key. Milah writes it into the name of every folio
@@ -893,10 +1050,31 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
 
     def test_the_terms_are_recorded(self) -> None:
         # The images stay on the library's server under the library's terms, so
-        # a scan whose terms have been lost is a scan nobody may use.
+        # a scan whose terms have been lost is a scan nobody may use. Not asked
+        # of an unavailable entry: there is no image to state terms for.
         for scan in self.document["scans"]:
+            if scan.get("unavailable"):
+                continue
             self.assertTrue(scan["licence"], f"{scan['id']} states no terms")
             self.assertTrue(scan["attribution"], f"{scan['id']} credits nobody")
+
+    def test_every_scan_says_whether_it_is_unavailable(self) -> None:
+        # Always present, even when empty, the same discipline "folios" is
+        # held to: a key a reader has to check for is a key that gets forgotten.
+        for scan in self.document["scans"]:
+            self.assertIn("unavailable", scan, scan["id"])
+
+    def test_an_unavailable_scan_explains_itself_and_has_nothing_to_open(self) -> None:
+        for scan in self.document["scans"]:
+            if not scan.get("unavailable"):
+                continue
+            self.assertEqual(scan["pages"], [], scan["id"])
+            self.assertTrue(scan["shelfmark"] or scan["title"], scan["id"])
+            self.assertNotEqual(
+                scan["unavailable"],
+                "Not digitised; no scan has been published.",
+                f"{scan['id']} carries only the generic fallback note",
+            )
 
 
 if __name__ == "__main__":

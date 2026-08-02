@@ -56,6 +56,25 @@ manifest, which covers the Bodleian, the Vatican, e-codices and the National
 Library of Israel; a library with its own richer record — as Cambridge has —
 deserves its own function, because IIIF metadata is written for a viewer to
 display rather than for a program to read.
+
+Not always a new function, though: Manchester turned out to run the same
+platform Cambridge does, discovered only by reading its record and finding the
+same shape. ``Platform`` and ``platform_scan`` are what that led to — check
+whether a new host is already one of these before writing a fourth reader.
+
+Known but never photographed
+-----------------------------
+
+A row may set ``status`` to ``unavailable`` instead of naming an address. There
+is nothing to fetch — Cambridge MS Oo.1.16 has no viewer to copy a link from,
+and the British Library's own catalogue records Add MS 26964's images as
+"currently unavailable" — so the row supplies by hand what a resolver would
+otherwise have read: ``title``, ``shelfmark``, ``repository``, and a ``note``
+saying why there is nothing here yet. The entry this produces carries no pages,
+which the shape everywhere else in this file treats as an error to skip; here
+it is the point, marked by a non-empty ``unavailable`` field so Milah can tell
+the two apart and offer the manuscript anyway, disabled, rather than making it
+invisible until somebody already knows to look for it.
 """
 
 from __future__ import annotations
@@ -69,6 +88,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from typing import NamedTuple
 
 #: Named rather than left to the default, because a default one gets blocked.
 #: Cambridge bot-filters unidentified clients — its own help pages answer 403 —
@@ -82,14 +102,43 @@ USER_AGENT = "milah-build"
 #: is opened, so it is also a size worth waiting for.
 DEFAULT_WIDTH = 1024
 
-#: Cambridge's viewer address, which is what a reader copies out of the browser.
+#: The viewer address, which is what a reader copies out of the browser. Shared
+#: by every library on this platform: Manchester's viewer answers to the same
+#: /view/{item} shape Cambridge's does, because it is the same platform.
 CUDL_VIEW = re.compile(r"/view/([^/?#]+)")
-#: Its record, which is not the IIIF manifest. The manifest carries the same
-#: facts with HTML and viewer-internal onclick handlers wrapped around them; this
-#: gives each field as a plain string, and the dates machine-readable besides.
-CUDL_RECORD = "https://services.cudl.lib.cam.ac.uk/v1/metadata/json/{item}"
-#: Where the image server keeps a page, given the identifier the record names.
-CUDL_IMAGE = "https://images.lib.cam.ac.uk/iiif/{image}.jp2"
+
+
+class Platform(NamedTuple):
+    """Where one digital-library platform keeps its record and its images.
+
+    Cambridge and the John Rylands Library in Manchester turned out, on
+    inspection, to run the identical software: the same JSON shape from
+    ``descriptiveMetadata``/``pages`` down to the two-part rights split, the
+    same viewer address, even the same field names. Only the host differs, so
+    one reader serves both rather than carrying two records that are nearly the
+    same and drifting apart the first time one of them changes a field.
+    """
+
+    #: Its record, which is not the IIIF manifest. The manifest carries the same
+    #: facts with HTML and viewer-internal onclick handlers wrapped around them;
+    #: this gives each field as a plain string, and the dates machine-readable
+    #: besides.
+    record: str
+    #: Where the image server keeps a page, given the identifier the record
+    #: names.
+    image: str
+
+
+CAMBRIDGE = Platform(
+    record="https://services.cudl.lib.cam.ac.uk/v1/metadata/json/{item}",
+    image="https://images.lib.cam.ac.uk/iiif/{image}.jp2",
+)
+#: The image host is singular — "image", not "images" — which is the one place
+#: the two platforms actually differ rather than merely being hosted apart.
+MANCHESTER = Platform(
+    record="https://services.digitalcollections.manchester.ac.uk/v1/metadata/json/{item}",
+    image="https://image.digitalcollections.manchester.ac.uk/iiif/{image}.jp2",
+)
 
 #: OPenn publishes no API at all: a manuscript is a directory of static files on
 #: an Apache server, and the TEI beside them is the only thing that says which of
@@ -238,6 +287,14 @@ def parse_link(url: str) -> tuple[str, str]:
             return "cudl", found.group(1)
         return "", ""
 
+    if host.endswith("digitalcollections.manchester.ac.uk"):
+        # The same /view/{item} shape Cambridge's viewer uses, because it is
+        # the same platform.
+        found = CUDL_VIEW.search(parsed.path)
+        if found:
+            return "manchester", found.group(1)
+        return "", ""
+
     # Before the IIIF fallback below, which would otherwise never be reached for
     # OPenn but would be the wrong reader if its paths ever gained the word.
     if host.endswith(OPENN_HOST):
@@ -254,9 +311,13 @@ def parse_link(url: str) -> tuple[str, str]:
     return "", ""
 
 
-def cudl_scan(item: str, width: int) -> dict | None:
-    """One entry from Cambridge's own record of a manuscript."""
-    record = fetch_json(CUDL_RECORD.format(item=item))
+def platform_scan(item: str, width: int, platform: Platform) -> dict | None:
+    """One entry from a record published by the shared platform.
+
+    Cambridge and Manchester alike: see ``Platform`` for why this is one
+    function rather than two nearly-identical ones.
+    """
+    record = fetch_json(platform.record.format(item=item))
     if not record:
         return None
 
@@ -274,7 +335,7 @@ def cudl_scan(item: str, width: int) -> dict | None:
             {
                 "n": int(page.get("sequence") or len(pages) + 1),
                 "label": strip_html(str(page.get("label", ""))),
-                "image": image_url(CUDL_IMAGE.format(image=identifier), width),
+                "image": image_url(platform.image.format(image=identifier), width),
             }
         )
 
@@ -292,17 +353,28 @@ def cudl_scan(item: str, width: int) -> dict | None:
         "language": strip_html(language),
         "material": display_form(metadata.get("material")),
         "provenance": display_form(first_value(metadata.get("provenances"))),
-        # A credit line, not a rights statement. Cambridge splits rights in two:
-        # displayImageRights covers its own zooming viewer and reads "All rights
-        # reserved", while downloadImageRights covers fetching an image through
-        # the Image API — which is what Milah does, and which is CC BY-NC. The
-        # display terms are deliberately not recorded: they govern a viewer
-        # nobody here uses, and printing "All rights reserved" beside a folio
-        # fetched under a Creative Commons licence would misstate both.
+        # A credit line, not a rights statement. This platform splits rights in
+        # two: displayImageRights covers its own zooming viewer and reads "All
+        # rights reserved", while downloadImageRights covers fetching an image
+        # through the Image API — which is what Milah does, and which is
+        # CC BY-NC. The display terms are deliberately not recorded: they
+        # govern a viewer nobody here uses, and printing "All rights reserved"
+        # beside a folio fetched under a Creative Commons licence would
+        # misstate both.
         "attribution": f"Provided by {repository}" if repository else "",
         "licence": strip_html(str(metadata.get("downloadImageRights", ""))),
         "pages": pages,
     }
+
+
+def cudl_scan(item: str, width: int) -> dict | None:
+    """Cambridge's own record of a manuscript."""
+    return platform_scan(item, width, CAMBRIDGE)
+
+
+def manchester_scan(item: str, width: int) -> dict | None:
+    """The John Rylands Library's own record of a manuscript."""
+    return platform_scan(item, width, MANCHESTER)
 
 
 def openn_scan(identifier: str, width: int) -> dict | None:
@@ -648,6 +720,57 @@ def folio_range(pages: list[dict], folios: str) -> tuple[list[dict], str]:
     return [dict(page) for page in pages[first : last + 1]], ""
 
 
+def unavailable_entry(row: dict, given: set[str]) -> dict | None:
+    """A stub entry for a manuscript known to exist with nothing to fetch.
+
+    Everything a resolver would otherwise have read is supplied by hand:
+    Cambridge MS Oo.1.16 has no viewer address to copy, and the British
+    Library's own catalogue calls Add MS 26964's images "currently
+    unavailable" — there being nothing to ask for is the point, not something
+    a URL column can name.
+
+    None when the row cannot even be shown — no title and no shelfmark is a
+    manuscript nobody could choose from a list — or when its id collides with
+    one already given out. Both are printed by the caller, not here, so every
+    refusal in a run reads in the same voice.
+    """
+    title = (row.get("title") or "").strip()
+    shelfmark = (row.get("shelfmark") or "").strip()
+    identity = shelfmark or title
+    if not identity:
+        return None
+
+    entry_id = f"unavailable-{page_id(identity)}"
+    if entry_id in given:
+        return None
+    given.add(entry_id)
+
+    note = (row.get("note") or "").strip()
+    return {
+        "id": entry_id,
+        "title": title or shelfmark,
+        "shelfmark": shelfmark,
+        "repository": (row.get("repository") or "").strip(),
+        "origin": "",
+        "date": "",
+        "language": "",
+        "material": "",
+        "provenance": "",
+        "attribution": "",
+        "licence": "",
+        "book": (row.get("book") or "").strip(),
+        # The one thing a stub row may still usefully link to: not a viewer,
+        # since there isn't one, but wherever a reader could confirm this for
+        # themselves — a plain catalogue record, most often.
+        "source": (row.get("url") or "").strip(),
+        "folios": "",
+        # Non-empty is what tells Milah this absence is deliberate rather than
+        # a resolver that came back with nothing to show — see fromJson().
+        "unavailable": note or "Not digitised; no scan has been published.",
+        "pages": [],
+    }
+
+
 def build(rows: list[dict]) -> list[dict]:
     entries = []
     # One reading per record per width, however many rows slice it. Twenty-six
@@ -658,10 +781,26 @@ def build(rows: list[dict]) -> list[dict]:
     # address, so two widths are genuinely two records.
     fetched: dict[tuple[str, str, int], dict | None] = {}
     # Ids already handed out. Two entries under one id is a catalogue Milah
-    # cannot key: it shows one of them twice and loses the other.
+    # cannot key: it shows one of them twice and loses the other. Shared with
+    # unavailable_entry(), because an ordinary scan and a stub must not collide
+    # either.
     given: set[str] = set()
 
     for row in rows:
+        status = (row.get("status") or "").strip().lower()
+        if status == "unavailable":
+            entry = unavailable_entry(row, given)
+            if entry is None:
+                print(f"  skipped (needs a title or a shelfmark, or repeats an id): {row}")
+                continue
+            if not (row.get("note") or "").strip():
+                # Not fatal — the manifest still offers the manuscript, disabled
+                # — but "not digitised" alone tells a transcriber nothing a
+                # library-specific reason would.
+                print(f"  warning: {entry['id']} is marked unavailable with no note explaining why")
+            entries.append(entry)
+            continue
+
         url = (row.get("url") or "").strip()
         if not url:
             continue
@@ -686,7 +825,12 @@ def build(rows: list[dict]) -> list[dict]:
             print(f"  {url}: {folios or 'the whole codex'}, from the record already read")
         else:
             print(f"  reading {url}")
-            readers = {"cudl": cudl_scan, "openn": openn_scan, "iiif": iiif_scan}
+            readers = {
+                "cudl": cudl_scan,
+                "manchester": manchester_scan,
+                "openn": openn_scan,
+                "iiif": iiif_scan,
+            }
             fetched[key] = readers[source](identifier, width)
         record = fetched[key]
 
@@ -736,6 +880,14 @@ def build(rows: list[dict]) -> list[dict]:
         if shelfmark:
             entry["shelfmark"] = shelfmark
 
+        # Given for the same reason: a bare IIIF manifest states no repository
+        # at all, and "Held at" is blank in the picker for every one of them —
+        # Gallica, the Bodleian, the Laurenziana, the Vatican all name only
+        # themselves in the licence line, never in a field this file can read.
+        repository = (row.get("repository") or "").strip()
+        if repository:
+            entry["repository"] = repository
+
         # Where a library states its terms somewhere a manifest has no field
         # for. The Bodleian puts them in the attribution line and leaves
         # `license` unset; the Laurenziana states an access status and no terms
@@ -755,6 +907,10 @@ def build(rows: list[dict]) -> list[dict]:
         # share a shelfmark, a date and a repository, and the first thing anyone
         # reading the file needs is which folios each one covers.
         entry["folios"] = folios
+        # Always present and always empty here: this entry was resolved and
+        # has pages. A stub for a manuscript with no scan is the only place
+        # this field is ever non-empty — see unavailable_entry().
+        entry["unavailable"] = ""
         entry["pages"] = pages
 
         if not entry["title"]:

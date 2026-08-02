@@ -84,23 +84,44 @@ and carries the licence and attribution that library states. Cambridge's images,
 for instance, are CC BY-NC 3.0 — which is why the terms travel with the entry
 rather than being assumed to match this repository's own licence.
 
-Only `url` is required in a row. `title` overrides a library record that names a
-whole codex where only part of it is being transcribed, `shelfmark` overrides one
-that states none at all, `book` groups a scan that is of one book, `folios`
-offers one part of a codex rather than all of it, and `width` asks for a
-different image size — honoured only where the library lets a size be asked for.
-Cambridge serves any width but caps delivery at 2000px; OPenn publishes fixed
-derivatives and chooses for you, and says so when a row asks anyway.
+Only `url` is required in a row, except for an unavailable one — see below.
+`title` overrides a library record that names a whole codex where only part of
+it is being transcribed, `shelfmark` overrides one that states none at all,
+`book` groups a scan that is of one book, `folios` offers one part of a codex
+rather than all of it, and `width` asks for a different image size — honoured
+only where the library lets a size be asked for. Cambridge serves any width but
+caps delivery at 2000px; OPenn publishes fixed derivatives and chooses for you,
+and says so when a row asks anyway.
 
 A bare IIIF manifest carries no shelfmark — Gallica states only a title — which
 is why `shelfmark` exists: it is what tells two manuscripts of the same book
-apart, and what Milah heads a manuscript's books with.
+apart, and what Milah heads a manuscript's books with. `repository` is given for
+the same reason: a bare manifest states no institution either, and "Held at"
+would otherwise sit blank for every one of them.
 
 `licence` is for the same gap in the field a scan may not be used without. The
 Bodleian states its terms in the manifest's attribution line and leaves
 `license` unset, so they are copied into the row. It records what a library
 says, never what it might have said: a scan whose terms are unclear is one
 nobody may use, and writing a licence into a row does not grant one.
+
+### A manuscript with nothing to open
+
+Set `status` to `unavailable` for a manuscript that is known to exist but has
+nothing to fetch — Cambridge MS Oo.1.16 has no viewer to copy a link from, and
+the British Library's own catalogue records Add MS 26964's images as "currently
+unavailable" since its 2023 cyberattack. `url` may then be blank, or may hold a
+plain page to learn more from; either way nothing is fetched from it, so an
+unavailable row never touches the network. `title`, `shelfmark`, `repository`
+and `note` are supplied by hand, since there is no record here to read them
+from — `note` is what a reader is told before wondering why the entry is
+greyed out, and a row without one prints a warning when the manifest is
+rebuilt.
+
+The resulting entry carries no pages and a non-empty `unavailable` field, which
+is what tells Milah this absence is deliberate — offer the manuscript anyway,
+disabled — rather than the sign of a resolver that came back with nothing to
+show, which is refused instead.
 
 ### One codex, many books
 
@@ -146,17 +167,23 @@ slice. A row with no range keeps the id it has always had.
 filename prefixes used in `manuscripts/` — which is why John is `JOH` and not the
 `JHN` a Paratext list would give.
 
-`build_scan_manifest.py` knows three kinds of source:
+`build_scan_manifest.py` knows these kinds of source:
 
 | source | how it is read |
 |---|---|
-| Cambridge (CUDL) | its own JSON record, which gives clean fields where the IIIF manifest gives HTML |
+| Cambridge and Manchester (CUDL) | the same platform's own JSON record, discovered by inspection rather than assumed — see `Platform` |
 | OPenn | the TEI description beside the images — OPenn publishes no API at all |
 | anything else | a IIIF manifest, Presentation v2 or v3 — the Bodleian, the Vatican, e-codices, the National Library of Israel |
 
 Adding a library means a resolver function and a line in `parse_link`, so that
 every library's quirks stay here rather than in the app. Milah only ever sees a
-list of image addresses, which is why adding OPenn needed no change to it at all.
+list of image addresses, which is why adding OPenn needed no change to it at
+all. Not always a new function, though: Manchester turned out to run the
+identical platform Cambridge does — same JSON shape, same viewer address
+pattern, same two-part rights split — so it shares `platform_scan` rather than
+carrying a second record that would drift from the first the moment one of
+them changed a field. Check whether a new host is one of these before writing
+a fourth reader.
 
 Only the `web` derivatives are linked from OPenn. Its masters are sometimes TIFF,
 which Milah cannot decode and which OPenn's own `robots.txt` declines to serve to
