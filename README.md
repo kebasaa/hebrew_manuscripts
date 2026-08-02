@@ -202,6 +202,21 @@ and would quietly be testing their uptime rather than this code.
 
 ## Licence
 
-[CC BY-NC-SA 4.0](LICENSE) (Attribution-NonCommercial-ShareAlike). Individual
-transcriptions may carry their own attribution and copyright in their OSIS
-headers; read them before redistributing.
+This is two licences, not one, because a manuscript transcription and a Python
+script are not the same kind of thing and one blanket claim over both was
+never accurate — a translation here is marked "all rights reserved" by its
+own author, which a single repository-wide licence could not have said.
+
+**The scripts** — everything in `src/` and `tests/` — are [GPLv3](LICENSE).
+
+**Each manuscript's own terms are in its own OSIS header**, in the `<rights>`
+element inside `<work>`, and nowhere else — there is no repository-wide
+default that applies where a file is silent. They differ: some carry a named
+translator's copyright (`© copyright 2025 Janice F. Baca`), one states "All
+rights reserved" outright, and a transcription with no stated terms of its
+own reads `CC BY-NC-SA 4.0 (this repository's default; no licence was stated
+for the transcription itself)`. `rights` is also a field in
+`manifest_manuscripts.json` for exactly this reason: a reader should not have
+to open every `.osis` file to find out what they may do with it. Check the
+field for the file you mean to use — read it before redistributing, not
+after.

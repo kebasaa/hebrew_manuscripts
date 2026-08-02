@@ -32,6 +32,7 @@ OSIS = """<?xml version="1.0" encoding="UTF-8"?>
     <title>Revelation (British Library, Sloane MS 237)</title>
     <date>ca. 1730</date>
     <description type="x-contents">1:1-2:13</description>
+    <rights>CC BY-NC-SA 4.0</rights>
    </work>
   </header>
   <div type="book" osisID="Rev"><verse osisID="Rev.1.1">TEXT</verse></div>

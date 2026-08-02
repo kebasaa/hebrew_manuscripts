@@ -127,6 +127,12 @@ def describe(path: Path) -> dict | None:
         "language": language,
         "date": element_text(work, "date"),
         "covers": coverage(work),
+        # What terms this particular text carries — never assumed. The
+        # repository stopped claiming one licence for every manuscript the day
+        # a translation turned up marked "all rights reserved" beside others
+        # marked CC BY-NC-SA; a reader now has to be told per file, and this is
+        # what tells them without opening it.
+        "rights": element_text(work, "rights"),
         "bytes": len(content),
         # What tells Milah that a text it already holds has been corrected.
         # Length cannot: correcting "MS Sloane 273" to "Sloane MS 237" moves not
