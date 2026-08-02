@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="Ebr530_LUK_Hebrew" osisRefWork="bible" xml:lang="he">
+    <header>
+      <work osisWork="Ebr530_LUK_Hebrew">
+        <title>Luke (Vatican, Vat. ebr. 530)</title>
+        <date event="original" type="Gregorian">undated</date>
+        <description>Hebrew transcription and English translation of Luke from Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v, transcribed, translated and annotated by Nehemia Gordon.</description>
+        <description type="x-contents">Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.</description>
+        <description type="x-script">Fully pointed Hebrew. The pointing is irregular by Tiberian standards: dagesh is often omitted where expected, and kamatz and patach — like tsere and segol — are used interchangeably, which the editor relates to the Sephardic pronunciation and to Palestinian pointing (Nikud Eretz-Yisraeli).</description>
+        <description type="x-provenance">Held by the Biblioteca Apostolica Vaticana and published through its digitisation programme on DigiVatLib.</description>
+        <description type="x-editorial">The editor notes that a scribe scratched out Adonai and wrote Yehovah in its place, and records variant forms attested in Mishnaic manuscripts and in the Bar Ilan Responsa Database.</description>
+        <publisher>Nehemia Gordon</publisher>
+        <type type="x-manuscript">Manuscript</type>
+        <identifier type="OSIS">Ebr530_LUK_Hebrew</identifier>
+        <identifier type="x-shelfmark">Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v</identifier>
+        <identifier type="URI">https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1</identifier>
+        <source>Shelfmark, extent and repository from the manuscript's record in DigiVatLib, https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1. Codicological detail is catalogued by Umberto Cassuto, 'Codices Vaticani Hebraici' — cited here, not consulted.</source>
+        <source>Text, translation and annotation from Nehemia Gordon, 'Hebrew Gospels of Luke and John found in the Vatican Library', version 3.9 (2018), nehemiaswall.com.</source>
+        <language>he</language>
+        <coverage>Luke 1:1–35</coverage>
+        <scope>Luke</scope>
+      </work>
+      <work osisWork="bible">
+        <title>Referenced versification (standard)</title>
+        <identifier type="OSIS">bible</identifier>
+        <language>he</language>
+        <refSystem>StandardV11N</refSystem>
+      </work>
+    </header>
+    <div type="titlePage" canonical="false">
+      <title type="main">Hebrew Gospels of Luke and John</title>
+      <title type="sub">found in the Vatican Library</title>
+      <title type="sub">Biblioteca Apostolica ebr. 530, part 1, fragment 11, folios 1r-2v</title>
+      <title type="sub">Luke 1:1-35; John 1:1-13</title>
+      <title type="sub">Transcribed, translated, and annotated by Nehemia Gordon</title>
+      <title type="sub">with contributions by Keith Johnson and T-Bone</title>
+      <title type="sub">Copyright 2018 Nehemia Gordon. All rights reserved. Version 3.9</title>
+    </div>
+    <div type="book" osisID="Luke" canonical="true">
+        <div type="introduction" canonical="true"><title type="main" canonical="true">הַבְּשׂוֹרָה הַקְדוֹשָׁה שֶל יֵשוּעַ הַמַּשִׁיחַ כְּפִי לוּקָה</title></div>
+        <title type="chapter" canonical="true">פֶרֶק רִאשׂוֹן</title>
+        <chapter sID="Luke.1" osisID="Luke.1" n="1"/>
+        <verse sID="Luke.1.1" osisID="Luke.1.1" n="1"/><milestone type="pb" n="1r"/>בִהְיוֹת כִּי הוּשָׂמוּ רַבִּים לְחַבֵר סִיפוּר הַדְּבָרִים אֲשֶר בֵינֵינוּ הֵם נֶאֱמָנִים<verse eID="Luke.1.1"/>
+        <verse sID="Luke.1.2" osisID="Luke.1.2" n="2"/>בִלְתִי סָפֵק, כַאֲשֶר הִגִידוּ לַנוּ אוֹתָם בְעַצְמַם, אֲשֶר מִתְחִלָה רַאוּם, וְהָיוּ מְשַרְתַי הַדָבָר<verse eID="Luke.1.2"/>
+        <verse sID="Luke.1.3" osisID="Luke.1.3" n="3"/>נִרְאָה לִי גָם כֵן אֲנִי, אֲשֶר מִתְּחִלָה חִפָשְׂתִּי כָל הַדְּבָרִים בִזְרִיזוּת עָל הַסֶדֶר, לִכְתוֹב לְךָ הַיְקָר טִיאוֹפִילּוֹ,<verse eID="Luke.1.3"/>
+        <verse sID="Luke.1.4" osisID="Luke.1.4" n="4"/>כְדֵי שֵתֵדָע אֲמִתּוּת הַדְּבָרִים אֲשֶר לַמָדְתָ:<verse eID="Luke.1.4"/>
+        <verse sID="Luke.1.5" osisID="Luke.1.5" n="5"/>וַיְהִי בִימֵי הוֹרוֹדוֹס מֶלֶךְ יְהוּדָה כֹהֵן אֶחַד וּשְמוֹ זְכַרְיָה מִבְּנֵי אֲבִיָה וְאִשְתוֹ מִבְּנֵי אַהֲרֹן וּשְמָהּ אֱלִישֶבָע<verse eID="Luke.1.5"/>
+        <verse sID="Luke.1.6" osisID="Luke.1.6" n="6"/>וַיִהְיוּ שְנֵיהֶם צַדִיקִים לִפְנֵי יְהוָֹה וְהוֹלְכִים בְכָל חוּקֵי וּמִשְפְטֵי יְהוָֹה בִלְתִי עָרְמָה<verse eID="Luke.1.6"/>
+        <verse sID="Luke.1.7" osisID="Luke.1.7" n="7"/>וּבַנִים לֹא הָיוּ לָהֶם כִי אֱלִישֶבָע הָיְתָה עֲקָרָה וּשְנְיהֶם בָאִים בַיָמִים: וַיְהִי בַכֹּהֵן<verse eID="Luke.1.7"/>
+        <verse sID="Luke.1.8" osisID="Luke.1.8" n="8"/>זְכַרְיָה הַכְהוּנָה לִפְנֵי אדנ[י] יְהוָֹה בְסֶדֶר מִשְפָחְתוֹ<verse eID="Luke.1.8"/>
+        <verse sID="Luke.1.9" osisID="Luke.1.9" n="9"/>כְמִנְהָג עֲבוֹדַת הַכְּהוּנָה בָא הַגוֹרָל עָלָיו לַשִׂים אֶת הַקְטֹרֶת: וַָיבֹא בְהֵיכָל יְהוָֹה<verse eID="Luke.1.9"/>
+        <verse sID="Luke.1.10" osisID="Luke.1.10" n="10"/><milestone type="pb" n="1v"/>וְכָל רִיבוּי הַעָם עוֹמְדִים בַחוּץ לְהִתְפַלֵל בְעֵת הַקְּטֹרֶת<verse eID="Luke.1.10"/>
+        <verse sID="Luke.1.11" osisID="Luke.1.11" n="11"/>וַיֵרָא אֵלָיו מַלְאָךְ יְהוָֹה עוֹמֵד לִימִין מִזְבַח הַקְּטֹרֶת<verse eID="Luke.1.11"/>
+        <verse sID="Luke.1.12" osisID="Luke.1.12" n="12"/>וּזְכַרְיָה בִרְאוֹתוֹ נִבְהָל וּפָחָד אַחַזַהו<verse eID="Luke.1.12"/>
+        <verse sID="Luke.1.13" osisID="Luke.1.13" n="13"/>וַיֹאמֶר לֹו הַמַלְאָךְ אַל תִירָא זְכַרְיָה כִי תְפִלָתְךָ נִשְמֶעֶת וְאֱלִישֶבָע אִשְתְךָ תֵלֵד בֵן וְתִקְרָא שְמוֹ יוֹחָנָן<verse eID="Luke.1.13"/>
+        <verse sID="Luke.1.14" osisID="Luke.1.14" n="14"/>וְיִהְיֶה לְךָ לְשָׂשׂוֹן ולְשִּׂמְחָה וְיִשְמְחוּ רָבִים בְעֵת הִוָלְדוֹ<verse eID="Luke.1.14"/>
+        <verse sID="Luke.1.15" osisID="Luke.1.15" n="15"/>כִי יִהְֶיה גָדוֹל לִפְנֵי יְהוָֹה וְלֹא יִשְתֶה יָיִן וְשֵׁכַר וְיִמָלֵא מֵרוּחַ הַקֹדֶש מִבֶטֶן אִמּוֹ<verse eID="Luke.1.15"/>
+        <verse sID="Luke.1.16" osisID="Luke.1.16" n="16"/>וְיַשִׁיב רַבִּים מִבְּנֵי יִשְׂרָאֵל אֶל יְהוָֹה אֱלֹהֵיהֶם.<verse eID="Luke.1.16"/>
+        <verse sID="Luke.1.17" osisID="Luke.1.17" n="17"/>וְהוּא יֵלֶך לְפָנָיו בְרוּח וְכֹח אֵלִיָהוּ לְהַשִׁיב לֵב אָבוֹת עַל בָנִים. וְהַמִינִים לְצִדְקַת הַצָדִיקִים. וּלְהַכִין לַיְהוָֹה הַעָם מוּכָן.<verse eID="Luke.1.17"/>
+        <verse sID="Luke.1.18" osisID="Luke.1.18" n="18"/>וַיֹאמֶר זְכַרְיָה אֶל הַמָלְאָךְ בַמָּה אֵדָע הַדַבָר הַזֶה יַעַן אֲשֶר אֲנִי זָקֵן וְאִשְתִי בַאָה בַיָמִים<verse eID="Luke.1.18"/>
+        <verse sID="Luke.1.19" osisID="Luke.1.19" n="19"/>וַיַעָן הַמַלְאָךְ וַיֹאמָר. אָנֹכִי גָבְרִיאֵל הַעֹומֵד לִפְנֵי יְהוָֹה וְנִשְלָחְתִי לְדָבֵר אֵלֶיךָ וּלְהַגִיד לְךָ הַדְּבָרִים הַאֵלֶה וְהִנֵּה<verse eID="Luke.1.19"/>
+        <verse sID="Luke.1.20" osisID="Luke.1.20" n="20"/>אָתָה תִהְיֶה אִלֵם וְלֹא תוּכַל לְדַבֵר עַד הַיוֹם אֲשֶׁר יֵעֲשׂוּ הַדְּבָרִים הַאֵלֶּה עַל אֲשֶר לֹא הֶאֱמַנְתָ לִדְבַרָי אֲשֶר יִתְמַלְאוּ בְעִתָם.<verse eID="Luke.1.20"/>
+        <verse sID="Luke.1.21" osisID="Luke.1.21" n="21"/>וְהַעָם הָיוּ מְיַחַלִים אֶת זְכַרְיָהוּ וְנִתְמָהִים מֵאִיחוּרוֹ בָהֵיכל.<verse eID="Luke.1.21"/>
+        <verse sID="Luke.1.22" osisID="Luke.1.22" n="22"/>וּבְצֵאתוֹ חוּצָה לֹא הַיָה יָכוֹל לְדַבֵּר עִמָהֵם. וַיֵדְעוּ כִי רַאָה מַרְאָה בַהֵיכָל. וְהוּא הָיָה רוֹמֵז לָהֶם וְנִשְאָר אִלֶם.<verse eID="Luke.1.22"/>
+        <verse sID="Luke.1.23" osisID="Luke.1.23" n="23"/><milestone type="pb" n="2r"/>וַיְהִי כִמְלֹאת יְמֵי עַבוֹדָתוֹ וַיֵלֶך אֶל בֵיתוֹ<verse eID="Luke.1.23"/>
+        <verse sID="Luke.1.24" osisID="Luke.1.24" n="24"/>וְאַחַר הַיָמִים הַאֶלֶה הַרְתָה אֱלִישֶבָע אִשְתוֹ. וַתִסָתֵר חַמִשָּׁה חֳדַֹשִים לֵאמֹר<verse eID="Luke.1.24"/>
+        <verse sID="Luke.1.25" osisID="Luke.1.25" n="25"/>לַמָה זֶה עַשָה יְהוָֹה לִי כֵן בַיָמִים אֲשֶר אָנֹכִי רוֹאָה. לַשֵֹאת מְשָלִי בֵין הַאֲנַשִׁים.<verse eID="Luke.1.25"/>
+        <verse sID="Luke.1.26" osisID="Luke.1.26" n="26"/>וּבַחֹדֶש הַשִּׁשִׁי נִשְלַח הַמָּלְאָךְ גַבְרִיאֵל מֵאֶת יְהוָֹה בְעִיר הַגָלִיל וּשְמָהּ נַצַרֵת<verse eID="Luke.1.26"/>
+        <verse sID="Luke.1.27" osisID="Luke.1.27" n="27"/>אֶל בְתוּלָה אַחָת מְאוֹרָשָֹה לְאִישׁ וּשְמוֹ יוֹסֵף מִבֵית דַוִד וְשֵם הַבְתוּלָה מִרְיָם.<verse eID="Luke.1.27"/>
+        <verse sID="Luke.1.28" osisID="Luke.1.28" n="28"/>וּבְבֹא הַמַלְאָך אֵלֶיהָ אָמַר. שָלֹום לִיךְ מְלֵיאָת חֵן יְהוָֹה עִמָךְ מְבוֹרֶכֶת אָתְּ בֵין הַנָשִׁים.<verse eID="Luke.1.28"/>
+        <verse sID="Luke.1.29" osisID="Luke.1.29" n="29"/>וַתָבֵט וַתִבָהֵל עַל דְבַרָיו. וְהָיְתָה חוֹשֶבֶת מָה שָלֹום הָיָה זֶה.<verse eID="Luke.1.29"/>
+        <verse sID="Luke.1.30" osisID="Luke.1.30" n="30"/>וַיֹאמֶר לָהּ הַמַלְאָך אַל תִירְאִי מִרְיָם. כִי מַצַאתְ חֵן לִפְנֵי יְהוָֹה<verse eID="Luke.1.30"/>
+        <verse sID="Luke.1.31" osisID="Luke.1.31" n="31"/>הִנָךְ הָרָה וְתֵלֵד בֵן וְקַרַָאתְ שְמֹו יֵשוּעַ<verse eID="Luke.1.31"/>
+        <verse sID="Luke.1.32" osisID="Luke.1.32" n="32"/>זֶה יִהְיֶה גָדוֹל וְיִקָרֵא בֵן עֵלְיוֹן וְיִתֵן לֹו יְהוָֹה אֱלֹהִים כִסֵא דָוִד אָבִיו<verse eID="Luke.1.32"/>
+        <verse sID="Luke.1.33" osisID="Luke.1.33" n="33"/>וְיִמְלֹוךְ עַל בֵית יַעֲקֹב לְעוֹלָם. וְלֹא יִהְיֶה קֵץ לְמַלְכוּתוֹ.<verse eID="Luke.1.33"/>
+        <verse sID="Luke.1.34" osisID="Luke.1.34" n="34"/>וַתֹאמֶר מִרְיָם אֶל הַמַלְאָך אֵיךְ יִהְיֶה זֶה כִי אֵינֵנִּי יוֹדַעָת אִיש.<verse eID="Luke.1.34"/>
+        <verse sID="Luke.1.35" osisID="Luke.1.35" n="35"/>וַיַעָן הַמַלְאָך וַֹיאמֶר אֵלֶיהָ רוּחַ הַקָדוֹש יַבֹא בִיך וְעוֹז עֵלְיוֹן יִהְיֶה בְצִלַךְ עַל אֲשֶר יִהְיֶה הַנוֹלָד קָדוֹש יִקָרֵא בֵן יְהוָֹה:<verse eID="Luke.1.35"/>
+        <chapter eID="Luke.1"/>
+      </div>
+  </osisText>
+</osis>

@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: milah-pdf2osis
+Version: 0.1.0
+Summary: Convert Hebrew New Testament manuscript PDFs to OSIS.
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: PyMuPDF<2,>=1.26
+Requires-Dist: lxml<7,>=6
+Requires-Dist: fonttools<5,>=4.50
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"
+Dynamic: license-file

@@ -1,0 +1,716 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.2.1.1.xsd">
+  <osisText osisIDWork="CochinOo.1.32_MAT_Hebrew" osisRefWork="bible" xml:lang="he">
+    <header>
+      <work osisWork="CochinOo.1.32_MAT_Hebrew">
+        <title>Matthew (Cochin MS Oo.1.32)</title>
+        <date event="original" type="ISO">ca. 1730</date>
+        <description>The Cochin Hebrew New Testament manuscripts are significant 18th-century Hebrew versions of the New Testament. This file encodes Matthew from Cambridge MS Oo.1.32.</description>
+        <description type="x-contents">Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.</description>
+        <description type="x-script">Essentially unpointed Hebrew, with gershayim marking divine names and abbreviations.</description>
+        <description type="x-editorial">Each verse is set with the Hebrew transcription, an English translation, The Scriptures 2009 for comparison, a Syriac Aramaic witness with its own English rendering, and an interlinear gloss table.</description>
+        <publisher>Project Truth Ministries</publisher>
+        <type type="x-manuscript">Manuscript</type>
+        <identifier type="OSIS">CochinOo.1.32_MAT_Hebrew</identifier>
+        <identifier type="x-shelfmark">MS.Oo.1.32</identifier>
+        <identifier type="URI">https://projecttruthministries.org/studies/cochin-matthew/</identifier>
+        <source>Text, translation and commentary from Janice F. Baca, 'The Cochin Hebrew Book of Matthew' (Project Truth Ministries, 2025).</source>
+        <language>he</language>
+        <coverage>Matthew 1:1–19:30</coverage>
+        <scope>Matt</scope>
+      </work>
+      <work osisWork="bible">
+        <title>Referenced versification (standard)</title>
+        <identifier type="OSIS">bible</identifier>
+        <language>he</language>
+        <refSystem>StandardV11N</refSystem>
+      </work>
+    </header>
+    <div type="book" osisID="Matt" canonical="true">
+        <chapter sID="Matt.1" osisID="Matt.1" n="1"/>
+        <verse sID="Matt.1.1" osisID="Matt.1.1" n="1"/>ספר הלידה דיש֞ו משיחה בן דוד בן אברהם׃<verse eID="Matt.1.1"/>
+        <verse sID="Matt.1.2" osisID="Matt.1.2" n="2"/>אברהם הוליד ליצחק ויצחק הוליד ליעקוב ויעקוב ליהודה עם אחיו׃<verse eID="Matt.1.2"/>
+        <verse sID="Matt.1.3" osisID="Matt.1.3" n="3"/>יהודה הוליד לפרץ וזרח מן תמר פרץ הוליד לחצרון וחצרון לארם׃<verse eID="Matt.1.3"/>
+        <verse sID="Matt.1.4" osisID="Matt.1.4" n="4"/>ארם הוליד לעמינדב ועמינדב לנחשון ונחשון לסלמון׃<verse eID="Matt.1.4"/>
+        <verse sID="Matt.1.5" osisID="Matt.1.5" n="5"/>ושלמון הוליד לבעז מן רחב ובעז הוליד את עובד מן רות ועובד הוליד את ישי׃<verse eID="Matt.1.5"/>
+        <verse sID="Matt.1.6" osisID="Matt.1.6" n="6"/>ישי הוליד לדוד דוד לשלמה מן אשת אוריה׃<verse eID="Matt.1.6"/>
+        <verse sID="Matt.1.7" osisID="Matt.1.7" n="7"/>שלמה הוליד לרחבעם ורחבעם לאביה אביה לאסה׃<verse eID="Matt.1.7"/>
+        <verse sID="Matt.1.8" osisID="Matt.1.8" n="8"/>אסה הוליד יהושפט יהושפט ליורם ויורם לעוזיהו׃<verse eID="Matt.1.8"/>
+        <verse sID="Matt.1.9" osisID="Matt.1.9" n="9"/>עוזיהו הוליד ליותם יותם לאחז אחז לחזקיה׃<verse eID="Matt.1.9"/>
+        <verse sID="Matt.1.10" osisID="Matt.1.10" n="10"/>חזקיה הוליד למנשה ומנשה לאמון ואמון ליאשיה׃<verse eID="Matt.1.10"/>
+        <verse sID="Matt.1.11" osisID="Matt.1.11" n="11"/>יאשיה הוליד ליכניה ולאחיו בגלות בבל׃<verse eID="Matt.1.11"/>
+        <verse sID="Matt.1.12" osisID="Matt.1.12" n="12"/>מן אחר גלות בבל יכניה הוליד לשאלתיאל ושאלתיאל לזרובבל׃<verse eID="Matt.1.12"/>
+        <verse sID="Matt.1.13" osisID="Matt.1.13" n="13"/>וזרובבל הוליד לאביהוד ואביהוד לאליאקם ואליאקם הוליד לעזור׃<verse eID="Matt.1.13"/>
+        <verse sID="Matt.1.14" osisID="Matt.1.14" n="14"/>עזור הוליד לצדוק וצדוק לאכין ואכין לאליוד׃<verse eID="Matt.1.14"/>
+        <verse sID="Matt.1.15" osisID="Matt.1.15" n="15"/>אליוד הוליד לאליעזר ואליעזר למתן ומתן ליעקב׃<verse eID="Matt.1.15"/>
+        <verse sID="Matt.1.16" osisID="Matt.1.16" n="16"/>ויעקוב הוליד ליוסף איש דמרים שממנה נולד יש֞ו הנקרא משיחה׃<verse eID="Matt.1.16"/>
+        <verse sID="Matt.1.17" osisID="Matt.1.17" n="17"/>זה הכל מן אברהם עד לדוד משפחה ארבע עשר ומן דוד עד גלות בבל יד֞ דור ומן גלות בבל עד משיח יד֞ דור׃<verse eID="Matt.1.17"/>
+        <verse sID="Matt.1.18" osisID="Matt.1.18" n="18"/>הלידה של ישוע משיחה כך היה כיון שארוסה היתה מרים אימו ליוסף עדין לא נתחברו נמצאת הרה מן רוח קודש׃<verse eID="Matt.1.18"/>
+        <verse sID="Matt.1.19" osisID="Matt.1.19" n="19"/>ויוסף זה בעלה היה צדיק ולא רצה לפרסם ונרצה להסתיר ולהניח׃<verse eID="Matt.1.19"/>
+        <verse sID="Matt.1.20" osisID="Matt.1.20" n="20"/>כיון שהיה לו זה רצון נראה איליו מלאך דמריה בחלום ואמר לו בן דוד לא תירא לישא למרים אשתך למה היא הרה מן רוח הקדש׃<verse eID="Matt.1.20"/>
+        <verse sID="Matt.1.21" osisID="Matt.1.21" n="21"/>יולדת זה הבן ותקרא את שמו יש֞ו כי הוא גואל את העם מן חטאות׃<verse eID="Matt.1.21"/>
+        <verse sID="Matt.1.22" osisID="Matt.1.22" n="22"/>זהו היה ממה שנאמר מן נביא׃<verse eID="Matt.1.22"/>
+        <verse sID="Matt.1.23" osisID="Matt.1.23" n="23"/>הנה העלמה הרה ויולדת בן וקראת שמו עמנואל דמתרגם עמן אלהן׃<verse eID="Matt.1.23"/>
+        <verse sID="Matt.1.24" osisID="Matt.1.24" n="24"/>וכיון שקם מן שינה עשה כמו שצוה אותו מלאך דמריה ונשא את אשתו׃<verse eID="Matt.1.24"/>
+        <verse sID="Matt.1.25" osisID="Matt.1.25" n="25"/>ולא ידעה אותה עד שילדה את בנה הבכור וקרא שמו ישוע׃<verse eID="Matt.1.25"/>
+        <chapter eID="Matt.1"/>
+        <chapter sID="Matt.2" osisID="Matt.2" n="2"/>
+        <verse sID="Matt.2.1" osisID="Matt.2.1" n="1"/>כיון שנולד י֞שו בבית לחם דיהודה בימי הורודוס המלך באו חרטומים מן מזרח לירושלם׃<verse eID="Matt.2.1"/>
+        <verse sID="Matt.2.2" osisID="Matt.2.2" n="2"/>ואמרו עכשיו מלך של יהודים נולד וראו כי כוכב של מזרח באו להשתחוות לו׃<verse eID="Matt.2.2"/>
+        <verse sID="Matt.2.3" osisID="Matt.2.3" n="3"/>שמע זה הורודוס המלך ונרעד וכל ירושלים עמו׃<verse eID="Matt.2.3"/>
+        <verse sID="Matt.2.4" osisID="Matt.2.4" n="4"/>וקבץ כל ראשי כהנים וסופרים של העם ושאל להם היכן נולד משיחה׃<verse eID="Matt.2.4"/>
+        <verse sID="Matt.2.5" osisID="Matt.2.5" n="5"/>הם אמרו בבית לחם דיהודה וכך כתיב בנביא׃<verse eID="Matt.2.5"/>
+        <verse sID="Matt.2.6" osisID="Matt.2.6" n="6"/>ואתה בית לחם של יהודה לא הית צעיר באלפי יהודה ממך לי יצא מלך ומרוצה לעמי ישראל׃<verse eID="Matt.2.6"/>
+        <verse sID="Matt.2.7" osisID="Matt.2.7" n="7"/>ועתה הורודס קרא לחרטומים וחכמים ולמד מהם באיזה זמן נראה כוכב׃<verse eID="Matt.2.7"/>
+        <verse sID="Matt.2.8" osisID="Matt.2.8" n="8"/>ושלח אותם לבית לחם ואמר להון לכו בהסתר על הנער היולד ומה שמצאתם בואו ותגיד לי ואף אני אלך ואסגוד לו׃<verse eID="Matt.2.8"/>
+        <verse sID="Matt.2.9" osisID="Matt.2.9" n="9"/>הם כיון ששמעו מן מלך הלכו וזה כוכב שראו במזרח הלך בפנהם עד שבאו ועמד במקום שיש הנער׃<verse eID="Matt.2.9"/>
+        <verse sID="Matt.2.10" osisID="Matt.2.10" n="10"/>כיון שראו לכוכבים שמחו שמחה רבה וטוב׃<verse eID="Matt.2.10"/>
+        <verse sID="Matt.2.11" osisID="Matt.2.11" n="11"/>ועלו לבית וראו לנער עם מרים אמו ונפלו וסגידו ליה ופתחו גנזיהם וקרבו ליה קורבן זהב ומוסקו ולבונה׃<verse eID="Matt.2.11"/>
+        <verse sID="Matt.2.12" osisID="Matt.2.12" n="12"/>ונראה להם בחלם שלא יהפכו אל הורודוס ובדרך אחרת הלכו למקומם׃<verse eID="Matt.2.12"/>
+        <verse sID="Matt.2.13" osisID="Matt.2.13" n="13"/>כיון שהלכו נראה בחלום דמריה ליוסף ואמר קום קח לנער ולאמו וברח למצרים ושם תהיה עד שאומר אני לך למה הורודוס רוצה לנער להרוג׃<verse eID="Matt.2.13"/>
+        <verse sID="Matt.2.14" osisID="Matt.2.14" n="14"/>יוסף זה קם ולקח לנער ולאמו בלילה וברח והיה שם עד שמת למצרים׃<verse eID="Matt.2.14"/>
+        <verse sID="Matt.2.15" osisID="Matt.2.15" n="15"/>והיה שם עד שמת הורודוס משום למלאת מה שנאמר מן מריה לנביא שאמר וממצרים קריתי לבני׃<verse eID="Matt.2.15"/>
+        <verse sID="Matt.2.16" osisID="Matt.2.16" n="16"/>ועתה כיון שראה הורודוס שנתבזה מן חרטומים וחשב הרבה ושלח להרוג כל הנערים של בית לחם ובכל תחומיה מן ב׳ שנים ולמטה כמו זמן שהיגיד מן חרטומים׃<verse eID="Matt.2.16"/>
+        <verse sID="Matt.2.17" osisID="Matt.2.17" n="17"/>ועתה נתקיים מה שאמר ביד ירמיה הנביא שאמר׃<verse eID="Matt.2.17"/>
+        <verse sID="Matt.2.18" osisID="Matt.2.18" n="18"/>קול נשמע ברמה נהי בכי תמרורים רחל מבכה על בניה מאנה להנחם משום כי איננו׃<verse eID="Matt.2.18"/>
+        <verse sID="Matt.2.19" osisID="Matt.2.19" n="19"/>כיון שמת הורודוס מלך נראה מלאך דמריה בחלום ליוסף קום קח במצרים ואמר לו׃<verse eID="Matt.2.19"/>
+        <verse sID="Matt.2.20" osisID="Matt.2.20" n="20"/>קום קח לנער ולאמו ולך לארץ ישראל כי מתו הם המבקשין את נפש הנער׃<verse eID="Matt.2.20"/>
+        <verse sID="Matt.2.21" osisID="Matt.2.21" n="21"/>ויוסף קם ולקח את הנער ולאמו ובא לארעה דישראל׃<verse eID="Matt.2.21"/>
+        <verse sID="Matt.2.22" osisID="Matt.2.22" n="22"/>כיון ששמע ארכלאהוס הוא מלך ביהוד חלף הורודוס אביו דחל לילך לשם והראה לו בחלום לילך למקום גליל׃<verse eID="Matt.2.22"/>
+        <verse sID="Matt.2.23" osisID="Matt.2.23" n="23"/>ובא וישב במדינה הנקרא נצרת כמו שנתקיים מה שנאמר בנביא מן נצריה יקרא׃<verse eID="Matt.2.23"/>
+        <chapter eID="Matt.2"/>
+        <chapter sID="Matt.3" osisID="Matt.3" n="3"/>
+        <verse sID="Matt.3.1" osisID="Matt.3.1" n="1"/>באותו ביום בֹא יוחנן בבטיסטו ומכריז הוא בחָרבּות של יהודים ואמר:<verse eID="Matt.3.1"/>
+        <verse sID="Matt.3.2" osisID="Matt.3.2" n="2"/>שובו קרבת לה מלכות שמים:<verse eID="Matt.3.2"/>
+        <verse sID="Matt.3.3" osisID="Matt.3.3" n="3"/>הנה כי הוא דאמור ביד ישעיה הנביא קול קורא במדבר פנו דרך ה֞ ישרו בערבה׃<verse eID="Matt.3.3"/>
+        <verse sID="Matt.3.4" osisID="Matt.3.4" n="4"/>זה יוחנן יש לו לבוש של העור דגמל ואזור רצועה דעור על מתניו ואכילתו חגבים ודבש היער׃<verse eID="Matt.3.4"/>
+        <verse sID="Matt.3.5" osisID="Matt.3.5" n="5"/>ועתה נפק הוא ירושלים וכל יהודים וכל המקום שסביב לירדן׃<verse eID="Matt.3.5"/>
+        <verse sID="Matt.3.6" osisID="Matt.3.6" n="6"/>בבט֞יזא דו )כלו֜ ניתנים מי השמד( מן נהר ירדן והיו מודים בחטאם׃<verse eID="Matt.3.6"/>
+        <verse sID="Matt.3.7" osisID="Matt.3.7" n="7"/>כיון שראו זה הרבה מן חכמים ומן צדוקים שבאים למי ה֞שמד אמר להון ילדי נחשים מי היגיד לכם לברוח מן הרוגז שיבא׃<verse eID="Matt.3.7"/>
+        <verse sID="Matt.3.8" osisID="Matt.3.8" n="8"/>תעשו זה כאוכל פרי דשויא לרצון טוב׃<verse eID="Matt.3.8"/>
+        <verse sID="Matt.3.9" osisID="Matt.3.9" n="9"/>ואל תחשבו ותאמרו בעצמכם יש לנו אב אברהם אומר אני לכון הרי יכולת לאלהים מן זה אבנים להקים בנים לאברהם׃<verse eID="Matt.3.9"/>
+        <verse sID="Matt.3.10" osisID="Matt.3.10" n="10"/>זה הקורדום ששם על עיקר האילן כל האילן שאין עושה פירות טוב תקצית וליתן באש׃<verse eID="Matt.3.10"/>
+        <verse sID="Matt.3.11" osisID="Matt.3.11" n="11"/>אני הוא מטהר אתכם במים לרצון ומי שיבא אחרי חזק הוא ממני ולא שוה אני לישא את מנעליו והוא מטהר אתכם ברוח הקדש ובאש׃<verse eID="Matt.3.11"/>
+        <verse sID="Matt.3.12" osisID="Matt.3.12" n="12"/>הנפה שיש בידו ומטהר את מקומו וחיטים מכניס לאוצרותיו והתבן מבעיר באש שלא יכבה׃<verse eID="Matt.3.12"/>
+        <verse sID="Matt.3.13" osisID="Matt.3.13" n="13"/>ובאותה שעה בא יש״ו מן גליל לירדן אצל יוחנן לטהר עצמו׃<verse eID="Matt.3.13"/>
+        <verse sID="Matt.3.14" osisID="Matt.3.14" n="14"/>אבל נחדל יוחנן ממנו ואמר צריך אני להטהר ממך ואתה בא אלי׃<verse eID="Matt.3.14"/>
+        <verse sID="Matt.3.15" osisID="Matt.3.15" n="15"/>והשיב יש׳ו וענה ואמר לו יתשבוק עכשיו זה למה כך יפה לן לקיים כל הדינים ושבק באותה שעה׃<verse eID="Matt.3.15"/>
+        <verse sID="Matt.3.16" osisID="Matt.3.16" n="16"/>כיון שטיהר זה יש׳ו במהרה עלה מן המים ונפתח לו שער השמים וראה רוח הקדש ירד כמו יונה ובא עליו׃<verse eID="Matt.3.16"/>
+        <verse sID="Matt.3.17" osisID="Matt.3.17" n="17"/>ובת קול א׳ שמע מן שמים דאמר זהו בני חביבי ובו רציתי׃<verse eID="Matt.3.17"/>
+        <chapter eID="Matt.3"/>
+        <chapter sID="Matt.4" osisID="Matt.4" n="4"/>
+        <verse sID="Matt.4.1" osisID="Matt.4.1" n="1"/>אז הורד יש׳ו אל מדבר מרוח קודש הרי שינסה אותו השטן׃<verse eID="Matt.4.1"/>
+        <verse sID="Matt.4.2" osisID="Matt.4.2" n="2"/>וצם מ׳ יום ומ׳ לילה וירעב׃<verse eID="Matt.4.2"/>
+        <verse sID="Matt.4.3" osisID="Matt.4.3" n="3"/>אז קרב איליו השטן ויאמר לו אם בן אלהים אתה אמור לאבנים שיהיו לחם׃<verse eID="Matt.4.3"/>
+        <verse sID="Matt.4.4" osisID="Matt.4.4" n="4"/>והוא השיב ואמר כתוב כי לא בלחם לבדו יחיה האדם כי על כל מוצא פי יי׳ יחיה׃<verse eID="Matt.4.4"/>
+        <verse sID="Matt.4.5" osisID="Matt.4.5" n="5"/>ואז לקחו השטן והוליכו לעיר הקדש והעמידו על ראש תקרת בית המקדש ואמר לו׃<verse eID="Matt.4.5"/>
+        <verse sID="Matt.4.6" osisID="Matt.4.6" n="6"/>אם בן אלהים אתה הפל עצמך לארץ למטה לפי שכתיב כי מלאכיו יצוה לך על כפים ישאונך פן תגוף באבן רגלך׃<verse eID="Matt.4.6"/>
+        <verse sID="Matt.4.7" osisID="Matt.4.7" n="7"/>אמר ליה יש׳ו אבל עוד כתוב לא תנסו את ה׳ אלוהיכם׃<verse eID="Matt.4.7"/>
+        <verse sID="Matt.4.8" osisID="Matt.4.8" n="8"/>ועוד לקחו השטן והעלהו אל הר גבוה מאד והראה לו כל ממלכות העולם וכבודם ויאמר לו׃<verse eID="Matt.4.8"/>
+        <verse sID="Matt.4.9" osisID="Matt.4.9" n="9"/>את כל זה אתן לך אם תקוד ותשתחוה לי׃<verse eID="Matt.4.9"/>
+        <verse sID="Matt.4.10" osisID="Matt.4.10" n="10"/>ואז אמר לו יש׳ו לשטן לך אחרי כתוב את ה׳ אלהיך תירא ואותו תעבוד׃<verse eID="Matt.4.10"/>
+        <verse sID="Matt.4.11" osisID="Matt.4.11" n="11"/>אז עזב השטן והא מלאכים קרבו והוו משמשין לו׃<verse eID="Matt.4.11"/>
+        <verse sID="Matt.4.12" osisID="Matt.4.12" n="12"/>וכיון ששמע ישו שיוחנן אסיר בבית אסירים חזר לגליל׃<verse eID="Matt.4.12"/>
+        <verse sID="Matt.4.13" osisID="Matt.4.13" n="13"/>ושבק לנצרת ובא וישב בכפר נחום הסמוך לים אשר בגבולות זבולון ונפתלי׃<verse eID="Matt.4.13"/>
+        <verse sID="Matt.4.14" osisID="Matt.4.14" n="14"/>כד שיתקיים מאמר הנביא ע׳י ישעיה האמר׃<verse eID="Matt.4.14"/>
+        <verse sID="Matt.4.15" osisID="Matt.4.15" n="15"/>ארץ זבולון וארץ נפתלי דרך הים עבר הירדן גליל הגויים׃<verse eID="Matt.4.15"/>
+        <verse sID="Matt.4.16" osisID="Matt.4.16" n="16"/>עם היושב בחשוכה ראו אור גדול והיושבין במקום טל ומיתה אור גדול ירי להון׃<verse eID="Matt.4.16"/>
+        <verse sID="Matt.4.17" osisID="Matt.4.17" n="17"/>מאז התחיל למכרז לאמור שובו קרוב לן כי מלכות שמים׃<verse eID="Matt.4.17"/>
+        <verse sID="Matt.4.18" osisID="Matt.4.18" n="18"/>וכאשר התהלך יש׳ו על שפת הים הגליל וירא את שני אחים את שמעון המכנה כיפה ואת אנדרי אחיו שהיו משליכים מכמורות בים כי היו דייגים׃<verse eID="Matt.4.18"/>
+        <verse sID="Matt.4.19" osisID="Matt.4.19" n="19"/>ויאמר להם לכו אחרי אעשה אתכם דייגי אנשים׃<verse eID="Matt.4.19"/>
+        <verse sID="Matt.4.20" osisID="Matt.4.20" n="20"/>והם שבקו הרשת והלכו בתריה׃<verse eID="Matt.4.20"/>
+        <verse sID="Matt.4.21" osisID="Matt.4.21" n="21"/>וכד עבר משם באו תרי אחים יעקב בן זבדי ויוחנן אחואי בספינה עם זבדי אביהם ומתקנים הרשת וקרא אותם׃<verse eID="Matt.4.21"/>
+        <verse sID="Matt.4.22" osisID="Matt.4.22" n="22"/>הם במהרה עזבו לספינה ולאביהם והלכו אחריו׃<verse eID="Matt.4.22"/>
+        <verse sID="Matt.4.23" osisID="Matt.4.23" n="23"/>ומסבב יש׳ו בכל הגלילות ומלמד את כנישתהון ומכריז סברות דמלכות ומרפא כל חלישם וכל חלישות שיש בעם׃<verse eID="Matt.4.23"/>
+        <verse sID="Matt.4.24" osisID="Matt.4.24" n="24"/>וישמע שמועתו בכל סוריא וקרבו לו כל מי שיש לו רעות וביש שהיה בחלישות וכאבות וגם אחוז משדים והשוטים והפודגרה ודבר אסרה ובורים ומרפא אותן׃<verse eID="Matt.4.24"/>
+        <verse sID="Matt.4.25" osisID="Matt.4.25" n="25"/>הלכו אחריו הרבה חבורות מן גליל ומן עסרת מדינתא ומן ירושלים ומן יהודה ומן עבר הירדן׃<verse eID="Matt.4.25"/>
+        <chapter eID="Matt.4"/>
+        <chapter sID="Matt.5" osisID="Matt.5" n="5"/>
+        <verse sID="Matt.5.1" osisID="Matt.5.1" n="1"/>כשראה זאת יש׳ו לעם רב עלה להר וכשישב באו אצלו תלמידיו׃<verse eID="Matt.5.1"/>
+        <verse sID="Matt.5.2" osisID="Matt.5.2" n="2"/>ופתח פיו ולימד אותם ואמר׃<verse eID="Matt.5.2"/>
+        <verse sID="Matt.5.3" osisID="Matt.5.3" n="3"/>טובתהון של עניים ובשבילם יהיה מלכות שמים׃<verse eID="Matt.5.3"/>
+        <verse sID="Matt.5.4" osisID="Matt.5.4" n="4"/>טובתהון של אבלים שהם יהיו מתנחמים׃<verse eID="Matt.5.4"/>
+        <verse sID="Matt.5.5" osisID="Matt.5.5" n="5"/>טובתהון השפלים שהם יירשו את העולם׃<verse eID="Matt.5.5"/>
+        <verse sID="Matt.5.6" osisID="Matt.5.6" n="6"/>טובתהון הרעבים וצמאים לצדקה שיהיו הם שבעים׃<verse eID="Matt.5.6"/>
+        <verse sID="Matt.5.7" osisID="Matt.5.7" n="7"/>טובתהון של אוהבים ועליהם אני מרחם׃<verse eID="Matt.5.7"/>
+        <verse sID="Matt.5.8" osisID="Matt.5.8" n="8"/>טובתהון של מזכי לב ויחזו הם את האלהים׃<verse eID="Matt.5.8"/>
+        <verse sID="Matt.5.9" osisID="Matt.5.9" n="9"/>טובתהון עושי שלום והם יתקרי בני אלהים׃<verse eID="Matt.5.9"/>
+        <verse sID="Matt.5.10" osisID="Matt.5.10" n="10"/>טובתהון על העמלים במשפט שהם יירשו מלכות שמים׃<verse eID="Matt.5.10"/>
+        <verse sID="Matt.5.11" osisID="Matt.5.11" n="11"/>טובתכון כשמחרפין אתכם ורודפין אתכם ואומרים עליכם לשון הרע בשביל כבודי לשקר׃<verse eID="Matt.5.11"/>
+        <verse sID="Matt.5.12" osisID="Matt.5.12" n="12"/>חדו ושמחו אתם ששכרכם הרבה בשמים לפי שנרדפו בשבילי הרבה נביאים׃<verse eID="Matt.5.12"/>
+        <verse sID="Matt.5.13" osisID="Matt.5.13" n="13"/>אתם המלח ארץ ואם המלח שמניחים בכלי יסוף זורקים אותו בארץ ואין מועיל ורומסים בו בני אדם׃<verse eID="Matt.5.13"/>
+        <verse sID="Matt.5.14" osisID="Matt.5.14" n="14"/>אתם האור של עולם שלא יוכל להסתר במדינה גבוהה הבנויה על הר גדול׃<verse eID="Matt.5.14"/>
+        <verse sID="Matt.5.15" osisID="Matt.5.15" n="15"/>ואין מדליקים נר ומניחים תחת הפרגוד אלא מדליקים במנורה שמאיר לכל בני בית׃<verse eID="Matt.5.15"/>
+        <verse sID="Matt.5.16" osisID="Matt.5.16" n="16"/>כך אתם מאירים בזוהר לעיני כל אדם מעשים טובים ומשבחים לאביהם שבשמים׃<verse eID="Matt.5.16"/>
+        <verse sID="Matt.5.17" osisID="Matt.5.17" n="17"/>אל תחשבו שבאתי: לבטל את התורה או דברי נבֵיא אלא לקיים׃<verse eID="Matt.5.17"/>
+        <verse sID="Matt.5.18" osisID="Matt.5.18" n="18"/>אע פ֝ שיבוטלו שמים וארץ לא יבוטל אפילו אות או נקודה אחת מן התורה אלא יתקיים׃<verse eID="Matt.5.18"/>
+        <verse sID="Matt.5.19" osisID="Matt.5.19" n="19"/>כל מי שיבטל מצוה אחת קטנה שיש בתורה וילמד לאחרים כך קטן יתקרא במלכות שמים וכל מי שמקים אותם וילמד לאחרים לעשות גדול יתקרא במלכות שמים׃<verse eID="Matt.5.19"/>
+        <verse sID="Matt.5.20" osisID="Matt.5.20" n="20"/>אומר לכם שלא יוסיפו במשפט יותר שיש בספר או סופרים ובזה תזכו לעלות לשמים׃<verse eID="Matt.5.20"/>
+        <verse sID="Matt.5.21" osisID="Matt.5.21" n="21"/>אתם שמעתם שאמר לקדמונים לא תרצח ומי שירצח מתחייב מיתת ב׳ד׃<verse eID="Matt.5.21"/>
+        <verse sID="Matt.5.22" osisID="Matt.5.22" n="22"/>אומר לכם כל שכועס על אחיו ומבזה אותו חייב הוא בב׳ד וכל מי שאומר על אחיו ריקה או רשע מחוייב מלקות בב׳ד וכן מי שאמר שוטה לחברו ירד לגיהנם׃<verse eID="Matt.5.22"/>
+        <verse sID="Matt.5.23" osisID="Matt.5.23" n="23"/>כיון שאתה מקריב קרבנך שם זכרת את אחיך שיש לו עליך דבר חטא׃<verse eID="Matt.5.23"/>
+        <verse sID="Matt.5.24" osisID="Matt.5.24" n="24"/>ותניח קורבנך על מזבח ולך רצה את אחיך ואח״כ תקרב קורבנך׃<verse eID="Matt.5.24"/>
+        <verse sID="Matt.5.25" osisID="Matt.5.25" n="25"/>תהיה מתאוה לפשר עם בעל דינך בעוד שאתה עמו בדרך מפני שהוא בעל דינך ימסור לדין והדין ימסור לשוטר ותפול בבית האסורים׃<verse eID="Matt.5.25"/>
+        <verse sID="Matt.5.26" osisID="Matt.5.26" n="26"/>אמת אומר לך לא תוכל לצאת משם עד שתתן אפילו שמינית אחרית׃<verse eID="Matt.5.26"/>
+        <verse sID="Matt.5.27" osisID="Matt.5.27" n="27"/>לא תנאף שמעתם מ׳ש :<verse eID="Matt.5.27"/>
+        <verse sID="Matt.5.28" osisID="Matt.5.28" n="28"/>אני אומר לכם כל מי שראה אשה וחמד אותה תפס ניאוף בליבו׃<verse eID="Matt.5.28"/>
+        <verse sID="Matt.5.29" osisID="Matt.5.29" n="29"/>אם עין ימינך עשה מכשילך תשרא ותזרוק מנך וטוב לך שיאבד אבר א֝ ממך ולא כל גופך בגיהנם׃<verse eID="Matt.5.29"/>
+        <verse sID="Matt.5.30" osisID="Matt.5.30" n="30"/>ואם יד ימינך כושל אותך תחתוך ותשלך וטוב לך שיאביד אבר א׳ ממך ולא כל גופך לגיהנם׃<verse eID="Matt.5.30"/>
+        <verse sID="Matt.5.31" osisID="Matt.5.31" n="31"/>נאמר מי שפוטר את אשתו יתן לה גט כריתות׃<verse eID="Matt.5.31"/>
+        <verse sID="Matt.5.32" osisID="Matt.5.32" n="32"/>אני אומר לכם כל מי שמגרש אשתו חוץ מן זנות העושה לה ניאוף וגם מי שנושא אותה הגרושה נואף׃<verse eID="Matt.5.32"/>
+        <verse sID="Matt.5.33" osisID="Matt.5.33" n="33"/>שוב שמעתם שאמרו קדמונים לא תדגילו בשבועה ותשלם לבעל שבועתך׃<verse eID="Matt.5.33"/>
+        <verse sID="Matt.5.34" osisID="Matt.5.34" n="34"/>אני אומר לא תשבעו בשמים מפני כסא אלהים היא׃<verse eID="Matt.5.34"/>
+        <verse sID="Matt.5.35" osisID="Matt.5.35" n="35"/>ולא בארץ מפני הדום רגליו ולא לירושלים מפני ארץ של מלך העולם׃<verse eID="Matt.5.35"/>
+        <verse sID="Matt.5.36" osisID="Matt.5.36" n="36"/>לא תשבע בראשך שלא תוכל לעשות אחד שיער או שחור או לבן׃<verse eID="Matt.5.36"/>
+        <verse sID="Matt.5.37" osisID="Matt.5.37" n="37"/>אלא יהיה דבריכם על הין הין ועל לא לאו ואם מזה עבר רע הוא׃<verse eID="Matt.5.37"/>
+        <verse sID="Matt.5.38" osisID="Matt.5.38" n="38"/>שמעתון מ״ש עין תחת עין שן תחת שן׃<verse eID="Matt.5.38"/>
+        <verse sID="Matt.5.39" osisID="Matt.5.39" n="39"/>אני אומר לכם לא תקומו לעשות רע אלא מי שמכה על לחיו הימין יראה אף השמאל׃<verse eID="Matt.5.39"/>
+        <verse sID="Matt.5.40" osisID="Matt.5.40" n="40"/>ומי שרוצה לדון עמך ליקח סודרך עזוב לו אף חלוקך׃<verse eID="Matt.5.40"/>
+        <verse sID="Matt.5.41" osisID="Matt.5.41" n="41"/>מי שרוצה להוליך אותך פרסה לך עמו ב׳ פרסאות׃<verse eID="Matt.5.41"/>
+        <verse sID="Matt.5.42" osisID="Matt.5.42" n="42"/>למי ששואל שאלה תתן לו ומי שלוה ממך אל תכלימהו׃<verse eID="Matt.5.42"/>
+        <verse sID="Matt.5.43" osisID="Matt.5.43" n="43"/>שמעתון שאומרים ואהבת לרעך ותשנא את שונאיך׃<verse eID="Matt.5.43"/>
+        <verse sID="Matt.5.44" osisID="Matt.5.44" n="44"/>אני אומר לכם תרחמו לשונאיכם וברכו למי שמקלל אתכם ועשו טובה את המקללים בכם ותתפללו על אלו שזוכרים לעשות רעות ורדיפה׃<verse eID="Matt.5.44"/>
+        <verse sID="Matt.5.45" osisID="Matt.5.45" n="45"/>ובזה תהיו בנים לאביכם שבשמים שברא השמש על טובים ועל רעים וגם מוריד מטר על טובים ורעים וצדיקים ורשעים׃<verse eID="Matt.5.45"/>
+        <verse sID="Matt.5.46" osisID="Matt.5.46" n="46"/>ואם אתם אוהבים את אלו שאוהבים אתכם מה שכר יש לכם כמו זה בני השוק עושים׃<verse eID="Matt.5.46"/>
+        <verse sID="Matt.5.47" osisID="Matt.5.47" n="47"/>ואף אם ישאלו בשלום אחיכם לבד מה טוב יש בכם אף בני השוק עושים כך׃<verse eID="Matt.5.47"/>
+        <verse sID="Matt.5.48" osisID="Matt.5.48" n="48"/>תהיו כך אתם שלימים כמו דאביכם של שמים ששלם הוא׃<verse eID="Matt.5.48"/>
+        <chapter eID="Matt.5"/>
+        <chapter sID="Matt.6" osisID="Matt.6" n="6"/>
+        <verse sID="Matt.6.1" osisID="Matt.6.1" n="1"/>תראו כשאתם נותנים צדקה לא תתנו בפני אדם שאם יראו לא יהיה לכם שכר מן אביכם שבשמים׃<verse eID="Matt.6.1"/>
+        <verse sID="Matt.6.2" osisID="Matt.6.2" n="2"/>כשאתם עושים צדקה לא תכריזו ברחובות ובשווקים כדי שתשתבחו בפני הא׳ ותאבדו שכרכם׃<verse eID="Matt.6.2"/>
+        <verse sID="Matt.6.3" osisID="Matt.6.3" n="3"/>אך כשאתם עושים צדקה יהיה בסתר כ׳כ שלא ידע אפילו שמאל לימין׃<verse eID="Matt.6.3"/>
+        <verse sID="Matt.6.4" osisID="Matt.6.4" n="4"/>ותהיה צדקתך בסתר ואֵל הרואה בסתר יפרע לך בגלוי׃<verse eID="Matt.6.4"/>
+        <verse sID="Matt.6.5" osisID="Matt.6.5" n="5"/>וכשאתה מתפלל לא תהיה תפילתך עראי כאותם שנוהגים לקום ולהתפלל בשווקים וברחובות לעיני הא׳ ותאבדו שכרכם׃<verse eID="Matt.6.5"/>
+        <verse sID="Matt.6.6" osisID="Matt.6.6" n="6"/>אך כשאתה מתפלל הכנס לביתך וסגור דלתיך והתפלל לאלהיך הנסתר והוא הרואה בסתר יפרע בגלוי׃<verse eID="Matt.6.6"/>
+        <verse sID="Matt.6.7" osisID="Matt.6.7" n="7"/>ומי שמתפלל לא תדברו כחנפים שמדברים הרבה להיות שמעים׃<verse eID="Matt.6.7"/>
+        <verse sID="Matt.6.8" osisID="Matt.6.8" n="8"/>אל תדמו להם לפי שאביכם שבשמים עונה אתכם קודם שתשאלוהו׃<verse eID="Matt.6.8"/>
+        <verse sID="Matt.6.9" osisID="Matt.6.9" n="9"/>ובכן צלו אתם לאביכם ויתקדש שמו:<verse eID="Matt.6.9"/>
+        <verse sID="Matt.6.10" osisID="Matt.6.10" n="10"/>תהא מלכותך אמת ויציב ומרוצה תחת השמים ואף על הארץ:<verse eID="Matt.6.10"/>
+        <verse sID="Matt.6.11" osisID="Matt.6.11" n="11"/>תן לנו מזון דבר יום ביומו׃<verse eID="Matt.6.11"/>
+        <verse sID="Matt.6.12" osisID="Matt.6.12" n="12"/>ומחול לנו חובותינו כמו שאנו מוחלין לחייבין׃<verse eID="Matt.6.12"/>
+        <verse sID="Matt.6.13" osisID="Matt.6.13" n="13"/>לא תביאנו ליד נסיון אלא הצילינו מכל רע לפי שמלכותך היא שלך וחילך ותושבחתך לעולם ועד:<verse eID="Matt.6.13"/>
+        <verse sID="Matt.6.14" osisID="Matt.6.14" n="14"/>אם אתם מוחלין לאחרים גם השם מוחל לכם עוונותיכם:<verse eID="Matt.6.14"/>
+        <verse sID="Matt.6.15" osisID="Matt.6.15" n="15"/>אך אם אתם לא תמחלו לב׳א השם לא ימחול לכם עוונותיכם׃<verse eID="Matt.6.15"/>
+        <verse sID="Matt.6.16" osisID="Matt.6.16" n="16"/>כשאתם מתענים לא תראו עצמיכם כרעבים ותשנו פניכם בפני אדם להראות עצמכם המעונים ויאבדו שכרכם:<verse eID="Matt.6.16"/>
+        <verse sID="Matt.6.17" osisID="Matt.6.17" n="17"/>כשאתה מתענה רחוץ פניך וראשיך:<verse eID="Matt.6.17"/>
+        <verse sID="Matt.6.18" osisID="Matt.6.18" n="18"/>כדי שלא יראה ב׳א שאתה בתענית אלא אביך הנסתר ורואה בסתר הוא שלם לך:<verse eID="Matt.6.18"/>
+        <verse sID="Matt.6.19" osisID="Matt.6.19" n="19"/>לא תשימון לכם מטמון בארץ במקום תולעים אוכלים ומחבלים וגם גנבים חותרים וגונבים:<verse eID="Matt.6.19"/>
+        <verse sID="Matt.6.20" osisID="Matt.6.20" n="20"/>אלא שימו מטמוניכם בשמים היכן שלא יהיה תולעים לאכול ומקום שגנובים לא חותרים ולא גונבין:<verse eID="Matt.6.20"/>
+        <verse sID="Matt.6.21" osisID="Matt.6.21" n="21"/>מפני מקום שיש מטמוניכם שם יהיה רצונכם:<verse eID="Matt.6.21"/>
+        <verse sID="Matt.6.22" osisID="Matt.6.22" n="22"/>נר של הגוף הוא עין ואם עינך יהיה בטוח כל גופך יהיה נהורא:<verse eID="Matt.6.22"/>
+        <verse sID="Matt.6.23" osisID="Matt.6.23" n="23"/>אם אם יהיה עניך רע כל גופך יהיה חושך כך אם זה האום שיש בך חשוך כולם יהיו חשוכים׃<verse eID="Matt.6.23"/>
+        <verse sID="Matt.6.24" osisID="Matt.6.24" n="24"/>לא יוכל אדם לעבוד לב׳ אדונים מפני לאחד יהיה שונא ולאחר אהוב או יהיה לחד יקר ולאחר ביזוי ולא תוכלו לעבוד ג׳כ לאלהים ולממון:<verse eID="Matt.6.24"/>
+        <verse sID="Matt.6.25" osisID="Matt.6.25" n="25"/>ובשביל אומר לכם לא תקוצו נפשיכון לומר מה אוכל ומה אשתה ולא לגופכם ג׳כ מה לובשים ולא יהיה נפש יתירה מן הממון וגופך מן לבושא:<verse eID="Matt.6.25"/>
+        <verse sID="Matt.6.26" osisID="Matt.6.26" n="26"/>ותראו בעופות השמים לא זורעים ולא קוצרים ולא כונסין באוצר והשם מכין להם לא אתם יתרים עליהם׃<verse eID="Matt.6.26"/>
+        <verse sID="Matt.6.27" osisID="Matt.6.27" n="27"/>מי מכם שיגעים שיוכל להוסיף על קומתו אמה חד׃<verse eID="Matt.6.27"/>
+        <verse sID="Matt.6.28" osisID="Matt.6.28" n="28"/>ואם על הלבוש אתם תקוצו תראו בפרחים של מדבר איך גדלים דלא יגעים ולא טוים:<verse eID="Matt.6.28"/>
+        <verse sID="Matt.6.29" osisID="Matt.6.29" n="29"/>אומר לכם אפילו שלמה המלך בכל תושבחותיו לא נתלבש כאחד מהם׃<verse eID="Matt.6.29"/>
+        <verse sID="Matt.6.30" osisID="Matt.6.30" n="30"/>אם זה השבולת השדה שהיום יש ומחר נופל בתנור כך אלהים מלבישהם הלא די לכם כך קטני אמנה:<verse eID="Matt.6.30"/>
+        <verse sID="Matt.6.31" osisID="Matt.6.31" n="31"/>לא תדאגו לומר מה נאכל מה נשתה ומה אלבוש׃<verse eID="Matt.6.31"/>
+        <verse sID="Matt.6.32" osisID="Matt.6.32" n="32"/>כל זה מבקשים עמי הארצות אבל אבוכון שבשמים יודע אתכם שמבקשים כל זה׃<verse eID="Matt.6.32"/>
+        <verse sID="Matt.6.33" osisID="Matt.6.33" n="33"/>תבקשו זה מלפני אדון שמים שהוא צדקותיו ובזה יהיה מוסיף לכם׃<verse eID="Matt.6.33"/>
+        <verse sID="Matt.6.34" osisID="Matt.6.34" n="34"/>לא תהיו קצים למחרת מפני כי למחר יהיה דאגתו ודי לו לאדם רע היום:<verse eID="Matt.6.34"/>
+        <chapter eID="Matt.6"/>
+        <chapter sID="Matt.7" osisID="Matt.7" n="7"/>
+        <verse sID="Matt.7.1" osisID="Matt.7.1" n="1"/>לא תדין ולא תידון:<verse eID="Matt.7.1"/>
+        <verse sID="Matt.7.2" osisID="Matt.7.2" n="2"/>כשם שאתה דן את חבירך ידונו לך ובמידה שאתה מודד בה לך מודדין:<verse eID="Matt.7.2"/>
+        <verse sID="Matt.7.3" osisID="Matt.7.3" n="3"/>אך אתה רואה קסם של עין חבירך וקורא דעינך אינך רואה׃<verse eID="Matt.7.3"/>
+        <verse sID="Matt.7.4" osisID="Matt.7.4" n="4"/>עיניך איך אתה אומר לאחיך טול קסם מבין שינך והרי קורא בין עינך׃<verse eID="Matt.7.4"/>
+        <verse sID="Matt.7.5" osisID="Matt.7.5" n="5"/>הכופר תסיר קודם הקורה שמבין עניך ואח׳כ תסיר הקיסם שבין עיני אחיך:<verse eID="Matt.7.5"/>
+        <verse sID="Matt.7.6" osisID="Matt.7.6" n="6"/>לא תשליכו דבר קודש לפני הכלבים ולא תשליכו המרגליות לפני חזירים אולי ירמסון ברגליהום ויתהפכו להפסדכון׃<verse eID="Matt.7.6"/>
+        <verse sID="Matt.7.7" osisID="Matt.7.7" n="7"/>שאלו ואתן לכם בקשו ותמצאו וקשו בפתח ואפתח לכם׃<verse eID="Matt.7.7"/>
+        <verse sID="Matt.7.8" osisID="Matt.7.8" n="8"/>וכל מי ששאל לקח וכל מי שבקש מצא וכל מי שנקש נפתח׃<verse eID="Matt.7.8"/>
+        <verse sID="Matt.7.9" osisID="Matt.7.9" n="9"/>איזה הוא מנכון אנש אשר ישאל בנו ממנו לחם שיושיט לו אבן׃<verse eID="Matt.7.9"/>
+        <verse sID="Matt.7.10" osisID="Matt.7.10" n="10"/>ואם שואל דג יושיט לו נחש׃<verse eID="Matt.7.10"/>
+        <verse sID="Matt.7.11" osisID="Matt.7.11" n="11"/>ואפילו אם אתם רעים יודעים ליתן מתנות טוב לבניכם וכמה יותר השם שנותן מתנות טובות לשואליו׃<verse eID="Matt.7.11"/>
+        <verse sID="Matt.7.12" osisID="Matt.7.12" n="12"/>כשם שאתם רוצים שיעשו רצונכם ב׳א כך אתה עשה רצונם כי כך פקדו הנביאים׃<verse eID="Matt.7.12"/>
+        <verse sID="Matt.7.13" osisID="Matt.7.13" n="13"/>יכנס בשער צר לפי הדלת הרחבה ובדרך הרווחה מקום שהולכים לאיבוד ורוב אנשים הם שהולכים שם׃<verse eID="Matt.7.13"/>
+        <verse sID="Matt.7.14" osisID="Matt.7.14" n="14"/>כמה קטן השער וצר הדרך שמוליך לחיים ומעט הם הנמצאים שם׃<verse eID="Matt.7.14"/>
+        <verse sID="Matt.7.15" osisID="Matt.7.15" n="15"/>הזהרו מנביאי השקר הבאים אצליכם בלבוש הצמר מבחוץ ובפנים מלאים תחבולות׃<verse eID="Matt.7.15"/>
+        <verse sID="Matt.7.16" osisID="Matt.7.16" n="16"/>מן פרים זה תדעו אתם למה מלקטין ענבים מן קוצים ותאנים מן דרדרים׃<verse eID="Matt.7.16"/>
+        <verse sID="Matt.7.17" osisID="Matt.7.17" n="17"/>כך יש אילן טוב ופירותיו טובים והאילן רע פירותיו רעים׃<verse eID="Matt.7.17"/>
+        <verse sID="Matt.7.18" osisID="Matt.7.18" n="18"/>לא ימצא אילן טוב ופירותיו רעים ולא אילן רע ופירותיו טובים׃<verse eID="Matt.7.18"/>
+        <verse sID="Matt.7.19" osisID="Matt.7.19" n="19"/>כל אילן שאין עושה פרי טוב חותכים אותו ומשליכים לאש׃<verse eID="Matt.7.19"/>
+        <verse sID="Matt.7.20" osisID="Matt.7.20" n="20"/>ומן פרי שלהם תדעו אותם׃<verse eID="Matt.7.20"/>
+        <verse sID="Matt.7.21" osisID="Matt.7.21" n="21"/>לא כל מי שאומר לי מרי מרי יעלה לשמים אלא מי שעושה רצון אבי שבשמים׃<verse eID="Matt.7.21"/>
+        <verse sID="Matt.7.22" osisID="Matt.7.22" n="22"/>רבים יאמרו אותו היום מרי מרי ולא אנו מתנבא בשמך ובשמך שדים יוצאים ובשמך הרבה נפלאות׃<verse eID="Matt.7.22"/>
+        <verse sID="Matt.7.23" osisID="Matt.7.23" n="23"/>שאז אודה להם בשבועה לומר לא מכיר הייתי בכם ותרחקו ממני עובדי עולה׃<verse eID="Matt.7.23"/>
+        <verse sID="Matt.7.24" osisID="Matt.7.24" n="24"/>כל מי ששמע זה הדברים ממני ועושה אותו דומה לאיש חכם הוא ובונה ביתו על גבעות׃<verse eID="Matt.7.24"/>
+        <verse sID="Matt.7.25" osisID="Matt.7.25" n="25"/>ונחת מטרה ובאו נהרות ונשב הרוח להחריב אותו הבית ולא נפל משום יסודו על גבעות לסימן היה׃<verse eID="Matt.7.25"/>
+        <verse sID="Matt.7.26" osisID="Matt.7.26" n="26"/>וכל מי ששמע ולא עשה אותם דומה לאיש סכל שבנה ביתו על חול׃<verse eID="Matt.7.26"/>
+        <verse sID="Matt.7.27" osisID="Matt.7.27" n="27"/>ונחת מטר ובא נהר ונשב רוח והחריבו ונפל הבית והיה מפולת רב׃<verse eID="Matt.7.27"/>
+        <verse sID="Matt.7.28" osisID="Matt.7.28" n="28"/>כיון שהיה משלים דברי יש֞ו נתמהו כל העם על הלימוד׃<verse eID="Matt.7.28"/>
+        <verse sID="Matt.7.29" osisID="Matt.7.29" n="29"/>מפני שלימד אותם כמו שוטר ולא כמו סופרים וחכמים׃<verse eID="Matt.7.29"/>
+        <chapter eID="Matt.7"/>
+        <chapter sID="Matt.8" osisID="Matt.8" n="8"/>
+        <verse sID="Matt.8.1" osisID="Matt.8.1" n="1"/>כיון זה שירד מן הטור סובב אותו עם רב׃<verse eID="Matt.8.1"/>
+        <verse sID="Matt.8.2" osisID="Matt.8.2" n="2"/>ובא מצורע אחד שבא והשתחוה לו ואמר מורי אם אתה רוצה יוכל אתה לטהר אותי:<verse eID="Matt.8.2"/>
+        <verse sID="Matt.8.3" osisID="Matt.8.3" n="3"/>ופשט ידו ואמר רוצה אני לטהר ובאותה שעה טהר׃<verse eID="Matt.8.3"/>
+        <verse sID="Matt.8.4" osisID="Matt.8.4" n="4"/>ואמר לו יש׳ו תראה לא תאמר לשום אדם אלא לך אצל כהן וקרב קורבנך כמצות משה בתו֞רה׃<verse eID="Matt.8.4"/>
+        <verse sID="Matt.8.5" osisID="Matt.8.5" n="5"/>אח׳כ עלה יש׳ו לכפר נחום וקרב איליו שר אחד ושאל ממנו ואמר׃<verse eID="Matt.8.5"/>
+        <verse sID="Matt.8.6" osisID="Matt.8.6" n="6"/>אדוני נערי נפל בבתי ונעשה שוטה ונוטה למות׃<verse eID="Matt.8.6"/>
+        <verse sID="Matt.8.7" osisID="Matt.8.7" n="7"/>אמר לו יש׳ו אני אבא וארפא אותו׃<verse eID="Matt.8.7"/>
+        <verse sID="Matt.8.8" osisID="Matt.8.8" n="8"/>השיב לו האיש ואמר מורי אין רצוני שתבוא תחת קורתי אילא די שתאמר דבר אחד ויתרפא הנער׃<verse eID="Matt.8.8"/>
+        <verse sID="Matt.8.9" osisID="Matt.8.9" n="9"/>אף אני אשר ממונה מן מלכות ויש בצל קורתי אנשים ואם אני אומר להם ליך לך והם הולכים ולאחד אומר עושה׃ תבא ויבא ולעבדי אני אומר עשה כך והוא<verse eID="Matt.8.9"/>
+        <verse sID="Matt.8.10" osisID="Matt.8.10" n="10"/>כששמע יש״ו נתמה ואמר לאותם שעימו אמת אומר לכם שאף בבני ישראל לא יש כך אמונה׃<verse eID="Matt.8.10"/>
+        <verse sID="Matt.8.11" osisID="Matt.8.11" n="11"/>עוד אומר לכם שהרבה באו מן מזרח ומן מערב יסמכו על השלחן עם אברהם יצחק יעקב במלכות שמים׃<verse eID="Matt.8.11"/>
+        <verse sID="Matt.8.12" osisID="Matt.8.12" n="12"/>בנים של זאת המלכות יצאו לחשך בחוץ ושם יהיו בוכים וחורקין שיניהם׃<verse eID="Matt.8.12"/>
+        <verse sID="Matt.8.13" osisID="Matt.8.13" n="13"/>ואמר ישו לאיש לך לך כמו שאתה מאמין יהיו לך ובאותה שעה נתרפה ילד:<verse eID="Matt.8.13"/>
+        <verse sID="Matt.8.14" osisID="Matt.8.14" n="14"/>ואחר בא יש׳ו לבית שמעון הנקרא פידרו וראה לחמותו מושלכת ואחזתה קדחת׃<verse eID="Matt.8.14"/>
+        <verse sID="Matt.8.15" osisID="Matt.8.15" n="15"/>ותפש ביד שלה והלכה הקדחת ממינה ותקום והיתה משמשת להם:<verse eID="Matt.8.15"/>
+        <verse sID="Matt.8.16" osisID="Matt.8.16" n="16"/>כשהיה לילה הקריבו ליה אנשים נכפים משדים והוציא בלחש ולכל אותם שיש להם רעה ג׳כ רופא׃<verse eID="Matt.8.16"/>
+        <verse sID="Matt.8.17" osisID="Matt.8.17" n="17"/>כד לקיים מאמר הנביא ישעיה והוא נשא מכאובינו וחולינו:<verse eID="Matt.8.17"/>
+        <verse sID="Matt.8.18" osisID="Matt.8.18" n="18"/>כשראה יש׳ו שהרבה אנשים מתכנשים סביבותיו ציוה שילכו לצד אחר:<verse eID="Matt.8.18"/>
+        <verse sID="Matt.8.19" osisID="Matt.8.19" n="19"/>ויתקרב אצלו חכם א׳ ואמר לו רבי למקום שתלך אבא אחריך<verse eID="Matt.8.19"/>
+        <verse sID="Matt.8.20" osisID="Matt.8.20" n="20"/>אמר לו ישו לשועלים יש חפירות ולעופות השמים יש קינים ולבן אדם זה אין לו מקום שיסמוך ראשו׃<verse eID="Matt.8.20"/>
+        <verse sID="Matt.8.21" osisID="Matt.8.21" n="21"/>אחד מן תלמידו אמר לו מורי תן לי רשות שאלך ואקבור את אבי מקודם:<verse eID="Matt.8.21"/>
+        <verse sID="Matt.8.22" osisID="Matt.8.22" n="22"/>באותה שעה אמר לו יש׳ו אתה תבא אחרי והניח המת ויקברוהו המתים׃<verse eID="Matt.8.22"/>
+        <verse sID="Matt.8.23" osisID="Matt.8.23" n="23"/>וכשנכנס יש׳ו בספינה נכנסו עמו תלמידיו׃<verse eID="Matt.8.23"/>
+        <verse sID="Matt.8.24" osisID="Matt.8.24" n="24"/>והנה רוח סערה בים עד שהספינה היתה לטבוע מן גלי ימה ויש׳ו היה ישן:<verse eID="Matt.8.24"/>
+        <verse sID="Matt.8.25" osisID="Matt.8.25" n="25"/>וקרבו תלמידיו והעירו אותו ואמרו אדונינו הנה אנחנו נאבדים:<verse eID="Matt.8.25"/>
+        <verse sID="Matt.8.26" osisID="Matt.8.26" n="26"/>אמר להם יש׳ו למה אתם מפחדים קטני אמנה אז קם וגער ברוח ובים ושקט מזעפו׃<verse eID="Matt.8.26"/>
+        <verse sID="Matt.8.27" osisID="Matt.8.27" n="27"/>אנשים אלו תמהו ואמרו מי הוא זה אשר הרוח והים שומעים איליו׃<verse eID="Matt.8.27"/>
+        <verse sID="Matt.8.28" osisID="Matt.8.28" n="28"/>ואחר שבא ישו לעבור לאותו הצד פגעו בו שני מכשפים שיוצאים מבין הקברות רעים הרבה שלא היה יוכל שום אנשים לעבור באותו הדרך׃<verse eID="Matt.8.28"/>
+        <verse sID="Matt.8.29" osisID="Matt.8.29" n="29"/>וצעקו ואמרו מה לנו ולך יש׳ו בן אלהים באתה לכאן להרגיזינו קודם זמן׃<verse eID="Matt.8.29"/>
+        <verse sID="Matt.8.30" osisID="Matt.8.30" n="30"/>ומקום רחוק להם היה דיר של חזירים הרבה וגם הרועים:<verse eID="Matt.8.30"/>
+        <verse sID="Matt.8.31" osisID="Matt.8.31" n="31"/>ואותם השדים בקשו ממנו ואמר אם אתה מוציא מן המקום הזה נלך אצל חזירים׃<verse eID="Matt.8.31"/>
+        <verse sID="Matt.8.32" osisID="Matt.8.32" n="32"/>ואמר להון יש׳ו לכו לכם ואחר שיצאו הלכו אצל החזירים לדיר ורצו הרועים להקיפם ונפלו בים ומתו במים׃<verse eID="Matt.8.32"/>
+        <verse sID="Matt.8.33" osisID="Matt.8.33" n="33"/>אותם הרועים שהיו ברחו והלכו למדינה וספרו כל שהיה וענין השיטנת׃<verse eID="Matt.8.33"/>
+        <verse sID="Matt.8.34" osisID="Matt.8.34" n="34"/>ויצאו כל בני העיר לקראת יש׳ו וכשראוהו בקשו ממנו שיטה מן תחום שלהם׃<verse eID="Matt.8.34"/>
+        <chapter eID="Matt.8"/>
+        <chapter sID="Matt.9" osisID="Matt.9" n="9"/>
+        <verse sID="Matt.9.1" osisID="Matt.9.1" n="1"/>ונכנס בספינה ועבר לאותו צד ובא למדינה והביאו לו א׳ שוטה שוכב על המטה:<verse eID="Matt.9.1"/>
+        <verse sID="Matt.9.2" osisID="Matt.9.2" n="2"/>וראה יש׳ו אמונתם שמאמינים בו ואמר ליה הפודגרה יתרפא בני ויסלח חטאתיך׃<verse eID="Matt.9.2"/>
+        <verse sID="Matt.9.3" osisID="Matt.9.3" n="3"/>אנשים איזה הם היו חושבים בלבם שהוא מגדף׃<verse eID="Matt.9.3"/>
+        <verse sID="Matt.9.4" osisID="Matt.9.4" n="4"/>יש׳ו ידע מחשבותם ואמר להון למה אתם חושבים רעה בלבכם׃<verse eID="Matt.9.4"/>
+        <verse sID="Matt.9.5" osisID="Matt.9.5" n="5"/>איזה יותר טוב לומר נמחלו חטאתיך או לומר קום ליך׃<verse eID="Matt.9.5"/>
+        <verse sID="Matt.9.6" osisID="Matt.9.6" n="6"/>ותהיו יודעים שיש שולטנות לבן אדם בארץ למחול חטאים ואמר לו החולה קום קח מיטתך ולך לבתך׃<verse eID="Matt.9.6"/>
+        <verse sID="Matt.9.7" osisID="Matt.9.7" n="7"/>וקם ואזל לביתו׃<verse eID="Matt.9.7"/>
+        <verse sID="Matt.9.8" osisID="Matt.9.8" n="8"/>כיון שראו כך הקהילה הם פחדו ושבחו לאל דנתן שולטנות כך לבן אדם׃<verse eID="Matt.9.8"/>
+        <verse sID="Matt.9.9" osisID="Matt.9.9" n="9"/>וכיון שהלך יש׳ו משם ראה איש אחד בבית המכס ושמו מתי אמר לו תבא אחרי וקם והלך אחריו׃<verse eID="Matt.9.9"/>
+        <verse sID="Matt.9.10" osisID="Matt.9.10" n="10"/>וכשהיה יש׳ו יושב על השלחן עם תלמידיו בביתו באו אנשים מבית המכס והרבה חטאים עימם וסמכו על השלחן עם יש׳ו ותלמידיו׃<verse eID="Matt.9.10"/>
+        <verse sID="Matt.9.11" osisID="Matt.9.11" n="11"/>כיון שראו הפירושים אמרו לתלמידיו למה עם אנשים רעים וחטאים אכל רביכון׃<verse eID="Matt.9.11"/>
+        <verse sID="Matt.9.12" osisID="Matt.9.12" n="12"/>יש׳ו כששמע כך אמר להם לא לבריאים צריך רפ֝ואה אלא לאותם שהם חולים׃<verse eID="Matt.9.12"/>
+        <verse sID="Matt.9.13" osisID="Matt.9.13" n="13"/>לכו ותלמדו ממני שאני חפץ ברצונם ולא בזבח וקרבן לא באתי לקרות לצדיקים אלא לחטאים׃<verse eID="Matt.9.13"/>
+        <verse sID="Matt.9.14" osisID="Matt.9.14" n="14"/>אח׳כ יתקרבו אצלו תלמידי יוחנן ואמרו למה אנו והפירושים צמין ותלמידיך אינם מתענים׃<verse eID="Matt.9.14"/>
+        <verse sID="Matt.9.15" osisID="Matt.9.15" n="15"/>אמר להם יש׳ו כלום יש בני אדם שהם בשמחה עם החתן שמתענים והחתן עימהם אלא כשילך החתן אז הם מתענים׃<verse eID="Matt.9.15"/>
+        <verse sID="Matt.9.16" osisID="Matt.9.16" n="16"/>לא יש אדם שמניח טלאי חדש על כסות ישנה מפני שהטלאי חדש צורט יותר את לבוש הישן׃<verse eID="Matt.9.16"/>
+        <verse sID="Matt.9.17" osisID="Matt.9.17" n="17"/>ולא מניחי אדם יין חדש בנודות ישנים משום שלא יתקרע הנוד והיין יצא אלא מניחים יין חדש בנוד חדשה ובזה ישתמרו שניהם׃<verse eID="Matt.9.17"/>
+        <verse sID="Matt.9.18" osisID="Matt.9.18" n="18"/>והוא עודנו מדבר עימם והנה אדם חשוב בא והשתחווה לו ואמר הנה ביתי נוטה למות תבא ותניח ידך עליה ותחיה׃<verse eID="Matt.9.18"/>
+        <verse sID="Matt.9.19" osisID="Matt.9.19" n="19"/>ויקום יש׳ו ותלמידיו והלכו אחריו׃<verse eID="Matt.9.19"/>
+        <verse sID="Matt.9.20" osisID="Matt.9.20" n="20"/>והנה אשה שיוצא ממנה דם שנים עשרה שנים וכשבא מאחריו נגע בלבוש שלו׃<verse eID="Matt.9.20"/>
+        <verse sID="Matt.9.21" osisID="Matt.9.21" n="21"/>חשבה היא בליבה אם אני לבד תופסת בלבושו הייתי מתרפא׃<verse eID="Matt.9.21"/>
+        <verse sID="Matt.9.22" osisID="Matt.9.22" n="22"/>יש׳ו זה פנה וראה ואמר לה ביתי תרצי ואמונתיך הוריד אותיך פה והתרפה האישה באותה שעה:<verse eID="Matt.9.22"/>
+        <verse sID="Matt.9.23" osisID="Matt.9.23" n="23"/>ובא יש׳ו לבית אותו אדם חשוב וראה שהם מיללים עם כת של קוננים׃<verse eID="Matt.9.23"/>
+        <verse sID="Matt.9.24" osisID="Matt.9.24" n="24"/>ואמר להם רחקו מעל הבתולה לפי שלא מיתה אלא היא ישנה וצחקו עליו׃<verse eID="Matt.9.24"/>
+        <verse sID="Matt.9.25" osisID="Matt.9.25" n="25"/>וכיון שנכנס אצלם תפס בידים שלה וקם הבת׃<verse eID="Matt.9.25"/>
+        <verse sID="Matt.9.26" osisID="Matt.9.26" n="26"/>ויצא השמועה בכל הארץ ההיא׃<verse eID="Matt.9.26"/>
+        <verse sID="Matt.9.27" osisID="Matt.9.27" n="27"/>וכיון שבא יש׳ו משם רדפו אחרו שניים סומים וצועקין ואומרים רחם בנו של דוד׃<verse eID="Matt.9.27"/>
+        <verse sID="Matt.9.28" osisID="Matt.9.28" n="28"/>וכיון שבא יש׳ו משם לבית התקרבו אצלו אותם הסומים אמר להם מאמינים אתם שיוכל אני לעשות כך אמרו כן אדוני׃<verse eID="Matt.9.28"/>
+        <verse sID="Matt.9.29" osisID="Matt.9.29" n="29"/>באותה שעה נגע בעין שלהם ואמר כפי אמנותם כך יהיה לכם׃<verse eID="Matt.9.29"/>
+        <verse sID="Matt.9.30" osisID="Matt.9.30" n="30"/>ובאותה שעה נפתחו עיניהם ואז הזהירם יש׳ו שלא ספרו לשום אדם׃<verse eID="Matt.9.30"/>
+        <verse sID="Matt.9.31" osisID="Matt.9.31" n="31"/>אחר זה יצאו והכריזו טובתו בכל הארץ׃<verse eID="Matt.9.31"/>
+        <verse sID="Matt.9.32" osisID="Matt.9.32" n="32"/>כיון שיצא יש׳ו משם הביאו לו אלם אחד שיש לו שד׃<verse eID="Matt.9.32"/>
+        <verse sID="Matt.9.33" osisID="Matt.9.33" n="33"/>וכיון שהוציא השד ממנו דיבר ההוא אלם ואז האמינו כל האנשים ואמרו מעולם לא נמצא כזה בישראל׃<verse eID="Matt.9.33"/>
+        <verse sID="Matt.9.34" osisID="Matt.9.34" n="34"/>והפירושים היו אומרים בקודם מי שיאחז משד מוציא השד׃<verse eID="Matt.9.34"/>
+        <verse sID="Matt.9.35" osisID="Matt.9.35" n="35"/>והיה חוזר יש׳ו בכל המדינות והכפרים ומלמד בכל כנסיות ומכרז באמנות שמים ומרפא כל חולי וכל מחלה׃<verse eID="Matt.9.35"/>
+        <verse sID="Matt.9.36" osisID="Matt.9.36" n="36"/>כיון שראה כך לכל עם הארץ ריחם עליהם שלא שיגעים היו ויושבין כצאן שאין להם רועה׃<verse eID="Matt.9.36"/>
+        <verse sID="Matt.9.37" osisID="Matt.9.37" n="37"/>ואמר לתלמידיו קצירה הרבה ופועלים מעט׃<verse eID="Matt.9.37"/>
+        <verse sID="Matt.9.38" osisID="Matt.9.38" n="38"/>תתפללו מן בעל הקצירה שיוציא פועלים לקצירתו׃<verse eID="Matt.9.38"/>
+        <chapter eID="Matt.9"/>
+        <chapter sID="Matt.10" osisID="Matt.10" n="10"/>
+        <verse sID="Matt.10.1" osisID="Matt.10.1" n="1"/>וקרא לי׳ב תלמידיו והשליט אותם על כל רוחות רעים שיוכלו להוציאם ולימדם לרפאת כל חולי ומחלה:<verse eID="Matt.10.1"/>
+        <verse sID="Matt.10.2" osisID="Matt.10.2" n="2"/>אל֞ הם שמותם של יב תלמידיו שבאו ה'א שמעון הנקרא֞ כאפה: ואנדר אחיו ויעקוב בן זבדי ויוחנן֞ אחיו:<verse eID="Matt.10.2"/>
+        <verse sID="Matt.10.3" osisID="Matt.10.3" n="3"/>ופליפוס וברטולמיהו וטומא מטיאוס֞ המכריז ויעקוב בן חלפי ולבוהיהו הנקרא֞ טאדודיהו:<verse eID="Matt.10.3"/>
+        <verse sID="Matt.10.4" osisID="Matt.10.4" n="4"/>ושמעון הכנעני יהודה איסקאריוטה שמסר אותו:<verse eID="Matt.10.4"/>
+        <verse sID="Matt.10.5" osisID="Matt.10.5" n="5"/>לזה שנים עשרה יש׳ו ואמר וציוה אותם בדרך של חנפים לא תלכו ובמדינת שומרונים לא֞ תבאו:<verse eID="Matt.10.5"/>
+        <verse sID="Matt.10.6" osisID="Matt.10.6" n="6"/>לכו לכם קודם אצל צאן האבודים מן בית ישראל:<verse eID="Matt.10.6"/>
+        <verse sID="Matt.10.7" osisID="Matt.10.7" n="7"/>ובשעה שתלכו אתם תכריזו ותאמרו היגיע זמן֞ מלכות שמים:<verse eID="Matt.10.7"/>
+        <verse sID="Matt.10.8" osisID="Matt.10.8" n="8"/>ריפו את החולים ואת המצורעים תטהירו הקימו למתים הסירו השדים ומי שגואל חסד לכם תגמלו לו֞ חסד:<verse eID="Matt.10.8"/>
+        <verse sID="Matt.10.9" osisID="Matt.10.9" n="9"/>לא תקנו זהב וכסף ולא נחשת ותניח בכיס שלכם:<verse eID="Matt.10.9"/>
+        <verse sID="Matt.10.10" osisID="Matt.10.10" n="10"/>ולא תעשו כיס ללחם לדרך ולא תקחו ב׳ חלוקים ולא מנעלים ולא מטה שלא יאמרו עליכם שקר הוא מחשבותהם:<verse eID="Matt.10.10"/>
+        <verse sID="Matt.10.11" osisID="Matt.10.11" n="11"/>לאיזה מדינה או כפר שאתם נכנסים בה שאלו מי יש נאמן ושם תשבו עד שתצאו משם:<verse eID="Matt.10.11"/>
+        <verse sID="Matt.10.12" osisID="Matt.10.12" n="12"/>וכיון שאתם נכנסים שאלו בשלום אנשי הבית:<verse eID="Matt.10.12"/>
+        <verse sID="Matt.10.13" osisID="Matt.10.13" n="13"/>ואם בעל הבית דורש שלומכם קודם יאבד לכם שלומכם:<verse eID="Matt.10.13"/>
+        <verse sID="Matt.10.14" osisID="Matt.10.14" n="14"/>ואם לא יקבלו ולא ישמעו דובריכם כיון שאתם יוצאים מן הבית או מן העיר תנערו עפר מן֞ רגלכון:<verse eID="Matt.10.14"/>
+        <verse sID="Matt.10.15" osisID="Matt.10.15" n="15"/>באמת אני אומר לכם כמו סדום ועמורה יקרא להם ביום הדין לאותם בני המדינה:<verse eID="Matt.10.15"/>
+        <verse sID="Matt.10.16" osisID="Matt.10.16" n="16"/>הנה אני שולח אתכם כמו טלה בין זאיבים לכן תהיו חכמים כמו חיות ותמימים כבני֞ יונה:<verse eID="Matt.10.16"/>
+        <verse sID="Matt.10.17" osisID="Matt.10.17" n="17"/>הזהרו מן בני אדם שנראים כאוהבים שהם מוסרים אתכם לב׳ד שלהם ומשם מקללין אתכם:<verse eID="Matt.10.17"/>
+        <verse sID="Matt.10.18" osisID="Matt.10.18" n="18"/>ואצל שר ומלך מוליכין אתכם בשבילי לקיים֞ עדותן ועדות העם:<verse eID="Matt.10.18"/>
+        <verse sID="Matt.10.19" osisID="Matt.10.19" n="19"/>בשעה שמוסרין אתכם לא תחשבו מה תשיבו או מה יריב להם מפני באותה שעה ימצא לך מה֞ שתדברו:<verse eID="Matt.10.19"/>
+        <verse sID="Matt.10.20" osisID="Matt.10.20" n="20"/>לא שהוא שאתם מדברים אילא רוח אביכן היא המדברת֞ בכם:<verse eID="Matt.10.20"/>
+        <verse sID="Matt.10.21" osisID="Matt.10.21" n="21"/>ימסור לדיין אח לאחיו למיתה ואב לבנו ויקומו֞ הבנים על אביהם וימיתו֞ אותם:<verse eID="Matt.10.21"/>
+        <verse sID="Matt.10.22" osisID="Matt.10.22" n="22"/>ותהיו מאוסים מכל בני אדם בשביל שמי עוד אותו אדם שמצפה לסוף הדבר הוא יחיה:<verse eID="Matt.10.22"/>
+        <verse sID="Matt.10.23" osisID="Matt.10.23" n="23"/>אלא שרודפים אתכם במדינה אחד ברחו לכם֞ במדינה אחרת אמר אומר לכם שלא תשלימו כל מדינות ישראל עד שיבא בן האדם:<verse eID="Matt.10.23"/>
+        <verse sID="Matt.10.24" osisID="Matt.10.24" n="24"/>לא יש תלמיד עצב מרבו ולא עבד מאדונו:<verse eID="Matt.10.24"/>
+        <verse sID="Matt.10.25" osisID="Matt.10.25" n="25"/>דיו לתלמיד להיות כרבו ולעבד כאדונו ואם יקראו לבעל הבית בעל זבוב עד כמה לבני֞ הבית:<verse eID="Matt.10.25"/>
+        <verse sID="Matt.10.26" osisID="Matt.10.26" n="26"/>לכן אל יראו מהם דבר מכוסה לא יש דבר מכוסה שלא יתגלה ולא נסתר שלא ידע:<verse eID="Matt.10.26"/>
+        <verse sID="Matt.10.27" osisID="Matt.10.27" n="27"/>ומה שאומר לכם בחשך תאמרו בגלוי ומה שבאזניכון שומעין אתם תכריזו על הגגים:<verse eID="Matt.10.27"/>
+        <verse sID="Matt.10.28" osisID="Matt.10.28" n="28"/>לא תפחדו מן אותם שהורגים הגוף ולנפש אינם יכולים להרוג אך פחדו מן֞ אשר יוכל להרוג גוף ונפש בגהינם:<verse eID="Matt.10.28"/>
+        <verse sID="Matt.10.29" osisID="Matt.10.29" n="29"/>לא שני צפרים נמכרים בפרוטה אחת ולא אחד מהם נופל בארץ אלא בגזירת השמים:<verse eID="Matt.10.29"/>
+        <verse sID="Matt.10.30" osisID="Matt.10.30" n="30"/>שאף שער ראשכים מנוים הוא אחד אחד:<verse eID="Matt.10.30"/>
+        <verse sID="Matt.10.31" osisID="Matt.10.31" n="31"/>לא תפחדו הרבה לפי שאתם וראים יותר יען֞ העופות:<verse eID="Matt.10.31"/>
+        <verse sID="Matt.10.32" osisID="Matt.10.32" n="32"/>כל איש שיודה בפני ב׳א אני אודה בו קודם אבי שבשמים:<verse eID="Matt.10.32"/>
+        <verse sID="Matt.10.33" osisID="Matt.10.33" n="33"/>כל מי שיכפור בי קדם֞ ב׳א אף אני אכפור בו קודם אבי שבשמים:<verse eID="Matt.10.33"/>
+        <verse sID="Matt.10.34" osisID="Matt.10.34" n="34"/>לא תחשבו שבאתי להניח שלום בארץ לא באתי כי אם חרב:<verse eID="Matt.10.34"/>
+        <verse sID="Matt.10.35" osisID="Matt.10.35" n="35"/>באתי להניח מחלוקת בין אב לבנו ובין בת לאמה ובין כלה֞ לחמותה:<verse eID="Matt.10.35"/>
+        <verse sID="Matt.10.36" osisID="Matt.10.36" n="36"/>ואויבי איש אנשי ביתו:<verse eID="Matt.10.36"/>
+        <verse sID="Matt.10.37" osisID="Matt.10.37" n="37"/>כל מי שרוצה לאביו ולאימו יותר ממני אינו ממנו֞ וכל מי שאוהב לבנו או לבתו יותר ממני אינו ממני:<verse eID="Matt.10.37"/>
+        <verse sID="Matt.10.38" osisID="Matt.10.38" n="38"/>וכל מי שאינו לוקח צלימתו ויבא אחרי אינו֞ ממני:<verse eID="Matt.10.38"/>
+        <verse sID="Matt.10.39" osisID="Matt.10.39" n="39"/>מי שאוהב נפשו יותה֞ ממני נאבד ומי שמאבד נפשו בשבילי֞ אמצאנו:<verse eID="Matt.10.39"/>
+        <verse sID="Matt.10.40" osisID="Matt.10.40" n="40"/>מי שמקבל לכם מקבל אותי ומי שמקבל אותי מקבל את השולח֞ אותי:<verse eID="Matt.10.40"/>
+        <verse sID="Matt.10.41" osisID="Matt.10.41" n="41"/>מי שמקבל לנביא בשם נביא שכר של נביא לוקח֞ ומי שמקבל צדיק בשם צדיק שכר של הצדיק לוקח:<verse eID="Matt.10.41"/>
+        <verse sID="Matt.10.42" osisID="Matt.10.42" n="42"/>וכל מי שמשקה לאחד מן זה הקטנים כוסמים קרים לבד בשם תלמידים אמת אומר לכם שלא יאבד֞ שכרו:<verse eID="Matt.10.42"/>
+        <chapter eID="Matt.10"/>
+        <chapter sID="Matt.11" osisID="Matt.11" n="11"/>
+        <verse sID="Matt.11.1" osisID="Matt.11.1" n="1"/>והיה אחר שהשלים יש׳ו לצוות לי׳ב תלמידיו שונה מקומו משם ללמד ולהכריז במדינתהון:<verse eID="Matt.11.1"/>
+        <verse sID="Matt.11.2" osisID="Matt.11.2" n="2"/>כיון ששמע יוחנן בבית האסורים מעשים של משיח שלח ביד תלמידיו ואמר לו:<verse eID="Matt.11.2"/>
+        <verse sID="Matt.11.3" osisID="Matt.11.3" n="3"/>אתה הוא שאנו מצפים או ממתינים לאחר ולו אנו מצפים:<verse eID="Matt.11.3"/>
+        <verse sID="Matt.11.4" osisID="Matt.11.4" n="4"/>אמר יש׳ו לכו ותאמרו ליוחנן כמו ששמע אתם תראו:<verse eID="Matt.11.4"/>
+        <verse sID="Matt.11.5" osisID="Matt.11.5" n="5"/>עיורים רואים וחיגר הולך ומצורע ירפא ומת יקום והעני יעשור:<verse eID="Matt.11.5"/>
+        <verse sID="Matt.11.6" osisID="Matt.11.6" n="6"/>אשריו לאיש אשר לא נכשל בי:<verse eID="Matt.11.6"/>
+        <verse sID="Matt.11.7" osisID="Matt.11.7" n="7"/>כיון שהלכו התחיל יש״ו לומר לכנסת בשביל יוחנן למה יצאתם לחרבה לראות קנים רצוצים אשר מרוח מזדעזעים:<verse eID="Matt.11.7"/>
+        <verse sID="Matt.11.8" osisID="Matt.11.8" n="8"/>ולמה אתם יצאתם לראות לבוש בגדים רעים כמו זה הלבוש בינוני וכך זך תראו אף בבית מלכות:<verse eID="Matt.11.8"/>
+        <verse sID="Matt.11.9" osisID="Matt.11.9" n="9"/>עוד יצאתם לראות נביא אמת אני אומר לכם שיותר מן נביא:<verse eID="Matt.11.9"/>
+        <verse sID="Matt.11.10" osisID="Matt.11.10" n="10"/>הרי זהו שכתוב עליו הנה אנכי שולח מלאך לפניך לתקן הדרך לפניך:<verse eID="Matt.11.10"/>
+        <verse sID="Matt.11.11" osisID="Matt.11.11" n="11"/>אמת אני אומר לכם לא קם בבני אדם רב כמו יוחנן המטהר והוא קטן ובשמים יש גדול ממנו:<verse eID="Matt.11.11"/>
+        <verse sID="Matt.11.12" osisID="Matt.11.12" n="12"/>מן שנולד יוחנן המטהר ועד עכשיו נתחזק מלכות שמים וכל המקטרגים יפסקו וישתקו:<verse eID="Matt.11.12"/>
+        <verse sID="Matt.11.13" osisID="Matt.11.13" n="13"/>לפי שכל נביא ותורה עד זמן יוחנן נבאו:<verse eID="Matt.11.13"/>
+        <verse sID="Matt.11.14" osisID="Matt.11.14" n="14"/>ואם אתם רוצים תקחו אותו שהוא אליהו שעתיד לבא:<verse eID="Matt.11.14"/>
+        <verse sID="Matt.11.15" osisID="Matt.11.15" n="15"/>מי שיש לו אזנים לשמוע ישמע:<verse eID="Matt.11.15"/>
+        <verse sID="Matt.11.16" osisID="Matt.11.16" n="16"/>למי אדמה משפחה זאת שדומה לקטנים שיושבים בשוק וקורא לחבוריהם:<verse eID="Matt.11.16"/>
+        <verse sID="Matt.11.17" osisID="Matt.11.17" n="17"/>ואומרין שירים לכם ואינכם מרקדין וקוננים לכם ואינכם בוכים:<verse eID="Matt.11.17"/>
+        <verse sID="Matt.11.18" osisID="Matt.11.18" n="18"/>מפני זה יוחנן ראה ובא לא אכל ולא שתה ואמר שד אחזתו:<verse eID="Matt.11.18"/>
+        <verse sID="Matt.11.19" osisID="Matt.11.19" n="19"/>באו בן אדם ואכל ושתה ואומר תראו זה האיש זולל וסובא ואוהב פריצות וחטאים וחכמת צדקותיו מן עבדים:<verse eID="Matt.11.19"/>
+        <verse sID="Matt.11.20" osisID="Matt.11.20" n="20"/>אז התחיל יש׳ו לחרף המדינות אלו שהיו בהם חיילות הרבה ולא שבו בתשובה:<verse eID="Matt.11.20"/>
+        <verse sID="Matt.11.21" osisID="Matt.11.21" n="21"/>ואמר הוא אוי ליך כורזין ואוי ליך בית צידה ואם בצור ובצידון היו מתחילים זה נפלאות היו בוכים וחוץ מזה ג׳כ היו שבים בשק ובאפר:<verse eID="Matt.11.21"/>
+        <verse sID="Matt.11.22" osisID="Matt.11.22" n="22"/>באמת אני אומר לכון לצור ולצידון יהיה נחת רוח ביום הדין ולא לכון:<verse eID="Matt.11.22"/>
+        <verse sID="Matt.11.23" osisID="Matt.11.23" n="23"/>ואנת כפר נחום מן השמים הטיל אותך ועד לשאול ירדת שאילו בסדום היו רואים נפלאות האלו היו בומם ויהיו קיים כמו קודם:<verse eID="Matt.11.23"/>
+        <verse sID="Matt.11.24" osisID="Matt.11.24" n="24"/>באמת אומר לכם לסדום יהיו נחת רוח ביום הדין ולא לכון:<verse eID="Matt.11.24"/>
+        <verse sID="Matt.11.25" osisID="Matt.11.25" n="25"/>ובזה השעה אמר יש׳ו ואמר מודה אני לפניך אבי שבשמים וארץ שכיסית דברים אלו מן חכמים ונבונים ונתדמו לילדים:<verse eID="Matt.11.25"/>
+        <verse sID="Matt.11.26" osisID="Matt.11.26" n="26"/>אם אבי שכך הוא רצונך לפניך:<verse eID="Matt.11.26"/>
+        <verse sID="Matt.11.27" osisID="Matt.11.27" n="27"/>כל מה שנמסר לי מן אבי ואין אדם מכיר את בנו אלא אביו גם אין אדם מכיר את האב אלא בנו מי הוא הבן שרוצה למרוד:<verse eID="Matt.11.27"/>
+        <verse sID="Matt.11.28" osisID="Matt.11.28" n="28"/>בואו אצלי כלכם בעלי תלאות ובעלי משא ואני מניח לכם:<verse eID="Matt.11.28"/>
+        <verse sID="Matt.11.29" osisID="Matt.11.29" n="29"/>תשאו עולי עליכון וילמדו ממני לפי נכה רוח אנכי ורך הלבב ותמצא נחת רוח לנפשותיכם:<verse eID="Matt.11.29"/>
+        <verse sID="Matt.11.30" osisID="Matt.11.30" n="30"/>עולי כי מתוך הוא ומשאי קל הוא:<verse eID="Matt.11.30"/>
+        <chapter eID="Matt.11"/>
+        <chapter sID="Matt.12" osisID="Matt.12" n="12"/>
+        <verse sID="Matt.12.1" osisID="Matt.12.1" n="1"/>בזה הזמן הלך יש׳ו בשבת בבית זרעים ותלמידיו רעבים והתחיל מלקטים שיבולת ואוכלים:<verse eID="Matt.12.1"/>
+        <verse sID="Matt.12.2" osisID="Matt.12.2" n="2"/>הפירושים כיון שראו זה אמרו לו הנה תלמידך עושים דבר שאסור לעשות בשבת:<verse eID="Matt.12.2"/>
+        <verse sID="Matt.12.3" osisID="Matt.12.3" n="3"/>אז הוא השיב להם לא קריתם מה שעשה דוד כשהיה רעב ואנשים אשר היו עמו:<verse eID="Matt.12.3"/>
+        <verse sID="Matt.12.4" osisID="Matt.12.4" n="4"/>איך נכנס לבית אלהים ומלחם הפנים אכל מה שלא ראוי לו לאכול ולא לאנשים אשר עמו אלא לכהנים לבד:<verse eID="Matt.12.4"/>
+        <verse sID="Matt.12.5" osisID="Matt.12.5" n="5"/>וגם לא קריתם בתורה שכהנים בהכל מחלין בשבת ולא היו יראים וחוטאים מזה:<verse eID="Matt.12.5"/>
+        <verse sID="Matt.12.6" osisID="Matt.12.6" n="6"/>אומר אני לכם שגדול מן ההיכל הוא יש פה:<verse eID="Matt.12.6"/>
+        <verse sID="Matt.12.7" osisID="Matt.12.7" n="7"/>אילו זאת תהיו יודעים מי שחנן אבי׳ אני ולא רוצה בזבח ושלמים הוא לא תעשו אוהבים לאילו שלא פחדו ממנו:<verse eID="Matt.12.7"/>
+        <verse sID="Matt.12.8" osisID="Matt.12.8" n="8"/>אדון של השבת הוא בן אדם:<verse eID="Matt.12.8"/>
+        <verse sID="Matt.12.9" osisID="Matt.12.9" n="9"/>ונפרד משם יש׳ו ובא בתוך קהילתם<verse eID="Matt.12.9"/>
+        <verse sID="Matt.12.10" osisID="Matt.12.10" n="10"/>והיה שם איש א׳ שיבשה יד אחד ושאלו ואמרין אם יוכל בשבת לרפאת שיאכל בידו:<verse eID="Matt.12.10"/>
+        <verse sID="Matt.12.11" osisID="Matt.12.11" n="11"/>הוא זה השיב ואמר מי מכם איש שיש לו צאן שנפל בבור ביום שבת ואין מקים אותו:<verse eID="Matt.12.11"/>
+        <verse sID="Matt.12.12" osisID="Matt.12.12" n="12"/>כמה זה יותר בן אדם מן הצאן מן הדין ראוי בשבת לעשות טוב:<verse eID="Matt.12.12"/>
+        <verse sID="Matt.12.13" osisID="Matt.12.13" n="13"/>וחש אמר לאיש פשוט ידך ופשט והיה טוב כיד חברתה:<verse eID="Matt.12.13"/>
+        <verse sID="Matt.12.14" osisID="Matt.12.14" n="14"/>ויצאו הפירושים והמלך וקמו עליו לאבד אותו:<verse eID="Matt.12.14"/>
+        <verse sID="Matt.12.15" osisID="Matt.12.15" n="15"/>אז ישו כיון שידע זה והלך אחר הקהילות ומרפה הכלם:<verse eID="Matt.12.15"/>
+        <verse sID="Matt.12.16" osisID="Matt.12.16" n="16"/>והיה מזכיר אותם שלא יגלו אותו:<verse eID="Matt.12.16"/>
+        <verse sID="Matt.12.17" osisID="Matt.12.17" n="17"/>דנתקיים מה שאמר ע׳י נביא ישעיה:<verse eID="Matt.12.17"/>
+        <verse sID="Matt.12.18" osisID="Matt.12.18" n="18"/>הן עבדי אתמך בו בחירי רצתה נפשי נתתי רוחי עליו ומשפט לגויים יוציא:<verse eID="Matt.12.18"/>
+        <verse sID="Matt.12.19" osisID="Matt.12.19" n="19"/>לא יצעק ולא ישא ולא ישמוע קולו בחוץ:<verse eID="Matt.12.19"/>
+        <verse sID="Matt.12.20" osisID="Matt.12.20" n="20"/>קנה רצוץ לא ישבור ופשתה כהה לא יכבוה עד שיוציא לאמת משפט:<verse eID="Matt.12.20"/>
+        <verse sID="Matt.12.21" osisID="Matt.12.21" n="21"/>ובשמו היו מקוים עם:<verse eID="Matt.12.21"/>
+        <verse sID="Matt.12.22" osisID="Matt.12.22" n="22"/>אחר זה הביאו לו א׳ שוטה אלם ועיור וריפה אותו כך חרש וסומא מדברים ורואים:<verse eID="Matt.12.22"/>
+        <verse sID="Matt.12.23" osisID="Matt.12.23" n="23"/>ותמהו כל הקהילה ואמרו שמא זה בנו דדויד:<verse eID="Matt.12.23"/>
+        <verse sID="Matt.12.24" osisID="Matt.12.24" n="24"/>פירושים כיון ששמעו אמרו הם בודאי לא מוציא שדים אלא במקום בעל זבוב ראש השדים:<verse eID="Matt.12.24"/>
+        <verse sID="Matt.12.25" osisID="Matt.12.25" n="25"/>כשהבין מחשבותיהם אמר להם כל מלכות שתחלוק על עצמם נחרבת וכל בית ומדינה שתחלון על עצמם אינם מתקיימים:<verse eID="Matt.12.25"/>
+        <verse sID="Matt.12.26" osisID="Matt.12.26" n="26"/>ואם שטין שטנה על עצמו ומפליג כי עד יוכל לקיים מלכותה:<verse eID="Matt.12.26"/>
+        <verse sID="Matt.12.27" osisID="Matt.12.27" n="27"/>ואם אני מוציא מבעל זבוב השדים למה במהרה תוציאו לו בניכם ולכן יהיו נתבעים בזה עליכם:<verse eID="Matt.12.27"/>
+        <verse sID="Matt.12.28" osisID="Matt.12.28" n="28"/>ואם אני מוציא השדים מכח רוח אלהים לשדים יקרב עליכם מלכות שמים:<verse eID="Matt.12.28"/>
+        <verse sID="Matt.12.29" osisID="Matt.12.29" n="29"/>איך יוכל אדם מצוי שיבא לבית אדם אחד גבור לגנוב ממונו אלא קודם צריך לאסור לאותו גיבור ואז נגנוב ביתו:<verse eID="Matt.12.29"/>
+        <verse sID="Matt.12.30" osisID="Matt.12.30" n="30"/>מי שאינו עימי בו קנאתי ומי שאינו נכנס עימי נזרק נזרקיה:<verse eID="Matt.12.30"/>
+        <verse sID="Matt.12.31" osisID="Matt.12.31" n="31"/>על כן אומר לכם שכל חטאים ובזיונות מחול לבני אדם אבל בזיון שהוא נגד הרוח לא יהיו נמחל:<verse eID="Matt.12.31"/>
+        <verse sID="Matt.12.32" osisID="Matt.12.32" n="32"/>וכל מי שיאמר דבר על בן אדם ימחל לו אבל מי שאומר על רוח הקדש לא נמחל לו לא בעולם הזה ולא בעולם הבא:<verse eID="Matt.12.32"/>
+        <verse sID="Matt.12.33" osisID="Matt.12.33" n="33"/>או תעשו אילן טוב ופירותיו טובים או תעשו אילן רע ופירותיו רעים מן פירותיו תהיו יודעים האילן:<verse eID="Matt.12.33"/>
+        <verse sID="Matt.12.34" osisID="Matt.12.34" n="34"/>בני נחשים כיצד אתם יכולים לדבר טובה ואתם רעים מן מחשבות לבכם פיכם מדבר:<verse eID="Matt.12.34"/>
+        <verse sID="Matt.12.35" osisID="Matt.12.35" n="35"/>אדם טוב מן מחשבתו טובה מוציא טובה ואדם רע מן מחשבתו הרע מוציא רע:<verse eID="Matt.12.35"/>
+        <verse sID="Matt.12.36" osisID="Matt.12.36" n="36"/>אומר אני לכם שכל דברים בטלין שיאמרו בני אדם תלוים דבריו ליום הדין:<verse eID="Matt.12.36"/>
+        <verse sID="Matt.12.37" osisID="Matt.12.37" n="37"/>מן דבריך תצדק ומן דבריך תתחיב:<verse eID="Matt.12.37"/>
+        <verse sID="Matt.12.38" osisID="Matt.12.38" n="38"/>אז ענו אנשים מן הסופרים ומן הפירושים רבינו צרוכין אנו לראות איזה אות ממך:<verse eID="Matt.12.38"/>
+        <verse sID="Matt.12.39" osisID="Matt.12.39" n="39"/>אז הוא ענה ואמר משפחה ביש ונואף אותות מבקשים והאות לא ינתן אלא אות דיונה נביא:<verse eID="Matt.12.39"/>
+        <verse sID="Matt.12.40" osisID="Matt.12.40" n="40"/>כמו שהיה יונה במעי הדג ג׳ ימים וג׳ לילות כך יהיה בן אדם בלב הארץ ג׳ ימים וג׳ לילות:<verse eID="Matt.12.40"/>
+        <verse sID="Matt.12.41" osisID="Matt.12.41" n="41"/>אַנָשֶי יקומו עם המשפחה הזאת ומחייבים שהם שבו בהכרזת יונה ופה יש גדול מיונה:<verse eID="Matt.12.41"/>
+        <verse sID="Matt.12.42" osisID="Matt.12.42" n="42"/>מלכות תימן יקום בדין עם המשפחה זאת ויתחייב שבאה מארץ רחוקה לשמוע חכמת שלמה ופה גדול מן שלמה יש:<verse eID="Matt.12.42"/>
+        <verse sID="Matt.12.43" osisID="Matt.12.43" n="43"/>אימת זה רוחה טומאה יוצא מן בני אדם הולך אל מקום מנוחה למנוח ולא ימצא:<verse eID="Matt.12.43"/>
+        <verse sID="Matt.12.44" osisID="Matt.12.44" n="44"/>אז אמרה האפוך לבתי מן מקום שיצאתי ובאה ומצאה הבית ריקן ומופנה ומהופך:<verse eID="Matt.12.44"/>
+        <verse sID="Matt.12.45" osisID="Matt.12.45" n="45"/>אז הלכו ולקחו עמה שבע רוחין אחרים רעים ממנה ובאו ושכנו באותו בית והיה רע לאיש יותר מקודם וכך יהיה למשפחה הזאת הרעה:<verse eID="Matt.12.45"/>
+        <verse sID="Matt.12.46" osisID="Matt.12.46" n="46"/>כיון שהיה מדבר כך באו אמו ואחיו ועמדו לחוץ ורצו לדבר עמו:<verse eID="Matt.12.46"/>
+        <verse sID="Matt.12.47" osisID="Matt.12.47" n="47"/>אמר לו אחד איש הנה אמך ואחיך עומדים בחוץ ורוצה לדבר עמך:<verse eID="Matt.12.47"/>
+        <verse sID="Matt.12.48" osisID="Matt.12.48" n="48"/>הוא זה השיב למי שאמר לו מי הוא אימי ומי הם אחי:<verse eID="Matt.12.48"/>
+        <verse sID="Matt.12.49" osisID="Matt.12.49" n="49"/>ושלח ידו אל תלמידיו ואמר אלו הם אמי ואלו אחי:<verse eID="Matt.12.49"/>
+        <verse sID="Matt.12.50" osisID="Matt.12.50" n="50"/>כל מי שעושה רצון אבי הוא אחי ואחיותי ואימי:<verse eID="Matt.12.50"/>
+        <chapter eID="Matt.12"/>
+        <chapter sID="Matt.13" osisID="Matt.13" n="13"/>
+        <verse sID="Matt.13.1" osisID="Matt.13.1" n="1"/>באותו היום שיצא יש׳ו מביתו ישב על שפת הים:<verse eID="Matt.13.1"/>
+        <verse sID="Matt.13.2" osisID="Matt.13.2" n="2"/>ויכנסו אצלו אנשים רבים כיון שיצא ישב הוא בספינה וכל האנשים עמדו על שפת הים:<verse eID="Matt.13.2"/>
+        <verse sID="Matt.13.3" osisID="Matt.13.3" n="3"/>והרבה דברים דיבר עמהם בפלחות ובמשלים ואמר זה יצא הזורע לזרוע:<verse eID="Matt.13.3"/>
+        <verse sID="Matt.13.4" osisID="Matt.13.4" n="4"/>וכיון שזרע זה מעט נפל על הדרך ואתא עופות ואכל אותם:<verse eID="Matt.13.4"/>
+        <verse sID="Matt.13.5" osisID="Matt.13.5" n="5"/>וחלק אחד נפל על גבעות במקום שאין בו עפר הרבה ובאותה שעה נצמח בשביל שלא היה עפר לשורשו:<verse eID="Matt.13.5"/>
+        <verse sID="Matt.13.6" osisID="Matt.13.6" n="6"/>וכיון שזרחה עליו השמש ונתחמם בשביל שאין לו שורש נתייבש:<verse eID="Matt.13.6"/>
+        <verse sID="Matt.13.7" osisID="Matt.13.7" n="7"/>וחלק א׳ נפל במקום הקוצין וכיון שנתגדל הקוצים נחנקו:<verse eID="Matt.13.7"/>
+        <verse sID="Matt.13.8" osisID="Matt.13.8" n="8"/>וחלק א׳ נפל בארץ טובה ונתן הפירות יש שנתן לק׳ ויש של ס׳ ויש של ל׳:<verse eID="Matt.13.8"/>
+        <verse sID="Matt.13.9" osisID="Matt.13.9" n="9"/>מי שיש לו אזנים לשמוע ישמע:<verse eID="Matt.13.9"/>
+        <verse sID="Matt.13.10" osisID="Matt.13.10" n="10"/>וקרבו תלמידיו אצלו למה אתה במשלים מדבר עימהם:<verse eID="Matt.13.10"/>
+        <verse sID="Matt.13.11" osisID="Matt.13.11" n="11"/>עוד הוא ענה ואמר לכם ניתן לידע רז מלכות שמים ולאילו לא ניתן:<verse eID="Matt.13.11"/>
+        <verse sID="Matt.13.12" osisID="Matt.13.12" n="12"/>למי שיש לו נותנים לו ומתעלה עוד ומי שאין לו אף מה שהיה לו לוקחים ממנו:<verse eID="Matt.13.12"/>
+        <verse sID="Matt.13.13" osisID="Matt.13.13" n="13"/>בשביל זה אני מדבר עמם במשל לפי רואים ולא רואים ושומעים ואינם שומעים וגם לא סוברים:<verse eID="Matt.13.13"/>
+        <verse sID="Matt.13.14" osisID="Matt.13.14" n="14"/>ונתאמת בהם נבואת ישעיה שאמר שמעו שמוע ואל תבינו וראו ראו ואל תדעו:<verse eID="Matt.13.14"/>
+        <verse sID="Matt.13.15" osisID="Matt.13.15" n="15"/>השמן לב העם הזה ואזניו הכבד ועיניו השע פן יראו בעיניו ובאזניו ישמע ולבבו יבין ושב ורפא לו:<verse eID="Matt.13.15"/>
+        <verse sID="Matt.13.16" osisID="Matt.13.16" n="16"/>עליכם היא הטובה שעינכם רואים ואזניכם שומעים:<verse eID="Matt.13.16"/>
+        <verse sID="Matt.13.17" osisID="Matt.13.17" n="17"/>באמת כי אני אומר לכם שהרבה נביאים וצדיקים התאוו לראות מה שאתם רואים ולא ראו ולשמוע מה שאתם שומעים ולא שמעו:<verse eID="Matt.13.17"/>
+        <verse sID="Matt.13.18" osisID="Matt.13.18" n="18"/>אתם תבינו משל הזרע:<verse eID="Matt.13.18"/>
+        <verse sID="Matt.13.19" osisID="Matt.13.19" n="19"/>כל השומע דברי מלכות ולא מבין בה והיה זרעיו בלא רצון זה הוא שזרע על הדרך:<verse eID="Matt.13.19"/>
+        <verse sID="Matt.13.20" osisID="Matt.13.20" n="20"/>אותו שזרע על הר הוא ששומע הדבר ומקבל בשמחה באותה שעה:<verse eID="Matt.13.20"/>
+        <verse sID="Matt.13.21" osisID="Matt.13.21" n="21"/>לא יש לו עיקר מעצמו אלא לפי הזמן וכיון שהיה חולי או איזה חלשות במהרה יכשל:<verse eID="Matt.13.21"/>
+        <verse sID="Matt.13.22" osisID="Matt.13.22" n="22"/>הוא זה שזורע מקום הקוצין הוא הוא מי ששומע דבר וחשב בזה בעיון העולם והטעה אותו העושר והחניק את הדבר ולא עשה את הפירות:<verse eID="Matt.13.22"/>
+        <verse sID="Matt.13.23" osisID="Matt.13.23" n="23"/>ומי שזרע בארץ טובה הוא הוא ששומע ומבין ונותן פרי למאה או לששים או לשלשים:<verse eID="Matt.13.23"/>
+        <verse sID="Matt.13.24" osisID="Matt.13.24" n="24"/>משל אחר המשיל להם שדומה מלכות שמים לאיש שזרע זרע הטוב בעירו:<verse eID="Matt.13.24"/>
+        <verse sID="Matt.13.25" osisID="Matt.13.25" n="25"/>וכיון שהיו ישנים באו אוייבים וזרעו זונין בין החיטים והלכו:<verse eID="Matt.13.25"/>
+        <verse sID="Matt.13.26" osisID="Matt.13.26" n="26"/>כיון שנתגדל יפה העשבים ועשו פרי באותה שעה נראה הזונין:<verse eID="Matt.13.26"/>
+        <verse sID="Matt.13.27" osisID="Matt.13.27" n="27"/>ונתקרבו עבדים לאדון ואמרו לו אדונינו זרע טוב זרעת בשדיך מהיכן יצאו הזונין:<verse eID="Matt.13.27"/>
+        <verse sID="Matt.13.28" osisID="Matt.13.28" n="28"/>אמר לו האדון אוייבים שלי עשה כך ואמרו עבדיו רוצה אתה במהרה להסיר אותם:<verse eID="Matt.13.28"/>
+        <verse sID="Matt.13.29" osisID="Matt.13.29" n="29"/>אמר להם שמא כשאתם מנקין את הזונין עוקרין את החיטים ג׳כ:<verse eID="Matt.13.29"/>
+        <verse sID="Matt.13.30" osisID="Matt.13.30" n="30"/>וְתַנִחּו אותם שיהיו גדולים ביחד עד זמן הקצירה ובשעת הקצירה אומר אני לקוצר שינקה קודם לזונין ויקשור אותם לשריפה והחיטים וכניסו לאוצרות:<verse eID="Matt.13.30"/>
+        <verse sID="Matt.13.31" osisID="Matt.13.31" n="31"/>משל אחר אמשול לכם שדומה מלכות שמים לגרעוני חרדל שלקח אדם וזרע בשדהו:<verse eID="Matt.13.31"/>
+        <verse sID="Matt.13.32" osisID="Matt.13.32" n="32"/>והוא זרע קטן מן כל זרעועים וזה נתגדל מכל הירקות והיה כאילן עד שבא עופות השמים שמסתופפים בצלם:<verse eID="Matt.13.32"/>
+        <verse sID="Matt.13.33" osisID="Matt.13.33" n="33"/>משל אחר אומר לכון שדומה מלכות שמים לשאור שלקחה אשה והטמינה בג׳ סאין של קמח עד שהחמיץ כולו:<verse eID="Matt.13.33"/>
+        <verse sID="Matt.13.34" osisID="Matt.13.34" n="34"/>זה הכל היה במשלים לקהילות ומה שאין בו משל ופלא לא דיבר עמהם׃<verse eID="Matt.13.34"/>
+        <verse sID="Matt.13.35" osisID="Matt.13.35" n="35"/>כמו שנאמר ביד נביא אפתחה במשל פי אביעה חידות מיני קדם:<verse eID="Matt.13.35"/>
+        <verse sID="Matt.13.36" osisID="Matt.13.36" n="36"/>אז שבק יש׳ו לקהילה ובא לבית וקרבו תלמידיו ואמרו פתור לנו זה של זיונים והארץ:<verse eID="Matt.13.36"/>
+        <verse sID="Matt.13.37" osisID="Matt.13.37" n="37"/>ענה יש׳ו אמר זה שזרע זרע טוב הם בני אנשים:<verse eID="Matt.13.37"/>
+        <verse sID="Matt.13.38" osisID="Matt.13.38" n="38"/>והארץ הוא עולם זרע זה הטוב הוא בנים הם זיונא שיש בו בנים רעים:<verse eID="Matt.13.38"/>
+        <verse sID="Matt.13.39" osisID="Matt.13.39" n="39"/>ואוייבים הם שזרע אותם הוא שדים קצירה שלו הוא תשובה ומעשים טובים של עולם וקוצרים הם המלאכים:<verse eID="Matt.13.39"/>
+        <verse sID="Matt.13.40" osisID="Matt.13.40" n="40"/>כמו שמלקטין הזיונא ושורפים באש כך יהיה שלום עולם הזה:<verse eID="Matt.13.40"/>
+        <verse sID="Matt.13.41" osisID="Matt.13.41" n="41"/>שלחו לבני אדם עם מלאכוהי לגבית מן כל מלכות המכשולות וכל שעושים עול:<verse eID="Matt.13.41"/>
+        <verse sID="Matt.13.42" osisID="Matt.13.42" n="42"/>וישליכו אותם בתנור באש ושם יהיו בוכים וחורקין שיניהם:<verse eID="Matt.13.42"/>
+        <verse sID="Matt.13.43" osisID="Matt.13.43" n="43"/>אז הצדיקים מזהירים כזוהר השמש במלכות אביהם מי שיש לו אזנים לשמוע ישמע:<verse eID="Matt.13.43"/>
+        <verse sID="Matt.13.44" osisID="Matt.13.44" n="44"/>שוב דומה מלכות שמים למטמון הגנוזה בארץ וכיון שמצא אדם שמח והסתיר במקומו ומן השמחה הלך ומכר כל מה שיש לו וקנה קרקע זאת:<verse eID="Matt.13.44"/>
+        <verse sID="Matt.13.45" osisID="Matt.13.45" n="45"/>שוב דומה מלכות שמים לתגר שמבקש מרגלית טובה:<verse eID="Matt.13.45"/>
+        <verse sID="Matt.13.46" osisID="Matt.13.46" n="46"/>וכיון שמצא א׳ מרגלית הלך ומכר כל מה שיש לו וקנה אותה:<verse eID="Matt.13.46"/>
+        <verse sID="Matt.13.47" osisID="Matt.13.47" n="47"/>עוד דומה מלכות שמים לרשת שנופלת למים וכל מה שנופלת בתוכו הדגים כונסת:<verse eID="Matt.13.47"/>
+        <verse sID="Matt.13.48" osisID="Matt.13.48" n="48"/>וכין שהעלה אותם ליבשה מלאה 'הדגים וישב עליו לברר והטוב השליך בכיליו והרע זרן לחוץ:<verse eID="Matt.13.48"/>
+        <verse sID="Matt.13.49" osisID="Matt.13.49" n="49"/>כך יהיה בסוף העולם יצאו המלאכים ויפרשין רעים מן בין הצדיקים:<verse eID="Matt.13.49"/>
+        <verse sID="Matt.13.50" osisID="Matt.13.50" n="50"/>וישליך אותם בתנור באש ושם יהיו בוכים וחורקין שיניהם:<verse eID="Matt.13.50"/>
+        <verse sID="Matt.13.51" osisID="Matt.13.51" n="51"/>אמר להם יש׳ו היבנתון כל זה ואמרו כין מורינו:<verse eID="Matt.13.51"/>
+        <verse sID="Matt.13.52" osisID="Matt.13.52" n="52"/>אמר להם בשיל זה כל הסופרים המלמדים למלכות שמים דומה לאיש בעל הבית שהוציא מן ארגזו חדש וישן:<verse eID="Matt.13.52"/>
+        <verse sID="Matt.13.53" osisID="Matt.13.53" n="53"/>והוא כיון שהשלם יש׳ו משלים אלה שינה מקומו משם:<verse eID="Matt.13.53"/>
+        <verse sID="Matt.13.54" osisID="Matt.13.54" n="54"/>ובא למדינה ומלמד הוא להם בקהילתם איך שמתמיהים ואומרים מהיכן לזה חכמה הזאת ופלאות:<verse eID="Matt.13.54"/>
+        <verse sID="Matt.13.55" osisID="Matt.13.55" n="55"/>לא היה זה בן נגר עצים לא אימו מתקריה מרים ואחיו יעקוב יוסף ושמעון ויהודה:<verse eID="Matt.13.55"/>
+        <verse sID="Matt.13.56" osisID="Matt.13.56" n="56"/>וגם אחותיו כלם לא יש עימן מאין בא לו כל זה:<verse eID="Matt.13.56"/>
+        <verse sID="Matt.13.57" osisID="Matt.13.57" n="57"/>ומתמיהים היו בו אז יש׳ו אמר להם לא יש נביא בלא כבוד אלא בעירו ובביתו:<verse eID="Matt.13.57"/>
+        <verse sID="Matt.13.58" osisID="Matt.13.58" n="58"/>ויצא יש׳ו ולא עשה שם נפלאות הרבה בשביל שלא האמינו בו:<verse eID="Matt.13.58"/>
+        <chapter eID="Matt.13"/>
+        <chapter sID="Matt.14" osisID="Matt.14" n="14"/>
+        <verse sID="Matt.14.1" osisID="Matt.14.1" n="1"/>ובאותה שעה שמע הורודס טטררכה )כלו׳ הורדוס הרביעי( שמעה דישו:<verse eID="Matt.14.1"/>
+        <verse sID="Matt.14.2" osisID="Matt.14.2" n="2"/>ואמר לעבדיו שיוחנן המטהר הוא קם מן המתים בשביל זה הוא עושה נפלאות הזה:<verse eID="Matt.14.2"/>
+        <verse sID="Matt.14.3" osisID="Matt.14.3" n="3"/>הוא זה הורודוס שתפס ליוחנן ואסר והשליך בבית האסורים בשביל הירודיה אשת פיליפוס אחיו:<verse eID="Matt.14.3"/>
+        <verse sID="Matt.14.4" osisID="Matt.14.4" n="4"/>ואמר הוא לה הרי יוחנן דלא מניח לישא אותה להיות אשתו:<verse eID="Matt.14.4"/>
+        <verse sID="Matt.14.5" osisID="Matt.14.5" n="5"/>ורצה להרוג ומשום פחד המוני עם לא הרג מפני הם לנביא חושבים אותו:<verse eID="Matt.14.5"/>
+        <verse sID="Matt.14.6" osisID="Matt.14.6" n="6"/>כיון שהיה במשתה יום הלידת הורודוס רקדת בת הירודיה בפניו ורצה הורודוס בה:<verse eID="Matt.14.6"/>
+        <verse sID="Matt.14.7" osisID="Matt.14.7" n="7"/>בשביל זה בשבועה אמר לה ליתן לה כל מה ששואלת:<verse eID="Matt.14.7"/>
+        <verse sID="Matt.14.8" osisID="Matt.14.8" n="8"/>והיא בשביל המרובה שהיה לאימה אמרה תן לי עכשיו בקערה אחת ראש של יוחנן המטהר:א<verse eID="Matt.14.8"/>
+        <verse sID="Matt.14.9" osisID="Matt.14.9" n="9"/>נאנח לה המולך ובשביל שבועה שעשה בשלחן צוה שיתן לה:<verse eID="Matt.14.9"/>
+        <verse sID="Matt.14.10" osisID="Matt.14.10" n="10"/>ושלח והרג ליוחנן בבית האסורים:<verse eID="Matt.14.10"/>
+        <verse sID="Matt.14.11" osisID="Matt.14.11" n="11"/>והביא ראשו בקערה ונתן לנערה והביאה לאימה:<verse eID="Matt.14.11"/>
+        <verse sID="Matt.14.12" osisID="Matt.14.12" n="12"/>ובאו תלמידיו ולקחו גופו וקברו ובאו והיגדו ליש׳ו:<verse eID="Matt.14.12"/>
+        <verse sID="Matt.14.13" osisID="Matt.14.13" n="13"/>יש׳ו כיון ששמע שונה את מקומו בספינה למקום חורבה לבדו וכיון הקילה הלכו אחריו ביבשה מן הארץ:<verse eID="Matt.14.13"/>
+        <verse sID="Matt.14.14" osisID="Matt.14.14" n="14"/>ויצא יש׳ו עם הקהילה וריחם עליהם וריפא כאיביהון:<verse eID="Matt.14.14"/>
+        <verse sID="Matt.14.15" osisID="Matt.14.15" n="15"/>כיון שהיה ערב קרבו אצלו תלמידיו ואמרו לו מקום חורבה זה וזמן אכולה עבר תשלח לקהילה שילכו לעיר ויקנה להם אכולה:<verse eID="Matt.14.15"/>
+        <verse sID="Matt.14.16" osisID="Matt.14.16" n="16"/>הוא אמר להם לא צריכים לילך תתנו להם אכילה:<verse eID="Matt.14.16"/>
+        <verse sID="Matt.14.17" osisID="Matt.14.17" n="17"/>הם אמרו לא יש לנו כאן כי אם ה׳ פת וב׳ דגים:<verse eID="Matt.14.17"/>
+        <verse sID="Matt.14.18" osisID="Matt.14.18" n="18"/>אמר להם תביאו פה לי:<verse eID="Matt.14.18"/>
+        <verse sID="Matt.14.19" osisID="Matt.14.19" n="19"/>וציוה לקהילה לישב לארץ ולקח ה׳ פת וב׳ דגים והניח לפניהם וראה בשמים ובירך וחילק לתלמידיו ותלמידיו נתנו לקהילה:<verse eID="Matt.14.19"/>
+        <verse sID="Matt.14.20" osisID="Matt.14.20" n="20"/>ואכלו כלם ושבעו ונטלו מן שיור חתיכות וב׳ סלים מלאים:<verse eID="Matt.14.20"/>
+        <verse sID="Matt.14.21" osisID="Matt.14.21" n="21"/>זה אנשים שאכלו היו ה׳ אלפים חוץ מן נשים וילדים:<verse eID="Matt.14.21"/>
+        <verse sID="Matt.14.22" osisID="Matt.14.22" n="22"/>ובמהרה צוה לתלמידיו שיעלו לספינה לילך לפניו לעבר הנהר והוא שלח לקהילות:<verse eID="Matt.14.22"/>
+        <verse sID="Matt.14.23" osisID="Matt.14.23" n="23"/>וכיון ששלח לקהילה עלה להר בעצמו להתפלל:<verse eID="Matt.14.23"/>
+        <verse sID="Matt.14.24" osisID="Matt.14.24" n="24"/>והיה לבדו והספינה היה רחוק מן הארץ והיה הים סוער הרבה מן גלים ורוח היה נגדיים:<verse eID="Matt.14.24"/>
+        <verse sID="Matt.14.25" osisID="Matt.14.25" n="25"/>ובשמרה רביעית בלילה בא אצלם יש׳ו במהלך על הים:<verse eID="Matt.14.25"/>
+        <verse sID="Matt.14.26" osisID="Matt.14.26" n="26"/>וראה תלמידיו א׳ שהולך על הים ותמהו ואמרו פלאות הוא ומן הפחד צעקו:<verse eID="Matt.14.26"/>
+        <verse sID="Matt.14.27" osisID="Matt.14.27" n="27"/>ויש׳ו אמר להם תקשו לבכם אני אני לא תפחדו:<verse eID="Matt.14.27"/>
+        <verse sID="Matt.14.28" osisID="Matt.14.28" n="28"/>וענה פדרו ואמר מורי אם אתה הוא צוה אותי שיבא אצלך על המים:<verse eID="Matt.14.28"/>
+        <verse sID="Matt.14.29" osisID="Matt.14.29" n="29"/>ויש׳ו אמר לו תבא וירד פידרו מן ספינה והלך על ים ובא אצל יש׳ו:<verse eID="Matt.14.29"/>
+        <verse sID="Matt.14.30" osisID="Matt.14.30" n="30"/>וכיון שבא רוח קשה פחד והתחיל ליטבוע והרים קול וצעק אדוני תפדני:<verse eID="Matt.14.30"/>
+        <verse sID="Matt.14.31" osisID="Matt.14.31" n="31"/>ובאותה שעה פשט ידו ואמר מפני מה קטני אמנה היית בספקות:<verse eID="Matt.14.31"/>
+        <verse sID="Matt.14.32" osisID="Matt.14.32" n="32"/>וכיון שעלו לספינה פסק הרוח:<verse eID="Matt.14.32"/>
+        <verse sID="Matt.14.33" osisID="Matt.14.33" n="33"/>ובאו הם שיש בספינה והשתחוו לו ואמרו באמת בן אלהים את:<verse eID="Matt.14.33"/>
+        <verse sID="Matt.14.34" osisID="Matt.14.34" n="34"/>וירדו ובאו לארץ של גינוסר:<verse eID="Matt.14.34"/>
+        <verse sID="Matt.14.35" osisID="Matt.14.35" n="35"/>כיון שידעו אנשים של מקום ושלחו בעיר בסביבותיו וקרבו לו כל זה שיש רעות עושין:<verse eID="Matt.14.35"/>
+        <verse sID="Matt.14.36" osisID="Matt.14.36" n="36"/>ובקשו ממנו שיקריבו ידן לכנפות של לבישיו וכל שנוגעים היו מתרפאים:<verse eID="Matt.14.36"/>
+        <chapter eID="Matt.14"/>
+        <chapter sID="Matt.15" osisID="Matt.15" n="15"/>
+        <verse sID="Matt.15.1" osisID="Matt.15.1" n="1"/>אז קרבו אצל יש׳ו פירושים וסופרים מן ירושלים ואמרו׃<verse eID="Matt.15.1"/>
+        <verse sID="Matt.15.2" osisID="Matt.15.2" n="2"/>למה תלמידך עוברין על דת חכמים ולא נוטלין ידים כיון שאוכלים לחם׃<verse eID="Matt.15.2"/>
+        <verse sID="Matt.15.3" osisID="Matt.15.3" n="3"/>ענה יש׳ו ואמר מפני מה אתם עוברים על מצות השם בשביל הנאתכם׃<verse eID="Matt.15.3"/>
+        <verse sID="Matt.15.4" osisID="Matt.15.4" n="4"/>השם אמר כבד את אביך ואת אביך ומי שמקללם מות ימות׃<verse eID="Matt.15.4"/>
+        <verse sID="Matt.15.5" osisID="Matt.15.5" n="5"/>אתם מה אתם אומרין כל מי שאומר לאביו ולאימו קרבתם אותי בשביל שתתהגו ממני׃<verse eID="Matt.15.5"/>
+        <verse sID="Matt.15.6" osisID="Matt.15.6" n="6"/>ולא כבדו את אביו ואמו בשביל הנאתכם׃<verse eID="Matt.15.6"/>
+        <verse sID="Matt.15.7" osisID="Matt.15.7" n="7"/>הכופרים בטוב נתנבא עליכם ישעיה נביא ואמר׃<verse eID="Matt.15.7"/>
+        <verse sID="Matt.15.8" osisID="Matt.15.8" n="8"/>העם הזה בפיו ובשפתיו כבדוני וליבו ריחק ממני׃<verse eID="Matt.15.8"/>
+        <verse sID="Matt.15.9" osisID="Matt.15.9" n="9"/>ותהי יראתם אותי כשלומדים ואח׳כ מצות אנשים מלומדים׃<verse eID="Matt.15.9"/>
+        <verse sID="Matt.15.10" osisID="Matt.15.10" n="10"/>וקרא לקהילה ואמר להן תשמעו ותבינו׃<verse eID="Matt.15.10"/>
+        <verse sID="Matt.15.11" osisID="Matt.15.11" n="11"/>לא הוא כל דבר שיכנס בפי מטמא לבני אדם אלא כל היוצא מן הפה מטמא לבני אדם׃<verse eID="Matt.15.11"/>
+        <verse sID="Matt.15.12" osisID="Matt.15.12" n="12"/>אז קרבו איליו התלמידים ואמרו לו ידעת הפירושים ששמעו זה הדבר נתקנו׃<verse eID="Matt.15.12"/>
+        <verse sID="Matt.15.13" osisID="Matt.15.13" n="13"/>ענה הוא ואמר להם כל נטעים במקום שלא נטע אבי של שמים תתעקר׃<verse eID="Matt.15.13"/>
+        <verse sID="Matt.15.14" osisID="Matt.15.14" n="14"/>תעזבו אותם סומים הם ומנהגם לסומים וסומים המנהיגים לסומים בהכרח במקום שהולך שניהם נופלים בגימא׃<verse eID="Matt.15.14"/>
+        <verse sID="Matt.15.15" osisID="Matt.15.15" n="15"/>וענה פידרו ואמר מורי תפרש לנו זה הדבר׃<verse eID="Matt.15.15"/>
+        <verse sID="Matt.15.16" osisID="Matt.15.16" n="16"/>ואז הוא אמר עדין אין אתם ג׳כ בעלי שכל׃<verse eID="Matt.15.16"/>
+        <verse sID="Matt.15.17" osisID="Matt.15.17" n="17"/>לא תדעו אתם כל מה שיבא לפה לכרס הוא הולך ומן שם בטהרה יוצא לחוץ׃<verse eID="Matt.15.17"/>
+        <verse sID="Matt.15.18" osisID="Matt.15.18" n="18"/>וכל מה שיוצא חליפה יוצא מן הלב והוא מטמא לבני אדם׃<verse eID="Matt.15.18"/>
+        <verse sID="Matt.15.19" osisID="Matt.15.19" n="19"/>מן הלב יוצא מחשבות רעות והרג וזנות גניבה ניאוף עדות שקר ודופי׃<verse eID="Matt.15.19"/>
+        <verse sID="Matt.15.20" osisID="Matt.15.20" n="20"/>זה הם שמטמא לב׳א אלא מי שאוכל בלא נטילת יד לא יטמא׃<verse eID="Matt.15.20"/>
+        <verse sID="Matt.15.21" osisID="Matt.15.21" n="21"/>ויצא מן שם יש׳ו ובא לתחום של צור וצידון׃<verse eID="Matt.15.21"/>
+        <verse sID="Matt.15.22" osisID="Matt.15.22" n="22"/>ובא אשה כנענית מן אותו התחום וצועקת ובוכה ואומרת תרחם עלי אדוני בן דוד ביתי אחוזה מן שד׃<verse eID="Matt.15.22"/>
+        <verse sID="Matt.15.23" osisID="Matt.15.23" n="23"/>הוא לא השיב שום דבר וקרבו תלמידיו ובקשו ממנו ואמרו תניח אותה שבוכה אחרינו׃<verse eID="Matt.15.23"/>
+        <verse sID="Matt.15.24" osisID="Matt.15.24" n="24"/>הוא ענה ואמר לה לא נשתלחתי אלא לות הצאן אבודים מן בית ישראל׃<verse eID="Matt.15.24"/>
+        <verse sID="Matt.15.25" osisID="Matt.15.25" n="25"/>באותה שעה באה היא ובכה מורי תעזור לי׃<verse eID="Matt.15.25"/>
+        <verse sID="Matt.15.26" osisID="Matt.15.26" n="26"/>אמר לה יש׳ו לא נאה ליך ליקח פת של הבנים וליתן לכלבים׃<verse eID="Matt.15.26"/>
+        <verse sID="Matt.15.27" osisID="Matt.15.27" n="27"/>היא השיבה כך אוכלים הכלבים מן פתיתים שנופלים מעל שלחן אדוניהם וחיים׃<verse eID="Matt.15.27"/>
+        <verse sID="Matt.15.28" osisID="Matt.15.28" n="28"/>אז ענה יש׳ו אשה רבה אמונתך תעשי כמו שאת רוצית והתרפה ביתה מן אותה שעה׃<verse eID="Matt.15.28"/>
+        <verse sID="Matt.15.29" osisID="Matt.15.29" n="29"/>ושינה מן שם ובא על נגב ים של גליל ועלה להר וישב שם׃<verse eID="Matt.15.29"/>
+        <verse sID="Matt.15.30" osisID="Matt.15.30" n="30"/>וקרב איליו כל הקהילות רבים שיש בהם חיגרים וסומים וחרשים וחולי הפודגרה ואחרים הרבה שנפלו על רגלי יש׳ו וריפה אותם׃<verse eID="Matt.15.30"/>
+        <verse sID="Matt.15.31" osisID="Matt.15.31" n="31"/>כמה תמהים היו הקהילות שרואים שאילם מדבר ובעל פידגרה נרפא וחיגר מהלך וסומים רואים ושבחו לאלהי ישראל׃<verse eID="Matt.15.31"/>
+        <verse sID="Matt.15.32" osisID="Matt.15.32" n="32"/>וקרב תלמידיו ואמר להם מרחם אני על הקהילה זו שזה ג׳ ימים ישבו עימי ולית להם אכילה ולשלוח אותם בתענית לא רציתי שמא ילעון בדרך׃<verse eID="Matt.15.32"/>
+        <verse sID="Matt.15.33" osisID="Matt.15.33" n="33"/>אמרו תלמידיו מהיכן יבא לן פת בחורבא זו להשביע לכל קהילה הזאת׃<verse eID="Matt.15.33"/>
+        <verse sID="Matt.15.34" osisID="Matt.15.34" n="34"/>אמר להם כמה פת יש לכם אמרו ז׳ פת ומעט דגים קטנים׃<verse eID="Matt.15.34"/>
+        <verse sID="Matt.15.35" osisID="Matt.15.35" n="35"/>וציוה לקהילה לישב על הארץ׃<verse eID="Matt.15.35"/>
+        <verse sID="Matt.15.36" osisID="Matt.15.36" n="36"/>ולקח זה ז׳ פת ודג ובירך וחתך לתלמידיו והתלמיד יתן לקהילה׃<verse eID="Matt.15.36"/>
+        <verse sID="Matt.15.37" osisID="Matt.15.37" n="37"/>ואכל כלם ושבעו והותירו מן פתיתים ז׳ סלים׃<verse eID="Matt.15.37"/>
+        <verse sID="Matt.15.38" osisID="Matt.15.38" n="38"/>זה שאכלו היו ד׳ אלפים איש חוץ מן קטנים ונשים׃<verse eID="Matt.15.38"/>
+        <verse sID="Matt.15.39" osisID="Matt.15.39" n="39"/>וכיון שהלך הקהילה עלה לספינה ובא לתחום מגידו׃<verse eID="Matt.15.39"/>
+        <chapter eID="Matt.15"/>
+        <chapter sID="Matt.16" osisID="Matt.16" n="16"/>
+        <verse sID="Matt.16.1" osisID="Matt.16.1" n="1"/>וקרבו הפירושים והצדוקים לנסות אותו ושאלו אות ממנו מן השמים שיראה להם׃<verse eID="Matt.16.1"/>
+        <verse sID="Matt.16.2" osisID="Matt.16.2" n="2"/>אז ענה הוא ואמר להם כיון שהוא עת ערב אתם אומרים שעה טוב מפני שהשמים אדום׃<verse eID="Matt.16.2"/>
+        <verse sID="Matt.16.3" osisID="Matt.16.3" n="3"/>ובבוקר אומרים יום קור הוא והיה השמים אדומים בגוון הכופרים הידעו אתם לבדוק באותות השמים ואפיל סימן של זמן לא יודעים להפריש׃<verse eID="Matt.16.3"/>
+        <verse sID="Matt.16.4" osisID="Matt.16.4" n="4"/>שבט רע ועיקש אות אתם מבקשים ואות אינו ניתן אלא ליונה הנביא והניח אותם והלך לו׃<verse eID="Matt.16.4"/>
+        <verse sID="Matt.16.5" osisID="Matt.16.5" n="5"/>וכיון שבא תלמידיו לעבור לאותו הבד שכחו ליקח לחם עימהם:<verse eID="Matt.16.5"/>
+        <verse sID="Matt.16.6" osisID="Matt.16.6" n="6"/>הוא זה אמר להם תזהרו מן תחבולות הפירושים וצדוקים::<verse eID="Matt.16.6"/>
+        <verse sID="Matt.16.7" osisID="Matt.16.7" n="7"/>והם היו מתנחמים בליבם ואומרים למה כל זה לפי שלא לקחנו לחם׃<verse eID="Matt.16.7"/>
+        <verse sID="Matt.16.8" osisID="Matt.16.8" n="8"/>ויש׳ו כיון שהבין אמר להם למה מחשבים בליבכם קטני אמנה על הלחם שלא הבאתם׃<verse eID="Matt.16.8"/>
+        <verse sID="Matt.16.9" osisID="Matt.16.9" n="9"/>עד עכשיו לא הבנתם ולא ידעתם לאלו ה׳ לחם על ה׳ לחם על ה׳ אלפים וכמה קופות לקחתם׃<verse eID="Matt.16.9"/>
+        <verse sID="Matt.16.10" osisID="Matt.16.10" n="10"/>וגם לאילו ז׳ לחם של ד׳ אלפים וכמה קופות לקחתם׃<verse eID="Matt.16.10"/>
+        <verse sID="Matt.16.11" osisID="Matt.16.11" n="11"/>אמת לא הבנתם שעל הלחם לא אמרתי לכם אלא שתהיו זהירים מן תחבולות של פירושים וצדוקים׃<verse eID="Matt.16.11"/>
+        <verse sID="Matt.16.12" osisID="Matt.16.12" n="12"/>אח׳כ הבינו שלא אמר שיזהרו מן הלחם אלא מן תלמוד פירושים והצדוקים׃<verse eID="Matt.16.12"/>
+        <verse sID="Matt.16.13" osisID="Matt.16.13" n="13"/>כיון שבא יש׳ו לארץ קיסר של פיליפוס שאל הוא מתלמידיו ואמר מה אומרין עלי בני אדם אם אני בן אדם׃<verse eID="Matt.16.13"/>
+        <verse sID="Matt.16.14" osisID="Matt.16.14" n="14"/>השיבו לו ואמרו יש שאומרים יוחנן המ״שמד הוא ויש אומרים אליה ואחרים אומרים ירמיה או א׳ מן הנביאים׃<verse eID="Matt.16.14"/>
+        <verse sID="Matt.16.15" osisID="Matt.16.15" n="15"/>אמר להם מה אתם אומרים עלי מי אני׃<verse eID="Matt.16.15"/>
+        <verse sID="Matt.16.16" osisID="Matt.16.16" n="16"/>השיב פד״רו ואמר אתה הוא משיח בן אלהים חי׃<verse eID="Matt.16.16"/>
+        <verse sID="Matt.16.17" osisID="Matt.16.17" n="17"/>ענה יש׳ו ואמר טוב לך פידרו בנו של יונה שבשר ודם לא גילה לך אלא מאבי שבשמים׃<verse eID="Matt.16.17"/>
+        <verse sID="Matt.16.18" osisID="Matt.16.18" n="18"/>אף אני אומר לך שאת הוא פידרו ועל זה האבן אני בונה כנסת ושערי גהינם לא ירש אותה׃<verse eID="Matt.16.18"/>
+        <verse sID="Matt.16.19" osisID="Matt.16.19" n="19"/>לך אתן מפתחות של שמים וכל מה שאתה אוסר בעולם יהיו אסורים בשמים וכל מה שיתר יהיו מותרים משמים׃<verse eID="Matt.16.19"/>
+        <verse sID="Matt.16.20" osisID="Matt.16.20" n="20"/>אח׳כ ציוה לתלמידיו שלא יאמרו לבן אדם שהוא משיח׃<verse eID="Matt.16.20"/>
+        <verse sID="Matt.16.21" osisID="Matt.16.21" n="21"/>ומאותה שעה התחיל יש׳ו לרמוז לתלמידיו שעתיד הוא לעלות לירושלים והרבה מתקוטט עם זקינים וכוהנים וסופרים ויהרגוהו וביום הג׳ יקום׃<verse eID="Matt.16.21"/>
+        <verse sID="Matt.16.22" osisID="Matt.16.22" n="22"/>ודיבר פי''דרו ואמר חלילה שאי רע לך מורי׃<verse eID="Matt.16.22"/>
+        <verse sID="Matt.16.23" osisID="Matt.16.23" n="23"/>אז השיב ואמר לפדרו לך לך לאחורי יצר הרע כבר אתה אינך דוברי כבני אלהים אלא כבני אדם׃<verse eID="Matt.16.23"/>
+        <verse sID="Matt.16.24" osisID="Matt.16.24" n="24"/>אז אמר יש׳ו לתלמידיו כל מי שרוצה לבא אחרי יתיאש מנפשו למות ויבא אחרי׃<verse eID="Matt.16.24"/>
+        <verse sID="Matt.16.25" osisID="Matt.16.25" n="25"/>לפי כל מי שרוצה נחת רוח לנפשו ויאביד עלי וכל מי שמאבד נפשו עלי ינוח׃<verse eID="Matt.16.25"/>
+        <verse sID="Matt.16.26" osisID="Matt.16.26" n="26"/>כל מי שמקנה לאדם אחד כאילו קנה כל העולם וכשנפשו יחסר במיתה או יתן לו בן אדם כופר נפשו׃<verse eID="Matt.16.26"/>
+        <verse sID="Matt.16.27" osisID="Matt.16.27" n="27"/>עתיד שיבא בן אדם בשבחות אביו עם מלאכין קדושין ואז יפרע לכל איש ואשה כמעשיהו׃<verse eID="Matt.16.27"/>
+        <verse sID="Matt.16.28" osisID="Matt.16.28" n="28"/>אמת אומר אני לכם שיש אנשים שיושבים כאן שאינו טעם מיתה עד שיראו בן אדם שיבא לעתיד במלכותו׃<verse eID="Matt.16.28"/>
+        <chapter eID="Matt.16"/>
+        <chapter sID="Matt.17" osisID="Matt.17" n="17"/>
+        <verse sID="Matt.17.1" osisID="Matt.17.1" n="1"/>ואחר ששה ימים לקח יש׳ו לפדרו וליעקוב וליוחנן אחיו והעלה אותם לבדם׃<verse eID="Matt.17.1"/>
+        <verse sID="Matt.17.2" osisID="Matt.17.2" n="2"/>ושונה יש׳ו את מראיו והאיר פניו כמו השמש והלבושו היה לבן כמו הזוהר׃<verse eID="Matt.17.2"/>
+        <verse sID="Matt.17.3" osisID="Matt.17.3" n="3"/>ונדמה להם שם כפני מושה ואליה שהיה מדבר עמו׃<verse eID="Matt.17.3"/>
+        <verse sID="Matt.17.4" osisID="Matt.17.4" n="4"/>ענה פדרו ואמר ליש׳ו אדוני שנשב אנחנו פה ואם יכשר בעינך נעשה שלשה מקומות אחד לך וא׳ למושה וא׳ לאליה׃<verse eID="Matt.17.4"/>
+        <verse sID="Matt.17.5" osisID="Matt.17.5" n="5"/>וכשהיה מדבר היה ענן מאיר והיה הצל עליהם וקול מן הענן יצא הנה בני ידידי ובו רציתי ולו תשמעו׃<verse eID="Matt.17.5"/>
+        <verse sID="Matt.17.6" osisID="Matt.17.6" n="6"/>וכיון ששמעו התלמידים נפלו על פניהם ופחדו הרבה׃<verse eID="Matt.17.6"/>
+        <verse sID="Matt.17.7" osisID="Matt.17.7" n="7"/>וקרב אצלם יש׳ו ואמר להם תקומו לא תפחדו׃<verse eID="Matt.17.7"/>
+        <verse sID="Matt.17.8" osisID="Matt.17.8" n="8"/>ופתחו עינם ולא ראו לשום אדם כי אם ליש׳ו לבדו׃<verse eID="Matt.17.8"/>
+        <verse sID="Matt.17.9" osisID="Matt.17.9" n="9"/>וכיון שירדו מן ההר צוה אותם יש׳ו ואמר להם בפני בן אדם חזון עד שיקום בן אדם מן המתים׃<verse eID="Matt.17.9"/>
+        <verse sID="Matt.17.10" osisID="Matt.17.10" n="10"/>ושאלו תלמידיו ויאמרו לו אומרים הסופרים שאליה יבא קודם׃<verse eID="Matt.17.10"/>
+        <verse sID="Matt.17.11" osisID="Matt.17.11" n="11"/>ענה יש׳ו ואמר להם שאליה יבא קודם למי שיודה בו ימצא׃<verse eID="Matt.17.11"/>
+        <verse sID="Matt.17.12" osisID="Matt.17.12" n="12"/>אומר אני לכם אליה בא ואתם לא ידעתם ועשו עמו כל מה שרצו כך בן אדם עתיד להכשל מהם׃<verse eID="Matt.17.12"/>
+        <verse sID="Matt.17.13" osisID="Matt.17.13" n="13"/>ואז הבינו התלמידים שעל יוחנן המטהר אומר להם׃<verse eID="Matt.17.13"/>
+        <verse sID="Matt.17.14" osisID="Matt.17.14" n="14"/>וכיון שבאו לבית קהילתם וקרב לו איש אחד וכרע על ברכיו ואמר לו׃<verse eID="Matt.17.14"/>
+        <verse sID="Matt.17.15" osisID="Matt.17.15" n="15"/>אדוני רחם על בני היה שוטה גדול כי לפעמים נופל במים ופעמים באש׃<verse eID="Matt.17.15"/>
+        <verse sID="Matt.17.16" osisID="Matt.17.16" n="16"/>והבאתי לתלמידך ולא יכלו לרפאת אותו׃<verse eID="Matt.17.16"/>
+        <verse sID="Matt.17.17" osisID="Matt.17.17" n="17"/>ענה יש׳ו ואמר אני לכם משפחה שפלה שאינכם מאמינים עד אימתי אתם תועים ועד אימת למוד ממני תביאו אותו לכאן׃<verse eID="Matt.17.17"/>
+        <verse sID="Matt.17.18" osisID="Matt.17.18" n="18"/>וגער בו יש׳ו והוציא ונתרפא הילד באותה שעה׃<verse eID="Matt.17.18"/>
+        <verse sID="Matt.17.19" osisID="Matt.17.19" n="19"/>באותה שעה יתקרבו תלמידיו אצל יש׳ו ואמרו לו למה אנחנו לא יכולנו לרפאת אותו׃<verse eID="Matt.17.19"/>
+        <verse sID="Matt.17.20" osisID="Matt.17.20" n="20"/>אמר להם יש׳ו בשביל שלא האמנתם בטוב אמת אומר לכם שאים היה בכם אמונה כמו חרדל לבד אפילו שאומרים להר שישנה מקומו ושנה וגם לא יחסרו משום דבר׃<verse eID="Matt.17.20"/>
+        <verse sID="Matt.17.21" osisID="Matt.17.21" n="21"/>הנה זה הדור לא יצא כי אם בתפילה ובתענית׃<verse eID="Matt.17.21"/>
+        <verse sID="Matt.17.22" osisID="Matt.17.22" n="22"/>כיון שהיה מסבבין בגליל אמר להם יש׳ו עתיד בן אדם שיפול ביד בן אדם׃<verse eID="Matt.17.22"/>
+        <verse sID="Matt.17.25" osisID="Matt.17.25" n="25"/>אמר להם טוב וכיון שבא אצל יש׳ו לבית אמר לו יש׳ו מה אתה חושב פדרו במלכות הארץ הזאת מאותם שגובים המכס אם תחילה גובים מן בניהם או מן הזרים׃<verse eID="Matt.17.25"/>
+        <verse sID="Matt.17.26" osisID="Matt.17.26" n="26"/>אמר לו פדרו מן זרים תחילה גובים אמר לו יש׳ו אם כן הבנים יהיו בני חורין׃<verse eID="Matt.17.26"/>
+        <verse sID="Matt.17.27" osisID="Matt.17.27" n="27"/>וכדי שלא נתכשל בהם לך לים ותשליך מזלגך במים והדג שיצא ראשון תפתח פיו ותמצא א׳ איס﮺ תירה ותקח אותה ותתן בשבילי ובשבילך׃<verse eID="Matt.17.27"/>
+        <chapter eID="Matt.17"/>
+        <chapter sID="Matt.18" osisID="Matt.18" n="18"/>
+        <verse sID="Matt.18.1" osisID="Matt.18.1" n="1"/>בזה השעה קרבו תלמידיו ליש׳ו ואמרו מי הוא גדול במלכות שמים׃<verse eID="Matt.18.1"/>
+        <verse sID="Matt.18.2" osisID="Matt.18.2" n="2"/>וקרא יש׳ו לנערא והעמיד בתוכם׃<verse eID="Matt.18.2"/>
+        <verse sID="Matt.18.3" osisID="Matt.18.3" n="3"/>ואמר אמת אני אומר דאם לא תתהפכון עצמכם לעשות כמו ילדים לא תכנסו במלכות שמים׃<verse eID="Matt.18.3"/>
+        <verse sID="Matt.18.4" osisID="Matt.18.4" n="4"/>מי הוא שמשפיל נפשו כמו זה הנער הוא יהיה רב במלכות שמים׃<verse eID="Matt.18.4"/>
+        <verse sID="Matt.18.5" osisID="Matt.18.5" n="5"/>ומי שמקבל את הנער בשמי לי מקבל הוא׃<verse eID="Matt.18.5"/>
+        <verse sID="Matt.18.6" osisID="Matt.18.6" n="6"/>וכל המכשלים את הנערים המאמינים בי טוב לו יותר שיהיה ריחים תלוי בצאורו ולהטביע את עצמו בים׃<verse eID="Matt.18.6"/>
+        <verse sID="Matt.18.7" osisID="Matt.18.7" n="7"/>וי לעולם מן המעורעות שעתיד לבא אותו מכשול אוי לאיש הזה שבשבילו יבואו המאורעות׃<verse eID="Matt.18.7"/>
+        <verse sID="Matt.18.8" osisID="Matt.18.8" n="8"/>אם ידך או רגלך מוקש לך תחתוך ותזרוק ממך וטוב לך שתבא לחיים חיגר או אטר יד ולא בשני רגלים וב׳ ידים באש ובגהינם׃<verse eID="Matt.18.8"/>
+        <verse sID="Matt.18.9" osisID="Matt.18.9" n="9"/>ואם יהיה עינך מכשילך תעקר ותזרוק לחוץ טוב ליכנס בעין אחד לחיים משני עינים לגהינם׃<verse eID="Matt.18.9"/>
+        <verse sID="Matt.18.10" osisID="Matt.18.10" n="10"/>ותראו איך לא תבזון אפילו לאחד מן הקטנים אני אומר כי המלאכים כל זמן שניראים בפירצוף אבי שבשמים׃<verse eID="Matt.18.10"/>
+        <verse sID="Matt.18.11" osisID="Matt.18.11" n="11"/>כי אני בר אנש לפדות כל האובדים׃<verse eID="Matt.18.11"/>
+        <verse sID="Matt.18.12" osisID="Matt.18.12" n="12"/>ומזה תיראו אם יש לבני אדם ק׳ צאן ונאבד א׳ הלא היו מניחים צ׳ט הנשארים ומבקש את א׳ הנאבד׃<verse eID="Matt.18.12"/>
+        <verse sID="Matt.18.13" osisID="Matt.18.13" n="13"/>ואם נמצא אמת אומר לכם שיהיה בזה א׳ שמחה יותר מצ׳ט שלא נאבדו׃<verse eID="Matt.18.13"/>
+        <verse sID="Matt.18.14" osisID="Matt.18.14" n="14"/>הלא כמו זה יש רצון לאביכם שבשמים על איבוד של אחד מן הקטנים׃<verse eID="Matt.18.14"/>
+        <verse sID="Matt.18.15" osisID="Matt.18.15" n="15"/>אם אחד אחיך חטא לנגדך לך ותרצה בינך לבינו ואם שמע אחיך הרוחת׃<verse eID="Matt.18.15"/>
+        <verse sID="Matt.18.16" osisID="Matt.18.16" n="16"/>ואם לא ישמע תקח ב׳ או ג׳ עדים מפני על פי ב׳ עדים או על פי ג׳ עדים יקום כל דבר׃<verse eID="Matt.18.16"/>
+        <verse sID="Matt.18.17" osisID="Matt.18.17" n="17"/>ואם זה לא שומע אף לאלו תאמר לעדה ואם לעידה ג׳כ אין שומע והיה לך הוא כמו נבל ובזוי׃<verse eID="Matt.18.17"/>
+        <verse sID="Matt.18.18" osisID="Matt.18.18" n="18"/>ואמת אומר לכם כל מה שקשור בארץ יהיו קשורים בשמים ומה שפתוח בארץ יהיה פתוח בשמים׃<verse eID="Matt.18.18"/>
+        <verse sID="Matt.18.19" osisID="Matt.18.19" n="19"/>שוב אומר לכם אם אתם שניכם רוצים בדבר אחד בארץ על כל רצונכם שתשאלו יהיה לכם מן אבי שבשמים׃<verse eID="Matt.18.19"/>
+        <verse sID="Matt.18.20" osisID="Matt.18.20" n="20"/>ובמקום שיש ב׳ או ג׳ מכונסין יחד לשמי שם אהיה בניהם׃<verse eID="Matt.18.20"/>
+        <verse sID="Matt.18.21" osisID="Matt.18.21" n="21"/>אז קרב אצלו פדרו ואמר לו מורי כמה פעמים אם חטא נגדי אחי ואמחול לו עד ז׳ פעמים׃<verse eID="Matt.18.21"/>
+        <verse sID="Matt.18.22" osisID="Matt.18.22" n="22"/>אמר יש׳ו לו לא אמרתי ז׳ פעמים אלא ע׳ פעמים ז׳ ז׳׃<verse eID="Matt.18.22"/>
+        <verse sID="Matt.18.23" osisID="Matt.18.23" n="23"/>בשביל נתדמה מלכות שמים למלך אחד שרוצה ליקח חשבון מן עבדיו׃<verse eID="Matt.18.23"/>
+        <verse sID="Matt.18.24" osisID="Matt.18.24" n="24"/>וכיון שנושה חשבון היה א׳ בעל חוב שחייב רבוא ככרין׃<verse eID="Matt.18.24"/>
+        <verse sID="Matt.18.25" osisID="Matt.18.25" n="25"/>וכיון שאין לו לפרוע צוה אדון שימכור את אשתו ואת בניו ומה שיש לו הכל ויפרע׃<verse eID="Matt.18.25"/>
+        <verse sID="Matt.18.26" osisID="Matt.18.26" n="26"/>ונפל הוא וסגיד ואמר אדוני תאריך אפך וכל מה שיש אפרע לך׃<verse eID="Matt.18.26"/>
+        <verse sID="Matt.18.27" osisID="Matt.18.27" n="27"/>וריחם עליו אדונו ועזב אותו וגם חובתו שבק לו׃<verse eID="Matt.18.27"/>
+        <verse sID="Matt.18.28" osisID="Matt.18.28" n="28"/>יצא זה העבד ומצא לא׳ איש שחייב לו מאה ותפס אותו וחנק אותו ואמר תפרע לי חובי׃<verse eID="Matt.18.28"/>
+        <verse sID="Matt.18.29" osisID="Matt.18.29" n="29"/>ונפל הלוה על רגלו ובקש תאריך אפך ואני אפרע׃<verse eID="Matt.18.29"/>
+        <verse sID="Matt.18.30" osisID="Matt.18.30" n="30"/>וזה לא רצה אלא הלך והניח אותו בבית אסורים עד שפרע החוב׃<verse eID="Matt.18.30"/>
+        <verse sID="Matt.18.31" osisID="Matt.18.31" n="31"/>כיון שראה כך חביריהם נזעפו הרבה ובאו והודיעו לאדוניהם כמו שהיה׃<verse eID="Matt.18.31"/>
+        <verse sID="Matt.18.32" osisID="Matt.18.32" n="32"/>קרא לו אדון ואמר לו עבד רע איך כל החובות שבקתי לך מפני בקשתך׃<verse eID="Matt.18.32"/>
+        <verse sID="Matt.18.33" osisID="Matt.18.33" n="33"/>ולא היה לך חנינה על חברך כמו שחננתי אותך׃<verse eID="Matt.18.33"/>
+        <verse sID="Matt.18.34" osisID="Matt.18.34" n="34"/>וכעס האדון ומסר למכים עד שיפרע כל החוב שלו׃<verse eID="Matt.18.34"/>
+        <verse sID="Matt.18.35" osisID="Matt.18.35" n="35"/>כך עושה לכם אבי שבשמים אם לא תשבקון ותמחלו איש לאחיו מן הלב הרצן׃<verse eID="Matt.18.35"/>
+        <chapter eID="Matt.18"/>
+        <chapter sID="Matt.19" osisID="Matt.19" n="19"/>
+        <verse sID="Matt.19.1" osisID="Matt.19.1" n="1"/>והיה דכד שלים יש׳ו דברים אלו נסע מן גליל ובא לתחום של יהודים לעבר הירדן׃<verse eID="Matt.19.1"/>
+        <verse sID="Matt.19.2" osisID="Matt.19.2" n="2"/>ובאו אחריו קהילה רב וריפא אותם שם׃<verse eID="Matt.19.2"/>
+        <verse sID="Matt.19.3" osisID="Matt.19.3" n="3"/>וקרבו איליו הפירושים והיו מנסין אותו ואומרים לו אם יש ממשלה לאיש לגרש את אשתו מכל עלילות׃<verse eID="Matt.19.3"/>
+        <verse sID="Matt.19.4" osisID="Matt.19.4" n="4"/>הוא ענה ואמר להם לא קריתם שהוא עשה בבראשית ברא אותם׃<verse eID="Matt.19.4"/>
+        <verse sID="Matt.19.5" osisID="Matt.19.5" n="5"/>ואמר בשביל זה ועזבו אביו ואימו ודבק באשתו והיו לבשר אחד׃<verse eID="Matt.19.5"/>
+        <verse sID="Matt.19.6" osisID="Matt.19.6" n="6"/>מן זה נראה לא הוא ב׳ אלא א׳ גוף מפני כך עשה אלהים זוג לב׳א שלא יגרש׃<verse eID="Matt.19.6"/>
+        <verse sID="Matt.19.7" osisID="Matt.19.7" n="7"/>אמר לו למה משה עשה כך שציוה ליתן כתב כריתות ומותרת׃<verse eID="Matt.19.7"/>
+        <verse sID="Matt.19.8" osisID="Matt.19.8" n="8"/>אמר להם משה מכובד לב שיש לכם היתיר לכם שיגרש נשים שלכם ומן בראשית לא היה כך׃<verse eID="Matt.19.8"/>
+        <verse sID="Matt.19.9" osisID="Matt.19.9" n="9"/>אומר אני לכם ומי שמגרש אשתו שאינה זונה ולוקח זונה אחרת ומי שנושא אותה הוא זונה׃<verse eID="Matt.19.9"/>
+        <verse sID="Matt.19.10" osisID="Matt.19.10" n="10"/>אמרו לו תלמדיו אם כך הוא הענין בין אנשים עם אשה לא יוכל לנשא אשה׃<verse eID="Matt.19.10"/>
+        <verse sID="Matt.19.11" osisID="Matt.19.11" n="11"/>אמר להם לא כל אדם יוכל ללמוד זה אלא למי שנותן לו׃<verse eID="Matt.19.11"/>
+        <verse sID="Matt.19.12" osisID="Matt.19.12" n="12"/>יש מי שמאמין מבטן אמו וכך נולד יש מי שאמונתו מן אדם הוא לבד אמונתו ויש שמאמין שהם עשו ברצונם באמונה בשביל מלכות שמים ומי שרוצה להספיק יוכל להספיק׃<verse eID="Matt.19.12"/>
+        <verse sID="Matt.19.13" osisID="Matt.19.13" n="13"/>אחר כן הקריבו לו ילדים בשביל ששים ידו עליהם לברכם והתלמידים לא רצו׃<verse eID="Matt.19.13"/>
+        <verse sID="Matt.19.14" osisID="Matt.19.14" n="14"/>אז אמר יש׳ו תניחו את הילדים שיבא אצלי ולא תעכבו אותם לפי שהם מעוטים והם יהיו במלכות שמים׃<verse eID="Matt.19.14"/>
+        <verse sID="Matt.19.15" osisID="Matt.19.15" n="15"/>והניח ידו עליהם והלך משם׃<verse eID="Matt.19.15"/>
+        <verse sID="Matt.19.16" osisID="Matt.19.16" n="16"/>ובא א׳ וקרב אצלו ואמר לו מלמד הטוב מה טוב אעשה שיהיה לי חיי עולם׃<verse eID="Matt.19.16"/>
+        <verse sID="Matt.19.17" osisID="Matt.19.17" n="17"/>והוא אמר לו למה אתה קורא טוב אותי אין טוב אלא אחד ואם אתה רוצה לחיי עולם שמור מצוותיו׃<verse eID="Matt.19.17"/>
+        <verse sID="Matt.19.18" osisID="Matt.19.18" n="18"/>ואמר לו אילו הן המצוות שאמר יש׳ו לא תרצח ולא תנאף ולא תגנוב ולא תענה ברעך עד שקר׃<verse eID="Matt.19.18"/>
+        <verse sID="Matt.19.19" osisID="Matt.19.19" n="19"/>כבד את אביך ואת אמך ואהבת לרעך כמוך׃<verse eID="Matt.19.19"/>
+        <verse sID="Matt.19.20" osisID="Matt.19.20" n="20"/>אמר לו כיון שהייתי בחור בקטינתי שמרתי כל אלו אפילו הכי חסר אני׃<verse eID="Matt.19.20"/>
+        <verse sID="Matt.19.21" osisID="Matt.19.21" n="21"/>אמר להם יש׳ו אם אתם רוצים שתהיה שלום מכור נחלתך ותתן לעניים ותהיה לך שם בשמים ובא אחרי׃<verse eID="Matt.19.21"/>
+        <verse sID="Matt.19.22" osisID="Matt.19.22" n="22"/>וכיון ששמע זה הבחור אלו הדברים הלך ביגון מפני שיש לו רכוש הרבה׃<verse eID="Matt.19.22"/>
+        <verse sID="Matt.19.23" osisID="Matt.19.23" n="23"/>יש׳ו זה אמר לתלמידיו אמת אני אומר לכם שעתיד העשיר לעלות לשמים׃<verse eID="Matt.19.23"/>
+        <verse sID="Matt.19.24" osisID="Matt.19.24" n="24"/>אני אומר כמו שגמל יותר בנקל יוכל ליכנס בחור המחט כך יכנס העשיר במלכות שמים׃<verse eID="Matt.19.24"/>
+        <verse sID="Matt.19.25" osisID="Matt.19.25" n="25"/>תלמידים אלו כיון ששמעו נתמהו הרבה ואמרו בתמהון לבב מי הוא שיוכל להנצל כך לחיי עולם׃<verse eID="Matt.19.25"/>
+        <verse sID="Matt.19.26" osisID="Matt.19.26" n="26"/>צעק בהם יש׳ו ואמר להם בכעס לא יש בני אדם שימצא אצל אלהים כל מה שמבקשים ימצאו׃<verse eID="Matt.19.26"/>
+        <verse sID="Matt.19.27" osisID="Matt.19.27" n="27"/>אז ענה פדרו ואמר לו הנה אנחנו כל מה שיש שבקנו ובאנו אחריך למה לנו לא יהיה כך׃<verse eID="Matt.19.27"/>
+        <verse sID="Matt.19.28" osisID="Matt.19.28" n="28"/>אמר להון יש׳ו באמת אומר אני לכם שאתם שבאתם אחרי בעולם הזה כך כמו שאנחנו יושבים על כסא מלכות כך תשבו גם אתם על י׳ב כסאות ותדינו על י׳ב שבטי ישראל׃<verse eID="Matt.19.28"/>
+        <verse sID="Matt.19.29" osisID="Matt.19.29" n="29"/>וכל איש שמניח ביתו או אחיו או אחותו או אביו או אמו או אשתו או בניו או קרובין לשמי באמת יקבל שכרם ויחיה לחיי עולם׃<verse eID="Matt.19.29"/>
+        <verse sID="Matt.19.30" osisID="Matt.19.30" n="30"/>הרבה הם קדמונים שהיו אחרונים ואחרונים היו קדמונים׃<verse eID="Matt.19.30"/>
+        <chapter eID="Matt.19"/>
+      </div>
+  </osisText>
+</osis>

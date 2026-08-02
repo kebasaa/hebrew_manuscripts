@@ -10,9 +10,9 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 24828,
-   "sha256": "7deab0d2a999c8a81bb732d64763b15e92dc4df1f482142cc7e966d788a3ff9c"
+   "rights": "© copyright 2024 Janice F. Baca",
+   "bytes": 24764,
+   "sha256": "530014db7e3bd053ea13067ec578dfa11819419b203161ef4281148d2a27620b"
   },
   {
    "file": "JAS_CochinOo.1.32_translation.osis",
@@ -34,9 +34,9 @@
    "language": "he",
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 7827,
-   "sha256": "411e32255db9bc68232f1196a402a8c0dda7b329977c5f562288b00055c6d17c"
+   "rights": "© 2018 Nehemia Gordon. All rights reserved.",
+   "bytes": 7775,
+   "sha256": "9af0b785824d50d170755c944cbe472a068b4c1dcbe5fc5175bca58e318d1f27"
   },
   {
    "file": "JOH_Ebr530_translation.osis",
@@ -58,9 +58,9 @@
    "language": "he",
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 15938,
-   "sha256": "3cdf32a008475361883a23364ed78fd94b7b3c47167591869e78e24b5b11152b"
+   "rights": "© 2018 Nehemia Gordon. All rights reserved.",
+   "bytes": 15886,
+   "sha256": "72f9d69f6b9df80fda31a65726e2d5ebacb271d04f882d4baf2df18f6b774b64"
   },
   {
    "file": "LUK_Ebr530_translation.osis",
@@ -82,9 +82,9 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 134945,
-   "sha256": "506cf2656a7a72e33f1fb08354dac54b191f0befd860a6fc12fb3a7e4c4afbe8"
+   "rights": "© copyright 2025 Janice F. Baca",
+   "bytes": 134881,
+   "sha256": "d6fee5966b5571e9143a6ef9654914b25cf09c2d0fbfc8cf82668abd62add87a"
   },
   {
    "file": "MAT_CochinOo.1.32_translation.osis",
@@ -130,9 +130,9 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 169502,
-   "sha256": "8ba29906beff2e972dba5b0c03ca06295b9234c6a825a49f06d008fa873e0ee8"
+   "rights": "© copyright 2024 Janice F. Baca",
+   "bytes": 169438,
+   "sha256": "fffddf076fe774ee34404ef8f43312e7bbbc0dd2bf56cf55c0c18dcf055c2b17"
   },
   {
    "file": "REV_CochinOo.1.16.2_translation.osis",
@@ -154,9 +154,9 @@
    "language": "he",
    "date": "between 1500 and 1699",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
-   "rights": "CC BY-NC-SA 4.0 (this repository's default; no licence was stated for the transcription itself).",
-   "bytes": 17606,
-   "sha256": "eeb0bb370c59d806c612096813e728a7a1b569236369a5d989f991e834da014e"
+   "rights": "© 2017 by Nehemia Gordon",
+   "bytes": 17535,
+   "sha256": "35aa313d61bd38f417ed9f17fcd2f12be5c9fd7e5e36e3304cdd2e5b952109f9"
   },
   {
    "file": "REV_Sloane237_translation.osis",
