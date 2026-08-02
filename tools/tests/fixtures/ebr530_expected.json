@@ -1,0 +1,256 @@
+{
+  "John": {
+    "english": {
+      "John.1.1": "In the beginning was the Word, and the Word was next to Elohim And Elohim, he was the",
+      "John.1.10": "into This World. He was in the world and the world was made",
+      "John.1.11": "through him. And the world did not recognize him. He came to his true homeland and the children of his",
+      "John.1.12": "house did not accept him. And to all those who accepted him and believe in his name, he gave",
+      "John.1.13": "dominion that they would be Sons of Elohim. For they were not born out of blood and not out of the desire of the flesh and not out of the desire of men, but from Elohim",
+      "John.1.2": "Word. This was in the beginning next to",
+      "John.1.3": "Elohim. All things were made through him and without him nothing was made",
+      "John.1.4": "from all that was. In him was life. And life was the light",
+      "John.1.5": "of men. And the light was shining forth in the darkness and the darkness",
+      "John.1.6": "could not contain it. And there was a certain man sent from God",
+      "John.1.7": "and his name was Yochanan. This one came in testimony, to testify concerning the light in order that they would believe",
+      "John.1.8": "everything because of him. He was not the light, but only",
+      "John.1.9": "testifying concerning the light. It was true light, to shed light on all to every man who enters"
+    },
+    "folios": {
+      "John.1.1": [
+        "2v"
+      ]
+    },
+    "note_anchors": {
+      "John.1.10": [
+        "19"
+      ],
+      "John.1.11": [
+        "20"
+      ],
+      "John.1.12": [
+        "21"
+      ],
+      "John.1.13": [
+        "22"
+      ],
+      "John.1.3": [
+        "16",
+        "17"
+      ],
+      "John.1.5": [
+        "18"
+      ]
+    },
+    "notes": {
+      "16": "The form נַעֲשׂוּ is found in Mishnah, Yoma 3:10 in the Kaufmann manuscript.",
+      "17": "A Patach is expected in the Bet.",
+      "18": "Furtive Patach is missing under Chet.",
+      "19": "Sin dot omitted.",
+      "20": "Cholam omitted.",
+      "21": "Shin dot omitted.",
+      "22": "Shin dot omitted."
+    },
+    "passages": [
+      {
+        "chapter": null,
+        "folios": [],
+        "hebrew": "",
+        "kind": "titlePage",
+        "notes": []
+      },
+      {
+        "chapter": null,
+        "folios": [],
+        "hebrew": "הַבְּשׂוֹרָה הַקְּדוֹשָׁה שֶׁל יֵשׁוּעַ הַמַּשִׁיחַ כְּפִי יוֹחָנָן",
+        "kind": "book-title",
+        "notes": []
+      },
+      {
+        "chapter": 1,
+        "folios": [],
+        "hebrew": "פֶרֶק רִאשׁוֹן",
+        "kind": "chapter-title",
+        "notes": []
+      }
+    ],
+    "verses": {
+      "John.1.1": "בְרֵאשִׁית הָיָה הַדַבָר וְהַדַבָר הַיָה אֵצֶל הַאֱלֹהִים וְהַאֱלֹהִים הוּא הָיָה הַדַבָר",
+      "John.1.10": "הוּא הָיָה בַעוֹלָם וְהַעוֹלָם נֶעֱשָה בוֹ. וְהַעוֹלָם לֹא הִכִירוּהוּ.",
+      "John.1.11": "בַא אֶל מוֹלַדְתוֹ מַמָש וּבְנֵי בֵיתוֹ לא קִבְלוּהוּ.",
+      "John.1.12": "וּלְכָל אֲשֶר קִבְלוּהוּ וּמַאֲמִינִים בִשְמוֹ נָתַן מֵמְשָלָה שֶיִהְיוּ בְנֵי הַאֱלֹהִים.",
+      "John.1.13": "אֲשֶר הֵם לֹא מִדַּם וְלֹא מֵחֵפֶץ הַבָשָׂר וְלֹא מֵחֵפֶץ אָדָם נוֹלָדוּ כִי אִם מֵאֶת האלהים",
+      "John.1.2": "זֶה הָיָה בְרֵאשִׁית אֵצֶל הַאֱלֹהִים.",
+      "John.1.3": "כָל הַדְּבָרִים נֶעֱשֹוּ בוֹ וּמִבִלְעַדָיו לֹא נֶעֱשָֹה דָבַר מִכָל אֲשֶר הָיָה.",
+      "John.1.4": "בוֹ הָיוּ הַחַיִים. וְהַחַיִים הַיוּ אוֹר הַאֲנַשִׁים.",
+      "John.1.5": "וְהַאוֹר הַיָה זוֹרֵח בַאֲפֵלֹות וְהַאֲפֵלֹות לֹא הֵכִילוּהוּ.",
+      "John.1.6": "וַיְהִי אִישׁ אֵחָד שָלוּחַ מֵאֵת הַאֱלֹהִים וּשְמוֹ יוֹחָנָן",
+      "John.1.7": "זֶה בָא בְעֵדוּת לְהַעִיד עַל הַאוֹר לְמַעָן אֲשֶר יַאֲמִינוּ הַכָל בַעֲבוּרוֹ.",
+      "John.1.8": "הוּא לֹא הָיָה הַאוֹר כִי אִם לְהַעִיד עַל הַאוֹר.",
+      "John.1.9": "הָיָה אוֹר אַמִתִּי הַמֵאִיר לְכָל אָדָם הַבָא אֶל הַעוֹלָם הַזֶה."
+    }
+  },
+  "Luke": {
+    "english": {
+      "Luke.1.1": "In that many were placed to write the account of the matters that",
+      "Luke.1.10": "Yehovah and the multitudes of people were standing outside to pray at the time of the",
+      "Luke.1.11": "incense and the angel of Yehovah appeared to him, standing at right of the altar of",
+      "Luke.1.12": "incense and Zechariah, when he saw him, was",
+      "Luke.1.13": "terrified and fear seized hold of him. And the angel said to him “Do not fear, Zechariah, for your prayer is heard, and Elisheva your wife will give birth to",
+      "Luke.1.14": "the lot fell upon him to present the incense. And he came into the sanctuary of a son and you shall call his name Yochanan and there shall be to you joy and happiness",
+      "Luke.1.15": "the time of his birth, for he will be great before Yehovah and will not drink wine or strong drink",
+      "Luke.1.16": "and he will be filled from the Ru’ach HaKodesh from the womb of his mother and he will return many of the sons of Israel",
+      "Luke.1.17": "to Yehovah their Elohim and he will walk before him in the spirit and power of Eliyahu, to return the heart of the fathers to the sons and [he will return] the heretics to the righteousness of the",
+      "Luke.1.18": "and many will be happy at righteous ones and to prepare to Yehovah the people, prepared.” And Zechariah said to the angel, “How will I know this matter, for I am old and my wife",
+      "Luke.1.19": "is advanced in years?” And the angel answered and said, “I am Gabriel who stands before Yehovah and I was sent to speak to you and tell you these matters",
+      "Luke.1.2": "are trustworthy among us, without doubt, as they told them to us themselves, those who saw them from the beginning, and were my servants [of] the Word,",
+      "Luke.1.20": "and behold, you will be mute and will not be able to speak until the day that these things are done, because you did not believe my words, that",
+      "Luke.1.21": "they would be fulfilled in their time.” And the people were waiting for Zechariah and wondering",
+      "Luke.1.22": "because of his delay in the sanctuary. And when he came out outside, he was not able to speak",
+      "Luke.1.23": "but remained a mute. And it came to pass when the days of his service were fulfilled and he went to",
+      "Luke.1.24": "his house and after these days, Elisheva his wife became pregnant. And she hid five months",
+      "Luke.1.25": "saying, “Why did Yehovah do this to me in the days that I see, to raise up my proverb among",
+      "Luke.1.26": "the people?” And in the sixth month, the angel Gabriel was sent from Yehovah in a city of the",
+      "Luke.1.27": "with them. And they knew he saw a vision in the sanctuary. And he was gesturing to them, Galilee, and its name was",
+      "Luke.1.28": "Miryam. And when the angel came to her he said, “Shalom to you, full of grace, Yehovah is with",
+      "Luke.1.29": "you, you are blessed among women.” And she looked and was frightened because of his words. And",
+      "Luke.1.3": "it seemed also right to me, because from the beginning I sought all the things in order, to write to you with speed, dear Theophilo,",
+      "Luke.1.30": "Natzaret, to a certain virgin who was betrothed to a man and his name was Yoseph from the House of David and the name of the virgin was she was thinking, “What sort of ‘Shalom’ was this?” And the angel said to her, “Do not fear, Miryam. For you have found favor before Yehovah.",
+      "Luke.1.31": "Behold you are",
+      "Luke.1.32": "pregnant and will give birth to a son and will call his name Yeshua. This one will be great and will be called Son of the Most High and Yehovah Elohim will give him the Throne of David",
+      "Luke.1.33": "his father and he will reign over the House of Ya’akov forever. And there will be no end",
+      "Luke.1.34": "to his kingdom.” And Miryam said to the angel, “How will this be,",
+      "Luke.1.35": "for I have not known a man?” And the angel answered and said to her, “The Ru’ach HaKadosh will enter you and an exalted might will be in your shadow. Because he that will be born will be holy, he shall be called ‘Son of Yehovah.’”",
+      "Luke.1.4": "in order that you would know the truth of the matter that you have learned.",
+      "Luke.1.5": "And it came to pass in the days of Herod, King of Judah, a certain Kohen, his name was Zechariah from the sons of Aviyah, and his wife from the children of Aaron",
+      "Luke.1.6": "and her name was Elisheva. And both of them were righteous before Yehovah and walking in all the statutes and judgements of Yehovah, without guile,",
+      "Luke.1.7": "and they did not have children; Elisheva was barren and both of them were",
+      "Luke.1.8": "advanced in years. And the Kohen Zechariah had the priesthood before Adona[i] Yehovah",
+      "Luke.1.9": "in the order of his family, according to the custom of the service of the priesthood."
+    },
+    "folios": {
+      "Luke.1.1": [
+        "1r"
+      ],
+      "Luke.1.10": [
+        "1v"
+      ],
+      "Luke.1.23": [
+        "2r"
+      ]
+    },
+    "note_anchors": {
+      "Luke.1.1": [
+        "3"
+      ],
+      "Luke.1.13": [
+        "9"
+      ],
+      "Luke.1.2": [
+        "4",
+        "5"
+      ],
+      "Luke.1.22": [
+        "10"
+      ],
+      "Luke.1.28": [
+        "11"
+      ],
+      "Luke.1.29": [
+        "12"
+      ],
+      "Luke.1.35": [
+        "13",
+        "14",
+        "15"
+      ],
+      "Luke.1.7": [
+        "7"
+      ],
+      "Luke.1.8": [
+        "8"
+      ]
+    },
+    "notes": {
+      "1": "The manuscript often omits Dagesh where expected.",
+      "10": "Jastrow, page 1481 “to nod, gesticulate, hint”. The literal meaning is the gestures made by a deaf-mute person before the invention of sign language.",
+      "11": "The variant form לִיךְ (instead of the expected לָךְ ) is documented in Jewish sources such as Mishnah, Yevamot 15:3 in the Kaufmann manuscript. The Historical Dictionary of the Academy of the Hebrew Language documents 164 instances of this form.",
+      "12": "The Hebrew is ambiguous and can mean “Yehovah is with you” or “Yehovah be with you”. The former is a statement, while the latter is a blessing. This ambiguity plays a key role in this passage as well as in Judges 6:12-13.",
+      "13": "The form בִיך (rather than the more common בָךְ ) is documented in Jewish sources, such as the Mishnah, Nidah 8:3 in the Kaufmann manuscript. The Historical Dictionary of the Academy of the Hebrew Language documents 29 instances of this form.",
+      "14": "A Tsere (rather than a Patach) us expected in בצלך.",
+      "15": "The variant phrase Ru’ach HaKadosh רוח הקדוש (rather than the more common Ru’ach HoKodesh רוח הקודש, found above in verse 15) is attested with twenty instances in the Bar Ilan Responsa Database (version 24+). For example, Leviticus Rabbah 14:2.",
+      "2": "The manuscript uses Kamatz and Patach interchangeably interchangeably and does the same thing with Tsere and Segol. This may reflect the dialect of Hebrew preserved in the Sephardic pronunciation of Hebrew as well as the so- called Palestinian Pointing (Nikud Eretz-Yisraeli).",
+      "3": "Hufal 3rd masculine plural perfect שׂום “they were placed”. The Historical Dictionary of the Academy of the Hebrew Languages has 20 instances of this exact form.",
+      "4": "The variant phrase בִלְתִי סָפֵק (instead of the expected form בלי ספק ) is attested with 608 instances in the Bar Ilan Responsa Database (version 24+).",
+      "5": "מְשַרְתַי “my servants”. Presumably this should read מְשָׁרְתֵי “servants of”.",
+      "6": "Should be רִאשׁוֹן with the Shin dot on the right.",
+      "7": "Should be לַכֹּהֵן?",
+      "8": "The scribe apparently scratched out Adonai and replaced it with Yehovah.",
+      "9": "The vocalization נִשְׁמַעַת is expected."
+    },
+    "passages": [
+      {
+        "chapter": null,
+        "folios": [],
+        "hebrew": "",
+        "kind": "titlePage",
+        "notes": []
+      },
+      {
+        "chapter": null,
+        "folios": [],
+        "hebrew": "הַבְּשׂוֹרָה הַקְדוֹשָׁה שֶל יֵשוּעַ הַמַּשִׁיחַ כְּפִי לוּקָה",
+        "kind": "book-title",
+        "notes": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "chapter": 1,
+        "folios": [],
+        "hebrew": "פֶרֶק רִאשׂוֹן",
+        "kind": "chapter-title",
+        "notes": [
+          "6"
+        ]
+      }
+    ],
+    "verses": {
+      "Luke.1.1": "בִהְיוֹת כִּי הוּשָׂמוּ רַבִּים לְחַבֵר סִיפוּר הַדְּבָרִים אֲשֶר בֵינֵינוּ הֵם נֶאֱמָנִים",
+      "Luke.1.10": "וְכָל רִיבוּי הַעָם עוֹמְדִים בַחוּץ לְהִתְפַלֵל בְעֵת הַקְּטֹרֶת",
+      "Luke.1.11": "וַיֵרָא אֵלָיו מַלְאָךְ יְהוָֹה עוֹמֵד לִימִין מִזְבַח הַקְּטֹרֶת",
+      "Luke.1.12": "וּזְכַרְיָה בִרְאוֹתוֹ נִבְהָל וּפָחָד אַחַזַהו",
+      "Luke.1.13": "וַיֹאמֶר לֹו הַמַלְאָךְ אַל תִירָא זְכַרְיָה כִי תְפִלָתְךָ נִשְמֶעֶת וְאֱלִישֶבָע אִשְתְךָ תֵלֵד בֵן וְתִקְרָא שְמוֹ יוֹחָנָן",
+      "Luke.1.14": "וְיִהְיֶה לְךָ לְשָׂשׂוֹן ולְשִּׂמְחָה וְיִשְמְחוּ רָבִים בְעֵת הִוָלְדוֹ",
+      "Luke.1.15": "כִי יִהְֶיה גָדוֹל לִפְנֵי יְהוָֹה וְלֹא יִשְתֶה יָיִן וְשֵׁכַר וְיִמָלֵא מֵרוּחַ הַקֹדֶש מִבֶטֶן אִמּוֹ",
+      "Luke.1.16": "וְיַשִׁיב רַבִּים מִבְּנֵי יִשְׂרָאֵל אֶל יְהוָֹה אֱלֹהֵיהֶם.",
+      "Luke.1.17": "וְהוּא יֵלֶך לְפָנָיו בְרוּח וְכֹח אֵלִיָהוּ לְהַשִׁיב לֵב אָבוֹת עַל בָנִים. וְהַמִינִים לְצִדְקַת הַצָדִיקִים. וּלְהַכִין לַיְהוָֹה הַעָם מוּכָן.",
+      "Luke.1.18": "וַיֹאמֶר זְכַרְיָה אֶל הַמָלְאָךְ בַמָּה אֵדָע הַדַבָר הַזֶה יַעַן אֲשֶר אֲנִי זָקֵן וְאִשְתִי בַאָה בַיָמִים",
+      "Luke.1.19": "וַיַעָן הַמַלְאָךְ וַיֹאמָר. אָנֹכִי גָבְרִיאֵל הַעֹומֵד לִפְנֵי יְהוָֹה וְנִשְלָחְתִי לְדָבֵר אֵלֶיךָ וּלְהַגִיד לְךָ הַדְּבָרִים הַאֵלֶה וְהִנֵּה",
+      "Luke.1.2": "בִלְתִי סָפֵק, כַאֲשֶר הִגִידוּ לַנוּ אוֹתָם בְעַצְמַם, אֲשֶר מִתְחִלָה רַאוּם, וְהָיוּ מְשַרְתַי הַדָבָר",
+      "Luke.1.20": "אָתָה תִהְיֶה אִלֵם וְלֹא תוּכַל לְדַבֵר עַד הַיוֹם אֲשֶׁר יֵעֲשׂוּ הַדְּבָרִים הַאֵלֶּה עַל אֲשֶר לֹא הֶאֱמַנְתָ לִדְבַרָי אֲשֶר יִתְמַלְאוּ בְעִתָם.",
+      "Luke.1.21": "וְהַעָם הָיוּ מְיַחַלִים אֶת זְכַרְיָהוּ וְנִתְמָהִים מֵאִיחוּרוֹ בָהֵיכל.",
+      "Luke.1.22": "וּבְצֵאתוֹ חוּצָה לֹא הַיָה יָכוֹל לְדַבֵּר עִמָהֵם. וַיֵדְעוּ כִי רַאָה מַרְאָה בַהֵיכָל. וְהוּא הָיָה רוֹמֵז לָהֶם וְנִשְאָר אִלֶם.",
+      "Luke.1.23": "וַיְהִי כִמְלֹאת יְמֵי עַבוֹדָתוֹ וַיֵלֶך אֶל בֵיתוֹ",
+      "Luke.1.24": "וְאַחַר הַיָמִים הַאֶלֶה הַרְתָה אֱלִישֶבָע אִשְתוֹ. וַתִסָתֵר חַמִשָּׁה חֳדַֹשִים לֵאמֹר",
+      "Luke.1.25": "לַמָה זֶה עַשָה יְהוָֹה לִי כֵן בַיָמִים אֲשֶר אָנֹכִי רוֹאָה. לַשֵֹאת מְשָלִי בֵין הַאֲנַשִׁים.",
+      "Luke.1.26": "וּבַחֹדֶש הַשִּׁשִׁי נִשְלַח הַמָּלְאָךְ גַבְרִיאֵל מֵאֶת יְהוָֹה בְעִיר הַגָלִיל וּשְמָהּ נַצַרֵת",
+      "Luke.1.27": "אֶל בְתוּלָה אַחָת מְאוֹרָשָֹה לְאִישׁ וּשְמוֹ יוֹסֵף מִבֵית דַוִד וְשֵם הַבְתוּלָה מִרְיָם.",
+      "Luke.1.28": "וּבְבֹא הַמַלְאָך אֵלֶיהָ אָמַר. שָלֹום לִיךְ מְלֵיאָת חֵן יְהוָֹה עִמָךְ מְבוֹרֶכֶת אָתְּ בֵין הַנָשִׁים.",
+      "Luke.1.29": "וַתָבֵט וַתִבָהֵל עַל דְבַרָיו. וְהָיְתָה חוֹשֶבֶת מָה שָלֹום הָיָה זֶה.",
+      "Luke.1.3": "נִרְאָה לִי גָם כֵן אֲנִי, אֲשֶר מִתְּחִלָה חִפָשְׂתִּי כָל הַדְּבָרִים בִזְרִיזוּת עָל הַסֶדֶר, לִכְתוֹב לְךָ הַיְקָר טִיאוֹפִילּוֹ,",
+      "Luke.1.30": "וַיֹאמֶר לָהּ הַמַלְאָך אַל תִירְאִי מִרְיָם. כִי מַצַאתְ חֵן לִפְנֵי יְהוָֹה",
+      "Luke.1.31": "הִנָךְ הָרָה וְתֵלֵד בֵן וְקַרַָאתְ שְמֹו יֵשוּעַ",
+      "Luke.1.32": "זֶה יִהְיֶה גָדוֹל וְיִקָרֵא בֵן עֵלְיוֹן וְיִתֵן לֹו יְהוָֹה אֱלֹהִים כִסֵא דָוִד אָבִיו",
+      "Luke.1.33": "וְיִמְלֹוךְ עַל בֵית יַעֲקֹב לְעוֹלָם. וְלֹא יִהְיֶה קֵץ לְמַלְכוּתוֹ.",
+      "Luke.1.34": "וַתֹאמֶר מִרְיָם אֶל הַמַלְאָך אֵיךְ יִהְיֶה זֶה כִי אֵינֵנִּי יוֹדַעָת אִיש.",
+      "Luke.1.35": "וַיַעָן הַמַלְאָך וַֹיאמֶר אֵלֶיהָ רוּחַ הַקָדוֹש יַבֹא בִיך וְעוֹז עֵלְיוֹן יִהְיֶה בְצִלַךְ עַל אֲשֶר יִהְיֶה הַנוֹלָד קָדוֹש יִקָרֵא בֵן יְהוָֹה:",
+      "Luke.1.4": "כְדֵי שֵתֵדָע אֲמִתּוּת הַדְּבָרִים אֲשֶר לַמָדְתָ:",
+      "Luke.1.5": "וַיְהִי בִימֵי הוֹרוֹדוֹס מֶלֶךְ יְהוּדָה כֹהֵן אֶחַד וּשְמוֹ זְכַרְיָה מִבְּנֵי אֲבִיָה וְאִשְתוֹ מִבְּנֵי אַהֲרֹן וּשְמָהּ אֱלִישֶבָע",
+      "Luke.1.6": "וַיִהְיוּ שְנֵיהֶם צַדִיקִים לִפְנֵי יְהוָֹה וְהוֹלְכִים בְכָל חוּקֵי וּמִשְפְטֵי יְהוָֹה בִלְתִי עָרְמָה",
+      "Luke.1.7": "וּבַנִים לֹא הָיוּ לָהֶם כִי אֱלִישֶבָע הָיְתָה עֲקָרָה וּשְנְיהֶם בָאִים בַיָמִים: וַיְהִי בַכֹּהֵן",
+      "Luke.1.8": "זְכַרְיָה הַכְהוּנָה לִפְנֵי אדנ[י] יְהוָֹה בְסֶדֶר מִשְפָחְתוֹ",
+      "Luke.1.9": "כְמִנְהָג עֲבוֹדַת הַכְּהוּנָה בָא הַגוֹרָל עָלָיו לַשִׂים אֶת הַקְטֹרֶת: וַָיבֹא בְהֵיכָל יְהוָֹה"
+    }
+  }
+}

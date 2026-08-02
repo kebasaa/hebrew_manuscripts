@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "milah-pdf2osis"
+version = "0.1.0"
+description = "Convert Hebrew New Testament manuscript PDFs to OSIS."
+requires-python = ">=3.11"
+dependencies = [
+    # 1.26 is the floor, not a preference: from that release MuPDF returns text
+    # in logical rather than visual order. Every extractor here reads Hebrew on
+    # that assumption, and an older wheel would silently reverse it.
+    "PyMuPDF>=1.26,<2",
+    "lxml>=6,<7",
+    # Reads the embedded font cmaps that pointed manuscripts need, because
+    # their PDFs ship a ToUnicode map that decodes many niqqud incorrectly.
+    "fonttools>=4.50,<5",
+    # Reads CrossWire SWORD Bible modules directly (pdf2osis.sword) — a source
+    # kind with no PDF at all, so nothing above this line applies to it.
+    "pysword>=0.2.8,<0.3",
+    # Fetches and parses the modern-Hebrew NT (pdf2osis.bsi_hnt) from its
+    # nocr.net mirror — the only source in this package with no local file at
+    # all until fetch_bsi_nt() writes one.
+    "requests>=2.31,<3",
+    "beautifulsoup4>=4.12,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+pdf2osis = "pdf2osis.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "tools/python"}
+
+[tool.setuptools.packages.find]
+where = ["tools/python"]
+
+[tool.setuptools.package-data]
+pdf2osis = ["schema/*.xsd"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
