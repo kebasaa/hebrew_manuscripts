@@ -21,7 +21,8 @@
         <source>Underlying transcription and pointing by Streams in the Negev (2003), https://github.com/HebrewNewTestament/HebDelitzsch.</source>
         <language>he</language>
         <coverage>Matthew 1:1–Revelation 22:21</coverage>
-        <rights>Copyright 2003 (Streams in the Negev). Free for use by any non-commercial project.</rights>
+        <rights type="x-copyright">Copyright 2003 (Streams in the Negev).</rights>
+        <rights type="x-license">Free for use by any non-commercial project.</rights>
         <scope>NT</scope>
       </work>
       <work osisWork="bible">

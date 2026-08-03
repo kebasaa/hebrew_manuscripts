@@ -19,6 +19,8 @@
         <source>Text, translation and annotation from Nehemia Gordon, 'Hebrew Gospels of Luke and John found in the Vatican Library', version 3.9 (2018), nehemiaswall.com.</source>
         <language>he</language>
         <coverage>John 1:1–13</coverage>
+        <rights type="x-copyright"></rights>
+        <rights type="x-license">All rights reserved.</rights>
         <scope>John</scope>
       </work>
       <work osisWork="bible">

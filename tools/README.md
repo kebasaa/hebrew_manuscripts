@@ -148,6 +148,42 @@ one record covers two verses.
 Every file validates against the upstream `osisCore.2.1.1.xsd`, vendored in
 `tools/python/pdf2osis/schema/`, and is pretty-printed one verse per line.
 
+### Rights and licensing
+
+Every variant of every file carries two `<rights>` elements, told apart by
+`type` — the schema permits both the `type` attribute and repeating the
+element (`rightsCT` in `osisCore.2.1.1.xsd`). They answer two different
+questions, and `_work()` in `pdf2osis/osis.py` never conflates them:
+
+- **`<rights type="x-copyright">`** — who holds copyright. Stated on the
+  translation (or the sole variant, for a source with no separate
+  translation), and on the commented Hebrew transcription too, wherever a
+  named person or publisher did that commenting — Gordon's annotations,
+  PTM's interlinear apparatus. The bare, uncommented `hebrew` variant of a
+  source that also has a translation carries an **empty** element: nobody in
+  particular is credited with producing it, and an empty `<rights>` says
+  that was considered and answered "nobody" rather than skipped.
+- **`<rights type="x-license">`** — what a reader may do with it. Never
+  empty. Either the source's own stated term, verbatim (`profile.license` on
+  the relevant `BookProfile`), or this repository's own default, **only**
+  when the source states nothing at all:
+
+  ```
+  CC BY-NC-SA 4.0 (repository default; no licence stated in the source).
+  ```
+
+  The default is never used to loosen a term a source did state, however
+  strict — Gordon's Ebr. 530 work is "All rights reserved.", the Cochin
+  editions are "All Rights Reserved" (confirmed directly with Janice F. Baca
+  / Project Truth Ministries, not printed in the PDFs themselves), and the
+  Bible Society in Israel's scrape states outright that no reuse permission
+  exists at all. Only `sloane_rev` currently has nothing stated and falls
+  back to the default.
+
+`src/build_manifest.py`, at the repository root, reads both into
+`manifest_manuscripts.json` as separate `rights` and `license` fields, so a
+reader of the catalogue sees which is which without opening the `.osis` file.
+
 ### Coverage
 
 | profile | records | extent |
@@ -238,17 +274,18 @@ fill. They are kept, numbered, empty, with the reason as a note.
 
 There is no accompanying English text at all, so `BookProfile.has_translation
 = False` suppresses the `translation` variant entirely, and the copyright and
-translator credit — normally only on the translation variant, since that is
-usually the only copyrightable modern text — move to the Hebrew variants
-instead, since here they are the only place those facts have anywhere to go.
+translator credit — normally only on the translation variant (or the
+commented Hebrew one, see "Rights and licensing" above) — move to *every*
+Hebrew variant here, since there is nowhere else for those facts to go.
 
 **Licensing**: the module is Streams in the Negev's 2003 transcription and
 repointing of Delitzsch's 1885 translation, distributed by CrossWire
-"free for use by any non-commercial project" — not public domain. The
-`rights` field in `profiles.DELITZSCH` states this in the OSIS header itself.
-The module zip is downloaded, not committed
-(`tools/data/00_source_files/sword/`), and `tests/test_sword.py` skips if it
-is not present locally.
+"free for use by any non-commercial project" — not public domain. Split
+across `profiles.DELITZSCH`'s two fields: `rights` states the copyright
+("Copyright 2003 (Streams in the Negev).") and `license` states this reuse
+term verbatim, not the repository's CC BY-NC-SA default. The module zip is
+downloaded, not committed (`tools/data/00_source_files/sword/`), and
+`tests/test_sword.py` skips if it is not present locally.
 
 ### Modern Hebrew New Testament (scraped)
 
@@ -288,11 +325,15 @@ before the next one. All are kept, numbered, empty, with a note.
 
 **Licensing**: unlike Delitzsch, there is **no license grant at all** — the
 source states only "copyrighted (c) 1995, revised (c) 2010 by The Bible
-Society in Israel," with no reuse or redistribution permission anywhere. The
-`rights` field in `profiles.BSI_HNT` states this verbatim in the OSIS header.
-The cache (`tools/data/00_source_files/bsi_hnt/`) and generated output are for
-local use only — not committed, not redistributed, absent direct permission
-from the publisher.
+Society in Israel," with no reuse or redistribution permission anywhere.
+`profiles.BSI_HNT.rights` states the copyright notice; `.license` states the
+absence of permission verbatim, in the OSIS header's `x-license` element —
+this is the one profile whose `license` is a real stated refusal, not the
+repository's CC BY-NC-SA default, and not empty either: "no licence" is
+itself a fact worth recording, not an unanswered question. The cache
+(`tools/data/00_source_files/bsi_hnt/`) and generated output are for local
+use only — not committed, not redistributed, absent direct permission from
+the publisher.
 
 ### Known issues
 

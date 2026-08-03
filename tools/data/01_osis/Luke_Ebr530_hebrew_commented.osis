@@ -19,6 +19,8 @@
         <source>Text, translation and annotation from Nehemia Gordon, 'Hebrew Gospels of Luke and John found in the Vatican Library', version 3.9 (2018), nehemiaswall.com.</source>
         <language>he</language>
         <coverage>Luke 1:1–35</coverage>
+        <rights type="x-copyright">© 2018 Nehemia Gordon.</rights>
+        <rights type="x-license">All rights reserved.</rights>
         <scope>Luke</scope>
       </work>
       <work osisWork="bible">

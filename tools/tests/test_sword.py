@@ -143,9 +143,10 @@ def test_rights_and_translator_credit_appear_on_the_hebrew_variant(outputs):
     variants do — otherwise the copyright notice would appear nowhere at all."""
     root = etree.fromstring(outputs["hebrew"])
     work = root.xpath("//osis:header/osis:work", namespaces=NS)[0]
-    rights = work.xpath("./osis:rights/text()", namespaces=NS)
-    assert rights and "Streams in the Negev" in rights[0]
-    assert "non-commercial" in rights[0]
+    copyright_ = work.xpath("./osis:rights[@type='x-copyright']/text()", namespaces=NS)
+    assert copyright_ and "Streams in the Negev" in copyright_[0]
+    license_ = work.xpath("./osis:rights[@type='x-license']/text()", namespaces=NS)
+    assert license_ and "non-commercial" in license_[0]
     creator = work.xpath("./osis:creator/text()", namespaces=NS)
     assert creator == ["Franz Delitzsch"]
 

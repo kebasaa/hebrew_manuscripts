@@ -243,6 +243,32 @@ def test_header_carries_attributed_provenance(outputs):
     assert shelfmark and "Vat. ebr. 530" in shelfmark[0]
 
 
+def _rights(output: bytes, kind: str) -> str:
+    root = etree.fromstring(output)
+    work = root.xpath("//osis:header/osis:work", namespaces=NS)[0]
+    found = work.xpath(f"./osis:rights[@type='x-{kind}']/text()", namespaces=NS)
+    return found[0] if found else ""
+
+
+def test_copyright_is_absent_from_the_plain_hebrew_variant(outputs):
+    for book in PROFILES:
+        assert _rights(outputs[book]["hebrew"], "copyright") == ""
+
+
+def test_copyright_names_gordon_on_the_commented_and_translation_variants(outputs):
+    for book in PROFILES:
+        for variant in ("hebrew_commented", "translation"):
+            assert _rights(outputs[book][variant], "copyright") == "© 2018 Nehemia Gordon."
+
+
+def test_licence_states_all_rights_reserved_on_every_variant(outputs):
+    # Gordon states this explicitly for Luke and John — the repository's own
+    # CC BY-NC-SA default must never override a position he actually took.
+    for book, profile in PROFILES.items():
+        for variant in profile.output_names():
+            assert _rights(outputs[book][variant], "license") == "All rights reserved."
+
+
 def test_conversion_is_deterministic(tmp_path):
     first = convert_pdf(PDF, EBR530_LUKE, tmp_path)
     payloads = {p: p.read_bytes() for p in first.output_paths.values()}

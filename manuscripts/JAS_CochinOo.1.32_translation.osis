@@ -14,7 +14,8 @@
         <identifier type="x-shelfmark">MS.Oo.1.32</identifier>
         <identifier type="URI">https://projecttruthministries.org/studies/cochin-james/</identifier>
         <language>en</language>
-        <rights>© copyright 2024 Janice F. Baca</rights>
+        <rights type="x-copyright">© copyright 2024 Janice F. Baca</rights>
+        <rights type="x-license">All Rights Reserved</rights>
         <scope>JAS</scope>
       </work>
       <work osisWork="bible">

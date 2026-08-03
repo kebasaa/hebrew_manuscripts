@@ -14,7 +14,8 @@
         <identifier type="x-shelfmark">MS.Oo.1.16.2</identifier>
         <identifier type="URI">https://projecttruthministries.org/studies/cochin-revelation/</identifier>
         <language>en</language>
-        <rights>© copyright 2024 Janice F. Baca</rights>
+        <rights type="x-copyright">© copyright 2024 Janice F. Baca</rights>
+        <rights type="x-license">All Rights Reserved</rights>
         <scope>Rev</scope>
       </work>
       <work osisWork="bible">

@@ -21,7 +21,8 @@
         <source>Text, translation and annotation from Nehemia Gordon, 'A Hebrew Manuscript of the Book of Revelation' (2017), nehemiaswall.com.</source>
         <language>en</language>
         <coverage>Revelation 1:1–2:13</coverage>
-        <rights>© 2017 by Nehemia Gordon</rights>
+        <rights type="x-copyright">© 2017 by Nehemia Gordon</rights>
+        <rights type="x-license">CC BY-NC-SA 4.0 (repository default; no licence stated in the source).</rights>
         <scope>Rev</scope>
       </work>
       <work osisWork="bible">

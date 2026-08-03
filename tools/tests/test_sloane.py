@@ -279,3 +279,30 @@ def test_header_carries_attributed_provenance(outputs):
     date = work.xpath("./osis:date", namespaces=NS)[0]
     assert date.get("type") == "Gregorian"
     assert date.text == "between 1500 and 1699"
+
+
+def _rights(output: bytes, kind: str) -> str:
+    root = etree.fromstring(output)
+    work = root.xpath("//osis:header/osis:work", namespaces=NS)[0]
+    found = work.xpath(f"./osis:rights[@type='x-{kind}']/text()", namespaces=NS)
+    return found[0] if found else ""
+
+
+def test_copyright_is_absent_from_the_plain_hebrew_variant(outputs):
+    # Nobody in particular is credited with the bare transcription — the
+    # commentary is Gordon's, not the manuscript's — so this is empty rather
+    # than missing: an element present and blank, not omitted.
+    assert _rights(outputs["hebrew"], "copyright") == ""
+
+
+def test_copyright_names_gordon_on_the_commented_and_translation_variants(outputs):
+    for variant in ("hebrew_commented", "translation"):
+        assert _rights(outputs[variant], "copyright") == "© 2017 by Nehemia Gordon"
+
+
+def test_licence_defaults_to_cc_by_nc_sa_on_every_variant(outputs):
+    # This edition states no reuse terms of its own, unlike the Cochin
+    # editions or Gordon's Ebr. 530 work — so every variant gets the
+    # repository's stated default, never left blank.
+    for variant in SLOANE_REV.output_names():
+        assert "CC BY-NC-SA 4.0" in _rights(outputs[variant], "license")

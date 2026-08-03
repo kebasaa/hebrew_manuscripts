@@ -32,7 +32,8 @@ OSIS = """<?xml version="1.0" encoding="UTF-8"?>
     <title>Revelation (British Library, Sloane MS 237)</title>
     <date>ca. 1730</date>
     <description type="x-contents">1:1-2:13</description>
-    <rights>CC BY-NC-SA 4.0</rights>
+    <rights type="x-copyright">© 2017 by Nehemia Gordon</rights>
+    <rights type="x-license">CC BY-NC-SA 4.0</rights>
    </work>
   </header>
   <div type="book" osisID="Rev"><verse osisID="Rev.1.1">TEXT</verse></div>
@@ -91,6 +92,55 @@ class TheHashIsStableAcrossLineEndings(unittest.TestCase):
 
         self.assertEqual(first["bytes"], second["bytes"])
         self.assertNotEqual(first["sha256"], second["sha256"])
+
+
+class CopyrightAndLicenceAreReadApart(unittest.TestCase):
+    """Two different `<rights>` elements, told apart by `type`.
+
+    Conflating them was the actual bug this split fixes: a translation marked
+    "all rights reserved" and one with no stated terms at all could not both
+    be described by one field.
+    """
+
+    def test_the_typed_elements_are_read_separately(self) -> None:
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "REV_typed.osis"
+            path.write_bytes(OSIS.encode("utf-8"))
+            entry = build_manifest.describe(path)
+
+        self.assertEqual(entry["rights"], "© 2017 by Nehemia Gordon")
+        self.assertEqual(entry["license"], "CC BY-NC-SA 4.0")
+
+    def test_an_untyped_rights_element_is_read_as_copyright(self) -> None:
+        """Every file in this repository carried a bare `<rights>` before the
+        split existed. An unretrofitted header must degrade to answering one
+        question, not raise or answer neither."""
+        untyped = OSIS.replace(
+            '<rights type="x-copyright">© 2017 by Nehemia Gordon</rights>\n'
+            '    <rights type="x-license">CC BY-NC-SA 4.0</rights>',
+            "<rights>CC BY-NC-SA 4.0</rights>",
+        )
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "REV_untyped.osis"
+            path.write_bytes(untyped.encode("utf-8"))
+            entry = build_manifest.describe(path)
+
+        self.assertEqual(entry["rights"], "CC BY-NC-SA 4.0")
+        self.assertEqual(entry["license"], "")
+
+    def test_copyright_may_be_empty(self) -> None:
+        """A bare, uncommented transcription may credit nobody in particular —
+        empty, not fabricated."""
+        no_copyright = OSIS.replace(
+            '<rights type="x-copyright">© 2017 by Nehemia Gordon</rights>', ""
+        )
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "REV_nocopy.osis"
+            path.write_bytes(no_copyright.encode("utf-8"))
+            entry = build_manifest.describe(path)
+
+        self.assertEqual(entry["rights"], "")
+        self.assertEqual(entry["license"], "CC BY-NC-SA 4.0")
 
 
 class RegeneratingReproducesTheManifest(unittest.TestCase):

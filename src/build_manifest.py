@@ -84,6 +84,29 @@ def element_text(parent: ET.Element | None, tag: str) -> str:
     return re.sub(r"\s+", " ", "".join(child.itertext())).strip()
 
 
+def rights_text(work: ET.Element | None, kind: str) -> str:
+    """The ``<rights type="x-{kind}">`` text, or "" when there is none.
+
+    Copyright and license are different questions with different answers, so
+    a header carries two ``<rights>`` elements distinguished by ``type`` — the
+    schema allows the repetition. ``kind`` is ``"copyright"`` or
+    ``"license"``. A bare, untyped ``<rights>`` — the shape every file in this
+    repository used before the split — is read as copyright, so a header that
+    has not been retrofitted degrades to answering one question rather than
+    neither.
+    """
+    if work is None:
+        return ""
+    typed = work.find(f"{{{OSIS_NS}}}rights[@type='x-{kind}']")
+    if typed is not None:
+        return re.sub(r"\s+", " ", "".join(typed.itertext())).strip()
+    if kind == "copyright":
+        untyped = work.find(f"{{{OSIS_NS}}}rights")
+        if untyped is not None and not untyped.get("type"):
+            return re.sub(r"\s+", " ", "".join(untyped.itertext())).strip()
+    return ""
+
+
 def coverage(work: ET.Element | None) -> str:
     """What the edition covers, from the description the transcriber wrote."""
     if work is None:
@@ -127,12 +150,15 @@ def describe(path: Path) -> dict | None:
         "language": language,
         "date": element_text(work, "date"),
         "covers": coverage(work),
-        # What terms this particular text carries — never assumed. The
-        # repository stopped claiming one licence for every manuscript the day
-        # a translation turned up marked "all rights reserved" beside others
-        # marked CC BY-NC-SA; a reader now has to be told per file, and this is
-        # what tells them without opening it.
-        "rights": element_text(work, "rights"),
+        # Two different questions, never assumed. `rights` is who holds
+        # copyright — may legitimately be empty, when nobody in particular is
+        # credited with a bare transcription. `license` is what a reader may
+        # do with it, and is never empty: the source's own stated term, or
+        # this repository's CC BY-NC-SA default when the source stated none —
+        # never invented past that, and never loosened past a stricter term
+        # ("All Rights Reserved.") a source did state.
+        "rights": rights_text(work, "copyright"),
+        "license": rights_text(work, "license"),
         "bytes": len(content),
         # What tells Milah that a text it already holds has been corrected.
         # Length cannot: correcting "MS Sloane 273" to "Sloane MS 237" moves not

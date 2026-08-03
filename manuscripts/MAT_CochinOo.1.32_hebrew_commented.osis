@@ -17,7 +17,8 @@
         <source>Text, translation and commentary from Janice F. Baca, 'The Cochin Hebrew Book of Matthew' (Project Truth Ministries, 2025).</source>
         <language>he</language>
         <coverage>Matthew 1:1–19:30</coverage>
-        <rights>© copyright 2025 Janice F. Baca</rights>
+        <rights type="x-copyright">© copyright 2025 Janice F. Baca</rights>
+        <rights type="x-license">All Rights Reserved</rights>
         <scope>MAT</scope>
       </work>
       <work osisWork="bible">

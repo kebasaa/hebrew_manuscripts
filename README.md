@@ -15,6 +15,7 @@ download.
 | `src/scan_links.tsv` | the scans offered, one address per row |
 | `src/build_scan_manifest.py` | writes that catalogue from the libraries' records |
 | `tests/` | checks on the generators |
+| `tools/` | the PDF-to-OSIS converter that produces `manuscripts/*.osis`, and Milah's data-file generators |
 
 Two catalogues, because they hold opposite things: one lists **texts already
 transcribed** that Milah downloads and collates, the other lists **images waiting
@@ -30,8 +31,10 @@ Every text is [OSIS](https://www.bibletechnologies.net/) XML, validated against
 `osisCore.2.1.1.xsd`: verses are marked with paired `<verse sID.../>` /
 `<verse eID.../>` milestones, editorial remarks are `<note>` elements inline in
 the text, and a `<header>` carries the bibliographic and provenance metadata
-(title, contributor, shelfmark, repository, date, rights, coverage, …) that
-`build_manifest.py` reads to build the catalogue.
+(title, contributor, shelfmark, repository, date, coverage, …) that
+`build_manifest.py` reads to build the catalogue — including two separate
+`<rights>` elements, `type="x-copyright"` and `type="x-license"`; see
+[Licence](#licence) below.
 
 ### Filenames
 
@@ -189,6 +192,26 @@ Only the `web` derivatives are linked from OPenn. Its masters are sometimes TIFF
 which Milah cannot decode and which OPenn's own `robots.txt` declines to serve to
 a program.
 
+## tools/
+
+`tools/` holds the converter that produces `manuscripts/*.osis` from source —
+each manuscript's PDF, or a SWORD module, or a scrape cache — plus a separate
+set of generators that build data files for the sibling
+[Milah](https://github.com/kebasaa/milah) app. Neither is needed to build or
+run Milah, and neither is needed to use what's already in `manuscripts/`; it
+exists so a correction can be regenerated rather than re-typed. Full account,
+including per-source extraction notes and known issues, in
+[`tools/README.md`](tools/README.md).
+
+The one thing worth knowing without opening it: **every OSIS file the
+converter writes carries `<rights>` twice**, `type="x-copyright"` and
+`type="x-license"` — the same split this repository's own `## Licence`
+section below describes. Copyright may be empty (nobody in particular is
+credited with a bare, uncommented transcription); license never is, and
+defaults to this repository's stated CC BY-NC-SA 4.0 only when a source
+states no reuse term of its own. A source that does state one — however
+strict — is never silently loosened past it.
+
 ## Tests
 
 ```bash
@@ -204,19 +227,30 @@ and would quietly be testing their uptime rather than this code.
 
 This is two licences, not one, because a manuscript transcription and a Python
 script are not the same kind of thing and one blanket claim over both was
-never accurate — a translation here is marked "all rights reserved" by its
-own author, which a single repository-wide licence could not have said.
+never accurate.
 
-**The scripts** — everything in `src/` and `tests/` — are [GPLv3](LICENSE).
+**The scripts** — everything in `src/`, `tests/` and `tools/` — are
+[GPLv3](LICENSE).
 
-**Each manuscript's own terms are in its own OSIS header**, in the `<rights>`
-element inside `<work>`, and nowhere else — there is no repository-wide
-default that applies where a file is silent. They differ: some carry a named
-translator's copyright (`© copyright 2025 Janice F. Baca`), one states "All
-rights reserved" outright, and a transcription with no stated terms of its
-own reads `CC BY-NC-SA 4.0 (this repository's default; no licence was stated
-for the transcription itself)`. `rights` is also a field in
-`manifest_manuscripts.json` for exactly this reason: a reader should not have
-to open every `.osis` file to find out what they may do with it. Check the
-field for the file you mean to use — read it before redistributing, not
-after.
+**Each manuscript's own terms are in its own OSIS header**, and nowhere
+else — there is no repository-wide default that silently applies where a
+file says nothing. Two questions, kept apart as two separate `<rights>`
+elements inside `<work>`:
+
+- `<rights type="x-copyright">` — who holds copyright. May be empty: a bare,
+  uncommented Hebrew transcription with no named commentator credits nobody
+  in particular, and says so with an empty element rather than omitting it.
+- `<rights type="x-license">` — what a reader may do with it. Never empty.
+  Some files state a named translator's copyright and nothing more about
+  reuse, in which case the license reads this repository's own default,
+  `CC BY-NC-SA 4.0 (repository default; no licence stated in the source)`.
+  Others state a real position of their own, which is never loosened past
+  what they actually say — several read `All Rights Reserved` (the Cochin
+  editions, confirmed directly with their author) or `All rights reserved.`
+  (Nehemia Gordon's Ebr. 530 work).
+
+Both are also fields — `rights` and `license` — in
+`manifest_manuscripts.json`, read from those same two elements by
+`src/build_manifest.py`, so a reader is not required to open every `.osis`
+file to find out what they may do with it. Check both fields for the file you
+mean to use — read them before redistributing, not after.

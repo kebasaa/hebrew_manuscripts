@@ -180,6 +180,33 @@ def test_cochin_output_is_structurally_first_class(profile, tmp_path: Path) -> N
             assert "<verse eID=" in line
 
 
+@pytest.mark.parametrize("profile", [REV, JAS, MAT])
+def test_cochin_rights_split_copyright_from_license(
+    profile, tmp_path: Path
+) -> None:
+    """Every Cochin edition: copyright present save on the bare Hebrew, and
+    All Rights Reserved on every variant — confirmed directly with Janice F.
+    Baca / Project Truth Ministries, not read out of any source PDF."""
+    report = convert_pdf(SOURCE / profile.default_pdf, profile, tmp_path)
+    namespace = {"osis": OSIS_NS}
+
+    for variant, path in report.output_paths.items():
+        root = etree.fromstring(path.read_bytes())
+        work = root.xpath("//osis:header/osis:work", namespaces=namespace)[0]
+
+        def rights(kind: str) -> str:
+            found = work.xpath(
+                f"./osis:rights[@type='x-{kind}']/text()", namespaces=namespace
+            )
+            return found[0] if found else ""
+
+        if variant == "hebrew":
+            assert rights("copyright") == "", (profile.key, variant)
+        else:
+            assert profile.rights == rights("copyright"), (profile.key, variant)
+        assert rights("license") == "All Rights Reserved", (profile.key, variant)
+
+
 @pytest.mark.parametrize(
     ("profile", "absent"),
     [

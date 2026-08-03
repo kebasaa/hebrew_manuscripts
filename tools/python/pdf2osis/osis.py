@@ -38,11 +38,14 @@ def _work(
     profile: BookProfile,
     *,
     translation: bool = False,
+    commented: bool = False,
 ) -> None:
     # OSIS fixes the order of a work's children: title, contributor, creator,
     # subject, date, description, publisher, type, format, identifier, source,
     # language, relation, coverage, rights, scope, castList, teiHeader,
-    # refSystem. Emitting them out of order fails schema validation.
+    # refSystem. Emitting them out of order fails schema validation. `rights`
+    # is written twice — copyright, then license — which the schema allows
+    # (rightsCT permits repetition), and both still land in this one slot.
     work = etree.SubElement(header, _tag("work"), osisWork=work_id)
     etree.SubElement(work, _tag("title")).text = title
 
@@ -106,12 +109,30 @@ def _work(
         etree.SubElement(work, _tag("relation")).text = profile.relation
     if profile.coverage:
         etree.SubElement(work, _tag("coverage")).text = profile.coverage
-    # Rights are stated on the translation variant everywhere it exists — that
-    # is where the copyrightable modern text lives (Gordon's, PTM's). A source
-    # with no translation at all, like Delitzsch, has nothing else to carry
-    # the rights statement, so its Hebrew variants get it instead.
-    if translation or not profile.has_translation:
-        etree.SubElement(work, _tag("rights")).text = profile.rights
+    # Two <rights>, always both present — the schema allows more than one
+    # (rightsCT permits `type` and maxOccurs="unbounded") — because copyright
+    # and license are different questions with different answers.
+    #
+    # Copyright: who holds it, stated on the translation (or the sole variant,
+    # when there is none) and on the commented Hebrew transcription too, where
+    # a named person or publisher did that commenting — Gordon's annotations,
+    # PTM's interlinear apparatus. The bare, uncommented Hebrew variant of a
+    # source that also has a translation carries none: nobody in particular is
+    # credited with producing it. Empty rather than absent, so a reader sees
+    # that this was considered and answered "nobody", not skipped.
+    if translation or not profile.has_translation or commented:
+        copyright_text = profile.rights
+    else:
+        copyright_text = ""
+    etree.SubElement(work, _tag("rights"), type="x-copyright").text = copyright_text
+
+    # License: what a reader may do with it. Never empty, unlike copyright
+    # above: what the source itself states about reuse, verbatim, or this
+    # repository's own stated default when the source said nothing at all —
+    # never invented, and never silently loosened past a stricter term
+    # (Gordon's "All rights reserved.", the Bible Society in Israel's outright
+    # refusal) the source did state.
+    etree.SubElement(work, _tag("rights"), type="x-license").text = profile.license
     etree.SubElement(work, _tag("scope")).text = profile.scope
 
 
@@ -122,6 +143,7 @@ def _header(
     language: str,
     *,
     translation: bool,
+    commented: bool = False,
 ) -> None:
     header = etree.SubElement(osis_text, _tag("header"))
     title = profile.translation_title if translation else profile.title
@@ -132,6 +154,7 @@ def _header(
         language,
         profile,
         translation=translation,
+        commented=commented,
     )
     bible = etree.SubElement(header, _tag("work"), osisWork="bible")
     etree.SubElement(bible, _tag("title")).text = (
@@ -401,6 +424,7 @@ def _start_document(
     if variant not in variants:
         raise ValueError(f"Unknown OSIS variant: {variant}")
     translation = variant == "translation"
+    commented = variant == "hebrew_commented"
     with_notes = variant in {"hebrew_commented", "translation"}
     suffix = {
         "hebrew": "",
@@ -422,7 +446,10 @@ def _start_document(
         osisRefWork="bible",
     )
     osis_text.set(XML_LANG, language)
-    _header(osis_text, profile, work_id, language, translation=translation)
+    _header(
+        osis_text, profile, work_id, language,
+        translation=translation, commented=commented,
+    )
     return root, osis_text, translation, with_notes
 
 

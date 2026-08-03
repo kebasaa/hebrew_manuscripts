@@ -20,7 +20,8 @@
         <source>Text scraped from https://nocr.net/hbm/hebrew/hebmht/index.php, chapter by chapter, by pdf2osis.bsi_hnt.</source>
         <language>he</language>
         <coverage>Matthew 1:1–Revelation 22:21</coverage>
-        <rights>Copyrighted (c) 1995, revised (c) 2010 by The Bible Society in Israel. No reuse or redistribution permission is stated anywhere by the publisher; this edition is for local, personal use only.</rights>
+        <rights type="x-copyright">Copyrighted (c) 1995, revised (c) 2010 by The Bible Society in Israel.</rights>
+        <rights type="x-license">No reuse or redistribution permission is stated anywhere by the publisher; this edition is for local, personal use only.</rights>
         <scope>NT</scope>
       </work>
       <work osisWork="bible">

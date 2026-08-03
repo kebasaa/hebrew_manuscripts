@@ -69,7 +69,19 @@ class BookProfile:
     translator: str = "Project Truth Ministries"
     contributor: str = "Janice F. Baca"
     contributor_file_as: str = "Baca, Janice F."
+    # Who holds copyright over this text, and when — attribution only. May
+    # legitimately be empty (see osis._work): the bare, uncommented Hebrew
+    # variant of a source that also has a translation carries none, because
+    # nobody in particular is credited with producing it.
     rights: str = "© copyright 2024 Janice F. Baca"
+    # What a reader may do with it — never empty, unlike `rights` above. This
+    # is this repository's stated default for a source that states no reuse
+    # terms of its own; a source that does state something, however strict
+    # ("All rights reserved."), overrides this field to say that instead. Never
+    # invented, never silently loosened past what the source actually says.
+    license: str = (
+        "CC BY-NC-SA 4.0 (repository default; no licence stated in the source)."
+    )
 
     def output_names(self) -> dict[str, str]:
         names = {
@@ -119,6 +131,11 @@ REV = BookProfile(
     ),
     expected_hebrew_prefix="אלה הסודות",
     cochin_book="rev",
+    # Confirmed directly with Janice F. Baca / Project Truth Ministries: this
+    # edition is All Rights Reserved. Not previously stated in any published
+    # file's rights text — new information the tool has to be told, not read
+    # out of the source PDF.
+    license="All Rights Reserved",
 )
 
 JAS = BookProfile(
@@ -149,6 +166,8 @@ JAS = BookProfile(
     ),
     expected_hebrew_prefix="יעקב עבד",
     cochin_book="jas",
+    # See REV — confirmed directly, the same publisher and terms.
+    license="All Rights Reserved",
 )
 
 SLOANE_REV = BookProfile(
@@ -311,7 +330,8 @@ EBR530_LUKE = BookProfile(
     translator="Nehemia Gordon",
     contributor="Nehemia Gordon",
     contributor_file_as="Gordon, Nehemia",
-    rights="© 2018 Nehemia Gordon. All rights reserved.",
+    rights="© 2018 Nehemia Gordon.",
+    license="All rights reserved.",
     expected_hebrew_prefix="בִהְיוֹת",
     extractor="ebr530",
     footer_top=701.0,
@@ -396,7 +416,8 @@ EBR530_JOHN = BookProfile(
     translator="Nehemia Gordon",
     contributor="Nehemia Gordon",
     contributor_file_as="Gordon, Nehemia",
-    rights="© 2018 Nehemia Gordon. All rights reserved.",
+    rights="© 2018 Nehemia Gordon.",
+    license="All rights reserved.",
     expected_hebrew_prefix="בְרֵאשִׁית",
     extractor="ebr530",
     footer_top=701.0,
@@ -460,6 +481,8 @@ MAT = BookProfile(
     original_date="ca. 1730",
     edition_date="2025",
     rights="© copyright 2025 Janice F. Baca",
+    # See REV — confirmed directly, the same publisher and terms.
+    license="All Rights Reserved",
     expected_hebrew_prefix="ספר הלידה",
     cochin_book="mat",
 )
@@ -546,13 +569,11 @@ DELITZSCH = BookProfile(
     translator="Franz Delitzsch",
     contributor="Streams in the Negev",
     contributor_file_as="Streams in the Negev",
+    rights="Copyright 2003 (Streams in the Negev).",
     # The module's own DistributionLicense is "Copyrighted; permission to
     # distribute granted to CrossWire"; STEPBible states the plainer term
     # under which CrossWire in turn makes it available.
-    rights=(
-        "Copyright 2003 (Streams in the Negev). Free for use by any "
-        "non-commercial project."
-    ),
+    license="Free for use by any non-commercial project.",
     expected_hebrew_prefix="סֵפֶר תּוֹלְדֹת יֵשׁוּעַ",
     extractor="sword",
     has_translation=False,
@@ -634,14 +655,15 @@ BSI_HNT = BookProfile(
     translator="The Bible Society in Israel",
     contributor="The Bible Society in Israel",
     contributor_file_as="Bible Society in Israel, The",
+    rights="Copyrighted (c) 1995, revised (c) 2010 by The Bible Society in Israel.",
     # No license is granted at all — not even Delitzsch's restrictive
     # "non-commercial" permission. This states the source's own notice
-    # verbatim; see tools/README.md for why this output stays local, never
-    # committed or redistributed, absent direct permission from the publisher.
-    rights=(
-        "Copyrighted (c) 1995, revised (c) 2010 by The Bible Society in "
-        "Israel. No reuse or redistribution permission is stated anywhere by "
-        "the publisher; this edition is for local, personal use only."
+    # verbatim, not the repository's CC BY-NC-SA default; see tools/README.md
+    # for why this output stays local, never committed or redistributed,
+    # absent direct permission from the publisher.
+    license=(
+        "No reuse or redistribution permission is stated anywhere by the "
+        "publisher; this edition is for local, personal use only."
     ),
     expected_hebrew_prefix="סֵפֶר הַיּוּחֲסִין שֶׁל יֵשׁוּעַ",
     extractor="bsi_hnt",

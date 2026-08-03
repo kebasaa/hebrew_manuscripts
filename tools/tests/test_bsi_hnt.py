@@ -136,9 +136,10 @@ def test_rights_state_there_is_no_reuse_permission(outputs):
     permission — the header must say so, not just credit the publisher."""
     root = etree.fromstring(outputs["hebrew"])
     work = root.xpath("//osis:header/osis:work", namespaces=NS)[0]
-    rights = work.xpath("./osis:rights/text()", namespaces=NS)
-    assert rights and "Bible Society in Israel" in rights[0]
-    assert "No reuse or redistribution permission" in rights[0]
+    copyright_ = work.xpath("./osis:rights[@type='x-copyright']/text()", namespaces=NS)
+    assert copyright_ and "Bible Society in Israel" in copyright_[0]
+    license_ = work.xpath("./osis:rights[@type='x-license']/text()", namespaces=NS)
+    assert license_ and "No reuse or redistribution permission" in license_[0]
 
 
 def test_conversion_is_deterministic(tmp_path):
