@@ -114,9 +114,13 @@ class Platform(NamedTuple):
     Cambridge and the John Rylands Library in Manchester turned out, on
     inspection, to run the identical software: the same JSON shape from
     ``descriptiveMetadata``/``pages`` down to the two-part rights split, the
-    same viewer address, even the same field names. Only the host differs, so
-    one reader serves both rather than carrying two records that are nearly the
-    same and drifting apart the first time one of them changes a field.
+    same viewer address, even the same field names. So one reader serves both
+    rather than carrying two records that are nearly the same and drifting
+    apart the first time one of them changes a field.
+
+    They are not identical, though, and this record is where they are told
+    apart. Believing the host was the only difference is what once asked
+    Manchester for every page twice-extensioned; see ``jp2``.
     """
 
     #: Its record, which is not the IIIF manifest. The manifest carries the same
@@ -124,20 +128,21 @@ class Platform(NamedTuple):
     #: this gives each field as a plain string, and the dates machine-readable
     #: besides.
     record: str
-    #: Where the image server keeps a page, given the identifier the record
-    #: names.
+    #: Where the image server keeps its pages. The identifier goes on the end as
+    #: the record gives it — not with an extension added here, because the two
+    #: platforms do not agree on whether the record already carries one.
     image: str
 
 
 CAMBRIDGE = Platform(
     record="https://services.cudl.lib.cam.ac.uk/v1/metadata/json/{item}",
-    image="https://images.lib.cam.ac.uk/iiif/{image}.jp2",
+    image="https://images.lib.cam.ac.uk/iiif/{image}",
 )
-#: The image host is singular — "image", not "images" — which is the one place
-#: the two platforms actually differ rather than merely being hosted apart.
+#: The image host is singular — "image", not "images" — and its page
+#: identifiers arrive with ".jp2" already on them, which Cambridge's do not.
 MANCHESTER = Platform(
     record="https://services.digitalcollections.manchester.ac.uk/v1/metadata/json/{item}",
-    image="https://image.digitalcollections.manchester.ac.uk/iiif/{image}.jp2",
+    image="https://image.digitalcollections.manchester.ac.uk/iiif/{image}",
 )
 
 #: OPenn publishes no API at all: a manuscript is a directory of static files on
@@ -262,6 +267,19 @@ def first_value(field: object) -> dict:
     return {}
 
 
+def jp2(identifier: str) -> str:
+    """A page identifier as its image server keeps it, exactly one .jp2 deep.
+
+    The two platforms disagree here and neither record says so. Cambridge names
+    a page "MS-OO-00001-00032-000-00001"; Manchester names the same kind of page
+    "MS-GASTER-HEBREW-01616-000-00001.jp2". Appending the extension either way
+    asks Manchester for "…jp2.jp2", which is a 404 — on every folio of every
+    book of the only manuscript it holds, silently, because a manifest full of
+    addresses that fetch nothing looks exactly like one that works.
+    """
+    return identifier if identifier.endswith(".jp2") else f"{identifier}.jp2"
+
+
 def image_url(service: str, width: int) -> str:
     """The IIIF Image API address of a whole page at a given width.
 
@@ -335,7 +353,7 @@ def platform_scan(item: str, width: int, platform: Platform) -> dict | None:
             {
                 "n": int(page.get("sequence") or len(pages) + 1),
                 "label": strip_html(str(page.get("label", ""))),
-                "image": image_url(platform.image.format(image=identifier), width),
+                "image": image_url(platform.image.format(image=jp2(identifier)), width),
             }
         )
 
@@ -922,6 +940,63 @@ def build(rows: list[dict]) -> list[dict]:
     return entries
 
 
+def probe(url: str) -> str:
+    """Empty when an address answers with a picture, or why it does not.
+
+    One byte is asked for rather than the image: this checks that the address is
+    right, not that the folio is worth having. HEAD would be lighter still, but
+    digi.vatlib.it answers HEAD with 405 — a check that reports the Vatican
+    broken because it asked the wrong way is worse than no check at all.
+
+    The content type is read as well as the status because the failure this
+    exists to catch arrived as a 404 carrying HTML, and a library's "not
+    available" page served as 200 would otherwise pass.
+    """
+    request = urllib.request.Request(
+        url, headers={"User-Agent": USER_AGENT, "Range": "bytes=0-0"}
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            kind = response.headers.get("Content-Type", "")
+            if not kind.split(";")[0].strip().startswith("image/"):
+                return f"answered {response.status} {kind or 'with no content type'}"
+    except (urllib.error.URLError, TimeoutError, OSError) as failure:
+        return str(failure)
+    return ""
+
+
+def verify(entries: list[dict]) -> int:
+    """Fetch the first folio of every entry. Returns the number that failed.
+
+    One page each rather than all of them. The addresses within an entry are
+    built off one record by one rule, so they stand or fall together — and
+    asking seven libraries for two thousand pictures to check a manifest is not
+    a reasonable thing to do to them.
+
+    Worth running whenever a reader is added or changed. The fault this was
+    written after was a working manifest in every respect except that none of
+    its addresses fetched anything, which no amount of reading it would show.
+    """
+    failures = 0
+    for entry in entries:
+        pages = entry.get("pages") or []
+        if not pages:
+            # A manuscript recorded as having no scan; nothing to check.
+            continue
+        reason = probe(pages[0]["image"])
+        if reason:
+            failures += 1
+            print(f"  {entry['id']}: {reason}")
+            print(f"    {pages[0]['image']}")
+
+    checked = sum(1 for entry in entries if entry.get("pages"))
+    if failures:
+        print(f"{failures} of {checked} scans do not answer with an image")
+    else:
+        print(f"{checked} scans checked, every one answers with an image")
+    return failures
+
+
 #: src/ sits at the repository root, so the manifest is one level up. Named for
 #: what it catalogues, beside manifest_manuscripts.json: one lists texts already
 #: transcribed, this one lists images waiting to be.
@@ -943,6 +1018,13 @@ def parser() -> argparse.ArgumentParser:
         type=Path,
         default=MANIFEST,
         help="Where to write the catalogue.",
+    )
+    parsed.add_argument(
+        "--verify",
+        action="store_true",
+        help="After writing, fetch the first folio of every scan and report "
+        "any that does not answer with an image. Off by default because it "
+        "asks every library for a picture.",
     )
     return parsed
 
@@ -980,6 +1062,11 @@ def main(argv: list[str] | None = None) -> int:
     # pictures on the library's server, and is meant to.
     folios = sum(len(entry["pages"]) for entry in entries)
     print(f"{len(entries)} scans, {folios} folios offered -> {args.out}")
+
+    if args.verify and verify(entries):
+        # Written all the same: a manifest that fetches nothing is easier to
+        # read than to imagine, and the addresses are what has to be looked at.
+        return 1
     return 0
 
 

@@ -66,6 +66,13 @@ CUDL_RECORD = {
 #: Cut from the real answer for Gaster Hebrew MS 1616 — the same shape as
 #: CUDL_RECORD but for a different host, which is the whole point of the class
 #: this fixture serves: proof that one reader was always going to be enough.
+#:
+#: Cut from the real answer, and this is not a detail. This fixture once carried
+#: a bare "…-000-00001" because CUDL_RECORD does, and the whole manifest was
+#: built on that: Manchester in fact names its pages with ".jp2" on the end, and
+#: every Gaster address asked for "…jp2.jp2" and fetched a 404. The test below
+#: named the right answer and passed anyway, because the question it asked was
+#: one Manchester never asks.
 MANCHESTER_RECORD = {
     "descriptiveMetadata": [
         {
@@ -81,7 +88,11 @@ MANCHESTER_RECORD = {
         }
     ],
     "pages": [
-        {"sequence": 1, "label": "Front_cover", "IIIFImageURL": "MS-GASTER-HEBREW-01616-000-00001"},
+        {
+            "sequence": 1,
+            "label": "Front_cover",
+            "IIIFImageURL": "MS-GASTER-HEBREW-01616-000-00001.jp2",
+        },
     ],
 }
 
@@ -383,6 +394,13 @@ class TheCambridgeRecordIsReadIntoAnEntry(unittest.TestCase):
             "/full/1024,/0/default.jpg",
         )
 
+    def test_an_identifier_that_does_not_name_its_format_still_gets_one(self) -> None:
+        # The other half of the pair with Manchester's. Cambridge hands over a
+        # bare "…-000-00001", and the extension its server wants has to be put
+        # on — so the fix for the doubled one cannot be to stop adding it.
+        self.assertEqual(self.entry["pages"][0]["image"].count(".jp2"), 1)
+        self.assertIn("-000-00001.jp2/", self.entry["pages"][0]["image"])
+
     def test_the_width_is_the_one_asked_for(self) -> None:
         build_scan_manifest.fetch_json = lambda url: CUDL_RECORD
         wider = build_scan_manifest.cudl_scan("MS-OO-00001-00032", 2000)
@@ -411,13 +429,20 @@ class ManchesterIsReadByTheSameReaderAsCambridge(unittest.TestCase):
         self.assertEqual(self.entry["repository"], "The John Rylands Library")
 
     def test_the_image_host_is_manchesters_own(self) -> None:
-        # The one place the two platforms actually differ: Manchester's image
-        # host is singular, "image", not the "images" Cambridge answers to.
+        # One of the two places the platforms differ: Manchester's image host is
+        # singular, "image", not the "images" Cambridge answers to.
         self.assertEqual(
             self.entry["pages"][0]["image"],
             "https://image.digitalcollections.manchester.ac.uk/iiif/"
             "MS-GASTER-HEBREW-01616-000-00001.jp2/full/1024,/0/default.jpg",
         )
+
+    def test_an_identifier_that_names_its_own_format_is_not_extended_twice(self) -> None:
+        # The other place, and the one that cost every Gaster folio. Manchester
+        # hands over "…-000-00001.jp2"; appending ".jp2" to it asks for
+        # "…jp2.jp2", which its server answers with a 404 in HTML. Nothing
+        # downstream can tell that from a manuscript nobody has scanned.
+        self.assertNotIn(".jp2.jp2", self.entry["pages"][0]["image"])
 
     def test_a_manchester_viewer_link_is_recognised(self) -> None:
         source, item = build_scan_manifest.parse_link(
@@ -1041,6 +1066,19 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
                 self.assertTrue(
                     page["image"].startswith("https://"),
                     f"{scan['id']} page {page['n']}: {page['image']}",
+                )
+
+    def test_no_folio_address_names_its_format_twice(self) -> None:
+        # Asked of the artefact, not of a fixture, because that is where this
+        # fault was visible. A fixture can only be wrong the way its author was
+        # wrong — the Manchester one was, and the manifest it produced went out
+        # with 1150 addresses that fetched a 404 apiece.
+        for scan in self.document["scans"]:
+            for page in scan["pages"]:
+                self.assertNotIn(
+                    ".jp2.jp2",
+                    page["image"],
+                    f"{scan['id']} page {page['n']} is asked for twice-extensioned",
                 )
 
     def test_the_folios_run_in_order(self) -> None:
