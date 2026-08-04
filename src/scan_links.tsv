@@ -202,6 +202,23 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Go
 # citation means.
 https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translated by Domenico Gerosolimitano)				Neofiti.32	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
 #
+# British Library, Add MS 11659 — found through the National Library of
+# Israel's Ktiv catalogue, searching the Hebrew word for "Matthew" rather
+# than "New Testament": a full Hebrew translation of the four Gospels by
+# Thomas Yeats, 1805 — the same translator whose exact copy of Cambridge MS
+# Oo.1.32 is offered above as Gaster Hebrew MS 1616. Ktiv's own microfilm of
+# it publishes no image list and is marked "copying prohibited", but the
+# manuscript itself is independently digitized and public domain on OPenn,
+# the same platform Sloane MS 237 is served from. Its own TEI names each
+# Gospel's opening folio (4r, 42r, 66r, 103r); the ranges below end one leaf
+# short of the next Gospel's start, not stated by OPenn but read directly off
+# its own page list.
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Matthew	MAT		4r..41v
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Mark	MRK		42r..65v
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Luke	LUK		66r..102v
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	John	JOH		103r..134v
+#
 # MS. Pococke 280 — a 14th/15th-century philosophical miscellany (Maimonides,
 # Avicenna, al-Farabi) assembled and annotated by Edward Pococke himself, whose
 # own catalogue record names "Fragments of the New Testament" on ff. 92v-101v
