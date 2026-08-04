@@ -165,6 +165,61 @@ https://gallica.bnf.fr/iiif/ark:/12148/btv1b10720220s/manifest.json	Matthew	MAT	
 # decided.
 https://iiif.bodleian.ox.ac.uk/iiif/manifest/44cd9a82-b931-4187-a114-3d3a044feac6.json	Even Bohan (Shem Tov's Hebrew Matthew, gate 12 from f. 171v)	MAT			Bodleian, MS. Oppenheim Add. 4° 72	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
 #
+# A second full copy, 17th/18th century, found by searching the Vatican's own
+# catalogue: ff. 1r-114v hold the Even Bohan itself and ff. 115r-123v a
+# separate short treatise by the same author, listed as its own item in the
+# Vatican's record. The range below is sliced to the Even Bohan alone for that
+# reason — not because gate 12 has been located within it, which the
+# catalogue does not say and this does not guess at, the same as the
+# Bodleian copy above.
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.523/manifest.json	Even Bohan (Shem Tov's Hebrew Matthew)	MAT		1r..114v	Vat. ebr. 523	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+#
+# Two further, unrelated Hebrew New Testament manuscripts turned up searching
+# the Vatican's own catalogue for "New Testament" directly, neither part of
+# the Even Bohan tradition above.
+#
+# Vat. ebr. 100, late 15th century: catalogued in the Vatican's own record as
+# "ברית החדשה. השליחים — New Testament (Four Gospels)", ff. 1v-153r, and
+# independently the subject of a 1981 article (Delcor, "Un manuscrit hébraïque
+# inédit des quatre evangiles conservé a la Bibliothèque vaticane (Hebr.
+# 100)"). The codex continues afterwards with two unrelated Hebrew works
+# (Maʿaseh Ashmedai, Mishle Sendebar), and — as with Vat. ebr. 523 above — the
+# folio label "1v" is not unique in this manifest: an unfoliated flyleaf pair
+# is labelled "1r"/"1v" too, ahead of the numbered leaf 1 the catalogue means.
+# Slicing on the label would silently take the flyleaf's "1v" instead of the
+# real one, so the whole codex is offered unsliced rather than risk that —
+# the same choice made above for the Bodleian Even Bohan and Pococke 280.
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Gospels), ff. 1v-153r				Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+#
+# Neofiti.32, early 17th century: ff. 1r-229r hold "עדות חדשה" — New
+# Testament — a Hebrew translation by Domenico Gerosolimitano (c. 1552-1622),
+# a Jewish convert who worked as the Church's Hebrew censor in Rome; ff.
+# Ir-Vv carry his own preface and autobiography as a separate catalogued item.
+# Which books it covers is not stated. Offered unsliced for the same reason
+# as Vat. ebr. 100 just above: "1r" is not a unique label here either — a
+# single unrelated leaf opens the volume under that label before the roman-
+# numbered preface, which itself precedes the numbered "1r" the catalogue's
+# citation means.
+https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translated by Domenico Gerosolimitano)				Neofiti.32	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+#
+# MS. Pococke 280 — a 14th/15th-century philosophical miscellany (Maimonides,
+# Avicenna, al-Farabi) assembled and annotated by Edward Pococke himself, whose
+# own catalogue record names "Fragments of the New Testament" on ff. 92v-101v
+# without saying in which of its five listed languages (Judaeo-Arabic, Aramaic,
+# Hebrew, Syriac, Latin). Checked directly against the images: f. 92v opens with
+# a multilingual specimen page (Arabic and Syriac/Karshuni running text, a Latin
+# gloss, Hebrew limited to marginal name-glosses), but ff. 96r and 99r that
+# follow are full pages of continuous square-Hebrew-script prose — Jewish
+# Aramaic vocabulary ("בר אנש", son of man) written in Hebrew characters, which
+# is the ordinary way Aramaic was written by a Hebrew-literate scribe, and is
+# offered here on that basis, the same as every other witness in this file is
+# offered by its script rather than by a purist reading of "Hebrew" against
+# "Jewish Aramaic in Hebrew letters". No printed catalogue description found
+# beyond the one line above, so which book(s) and verses these folios transcribe
+# is not stated anywhere and is not guessed at here — the title stays the
+# library's own, generic one.
+https://iiif.bodleian.ox.ac.uk/iiif/manifest/472d4374-8071-45c6-874a-3e56aef74057.json	Fragments of the New Testament			92v..101v	Pococke 280	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
+#
 # Known but with nothing to open — offered anyway, so a transcriber sees these
 # exist rather than having to already know to look for them. Each is the best
 # remaining Even Bohan witness after the four above; none is guessed at, and
