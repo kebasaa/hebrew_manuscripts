@@ -13,7 +13,6 @@ tools/
   data/
     00_source_files/   the manuscript PDFs
     01_osis/           the converted OSIS
-    example/           a worked example of the source format
   python/
     pdf2osis/          the converter package
     tools/             the generators for app/data/
@@ -190,7 +189,7 @@ reader of the catalogue sees which is which without opening the `.osis` file.
 |---|---|---|
 | `rev` | 405 | Revelation 1:1–22:21, including the combined `14:19-20` record |
 | `jas` | 107 | James 1:1–5:20; its `2:15` record covers KJV 2:15–16, so there is no independent `2:26` |
-| `mat` | 646 | Matthew 1:1–19:30; the volume stops there |
+| `mat` | 910 | Matthew 1:1–25:46, published a chapter at a time and still growing |
 | `sloane_rev` | 33 | Revelation 1:1–2:13 |
 | `ebr530_luke` / `ebr530_john` | 35 / 13 | Luke 1:1–35, John 1:1–13 |
 | `delitzsch` | 7959 | The whole New Testament, Matthew 1:1–Revelation 22:21, one file |
@@ -235,12 +234,42 @@ two out-of-order verses in the corpus; James and Matthew have none.
 
 ### Cochin extraction
 
-The three Cochin PDFs share a house style but not a format, so each has its own
+The Cochin editions share a house style but not a format, so each has its own
 extractor in `pdf2osis/cochin.py`: Revelation is headed `Revelation N:V (Cochin
 N:V)` and carries an interlinear gloss table, James is headed `James N:V (KJV …)`
 with no such table, and Matthew is headed `Chapter C:V` and prints a Syriac
 Aramaic column at the same type size as its English — so script, not size,
-separates them.
+separates them. All three headers are read by one `parse_reference`, because
+Matthew's occasionally carries the manuscript's own reference too: `Chapter
+17:23 (Cochin 17:22b)`. A pattern that allowed no parenthetical dropped 17:23
+and 17:24 outright, and a verse lost that way leaves nothing behind to notice.
+
+#### Matthew is published a chapter at a time
+
+Revelation and James are each one volume. Matthew is **25 of them**, a chapter
+each, in `data/00_source_files/MS_Cochin_Oo.1.32_Mat_PTM/`, revised and
+re-exported as the editor works. So the `mat` profile names that directory
+rather than a file, and `BookProfile.part_pattern` picks the parts out of it in
+chapter order — keyed on the chapter number in each filename, because the
+publisher's names are not otherwise consistent (`Mathew` and `Matthew`, padded
+and unpadded, a different date on every file).
+
+Two things follow from reading a book in parts, both handled in `_run`:
+
+- **Each part has its own front matter** — a title page, a copyright page and
+  an introduction, the last with footnotes of its own — so nothing before a
+  part's first verse header is read at all. This is why `mat` needs no
+  `first_page`: the front matter is a different length in every file.
+- **Each part numbers its footnotes from one**, so across the book those
+  numbers collide — 52 of the 56 printed numbers are reused, and merging under
+  them would let one note silently overwrite another. The parts are therefore
+  renumbered into a single sequence as they are joined, and a note's `n` here
+  is its place in the whole book rather than the number printed in that
+  chapter's own volume. Markers are matched against their own part's
+  definitions *before* the merge; afterwards a later part's note 6 would
+  happily satisfy an earlier part's dangling marker 6. Renumbering is confined
+  to editions that come in parts — Revelation's notes run 15–588 and James's
+  8–33, and renumbering those would move every note in files already published.
 
 Where the interlinear table repeats a transcription word at the same length and
 differs in exactly one letter, the gloss wins: the two are set in different

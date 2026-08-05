@@ -26,7 +26,10 @@ SOURCE = ROOT / "data" / "00_source_files"
         # gave 406.
         (REV, REV.default_pdf, 405, 22),
         (JAS, JAS.default_pdf, 107, 5),
-        (MAT, MAT.default_pdf, 646, 19),
+        # 910, the whole of Matthew 1-25 as the edition has published it so
+        # far. Not one volume but 25, a chapter each, which is why this one
+        # names a directory where the others name a file.
+        (MAT, MAT.default_pdf, 910, 25),
     ],
 )
 def test_full_pdf_record_coverage(
@@ -50,6 +53,46 @@ def test_full_pdf_record_coverage(
     )
     assert not any("markers without definitions" in item for item in anomalies)
     assert not any(re.search(r"[A-Za-z]", record.hebrew) for record in records)
+
+
+def test_matthew_source_specific_structure() -> None:
+    """Matthew is 25 separately published chapters read as one book."""
+    document = extract_cochin(SOURCE / MAT.default_pdf, MAT)
+    records = document.records
+    by_id = {(record.chapter, record.verse): record for record in records}
+
+    # 17:23 and 17:24 are the only headers carrying a parenthetical, and the
+    # pattern Matthew used to be read by rejected exactly those two, losing
+    # both verses. They are present, they have text, and the manuscript's own
+    # reference for each is kept.
+    assert by_id[(17, "23")].hebrew and by_id[(17, "24")].hebrew
+    assert (by_id[(17, "23")].alt_chapter, by_id[(17, "23")].alt_verse) == (17, "22b")
+    assert (by_id[(17, "24")].alt_chapter, by_id[(17, "24")].alt_verse) == (17, "23")
+    # Their neighbours are numbered plainly, so the parenthetical is the
+    # exception the edition makes and not the rule.
+    assert by_id[(17, "22")].alt_verse is None
+    assert by_id[(17, "25")].alt_verse is None
+
+    # The parts are joined in chapter order, not the order the files sort in.
+    assert [(records[0].chapter, records[0].verse)] == [(1, "1")]
+    assert (records[-1].chapter, records[-1].verse) == (25, "46")
+    assert [record.chapter for record in records] == sorted(
+        record.chapter for record in records
+    )
+
+    # Every part numbers its footnotes from one, so they are merged into a
+    # single run. Colliding numbers would mean one note overwriting another.
+    numbers = sorted(int(number) for number in document.notes)
+    assert numbers == list(range(1, len(numbers) + 1))
+    # Nothing is left pointing at a definition that did not survive the merge.
+    referenced = {
+        marker.number
+        for record in records
+        for marker in (*record.hebrew_markers, *record.english_markers)
+    }
+    assert referenced <= set(document.notes)
+    assert all(record.notes[key] == document.notes[key]
+               for record in records for key in record.notes)
 
 
 def test_james_source_specific_structure() -> None:

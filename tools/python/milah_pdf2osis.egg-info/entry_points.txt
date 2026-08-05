@@ -1,2 +1,0 @@
-[console_scripts]
-pdf2osis = pdf2osis.cli:main

@@ -1,9 +1,0 @@
-PyMuPDF<2,>=1.26
-lxml<7,>=6
-fonttools<5,>=4.50
-pysword<0.3,>=0.2.8
-requests<3,>=2.31
-beautifulsoup4<5,>=4.12
-
-[dev]
-pytest<9,>=8

@@ -6,17 +6,18 @@
         <title>Matthew (Cochin MS Oo.1.32)</title>
         <date event="original" type="ISO">ca. 1730</date>
         <description>The Cochin Hebrew New Testament manuscripts are significant 18th-century Hebrew versions of the New Testament. This file encodes Matthew from Cambridge MS Oo.1.32.</description>
-        <description type="x-contents">Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.</description>
+        <description type="x-contents">Matthew 1:1–25:46. The edition is published a chapter at a time and has reached chapter 25; the remaining chapters are not out yet. Chapter 17:23 and 17:24 are numbered as the edition prints them, with the manuscript's own 17:22b and 17:23 recorded beside them.</description>
         <description type="x-script">Essentially unpointed Hebrew, with gershayim marking divine names and abbreviations.</description>
         <description type="x-editorial">Each verse is set with the Hebrew transcription, an English translation, The Scriptures 2009 for comparison, a Syriac Aramaic witness with its own English rendering, and an interlinear gloss table.</description>
+        <description type="x-apparatus">Each chapter is published separately and numbers its footnotes from one, so the notes are renumbered into a single sequence as the chapters are joined. A note's number here is its place in the whole book, not the number printed in that chapter's own volume.</description>
         <publisher>Project Truth Ministries</publisher>
         <type type="x-manuscript">Manuscript</type>
         <identifier type="OSIS">CochinOo.1.32_MAT_Hebrew</identifier>
         <identifier type="x-shelfmark">MS.Oo.1.32</identifier>
         <identifier type="URI">https://projecttruthministries.org/studies/cochin-matthew/</identifier>
-        <source>Text, translation and commentary from Janice F. Baca, 'The Cochin Hebrew Book of Matthew' (Project Truth Ministries, 2025).</source>
+        <source>Text, translation and commentary from Janice F. Baca, 'The Cochin Hebrew Book of Matthew' (Project Truth Ministries, 2025–2026), published a chapter at a time.</source>
         <language>he</language>
-        <coverage>Matthew 1:1–19:30</coverage>
+        <coverage>Matthew 1:1–25:46</coverage>
         <rights type="x-copyright"></rights>
         <rights type="x-license">All Rights Reserved</rights>
         <scope>Matt</scope>
@@ -154,7 +155,7 @@
         <verse sID="Matt.5.24" osisID="Matt.5.24" n="24"/>ותניח קורבנך על מזבח ולך רצה את אחיך ואח״כ תקרב קורבנך׃<verse eID="Matt.5.24"/>
         <verse sID="Matt.5.25" osisID="Matt.5.25" n="25"/>תהיה מתאוה לפשר עם בעל דינך בעוד שאתה עמו בדרך מפני שהוא בעל דינך ימסור לדין והדין ימסור לשוטר ותפול בבית האסורים׃<verse eID="Matt.5.25"/>
         <verse sID="Matt.5.26" osisID="Matt.5.26" n="26"/>אמת אומר לך לא תוכל לצאת משם עד שתתן אפילו שמינית אחרית׃<verse eID="Matt.5.26"/>
-        <verse sID="Matt.5.27" osisID="Matt.5.27" n="27"/>לא תנאף שמעתם מ׳ש :<verse eID="Matt.5.27"/>
+        <verse sID="Matt.5.27" osisID="Matt.5.27" n="27"/>שמעתם מ׳ש לא תנאף:<verse eID="Matt.5.27"/>
         <verse sID="Matt.5.28" osisID="Matt.5.28" n="28"/>אני אומר לכם כל מי שראה אשה וחמד אותה תפס ניאוף בליבו׃<verse eID="Matt.5.28"/>
         <verse sID="Matt.5.29" osisID="Matt.5.29" n="29"/>אם עין ימינך עשה מכשילך תשרא ותזרוק מנך וטוב לך שיאבד אבר א֝ ממך ולא כל גופך בגיהנם׃<verse eID="Matt.5.29"/>
         <verse sID="Matt.5.30" osisID="Matt.5.30" n="30"/>ואם יד ימינך כושל אותך תחתוך ותשלך וטוב לך שיאביד אבר א׳ ממך ולא כל גופך לגיהנם׃<verse eID="Matt.5.30"/>
@@ -200,7 +201,7 @@
         <verse sID="Matt.6.20" osisID="Matt.6.20" n="20"/>אלא שימו מטמוניכם בשמים היכן שלא יהיה תולעים לאכול ומקום שגנובים לא חותרים ולא גונבין:<verse eID="Matt.6.20"/>
         <verse sID="Matt.6.21" osisID="Matt.6.21" n="21"/>מפני מקום שיש מטמוניכם שם יהיה רצונכם:<verse eID="Matt.6.21"/>
         <verse sID="Matt.6.22" osisID="Matt.6.22" n="22"/>נר של הגוף הוא עין ואם עינך יהיה בטוח כל גופך יהיה נהורא:<verse eID="Matt.6.22"/>
-        <verse sID="Matt.6.23" osisID="Matt.6.23" n="23"/>אם אם יהיה עניך רע כל גופך יהיה חושך כך אם זה האום שיש בך חשוך כולם יהיו חשוכים׃<verse eID="Matt.6.23"/>
+        <verse sID="Matt.6.23" osisID="Matt.6.23" n="23"/>אם יהיה עניך רע כל גופך יהיה חושך כך אם זה האום שיש בך חשוך כולם יהיו חשוכים׃<verse eID="Matt.6.23"/>
         <verse sID="Matt.6.24" osisID="Matt.6.24" n="24"/>לא יוכל אדם לעבוד לב׳ אדונים מפני לאחד יהיה שונא ולאחר אהוב או יהיה לחד יקר ולאחר ביזוי ולא תוכלו לעבוד ג׳כ לאלהים ולממון:<verse eID="Matt.6.24"/>
         <verse sID="Matt.6.25" osisID="Matt.6.25" n="25"/>ובשביל אומר לכם לא תקוצו נפשיכון לומר מה אוכל ומה אשתה ולא לגופכם ג׳כ מה לובשים ולא יהיה נפש יתירה מן הממון וגופך מן לבושא:<verse eID="Matt.6.25"/>
         <verse sID="Matt.6.26" osisID="Matt.6.26" n="26"/>ותראו בעופות השמים לא זורעים ולא קוצרים ולא כונסין באוצר והשם מכין להם לא אתם יתרים עליהם׃<verse eID="Matt.6.26"/>
@@ -260,7 +261,7 @@
         <verse sID="Matt.8.13" osisID="Matt.8.13" n="13"/>ואמר ישו לאיש לך לך כמו שאתה מאמין יהיו לך ובאותה שעה נתרפה ילד:<verse eID="Matt.8.13"/>
         <verse sID="Matt.8.14" osisID="Matt.8.14" n="14"/>ואחר בא יש׳ו לבית שמעון הנקרא פידרו וראה לחמותו מושלכת ואחזתה קדחת׃<verse eID="Matt.8.14"/>
         <verse sID="Matt.8.15" osisID="Matt.8.15" n="15"/>ותפש ביד שלה והלכה הקדחת ממינה ותקום והיתה משמשת להם:<verse eID="Matt.8.15"/>
-        <verse sID="Matt.8.16" osisID="Matt.8.16" n="16"/>כשהיה לילה הקריבו ליה אנשים נכפים משדים והוציא בלחש ולכל אותם שיש להם רעה ג׳כ רופא׃<verse eID="Matt.8.16"/>
+        <verse sID="Matt.8.16" osisID="Matt.8.16" n="16"/>כשהיה לילה יקריבו ליה אנשים נכפים משדים והוציא בלחש ולכל אותם שיש להם רעה ג׳כ רופא׃<verse eID="Matt.8.16"/>
         <verse sID="Matt.8.17" osisID="Matt.8.17" n="17"/>כד לקיים מאמר הנביא ישעיה והוא נשא מכאובינו וחולינו:<verse eID="Matt.8.17"/>
         <verse sID="Matt.8.18" osisID="Matt.8.18" n="18"/>כשראה יש׳ו שהרבה אנשים מתכנשים סביבותיו ציוה שילכו לצד אחר:<verse eID="Matt.8.18"/>
         <verse sID="Matt.8.19" osisID="Matt.8.19" n="19"/>ויתקרב אצלו חכם א׳ ואמר לו רבי למקום שתלך אבא אחריך<verse eID="Matt.8.19"/>
@@ -640,6 +641,8 @@
         <verse sID="Matt.17.20" osisID="Matt.17.20" n="20"/>אמר להם יש׳ו בשביל שלא האמנתם בטוב אמת אומר לכם שאים היה בכם אמונה כמו חרדל לבד אפילו שאומרים להר שישנה מקומו ושנה וגם לא יחסרו משום דבר׃<verse eID="Matt.17.20"/>
         <verse sID="Matt.17.21" osisID="Matt.17.21" n="21"/>הנה זה הדור לא יצא כי אם בתפילה ובתענית׃<verse eID="Matt.17.21"/>
         <verse sID="Matt.17.22" osisID="Matt.17.22" n="22"/>כיון שהיה מסבבין בגליל אמר להם יש׳ו עתיד בן אדם שיפול ביד בן אדם׃<verse eID="Matt.17.22"/>
+        <verse sID="Matt.17.23" osisID="Matt.17.23" n="23" subType="x-alt-17.22b"/>ויהרגוהו וביום השלישי יקום ונתאבלו הרבה׃<verse eID="Matt.17.23"/>
+        <verse sID="Matt.17.24" osisID="Matt.17.24" n="24" subType="x-alt-17.23"/>וכיון שבא לכפר נחום באו הגובין מס שלוקחין ב׳ ב׳ זוזין לא ראש אצל פידרו ואמרו לו אדוניכם לא יפרע כסף הראש ב׳ זוזים שלו׃<verse eID="Matt.17.24"/>
         <verse sID="Matt.17.25" osisID="Matt.17.25" n="25"/>אמר להם טוב וכיון שבא אצל יש׳ו לבית אמר לו יש׳ו מה אתה חושב פדרו במלכות הארץ הזאת מאותם שגובים המכס אם תחילה גובים מן בניהם או מן הזרים׃<verse eID="Matt.17.25"/>
         <verse sID="Matt.17.26" osisID="Matt.17.26" n="26"/>אמר לו פדרו מן זרים תחילה גובים אמר לו יש׳ו אם כן הבנים יהיו בני חורין׃<verse eID="Matt.17.26"/>
         <verse sID="Matt.17.27" osisID="Matt.17.27" n="27"/>וכדי שלא נתכשל בהם לך לים ותשליך מזלגך במים והדג שיצא ראשון תפתח פיו ותמצא א׳ איס﮺ תירה ותקח אותה ותתן בשבילי ובשבילך׃<verse eID="Matt.17.27"/>
@@ -713,6 +716,280 @@
         <verse sID="Matt.19.29" osisID="Matt.19.29" n="29"/>וכל איש שמניח ביתו או אחיו או אחותו או אביו או אמו או אשתו או בניו או קרובין לשמי באמת יקבל שכרם ויחיה לחיי עולם׃<verse eID="Matt.19.29"/>
         <verse sID="Matt.19.30" osisID="Matt.19.30" n="30"/>הרבה הם קדמונים שהיו אחרונים ואחרונים היו קדמונים׃<verse eID="Matt.19.30"/>
         <chapter eID="Matt.19"/>
+        <chapter sID="Matt.20" osisID="Matt.20" n="20"/>
+        <verse sID="Matt.20.1" osisID="Matt.20.1" n="1"/>דומה זה מלכות שמים לאיש בעל הבית שיצא לחוץ בבוקר לשכור פועלים לכרם שלו:<verse eID="Matt.20.1"/>
+        <verse sID="Matt.20.2" osisID="Matt.20.2" n="2"/>וחרץ עם פעליו דינר א׳ ביום ושלח אותם לכרם:<verse eID="Matt.20.2"/>
+        <verse sID="Matt.20.3" osisID="Matt.20.3" n="3"/>ויצא בג׳ שעות וראה אחרים עומדין בשוק ובטלין:<verse eID="Matt.20.3"/>
+        <verse sID="Matt.20.4" osisID="Matt.20.4" n="4"/>ואמר להם לכו אף אתם לכרם ומה שראוי אתן לכם:<verse eID="Matt.20.4"/>
+        <verse sID="Matt.20.5" osisID="Matt.20.5" n="5"/>והם הלכו ויצא עוד בשש שעות ובט׳ שעות ועשה כן:<verse eID="Matt.20.5"/>
+        <verse sID="Matt.20.6" osisID="Matt.20.6" n="6"/>ולפני יא׳ שעות יצא ומצא אחרים שעומדין בטלנים ואמר להם למה אתם עומדין כל היום בטלין:<verse eID="Matt.20.6"/>
+        <verse sID="Matt.20.7" osisID="Matt.20.7" n="7"/>אמרו לו לא יש איש להשכירנו אמר להם תלכו גם אתם לכרם ומה שראוי אתן לכם:<verse eID="Matt.20.7"/>
+        <verse sID="Matt.20.8" osisID="Matt.20.8" n="8"/>כיון שהיה לילה אמר אדון הכרם למשרתו קרא לפועלים ותן להם שכרם והתחיל מן אחרין עד ראשון:<verse eID="Matt.20.8"/>
+        <verse sID="Matt.20.9" osisID="Matt.20.9" n="9"/>ובא אלו של י׳א שעות ולקחו דינר דינר:<verse eID="Matt.20.9"/>
+        <verse sID="Matt.20.10" osisID="Matt.20.10" n="10"/>וכיון שבאו קדמונים חשבו שיותר ימצא להם ולא לקחו כי אם דינר דינר׃<verse eID="Matt.20.10"/>
+        <verse sID="Matt.20.11" osisID="Matt.20.11" n="11"/>וכיון שלקחו כך רגנו על בעל הבית ואמרו׃<verse eID="Matt.20.11"/>
+        <verse sID="Matt.20.12" osisID="Matt.20.12" n="12"/>אלו אחרונים שלא א׳ שעה שעבדו שלמת להם כמותינו שאנו עשינו מלאכת המשא בחום היום׃<verse eID="Matt.20.12"/>
+        <verse sID="Matt.20.13" osisID="Matt.20.13" n="13"/>הוא השיב ואמר להם חברי לא מעלתי בך אני הלא עשיתי קציה עמך בדינר׃<verse eID="Matt.20.13"/>
+        <verse sID="Matt.20.14" osisID="Matt.20.14" n="14"/>קח שלך ולך ורוצה אני ליתן לאחרים כמותך׃<verse eID="Matt.20.14"/>
+        <verse sID="Matt.20.15" osisID="Matt.20.15" n="15"/>לא יש מי שימשול עלי שכל מה שאני חפץ אעשה ולא אחשוך בשביל עין רע שלך ואני אדם טוב׃<verse eID="Matt.20.15"/>
+        <verse sID="Matt.20.16" osisID="Matt.20.16" n="16"/>כך יהיו אחרונים קדמונים וקדמונים אחרונים הרבה יהיו נקראים ומעט יהיו נבחרים׃<verse eID="Matt.20.16"/>
+        <verse sID="Matt.20.17" osisID="Matt.20.17" n="17"/>ועבר יש׳ו לירושלים ולקח י׳ב תלמידיו עימו ובדרך אמר להם׃<verse eID="Matt.20.17"/>
+        <verse sID="Matt.20.18" osisID="Matt.20.18" n="18"/>הנה אנחנו עולים לירושלים ובן אדם ימסר לכוהנים גדולים ולסופרים ויתחייב למיתה:<verse eID="Matt.20.18"/>
+        <verse sID="Matt.20.19" osisID="Matt.20.19" n="19"/>וימסרוהו אותו לעם ויכוהו ויקללוהו ויצלבוהו וביום הג׳ יקום׃<verse eID="Matt.20.19"/>
+        <verse sID="Matt.20.20" osisID="Matt.20.20" n="20"/>אז קרבה אליו אמם של בני זבדי היא ובניה והשתחוה לו ושאלה היא ממנו דבר׃<verse eID="Matt.20.20"/>
+        <verse sID="Matt.20.21" osisID="Matt.20.21" n="21"/>וזה אמר לה מה את רוצה ממני אמרה לו זה שני בני ישבו א׳ מימין וא׳ בשמאלך במלכות׃<verse eID="Matt.20.21"/>
+        <verse sID="Matt.20.22" osisID="Matt.20.22" n="22"/>ענה יש׳ו ואמר אינכם יודעים אתם מה שאתם שואלים: ויוכל אתם לשתות בכוס שאני שותה בו לעתיד וגם בטהרה שטיהרתי תטהרו אמרו לו יכולים אנחנו׃<verse eID="Matt.20.22"/>
+        <verse sID="Matt.20.23" osisID="Matt.20.23" n="23"/>אמר להם באמת בכוס שלי תשתון ומטהרתי תטהרון אבל לישב בימיני ובשמאלי איני יכול אלא לאותם שהטיב להם אבי׃<verse eID="Matt.20.23"/>
+        <verse sID="Matt.20.24" osisID="Matt.20.24" n="24"/>כיון ששמעו כך אלו י׳ כעסו על ב׳ אחים האלו׃<verse eID="Matt.20.24"/>
+        <verse sID="Matt.20.25" osisID="Matt.20.25" n="25"/>אז קרא אותם יש׳ו ואמר תדעו כטוב כי הגדולים של אנשים יהיו מושלים עליהם וראשי העם שולטון על הגדולים:<verse eID="Matt.20.25"/>
+        <verse sID="Matt.20.26" osisID="Matt.20.26" n="26"/>לא כן יהיה ביניכם אלא מי שרצה להיות גדול יהיה לכם משמשים׃<verse eID="Matt.20.26"/>
+        <verse sID="Matt.20.27" osisID="Matt.20.27" n="27"/>ומי שרצה מכם להיות קדמון יהיה לכם עבדים׃<verse eID="Matt.20.27"/>
+        <verse sID="Matt.20.28" osisID="Matt.20.28" n="28"/>לא כך בא זה בן אדם שישרתו לו אחרים אלא הוא בא לשרת ולמסור נפשו להציל הרבה אנשים׃<verse eID="Matt.20.28"/>
+        <verse sID="Matt.20.29" osisID="Matt.20.29" n="29"/>וכיון שיצא יש׳ו מן יריחו ובא אחריו הרבה קהילה:<verse eID="Matt.20.29"/>
+        <verse sID="Matt.20.30" osisID="Matt.20.30" n="30"/>והנה ב׳ סומים יושבים על אם הדרך וכיון ששמע ליש׳ו עובר נתנו קול ואמרו רחם עלינו אדונינו בן דוד׃<verse eID="Matt.20.30"/>
+        <verse sID="Matt.20.31" osisID="Matt.20.31" n="31"/>והקהילה היו גוערים בהם שישתוק והם היו מרימים קולם ואומרים רחם עלינו בן דוד׃<verse eID="Matt.20.31"/>
+        <verse sID="Matt.20.32" osisID="Matt.20.32" n="32"/>וקם יש׳ו וקרא להם ואמר מה אתם רוצים אעשה לכם׃<verse eID="Matt.20.32"/>
+        <verse sID="Matt.20.33" osisID="Matt.20.33" n="33"/>אמר לו אדונינו שתפתח עינינו׃<verse eID="Matt.20.33"/>
+        <verse sID="Matt.20.34" osisID="Matt.20.34" n="34"/>וריחם עליהם ונגע בעיניהם ובאותה שעה נפתחו עניהם והלכו אחריו׃<verse eID="Matt.20.34"/>
+        <chapter eID="Matt.20"/>
+        <chapter sID="Matt.21" osisID="Matt.21" n="21"/>
+        <verse sID="Matt.21.1" osisID="Matt.21.1" n="1"/>כיון שקרב לירושלים ובית ׳פגה׳ על נגב ההר הזיתים שלח יש׳ו ב׳ תלמידיו ואמר להם׃<verse eID="Matt.21.1"/>
+        <verse sID="Matt.21.2" osisID="Matt.21.2" n="2"/>לכו לעיר זה שנגדכם ובמהרה תמצאו חמור א׳ קשור ואנקה עמה ותתירו ותביאו לי׃<verse eID="Matt.21.2"/>
+        <verse sID="Matt.21.3" osisID="Matt.21.3" n="3"/>ואם אדם אומר לכם איזה דבר תאמרו אדון רוצה זה ובמהרה ישלח אותם׃<verse eID="Matt.21.3"/>
+        <verse sID="Matt.21.4" osisID="Matt.21.4" n="4"/>זה כמו שנאמר ע׳י נביא:<verse eID="Matt.21.4"/>
+        <verse sID="Matt.21.5" osisID="Matt.21.5" n="5"/>אימרו לבת ציון הנה מלכך בא עני ורוכב על חמור ועל עיר בר אתון׃<verse eID="Matt.21.5"/>
+        <verse sID="Matt.21.6" osisID="Matt.21.6" n="6"/>והלכו תלמידיו ועשו כמו שצוה אותם יש׳ו׃<verse eID="Matt.21.6"/>
+        <verse sID="Matt.21.7" osisID="Matt.21.7" n="7"/>והביאו לחמור ולבנה ושמו על בנה לבושיהם ורכב עליו יש׳ו:<verse eID="Matt.21.7"/>
+        <verse sID="Matt.21.8" osisID="Matt.21.8" n="8"/>והקהילות הכל היו מתקנין ופורשים בדרך בלבושיהם ואחרים כורתים עשבים מן אילן ומשליכים בארץ׃<verse eID="Matt.21.8"/>
+        <verse sID="Matt.21.9" osisID="Matt.21.9" n="9"/>קהילות הזה שהולכים בפניו ובאחריו צעקו ואמרו הושענה וברוך הוא שבא דמריה הושענה ממרום׃<verse eID="Matt.21.9"/>
+        <verse sID="Matt.21.10" osisID="Matt.21.10" n="10"/>וכד על לירושלים זעו כל המדינה ואמרו מי זה הוא׃<verse eID="Matt.21.10"/>
+        <verse sID="Matt.21.11" osisID="Matt.21.11" n="11"/>קהילה זה אמרו הוא זה יש׳ו נביא מן נצרת של גליל׃<verse eID="Matt.21.11"/>
+        <verse sID="Matt.21.12" osisID="Matt.21.12" n="12"/>ובא יש׳ו להיכל אלהים והוציא משם לכל איש שקונין ומוכרין בהיכל וחטף השלחן של שולחני וגם הכסא שמוכרים יונות׃<verse eID="Matt.21.12"/>
+        <verse sID="Matt.21.13" osisID="Matt.21.13" n="13"/>ואמר לה׳ כתוב הוא ביתי בית תפילה יקרא אתם זה עשיתם בור הגנבים׃<verse eID="Matt.21.13"/>
+        <verse sID="Matt.21.14" osisID="Matt.21.14" n="14"/>וקרב אצלו סומים וחיגרים וריפא אותם׃<verse eID="Matt.21.14"/>
+        <verse sID="Matt.21.15" osisID="Matt.21.15" n="15"/>וכד חזו זה רבי כהנים ופירושים נתמהו על זה והנערים שצועקים בהיכל ואומרים הושענה לבן דוד כעסו עליהם׃<verse eID="Matt.21.15"/>
+        <verse sID="Matt.21.16" osisID="Matt.21.16" n="16"/>ואמרו לו שמע מה שאומרים אלו אמר להם יש׳ו באמת ובשבועה לא שמעתם מן פה של נערים ושל יונקים תקנת תושבחות׃<verse eID="Matt.21.16"/>
+        <verse sID="Matt.21.17" osisID="Matt.21.17" n="17"/>ועזב אותם ויצא לחוץ מן המדינה לבית עניה" ולן שם׃<verse eID="Matt.21.17"/>
+        <verse sID="Matt.21.18" osisID="Matt.21.18" n="18"/>ובבוקר כיון שחזר למדינה נעשה רעב:<verse eID="Matt.21.18"/>
+        <verse sID="Matt.21.19" osisID="Matt.21.19" n="19"/>וראה תאנה א׳ בדרך ובא אצלו ולא מצא בה שום דבר כי אם עלים לבד ואמר לה לא יהיו ביך עוד פרי לעולם ובמהרה יבשת תאנה׃<verse eID="Matt.21.19"/>
+        <verse sID="Matt.21.20" osisID="Matt.21.20" n="20"/>וראו תלמידיו ותמהו ואמרו איך יבשה תאנה בשעתה:<verse eID="Matt.21.20"/>
+        <verse sID="Matt.21.21" osisID="Matt.21.21" n="21"/>ענה יש׳ו ואמר אמת אומר לכם אם יהיה בכם אמונה לא תספקון לא לבד תאנה זאת אלא אם תאמרו להר שיתעקר ויפול לים יהיה׃<verse eID="Matt.21.21"/>
+        <verse sID="Matt.21.22" osisID="Matt.21.22" n="22"/>וכל הדבר שמבקשים בתפילה ומצא באמונה׃<verse eID="Matt.21.22"/>
+        <verse sID="Matt.21.23" osisID="Matt.21.23" n="23"/>וכד בא יש׳ו להיכל קרבו אצלו כהנים ופירושים דעם היו אומרים באיזה ממשלה את עושה זה ומי שנתן לך שולטנות הזה׃<verse eID="Matt.21.23"/>
+        <verse sID="Matt.21.24" osisID="Matt.21.24" n="24"/>ענה יש׳ו ואמר להם אף אני אומר לכם דבר א׳ ואם יאמרו לי אף אני אומר לכם מי נתן לי ממשלה הזה׃<verse eID="Matt.21.24"/>
+        <verse sID="Matt.21.25" osisID="Matt.21.25" n="25"/>יוחנן המטהר מהיכן היה אם מן השמים או מן הארץ וחשבו הם אם אנו אומרים מן שמים יאמר הוא א׳כ למה לא האמנתם בו:<verse eID="Matt.21.25"/>
+        <verse sID="Matt.21.26" osisID="Matt.21.26" n="26"/>ואם יאמר מן בני אדם מפחדים אנו מפני חיילות כי הם לקחו אותו לנביא׃<verse eID="Matt.21.26"/>
+        <verse sID="Matt.21.27" osisID="Matt.21.27" n="27"/>ואנו ואמרו לא ידעונן: אמר להם יש׳ו אף אני ג׳כ לא אומר באיזה כח עושה זה:<verse eID="Matt.21.27"/>
+        <verse sID="Matt.21.28" osisID="Matt.21.28" n="28"/>מה חושבים אתם איש א׳ שיש לו ב׳ בנים וקרא לראשון אצלו ואמר לו לך ופלח היום בכרם׃<verse eID="Matt.21.28"/>
+        <verse sID="Matt.21.29" osisID="Matt.21.29" n="29"/>והוא ענה ואמר לא רוצה ואפ׳ה הלך בנחמה לכרם:<verse eID="Matt.21.29"/>
+        <verse sID="Matt.21.30" osisID="Matt.21.30" n="30"/>וקרב איליו השני אמר ג׳כ לו כך והוא ענה ואמר אלך אבי ולא הלך׃<verse eID="Matt.21.30"/>
+        <verse sID="Matt.21.31" osisID="Matt.21.31" n="31"/>מי הוא משניהם עשה רצון אביהם ואמרו הראשון אמר להם יש׳ו באמת אני אומר לכם עם הארץ ובני זונת מקדמין לכם במלכות שמים׃<verse eID="Matt.21.31"/>
+        <verse sID="Matt.21.32" osisID="Matt.21.32" n="32"/>כי בא יוחנן אצליכם לצדק אתכם ולא האמנתם ועם הארץ ובני זנונים האמינו בו אתם אף זה שראו כך לא ניחמתם להאמין בו׃<verse eID="Matt.21.32"/>
+        <verse sID="Matt.21.33" osisID="Matt.21.33" n="33"/>שמעו משל אחרת א׳ איש בעל הבית נטע כרם והסביב סביבו מחול וגדר וחפר בו מקום ובנה מגדל והחזיק אותם לאריס א׳ ויצא חוץ לעיר׃<verse eID="Matt.21.33"/>
+        <verse sID="Matt.21.34" osisID="Matt.21.34" n="34"/>כיון שקרב זמן פירות שלח לעבדיו אצל האריס שישלח מן פירותיו לו׃<verse eID="Matt.21.34"/>
+        <verse sID="Matt.21.35" osisID="Matt.21.35" n="35"/>ותפסו האריסים את עבדיו ולא׳ הכה ולא׳ סקל ולא׳ הרג:<verse eID="Matt.21.35"/>
+        <verse sID="Matt.21.36" osisID="Matt.21.36" n="36"/>ותוב שדר עבדים אחרים הרבה מן קודם וגם הם עשו כן׃<verse eID="Matt.21.36"/>
+        <verse sID="Matt.21.37" osisID="Matt.21.37" n="37"/>ולבסוף שלח לבנו ואמר שמא יהיה כבוד לבני׃<verse eID="Matt.21.37"/>
+        <verse sID="Matt.21.38" osisID="Matt.21.38" n="38"/>ואריס כיון שראה לבנו חשבו זהו יורשו נהרוג אותו ונהיה יורשיו׃<verse eID="Matt.21.38"/>
+        <verse sID="Matt.21.39" osisID="Matt.21.39" n="39"/>ותפס לבנו חוץ מן הכרם והרגו׃<verse eID="Matt.21.39"/>
+        <verse sID="Matt.21.40" osisID="Matt.21.40" n="40"/>כיון שיבא בעל הכרם מה יעשה לאריס:<verse eID="Matt.21.40"/>
+        <verse sID="Matt.21.41" osisID="Matt.21.41" n="41"/>אמרו לו לרעים הורג ברע והכרם נותן לאריסים אחרים שיתנו פירותיו לזמנו׃<verse eID="Matt.21.41"/>
+        <verse sID="Matt.21.42" osisID="Matt.21.42" n="42"/>אמר להם יש׳ו באמת לא קריתם בכתב שהאבן של בנאים בנאו אותו עד פנת הבית מן אצל אדונינו והיה נפלאות בעינינו:<verse eID="Matt.21.42"/>
+        <verse sID="Matt.21.43" osisID="Matt.21.43" n="43"/>בשביל זה אומר לכם שיטול מכם מלכות שמים ויתן לעם שעושה פירות׃<verse eID="Matt.21.43"/>
+        <verse sID="Matt.21.44" osisID="Matt.21.44" n="44"/>ומי שנפל על האבן הזאת יהיו שבורים וכל מי שיפול עליה זה אבן מרסקת:<verse eID="Matt.21.44"/>
+        <verse sID="Matt.21.45" osisID="Matt.21.45" n="45"/>וכד שמעו רבי כהנים ופירושים משלים אלו ידעו שאומר עליהם׃<verse eID="Matt.21.45"/>
+        <verse sID="Matt.21.46" osisID="Matt.21.46" n="46"/>ובקשו לתפוס אבל יראו מן קהילה בשביל כמו נביא לקחו אותו:<verse eID="Matt.21.46"/>
+        <chapter eID="Matt.21"/>
+        <chapter sID="Matt.22" osisID="Matt.22" n="22"/>
+        <verse sID="Matt.22.1" osisID="Matt.22.1" n="1"/>וענה עוד יש׳ו במשל ואמר׃<verse eID="Matt.22.1"/>
+        <verse sID="Matt.22.2" osisID="Matt.22.2" n="2"/>דומה מלכות שמים לאיש שעושה חופה לבנו׃<verse eID="Matt.22.2"/>
+        <verse sID="Matt.22.3" osisID="Matt.22.3" n="3"/>ושלח לעבדיו לקרא לאנשים לסעודה ולא רצו לבא׃<verse eID="Matt.22.3"/>
+        <verse sID="Matt.22.4" osisID="Matt.22.4" n="4"/>פעם שלח למשרתים אחרים לומר לכל הקרואים שהיה אכילה מזומן ותורים ומפוטמים היו נשחטים וכל דבר טוב למשתה׃<verse eID="Matt.22.4"/>
+        <verse sID="Matt.22.5" osisID="Matt.22.5" n="5"/>והם לא חשבו והלכו כל א׳ ליערו ולסחורתו׃<verse eID="Matt.22.5"/>
+        <verse sID="Matt.22.6" osisID="Matt.22.6" n="6"/>ואחרים לקחו למשרתים אלו וביזו והרגו׃<verse eID="Matt.22.6"/>
+        <verse sID="Matt.22.7" osisID="Matt.22.7" n="7"/>כששמע המלך כעס ושדר חיילותיו לאבד ולהרוג אותם ואת מדינתם באש׃<verse eID="Matt.22.7"/>
+        <verse sID="Matt.22.8" osisID="Matt.22.8" n="8"/>אז אמר עוד לעבדיו סעודה זה טובה והם אינם ראויים לא כילה הזה׃<verse eID="Matt.22.8"/>
+        <verse sID="Matt.22.9" osisID="Matt.22.9" n="9"/>לכו לכם לחוץ בדרך וכל מי שימצא אותם תקראו לסעודה׃<verse eID="Matt.22.9"/>
+        <verse sID="Matt.22.10" osisID="Matt.22.10" n="10"/>ויצאו עבדים בדרך וקבצו כל שמצאו רעים וטובים ומילא כל הבית משתה והנסב׃<verse eID="Matt.22.10"/>
+        <verse sID="Matt.22.11" osisID="Matt.22.11" n="11"/>ובא המלך וראה את המסובים וראה א׳ איש שאינו לבוש של סעודה׃<verse eID="Matt.22.11"/>
+        <verse sID="Matt.22.12" osisID="Matt.22.12" n="12"/>ושאל לו חברי למה ירדת לסעודה ובלא לבוש של סעודה׃<verse eID="Matt.22.12"/>
+        <verse sID="Matt.22.13" osisID="Matt.22.13" n="13"/>׃אז אמר לעבדיו תאסרו אותו בידים ורגלים ותוציא לחוץ לחשך ושם יהיה בוכה וחורך שינים<verse eID="Matt.22.13"/>
+        <verse sID="Matt.22.14" osisID="Matt.22.14" n="14"/>הרבה הם הקרואים ומיעוט הנבררים׃<verse eID="Matt.22.14"/>
+        <verse sID="Matt.22.15" osisID="Matt.22.15" n="15"/>אז הלכו פירושים ולקחו עצה כיצד נצדה בדברים׃<verse eID="Matt.22.15"/>
+        <verse sID="Matt.22.16" osisID="Matt.22.16" n="16"/>ושלחו ליה תלמידיהון עם בית הורודוס ואמרו לו רבי׳ יודעין אנו שישר אתה ואורח של אלהים מלמד אתה ולא פתחת פיך לאדם ולמה לא לקחת ארך אפים לאדם׃<verse eID="Matt.22.16"/>
+        <verse sID="Matt.22.17" osisID="Matt.22.17" n="17"/>לאו׃ ושאל לו איך אתה חושב בכח צריך ליתן מס לקסר או<verse eID="Matt.22.17"/>
+        <verse sID="Matt.22.18" osisID="Matt.22.18" n="18"/>ולמה מנסין אותי אתם כנושא פנים׃ ויש׳ו ידע דעתם ואמר<verse eID="Matt.22.18"/>
+        <verse sID="Matt.22.19" osisID="Matt.22.19" n="19"/>תראוני דינר של מס הם הקריבו דינר א׳׃<verse eID="Matt.22.19"/>
+        <verse sID="Matt.22.20" osisID="Matt.22.20" n="20"/>ואמר להם יש׳ו של מי צלם וחתימה וזה הכתובה:<verse eID="Matt.22.20"/>
+        <verse sID="Matt.22.21" osisID="Matt.22.21" n="21"/>ואמרו של קסר אמר להם א׳כ של קסר הוא תתנו לקסר ושל אלהים תתנו לאלהים:<verse eID="Matt.22.21"/>
+        <verse sID="Matt.22.22" osisID="Matt.22.22" n="22"/>וכששמעו כך נתמהו ושבקו ואזלו׃<verse eID="Matt.22.22"/>
+        <verse sID="Matt.22.23" osisID="Matt.22.23" n="23"/>בזה היום קרבו אליו צדוקים ואמרו לו לא יש תחית המתים זה שאלו וגם אמרו לו:<verse eID="Matt.22.23"/>
+        <verse sID="Matt.22.24" osisID="Matt.22.24" n="24"/>מלמד משה אמר לן אם אדם א׳ מת ולא יש לו בנים ישא אחיו את אשתו ויקיים זרע לאחיו׃<verse eID="Matt.22.24"/>
+        <verse sID="Matt.22.25" osisID="Matt.22.25" n="25"/>ואם יש לאחיו ז׳ אחים הראשון נשא אשה ומת ולא היה בנים ועזב אשתו לאחיו׃<verse eID="Matt.22.25"/>
+        <verse sID="Matt.22.26" osisID="Matt.22.26" n="26"/>וכך היה לפני ב׳ וגם לשלישי עד ז׳׃<verse eID="Matt.22.26"/>
+        <verse sID="Matt.22.27" osisID="Matt.22.27" n="27"/>׃ ובאחרית הכל מתה האשה ג׳כ<verse eID="Matt.22.27"/>
+        <verse sID="Matt.22.28" osisID="Matt.22.28" n="28"/>ובקומתם של המתים למי מן שבעה יהיה זאת אשה מפני לכלם היתה נשואה׃<verse eID="Matt.22.28"/>
+        <verse sID="Matt.22.29" osisID="Matt.22.29" n="29"/>ענה יש׳ו ואמר להם מוטעין אתם ולא ידעתם מה הכתב ולא כח השם׃<verse eID="Matt.22.29"/>
+        <verse sID="Matt.22.30" osisID="Matt.22.30" n="30"/>ובתחית המתים לא נושאים נשים וגם לא יהיו נשים לאנשים אלא יהיו כמו מלאכים של השם בתחית המתים:<verse eID="Matt.22.30"/>
+        <verse sID="Matt.22.31" osisID="Matt.22.31" n="31"/>ועל תחית המתים לא קריתם מה שנאמר לכם מן השם שאמר:<verse eID="Matt.22.31"/>
+        <verse sID="Matt.22.32" osisID="Matt.22.32" n="32"/>׃ אני הוא אלהי אברהם ואלהי יצחק ואלהי יעקוב ואלהים לא היה של מתים אלא של חיים<verse eID="Matt.22.32"/>
+        <verse sID="Matt.22.33" osisID="Matt.22.33" n="33"/>וכיון ששמעו הקהילה נתמהו בתלמודיו׃<verse eID="Matt.22.33"/>
+        <verse sID="Matt.22.34" osisID="Matt.22.34" n="34"/>פירושים הזה כיון ששמעו שהשתיך את הצדוקים נתחברו כאחד׃<verse eID="Matt.22.34"/>
+        <verse sID="Matt.22.35" osisID="Matt.22.35" n="35"/>ושאל א׳ מהם שיודע דת תורה כמו שמנסה אותו׃<verse eID="Matt.22.35"/>
+        <verse sID="Matt.22.36" osisID="Matt.22.36" n="36"/>המלמד איזהו מצוה גדולה בתורה׃<verse eID="Matt.22.36"/>
+        <verse sID="Matt.22.37" osisID="Matt.22.37" n="37"/>אמר לו יש׳ו והאבת את ה אלהיך בכל לבבך ובכל נפשיך ובכל מאדך ובכל מחשבותיך׃<verse eID="Matt.22.37"/>
+        <verse sID="Matt.22.38" osisID="Matt.22.38" n="38"/>הזו מצוה רבה וראשונה׃<verse eID="Matt.22.38"/>
+        <verse sID="Matt.22.39" osisID="Matt.22.39" n="39"/>והשני הדומה לו ואהבת לרעך כמוך:<verse eID="Matt.22.39"/>
+        <verse sID="Matt.22.40" osisID="Matt.22.40" n="40"/>בזה ב׳ המצוות תלוי תורה ונביא׃<verse eID="Matt.22.40"/>
+        <verse sID="Matt.22.41" osisID="Matt.22.41" n="41"/>כיון שנתקבצו הפירושים שאל יש׳ו ואמר:<verse eID="Matt.22.41"/>
+        <verse sID="Matt.22.42" osisID="Matt.22.42" n="42"/>מה אתם אומרים על משיח בן מי הוא אמרו בן דוד׃<verse eID="Matt.22.42"/>
+        <verse sID="Matt.22.43" osisID="Matt.22.43" n="43"/>אמר להם שאיך דוד ברוח הקדש קרא לאדונו ואמר כן׃<verse eID="Matt.22.43"/>
+        <verse sID="Matt.22.44" osisID="Matt.22.44" n="44"/>נאום אדוני לאדוני שב לך מן ימיני עד אשית אויבך הדום לרגליך:<verse eID="Matt.22.44"/>
+        <verse sID="Matt.22.45" osisID="Matt.22.45" n="45"/>אז דוד כיצד קרא לאדונו כך וכיצד עכשיו יהיה בנו׃<verse eID="Matt.22.45"/>
+        <verse sID="Matt.22.46" osisID="Matt.22.46" n="46"/>ולא היה אדם שוב מן ההוא יום לשאול לו׃<verse eID="Matt.22.46"/>
+        <chapter eID="Matt.22"/>
+        <chapter sID="Matt.23" osisID="Matt.23" n="23"/>
+        <verse sID="Matt.23.1" osisID="Matt.23.1" n="1"/>יש׳ו דבר אז עם הקהילה ותלמידיו ואמר להם׃<verse eID="Matt.23.1"/>
+        <verse sID="Matt.23.2" osisID="Matt.23.2" n="2"/>על כסא דמושה ישבו סופרים ופירושים׃<verse eID="Matt.23.2"/>
+        <verse sID="Matt.23.3" osisID="Matt.23.3" n="3"/>כל מה שיאמרו לכם לעשות תעשו ומה ששומרים תשמרו אבל זה לא תעשו שאומרים יעשה ולא יעשו הם׃<verse eID="Matt.23.3"/>
+        <verse sID="Matt.23.4" osisID="Matt.23.4" n="4"/>הם קושרים משא כבד ונושאים על כתפיהים של בני אדם אבל הם בעצמם אינם רוצים לנגוע בהם אפילו בא׳ צבעותיהם׃<verse eID="Matt.23.4"/>
+        <verse sID="Matt.23.5" osisID="Matt.23.5" n="5"/>וכל צרכיהם עושים להראות לבני אדם שמגלים תפילין ותולין התכלת בלבושיהם׃<verse eID="Matt.23.5"/>
+        <verse sID="Matt.23.6" osisID="Matt.23.6" n="6"/>ואוהבים להיות ראש המסובים בסעודה וראש היושב בכנסת׃<verse eID="Matt.23.6"/>
+        <verse sID="Matt.23.7" osisID="Matt.23.7" n="7"/>ונותנים שלומם בשוק והם נקראים רבי רבי:<verse eID="Matt.23.7"/>
+        <verse sID="Matt.23.8" osisID="Matt.23.8" n="8"/>אתם זה לא תקראו רבי א׳ הוא רבכון יש׳ו ואתם כלכם כאחים:<verse eID="Matt.23.8"/>
+        <verse sID="Matt.23.9" osisID="Matt.23.9" n="9"/>ולא תקראו בארצכם אבי ללשנה אדם לפי א׳ הוא אביך שבשמים:<verse eID="Matt.23.9"/>
+        <verse sID="Matt.23.10" osisID="Matt.23.10" n="10"/>ולא תיקרין מנהיג מפני מנהיג א׳ לכם שהוא משיח׃<verse eID="Matt.23.10"/>
+        <verse sID="Matt.23.11" osisID="Matt.23.11" n="11"/>וזה הוא רב בכם והוא משמש לכם׃<verse eID="Matt.23.11"/>
+        <verse sID="Matt.23.12" osisID="Matt.23.12" n="12"/>מי הוא שמגביה את עצמו יהיה שפל ומן השפל נפש ירום׃<verse eID="Matt.23.12"/>
+        <verse sID="Matt.23.13" osisID="Matt.23.13" n="13"/>אוי לכם סופרים ופירושים שאתם אוכלים בבית אלמנות ומאריכים בתפילתכם ובשביל זה תקבלון דין יותר׃<verse eID="Matt.23.13"/>
+        <verse sID="Matt.23.14" osisID="Matt.23.14" n="14"/>אוי לכם סופרים ופירושים הכופרים שסוגרים מלכות שמים לפני אנשים לא אתם נכנסים ולא למי שהוא רוצה יוכל ליכנס׃<verse eID="Matt.23.14"/>
+        <verse sID="Matt.23.15" osisID="Matt.23.15" n="15"/>אוי לכון סופרים ופירושים שמסבבים ים ויבשה לעשות גר אחד ואחר שעשה עושים בנים לגהינם וכופלים עליהם הדין׃<verse eID="Matt.23.15"/>
+        <verse sID="Matt.23.16" osisID="Matt.23.16" n="16"/>אוי לכם הסופרים ופירושים הכופרים שהולכים הסומים שאומרים אתם מי שנשבע בהיכל לא יש חשש ומי שנשבע על הזהב צריך לגבות כחוב׃<verse eID="Matt.23.16"/>
+        <verse sID="Matt.23.17" osisID="Matt.23.17" n="17"/>שוטים וסומים מה הם גדול היכל או זהב והיכל מקדש הזהב׃<verse eID="Matt.23.17"/>
+        <verse sID="Matt.23.18" osisID="Matt.23.18" n="18"/>ומי שישבע על מזבח אין חשש ומי שנש בע על קורבן נעשו כבעל חוב׃<verse eID="Matt.23.18"/>
+        <verse sID="Matt.23.19" osisID="Matt.23.19" n="19"/>שוטים ועיורים מה הוא גדול מזבח או קורבן ומזבח הוא שמקדש הקרבן׃<verse eID="Matt.23.19"/>
+        <verse sID="Matt.23.20" osisID="Matt.23.20" n="20"/>ומי שנשבע במזבח נשבע בו ובכל מה שיש בו׃<verse eID="Matt.23.20"/>
+        <verse sID="Matt.23.21" osisID="Matt.23.21" n="21"/>ומי שנשבע בהיכל נשבע בו וכל מה שיש בו׃<verse eID="Matt.23.21"/>
+        <verse sID="Matt.23.22" osisID="Matt.23.22" n="22"/>ומי שנשבע בשמים כנשבע בכסא השם ובמי שיושב עליו׃<verse eID="Matt.23.22"/>
+        <verse sID="Matt.23.23" osisID="Matt.23.23" n="23"/>אוי לכם סופרים ופירושים הכופרים שאתם מעשרין הירקות ואניס וכמן ועוזבים הדתות הכבדים והדין וחנינה ואמונה זה הם אין זוכרים לעשות ומזה לא יבטלו:<verse eID="Matt.23.23"/>
+        <verse sID="Matt.23.24" osisID="Matt.23.24" n="24"/>אגודת סומים שמתפללין בשביל יתוש ובולעין גמלים:<verse eID="Matt.23.24"/>
+        <verse sID="Matt.23.25" osisID="Matt.23.25" n="25"/>אוי לכם סופרים ופירושים הכופרים למה אתם מנקים הכוס מבחוץ ובתוכם מלאה טינוף ועולה׃<verse eID="Matt.23.25"/>
+        <verse sID="Matt.23.26" osisID="Matt.23.26" n="26"/>אגודת סומים טיהרו בקודם תוך הכוס וקערה א׳כ אף מבחוץ יהיה זכה׃<verse eID="Matt.23.26"/>
+        <verse sID="Matt.23.27" osisID="Matt.23.27" n="27"/>אוי לכם סופרים ופירושים הכופרים שדומין אתם כקבורה הנטחה מבחוץ ליופי אבל תוכם מלא עצמות המתים וכל טומאה:<verse eID="Matt.23.27"/>
+        <verse sID="Matt.23.28" osisID="Matt.23.28" n="28"/>כך אף אתם מן חוץ נראים לאנשים כצדיקים ובתוככם מלא תוך ומרמות׃<verse eID="Matt.23.28"/>
+        <verse sID="Matt.23.29" osisID="Matt.23.29" n="29"/>אוי לכם פירושים וסופרים הכופרים שבונים אתם קבורת הנביא ומצבת לקבורת הצדיקים׃<verse eID="Matt.23.29"/>
+        <verse sID="Matt.23.30" osisID="Matt.23.30" n="30"/>ואומרין אתם שאילו היינו בימי אבותינו לא יהיה להם שותפות בדם נביא׃<verse eID="Matt.23.30"/>
+        <verse sID="Matt.23.31" osisID="Matt.23.31" n="31"/>ומודין מעידים אתם בעצמכם שבניהם אתם שהם הרגו לנביא׃<verse eID="Matt.23.31"/>
+        <verse sID="Matt.23.32" osisID="Matt.23.32" n="32"/>ואף אתם מילאו מידה של אביכם:<verse eID="Matt.23.32"/>
+        <verse sID="Matt.23.33" osisID="Matt.23.33" n="33"/>נחשים וילידי צפעונים כיצד ימלטו מן דינא דגהינם׃<verse eID="Matt.23.33"/>
+        <verse sID="Matt.23.34" osisID="Matt.23.34" n="34"/>בשביל זה אני שולח נביא וחכמים וסופרים מהם הורגים וצולבים ומהם מוכים בקהילתכם וגם רודפין אותם ממדינה למדינה:<verse eID="Matt.23.34"/>
+        <verse sID="Matt.23.35" osisID="Matt.23.35" n="35"/>אך שבא עליכם כל דם ששפכתם של צדיקים על הארץ מן דם של הבל הצדיק ועד דם דזכריה בן ברכיה שהרגתם בהיכל ובמזבח׃<verse eID="Matt.23.35"/>
+        <verse sID="Matt.23.36" osisID="Matt.23.36" n="36"/>אמת אומר אני לכם זה הכל יבואו על משפחה זאת׃<verse eID="Matt.23.36"/>
+        <verse sID="Matt.23.37" osisID="Matt.23.37" n="37"/>ירושלים ירושלים הרגת נביא וסקלת לאלו השלוחים אצלך כמה פעמים רציתי אותך לקבץ בנייכי כמו שמקבץ התרנגול את בניה תחת כנפיהם ולא רצית׃<verse eID="Matt.23.37"/>
+        <verse sID="Matt.23.38" osisID="Matt.23.38" n="38"/>זה עזובה ליך ובתיך חרבה׃<verse eID="Matt.23.38"/>
+        <verse sID="Matt.23.39" osisID="Matt.23.39" n="39"/>אומר אני לכם כי לא יראוני כלל אתם עד שתאמרו ברוך הוא שבא בשם השם:<verse eID="Matt.23.39"/>
+        <chapter eID="Matt.23"/>
+        <chapter sID="Matt.24" osisID="Matt.24" n="24"/>
+        <verse sID="Matt.24.1" osisID="Matt.24.1" n="1"/>ויצא יש׳ו מן ההיכל לילך וקרבו תלמידיו ומראין לו בנין ההיכל׃<verse eID="Matt.24.1"/>
+        <verse sID="Matt.24.2" osisID="Matt.24.2" n="2"/>הוא זה אמר להם לא תהיו רואין בזה הכל באמת אומר אני לכם לא יאריך הרבה עד שיהיה אבן על אבן שלא יסתר׃<verse eID="Matt.24.2"/>
+        <verse sID="Matt.24.3" osisID="Matt.24.3" n="3"/>וכיון שישב יש׳ו על הר הזיתים וקרבו התלמידים ואמרו בניהם ולא אומר לנו אימתי יהיה זה מה אות יהיה בביאתך ותשלומת העולם׃<verse eID="Matt.24.3"/>
+        <verse sID="Matt.24.4" osisID="Matt.24.4" n="4"/>ענה יש׳ו ואמר להון תראו שלא ירמה שום אדם׃<verse eID="Matt.24.4"/>
+        <verse sID="Matt.24.5" osisID="Matt.24.5" n="5"/>בשביל הרבה יבאו בשמי ויאמרו אני הוא משיח והרבה יטעו׃<verse eID="Matt.24.5"/>
+        <verse sID="Matt.24.6" osisID="Matt.24.6" n="6"/>עתידים אתם לשמוע מלחמות ומצהלות מלחמה ותראו ולא תפחדו מפני זה הכל יהיה אפילו הכי לא יהיה תשלומת העולם׃<verse eID="Matt.24.6"/>
+        <verse sID="Matt.24.7" osisID="Matt.24.7" n="7"/>יקום כי עם על עם ומלכות על מלכות ויהיה רעב ודבר ורעדת הארץ בכל מקום׃<verse eID="Matt.24.7"/>
+        <verse sID="Matt.24.8" osisID="Matt.24.8" n="8"/>זה הכל הם ראשי הכאבות׃<verse eID="Matt.24.8"/>
+        <verse sID="Matt.24.9" osisID="Matt.24.9" n="9"/>אז ימסר אתכם ויקטול אתכם וישנאו אתכם כל העמים בשביל שמי׃<verse eID="Matt.24.9"/>
+        <verse sID="Matt.24.10" osisID="Matt.24.10" n="10"/>אז יהיו הרבה נכשלים וישנו אחד לאחד וימסרו אחד לאחר׃<verse eID="Matt.24.10"/>
+        <verse sID="Matt.24.11" osisID="Matt.24.11" n="11"/>והרבה נביאי שקר יקומו ויטעו הם לרבים׃<verse eID="Matt.24.11"/>
+        <verse sID="Matt.24.12" osisID="Matt.24.12" n="12"/>ובשביל ריבוי עולה מתקרר טובות הרבה׃<verse eID="Matt.24.12"/>
+        <verse sID="Matt.24.13" osisID="Matt.24.13" n="13"/>מי שמייחל עד סוף עולם יהיה לחירות׃<verse eID="Matt.24.13"/>
+        <verse sID="Matt.24.14" osisID="Matt.24.14" n="14"/>ותכריז זה הסברה בכל מלכות עולם להעיד לכל העמים ואז יבא שלום׃<verse eID="Matt.24.14"/>
+        <verse sID="Matt.24.15" osisID="Matt.24.15" n="15"/>מה זה שאתם רואים שיקוץ משומם שנאמר בדניאל הנביא שהקים במקום הקדש ומי שקורא השתומם׃<verse eID="Matt.24.15"/>
+        <verse sID="Matt.24.16" osisID="Matt.24.16" n="16"/>אז זה היהודים הוא ברחו מן רעתם להר׃<verse eID="Matt.24.16"/>
+        <verse sID="Matt.24.17" osisID="Matt.24.17" n="17"/>ומי שיש בגג לא ירדו ליקח מבית׃<verse eID="Matt.24.17"/>
+        <verse sID="Matt.24.18" osisID="Matt.24.18" n="18"/>והם שהיו בשדה הם לא נתהפכו לאחור ליקח מלבושיו׃<verse eID="Matt.24.18"/>
+        <verse sID="Matt.24.19" osisID="Matt.24.19" n="19"/>אוי לזה הבטן ולאותם שיונקים בהוא יומא׃<verse eID="Matt.24.19"/>
+        <verse sID="Matt.24.20" osisID="Matt.24.20" n="20"/>תתפללו שלא יהיה בריחתכם ביום השלג ולא בשבת:<verse eID="Matt.24.20"/>
+        <verse sID="Matt.24.21" osisID="Matt.24.21" n="21"/>יהיה אז צער הרבה שלא היה כך מראשית עולם ועד עתה וגם לא יהיה כמוהו׃<verse eID="Matt.24.21"/>
+        <verse sID="Matt.24.22" osisID="Matt.24.22" n="22"/>ואם לא היה נמהר ימים אלו לא יחיה כל בשר משום שגובים ממהרים ביום ההוא׃<verse eID="Matt.24.22"/>
+        <verse sID="Matt.24.23" osisID="Matt.24.23" n="23"/>אז אם אדם שואל לכם בכאן הוא המשיח או שם לא תאמינו׃<verse eID="Matt.24.23"/>
+        <verse sID="Matt.24.24" osisID="Matt.24.24" n="24"/>יקומון אז משיח שקר ונביא כזב ויתן אותות גדולים שיטעו אף לגובים׃<verse eID="Matt.24.24"/>
+        <verse sID="Matt.24.25" osisID="Matt.24.25" n="25"/>זה בקודם אמרתי לכם:<verse eID="Matt.24.25"/>
+        <verse sID="Matt.24.26" osisID="Matt.24.26" n="26"/>זה הכל אומרים לכם זה בחורבה הוא לא תצאו או שהוא בחדר לא תאמינו:<verse eID="Matt.24.26"/>
+        <verse sID="Matt.24.27" osisID="Matt.24.27" n="27"/>כמו הברקים שיוצא מן מזרח ומתראה עד מערב כך יהיה ביאתו של בן אדם׃<verse eID="Matt.24.27"/>
+        <verse sID="Matt.24.28" osisID="Matt.24.28" n="28"/>מקום זה שדיה נבילה שם יתקבצון הנשרים׃<verse eID="Matt.24.28"/>
+        <verse sID="Matt.24.29" osisID="Matt.24.29" n="29"/>במהרה זה אחר הצער של היום ההוא שמש יהיה נחשך ולבנה לא יאיר וכוכבים יפלו מן השמים וכח השמים מזדעזעים׃<verse eID="Matt.24.29"/>
+        <verse sID="Matt.24.30" osisID="Matt.24.30" n="30"/>ואז יתראה סימן של בן אדם בשמים ואז ירקדון כל משפחות הארץ ויראו בן אדם שבא על ענני שמים עם חיילות והרבה שבחות׃<verse eID="Matt.24.30"/>
+        <verse sID="Matt.24.31" osisID="Matt.24.31" n="31"/>וישלח מלאך שלו עם שופר גדול ויתחברו הובררים שלו מן ארבע רוחות העולם מן ראשית השמים עד ראשית השמים׃<verse eID="Matt.24.31"/>
+        <verse sID="Matt.24.32" osisID="Matt.24.32" n="32"/>מן תאנה תלמדו פלאות ובמהרה שענפי יהיה ירק ונובלים עליו תדעו אתם שהגיע קיץ׃<verse eID="Matt.24.32"/>
+        <verse sID="Matt.24.33" osisID="Matt.24.33" n="33"/>כך אף אתם כיון שרואים זה הכל דעו שקרבו לשער׃<verse eID="Matt.24.33"/>
+        <verse sID="Matt.24.34" osisID="Matt.24.34" n="34"/>אמת אומר אני לכם לא יעברו זה המשפחה עד שיבא כל זה הדבר׃<verse eID="Matt.24.34"/>
+        <verse sID="Matt.24.35" osisID="Matt.24.35" n="35"/>שמים וארץ יעברו ודברי לא יעבורו׃<verse eID="Matt.24.35"/>
+        <verse sID="Matt.24.36" osisID="Matt.24.36" n="36"/>על יום הזה ועל שעה זאת לא יש אדם שיודע אף לא המלאכים אלא אבי שבשמים׃<verse eID="Matt.24.36"/>
+        <verse sID="Matt.24.37" osisID="Matt.24.37" n="37"/>כמו שהיה ימיו של נח כך יהיה ביאתו של בן אדם׃<verse eID="Matt.24.37"/>
+        <verse sID="Matt.24.38" osisID="Matt.24.38" n="38"/>כמו כי שהיו הם קודם המבול שאוכלין ושותין ונושאין נשים ונותנים לאנשים עד יום שעלה נח לתיבה׃<verse eID="Matt.24.38"/>
+        <verse sID="Matt.24.39" osisID="Matt.24.39" n="39"/>ולא ידעו עד שבא המבול והוליכו לכולם כך יהיה ביאתו של בן אדם׃<verse eID="Matt.24.39"/>
+        <verse sID="Matt.24.40" osisID="Matt.24.40" n="40"/>אז שנים יהיו במדבר לאחד יהיה נלקח ואחד נעזב׃<verse eID="Matt.24.40"/>
+        <verse sID="Matt.24.41" osisID="Matt.24.41" n="41"/>שנים היו טוחנין בריחים א׳ א׳ נלקח וא׳ נעזב׃<verse eID="Matt.24.41"/>
+        <verse sID="Matt.24.42" osisID="Matt.24.42" n="42"/>יתעוררו כלם שלא יודעין אתם באיזה שעה ובא אדוניכון׃<verse eID="Matt.24.42"/>
+        <verse sID="Matt.24.43" osisID="Matt.24.43" n="43"/>כי זה דעו שאילו ידע הוא אדון הבית באיזה משמרה יבא הגנב מתעורר הוא ולא מניח הוא לחתור ביתו׃<verse eID="Matt.24.43"/>
+        <verse sID="Matt.24.44" osisID="Matt.24.44" n="44"/>בשביל זה אף זה הוו מטיבין מפני שאין אתם יודעים השעה שיבא בן אדם׃<verse eID="Matt.24.44"/>
+        <verse sID="Matt.24.45" osisID="Matt.24.45" n="45"/>מי הוא שיש עבד נאמן וחכם שהקים אדונו על בני ביתו שנותן להם מזונם בזמנו׃<verse eID="Matt.24.45"/>
+        <verse sID="Matt.24.46" osisID="Matt.24.46" n="46"/>אשריו לעבד ההוא שיבא אדוניו וימצא אותו שעושה כך׃<verse eID="Matt.24.46"/>
+        <verse sID="Matt.24.47" osisID="Matt.24.47" n="47"/>אמת אומר אני לך שמשליטו על כל שיש לו׃<verse eID="Matt.24.47"/>
+        <verse sID="Matt.24.48" osisID="Matt.24.48" n="48"/>אם זה יאמר עבד רע הוא וחוש ב ב ליבו אדוני מאחר לבא׃<verse eID="Matt.24.48"/>
+        <verse sID="Matt.24.49" osisID="Matt.24.49" n="49"/>והתחיל לאכול בסעודה והיה אוכל ושותה עם שיכורים׃<verse eID="Matt.24.49"/>
+        <verse sID="Matt.24.50" osisID="Matt.24.50" n="50"/>אז יבא אדונו ביום שלא חושב הוא ובשעה שלא ידע׃<verse eID="Matt.24.50"/>
+        <verse sID="Matt.24.51" osisID="Matt.24.51" n="51"/>ומפליג ומשים חלקם עם הכופרים ויהיו בוכים וחורקים שיניהם׃<verse eID="Matt.24.51"/>
+        <chapter eID="Matt.24"/>
+        <chapter sID="Matt.25" osisID="Matt.25" n="25"/>
+        <verse sID="Matt.25.1" osisID="Matt.25.1" n="1"/>אז יהיה דומה לעשרה בתולין שהיו לוקחין לפידים ויוצאים נגד חתן וכלה׃<verse eID="Matt.25.1"/>
+        <verse sID="Matt.25.2" osisID="Matt.25.2" n="2"/>חמש מהם נבונים וה׳ סכלים׃<verse eID="Matt.25.2"/>
+        <verse sID="Matt.25.3" osisID="Matt.25.3" n="3"/>וזה הסכלים לקחו לפידים ולא לקחו שמן עמהם:<verse eID="Matt.25.3"/>
+        <verse sID="Matt.25.4" osisID="Matt.25.4" n="4"/>שהם זה נבונים לקחו השמן בכלי עם הלפידים׃<verse eID="Matt.25.4"/>
+        <verse sID="Matt.25.5" osisID="Matt.25.5" n="5"/>כיון שנתאחר חתנים נתנמנמו כלם וישנו:<verse eID="Matt.25.5"/>
+        <verse sID="Matt.25.6" osisID="Matt.25.6" n="6"/>ובחצות לילה היה צעקה זה החתן בא צאו לנגדו׃<verse eID="Matt.25.6"/>
+        <verse sID="Matt.25.7" osisID="Matt.25.7" n="7"/>אז קמו כל הבתולות ותיקנו הלפידים׃<verse eID="Matt.25.7"/>
+        <verse sID="Matt.25.8" osisID="Matt.25.8" n="8"/>אמרו סכלות לנבונות תנו לן מן שמניכם משום שנכבו הלפידים׃<verse eID="Matt.25.8"/>
+        <verse sID="Matt.25.9" osisID="Matt.25.9" n="9"/>ענו אותם הנבונות ואמרו למה לא די לנו ולכם אלא לכו אצל זה שמוכרים וקנו לכם׃<verse eID="Matt.25.9"/>
+        <verse sID="Matt.25.10" osisID="Matt.25.10" n="10"/>וכיון שהלכו לקנות בא חתן וזה הנבונות שהיו עלו עמו לבית החופה וסגרו הדלתות:<verse eID="Matt.25.10"/>
+        <verse sID="Matt.25.11" osisID="Matt.25.11" n="11"/>ובאחרית באו אף זה הבתולות אחרניות ואמרו אדוני אדוני פתח לן׃<verse eID="Matt.25.11"/>
+        <verse sID="Matt.25.12" osisID="Matt.25.12" n="12"/>הוא זה ענה ואמר להם אמת אומר לכם שאיני יודע בכם׃<verse eID="Matt.25.12"/>
+        <verse sID="Matt.25.13" osisID="Matt.25.13" n="13"/>יתעוררו הכל לא יודעין אתם ליום ההוא ולא לשעתו׃<verse eID="Matt.25.13"/>
+        <verse sID="Matt.25.14" osisID="Matt.25.14" n="14"/>כמו האיש שהוא עשיר קרא לעבדיו ומסר להם קנייניו׃<verse eID="Matt.25.14"/>
+        <verse sID="Matt.25.15" osisID="Matt.25.15" n="15"/>יש שנתן לו חמש ככרין ויש של שנים ויש של אחד איש איש כפי כחו ויצא מהרה׃<verse eID="Matt.25.15"/>
+        <verse sID="Matt.25.16" osisID="Matt.25.16" n="16"/>הלך זה שלקח חמש ככרין ועשה סחורה בהם והרויח חמש אחרות:<verse eID="Matt.25.16"/>
+        <verse sID="Matt.25.17" osisID="Matt.25.17" n="17"/>וכך היה הוא של שנים ועשה סחורה בהם והרויח שנים אחרות:<verse eID="Matt.25.17"/>
+        <verse sID="Matt.25.18" osisID="Matt.25.18" n="18"/>הוא זה שלקח אחד הלך וחפר בארץ והטמין כסף של אדונו:<verse eID="Matt.25.18"/>
+        <verse sID="Matt.25.19" osisID="Matt.25.19" n="19"/>אחר זמן רב בא אדוניהם של עבדים אלו ולקח מהם חשבונם:<verse eID="Matt.25.19"/>
+        <verse sID="Matt.25.20" osisID="Matt.25.20" n="20"/>וקרב הוא שלקח חמש ככרים והקריב חמש אחרות ואמר אדוני חמש ככרים נתת לי וזה חמש אחרות הרוחתי עליהם׃<verse eID="Matt.25.20"/>
+        <verse sID="Matt.25.21" osisID="Matt.25.21" n="21"/>אמר לו אדונו טוב עבד טוב ונאמן על דבר קל נאמן היית ועל הרבה אני מקים אותך בוא בשמחת אדונך:<verse eID="Matt.25.21"/>
+        <verse sID="Matt.25.22" osisID="Matt.25.22" n="22"/>וקרב הוא של שני ככרים ואמר אדוני שני ככרים נתת לי והנה שני ככרים אחרים הרוחתי עליהם:<verse eID="Matt.25.22"/>
+        <verse sID="Matt.25.23" osisID="Matt.25.23" n="23"/>אמר לו אדונו טוב עבד טוב ונאמן על דבר קל נאמן היית ועל הרבה אני מקים אותך בוא בשמחת אדונך׃<verse eID="Matt.25.23"/>
+        <verse sID="Matt.25.24" osisID="Matt.25.24" n="24"/>וקרב גם הוא שלקח ככר אחד ואמר אדוני ידיעה יהיה לך איש קשה אתה וקצרת במקום שלא זרעת אתה רוצה להכניס ממקום שלא פיזרת:<verse eID="Matt.25.24"/>
+        <verse sID="Matt.25.25" osisID="Matt.25.25" n="25"/>ופחדתי והלכתי וטמנתי בבור בארץ וזהו שיש לך׃<verse eID="Matt.25.25"/>
+        <verse sID="Matt.25.26" osisID="Matt.25.26" n="26"/>ענה אדון ואמר לו עבד רע מהיכן ידעת אתה אותי וקצרתי ממקום שלא זרעתי והכנסתי ממקום שלא פיזרתי׃<verse eID="Matt.25.26"/>
+        <verse sID="Matt.25.27" osisID="Matt.25.27" n="27"/>ולא היה לך שתתן כספי לשולחני ואני הייתי בא ותובע ממנו ממון שלי עם הרבית:<verse eID="Matt.25.27"/>
+        <verse sID="Matt.25.28" osisID="Matt.25.28" n="28"/>לקח ממנו הככר ונתן אותו לאיש שישלו עשר ככרים׃<verse eID="Matt.25.28"/>
+        <verse sID="Matt.25.29" osisID="Matt.25.29" n="29"/>למי שיש לו ניתן לו ונוסף לו אבל זה שאין לו אף מה שיש לו נלקח ממנו׃<verse eID="Matt.25.29"/>
+        <verse sID="Matt.25.30" osisID="Matt.25.30" n="30"/>זה עבד שהוא בטל הוציאוהו לגיהנם ושם בוכה וחורק שיניו׃<verse eID="Matt.25.30"/>
+        <verse sID="Matt.25.31" osisID="Matt.25.31" n="31"/>מאחר שבא זה בן אדם בשבחיו וכל מלאכים קדושים עמו אז ישב על כסא המלכות׃<verse eID="Matt.25.31"/>
+        <verse sID="Matt.25.32" osisID="Matt.25.32" n="32"/>נקהלו אצלו כל העמים והבדיל אותם אחד מאחד כמו הרועה שמבדיל צאן מן הגדיים׃<verse eID="Matt.25.32"/>
+        <verse sID="Matt.25.33" osisID="Matt.25.33" n="33"/>והניח הצאן על ימינו וגדיים על שמאלו׃<verse eID="Matt.25.33"/>
+        <verse sID="Matt.25.34" osisID="Matt.25.34" n="34"/>אז אמר המלך לאותם שיש בימינו בואו מבורכים של אבי ורשו מלכות שמוכנת הוא לכם מקודם שנהיה העולם׃<verse eID="Matt.25.34"/>
+        <verse sID="Matt.25.35" osisID="Matt.25.35" n="35"/>הייתי רעב ונתתם לי מאכל וצמיתי והשקיתם לי מים אורח הייתי והכניסוני לבתיכם:<verse eID="Matt.25.35"/>
+        <verse sID="Matt.25.36" osisID="Matt.25.36" n="36"/>ערום הייתי וכסיתם אותי חולה הייתי וביקרתם אותי ובבית הסוהר הייתי ובאתם אצלי׃<verse eID="Matt.25.36"/>
+        <verse sID="Matt.25.37" osisID="Matt.25.37" n="37"/>אז אמרו אותן צדיקים אדונינו אימתי ראינו אותך שאתה רעב והאכלנוך או צמא היית והשקינוך׃<verse eID="Matt.25.37"/>
+        <verse sID="Matt.25.38" osisID="Matt.25.38" n="38"/>ואימתי ראינוך אורח והכניסוך או ערום היית וכסינוך:<verse eID="Matt.25.38"/>
+        <verse sID="Matt.25.39" osisID="Matt.25.39" n="39"/>ואימתי ראינוך חולה או בבית הסוהר ובאנו אצלך׃<verse eID="Matt.25.39"/>
+        <verse sID="Matt.25.40" osisID="Matt.25.40" n="40"/>והשיב המלך ואמר להם אמת אומר אני לכם כשם שעשיתם לאחד מן אלו אחי קטנים לי אתם עשיתם׃<verse eID="Matt.25.40"/>
+        <verse sID="Matt.25.41" osisID="Matt.25.41" n="41"/>אז אמר לאותם שיש בשמאלו לכו לכם ממני אבודים לגיהנם שאשו לעולם בוערת ולשטנים ולשולחים׃<verse eID="Matt.25.41"/>
+        <verse sID="Matt.25.42" osisID="Matt.25.42" n="42"/>לפי שהייתי רעב ולא נתתם לי מאכל וצמיתי ולא השקיתם אותי׃<verse eID="Matt.25.42"/>
+        <verse sID="Matt.25.43" osisID="Matt.25.43" n="43"/>ואורח הייתי ולא הכנסתם אותי וחולה הייתי ובבית הסוה הייתי ולא באתם אצלי׃<verse eID="Matt.25.43"/>
+        <verse sID="Matt.25.44" osisID="Matt.25.44" n="44"/>אז ענו אף הם ואמרו אדונינו אימתי ראינוך רעב או צמא או אורח או ערום או חולה או בבית הסוהר ולא שימשנו אותך:<verse eID="Matt.25.44"/>
+        <verse sID="Matt.25.45" osisID="Matt.25.45" n="45"/>אז ענה ואמר להם אמת אומר אני לכם כמו שלא עשיתם לאחד מן אלו הקטנים אף לי לא עשיתם:<verse eID="Matt.25.45"/>
+        <verse sID="Matt.25.46" osisID="Matt.25.46" n="46"/>וילכו אלו לגיהנם לעולם וצדיקים לחיי עולם׃<verse eID="Matt.25.46"/>
+        <chapter eID="Matt.25"/>
       </div>
   </osisText>
 </osis>

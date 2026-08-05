@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -59,6 +60,15 @@ class BookProfile:
     osis_book_name: str = ""
     # Which Cochin extractor handles this edition; see pdf2osis.cochin.
     cochin_book: str = ""
+    # An edition published a part at a time rather than as one volume. When set,
+    # `default_pdf` names a directory and every PDF in it matching this pattern
+    # is read, ordered by the integer its `chapter` group captures. The names
+    # themselves are not listed: this publisher renames and re-exports files
+    # freely, so matching on the chapter number survives what a fixed list of
+    # filenames would not. Empty for every edition published in one volume, and
+    # `first_page`/`last_page` are then unused — each part carries its own front
+    # matter, so the body start is found per file rather than configured.
+    part_pattern: str = ""
     # Calendar for <date>. A century range is not an ISO date.
     date_calendar: str = "ISO"
     # Header credits. The defaults describe the Project Truth Ministries Cochin
@@ -94,6 +104,37 @@ class BookProfile:
 
     def default_path(self, source_dir: Path) -> Path:
         return source_dir / self.default_pdf
+
+    def part_paths(self, source: Path) -> list[Path]:
+        """Every file this edition is made of, in reading order.
+
+        One entry — `source` itself — unless the edition was published a part
+        at a time, in which case `source` is the directory holding the parts
+        and they are ordered by the chapter each one covers. Sorting on the
+        captured number rather than the filename keeps the order right however
+        the publisher pads or spells them.
+        """
+        if not self.part_pattern:
+            return [source]
+
+        pattern = re.compile(self.part_pattern, re.I)
+        found: dict[int, Path] = {}
+        for path in sorted(source.glob("*.pdf")):
+            match = pattern.search(path.name)
+            if match is None:
+                continue
+            chapter = int(match.group("chapter"))
+            if chapter in found:
+                raise ValueError(
+                    f"{self.key}: two files claim chapter {chapter}: "
+                    f"{found[chapter].name} and {path.name}"
+                )
+            found[chapter] = path
+        if not found:
+            raise ValueError(
+                f"{self.key}: no part of this edition found in {source}"
+            )
+        return [found[chapter] for chapter in sorted(found)]
 
 
 REV = BookProfile(
@@ -431,18 +472,27 @@ MAT = BookProfile(
     osis_book_name="Matthew",
     scope="Matt",
     stem="Matt_CochinOo.1.32",
-    default_pdf="MS_Cochin_Oo.1.32_MAT_ProjectTruthMinistries.pdf",
-    # The volume opens with front matter and stops at Matthew 19:30.
-    first_page=12,
-    last_page=966,
+    # A directory, not a file: this edition is published a chapter at a time,
+    # and each chapter is its own book with its own title page, copyright page
+    # and introduction. The chapters cover Matthew 1–25 so far; the edition is
+    # still being written, and when chapter 26 arrives `expected_last`,
+    # `expected_chapters` and `expected_verses` below all need raising.
+    # `validate_records` fails loudly until they are, which is the point.
+    default_pdf="MS_Cochin_Oo.1.32_Mat_PTM",
+    part_pattern=r"Chapter[-_ ]?(?P<chapter>\d+)",
+    # Unused: each part carries its own front matter of a different length, so
+    # the body start is found per file rather than fixed here. See
+    # pdf2osis.cochin._mat_page.
+    first_page=0,
+    last_page=0,
     # Matthew carries no running header; its verse headers start as high as
     # y=33, so clipping the top of the page would drop them.
     header_y1=0,
     footer_y0=728,
     expected_first=(1, "1"),
-    expected_last=(19, "30"),
-    expected_chapters=19,
-    expected_verses=646,
+    expected_last=(25, "46"),
+    expected_chapters=25,
+    expected_verses=910,
     manuscript="MS.Oo.1.32",
     alt_namespace="https://projecttruthministries.org/studies/cochin-matthew/",
     hebrew_work="CochinOo.1.32_MAT_Hebrew",
@@ -457,8 +507,11 @@ MAT = BookProfile(
     descriptions=(
         (
             "x-contents",
-            "Matthew 1:1–19:30. The edition stops at 19:30; the remaining "
-            "chapters are not part of this volume.",
+            "Matthew 1:1–25:46. The edition is published a chapter at a time "
+            "and has reached chapter 25; the remaining chapters are not out "
+            "yet. Chapter 17:23 and 17:24 are numbered as the edition prints "
+            "them, with the manuscript's own 17:22b and 17:23 recorded beside "
+            "them.",
         ),
         (
             "x-script",
@@ -472,14 +525,22 @@ MAT = BookProfile(
             "witness with its own English rendering, and an interlinear gloss "
             "table.",
         ),
+        (
+            "x-apparatus",
+            "Each chapter is published separately and numbers its footnotes "
+            "from one, so the notes are renumbered into a single sequence as "
+            "the chapters are joined. A note's number here is its place in the "
+            "whole book, not the number printed in that chapter's own volume.",
+        ),
     ),
     sources=(
         "Text, translation and commentary from Janice F. Baca, 'The Cochin "
-        "Hebrew Book of Matthew' (Project Truth Ministries, 2025).",
+        "Hebrew Book of Matthew' (Project Truth Ministries, 2025–2026), "
+        "published a chapter at a time.",
     ),
-    coverage="Matthew 1:1–19:30",
+    coverage="Matthew 1:1–25:46",
     original_date="ca. 1730",
-    edition_date="2025",
+    edition_date="2026",
     rights="© copyright 2025 Janice F. Baca",
     # See REV — confirmed directly, the same publisher and terms.
     license="All Rights Reserved",

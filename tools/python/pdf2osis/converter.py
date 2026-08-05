@@ -52,7 +52,13 @@ def convert_pdf(
 ) -> ConversionReport:
     source = Path(input_path).resolve()
     destination = Path(output_dir).resolve()
-    if not source.is_file():
+    # An edition published a part at a time is a directory of PDFs rather than
+    # one file; the profile decides which, and BookProfile.part_paths picks the
+    # parts out of it.
+    if book_profile.part_pattern:
+        if not source.is_dir():
+            raise ConversionError(f"Input directory not found: {source}")
+    elif not source.is_file():
         raise ConversionError(f"Input file not found: {source}")
     destination.mkdir(parents=True, exist_ok=True)
 

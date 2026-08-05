@@ -8,14 +8,18 @@ makes both false, and it had been failing since.
 
 from __future__ import annotations
 
+import pytest
+
 from pdf2osis.cochin import (
+    CochinDocument,
+    _resolve_part_notes,
     header_absence,
     parse_reference,
     reconcile_with_interlinear,
     states_absent,
 )
-from pdf2osis.models import VerseRecord
-from pdf2osis.profiles import JAS
+from pdf2osis.models import Marker, VerseRecord
+from pdf2osis.profiles import JAS, MAT
 from pdf2osis.validate import _coverage_errors
 
 
@@ -146,3 +150,120 @@ def test_coverage_check_catches_a_truncated_extraction():
     assert "first verse is 1:2, expected 1:1" in errors[0]
     assert "last verse is 5:19, expected 5:20" in errors[1]
     assert _coverage_errors([], JAS) == ["no records"]
+
+
+def test_matthew_header_reads_its_cochin_parenthetical():
+    """Matthew 17:23 and 17:24 are the only two headers that carry one.
+
+    Matthew is headed "Chapter N:V" where the other editions print the book's
+    name, so it used to be read by an anchored `Chapter N:V` pattern of its
+    own. That pattern rejected a parenthetical outright, and those two verses
+    vanished from a 910-verse book without an anomaly to show for it. The
+    shared parser reads both forms, and keeps what the parenthetical says.
+    """
+    assert parse_reference("Chapter 17:23 (Cochin 17:22b)", "Chapter", "Cochin") == (
+        17,
+        "23",
+        None,
+        (17, "22b"),
+    )
+    assert parse_reference("Chapter 20:1", "Chapter", "Cochin") == (20, "1", None, None)
+
+
+def test_parts_are_ordered_by_the_chapter_they_cover(tmp_path):
+    """Ordering follows the chapter number, not the filename.
+
+    A filename sort puts chapter 10 before chapter 9, and this publisher pads
+    inconsistently and spells the book both "Mathew" and "Matthew". Reading the
+    number out of the name survives all of that; sorting the names does not.
+    """
+    for name in (
+        "Cochin-Mathew-Chapter-9_June-17-2026.pdf",
+        "Cochin-Matthew-Chapter-10_publication_Nov-06_2025.pdf",
+        "Cochin-Matthew-Chapter-02_publication_April-6-2026.pdf",
+    ):
+        (tmp_path / name).write_bytes(b"")
+
+    assert [path.name for path in MAT.part_paths(tmp_path)] == [
+        "Cochin-Matthew-Chapter-02_publication_April-6-2026.pdf",
+        "Cochin-Mathew-Chapter-9_June-17-2026.pdf",
+        "Cochin-Matthew-Chapter-10_publication_Nov-06_2025.pdf",
+    ]
+
+
+def test_two_files_claiming_one_chapter_are_refused(tmp_path):
+    """Silently keeping one of them would drop a chapter from the book."""
+    (tmp_path / "Cochin-Matthew-Chapter-05_May-5-2026.pdf").write_bytes(b"")
+    (tmp_path / "Cochin-Matthew-Chapter-5_May-6-2026.pdf").write_bytes(b"")
+    with pytest.raises(ValueError, match="claim chapter 5"):
+        MAT.part_paths(tmp_path)
+
+
+def test_a_single_volume_profile_reads_the_file_it_names(tmp_path):
+    source = tmp_path / "james.pdf"
+    assert JAS.part_paths(source) == [source]
+
+
+def _one_part(chapter: str, number: str) -> list[VerseRecord]:
+    record = VerseRecord(chapter=int(chapter), verse="1", page=1)
+    record.hebrew_markers.append(Marker(offset=0, number=number))
+    return [record]
+
+
+def test_serialised_parts_do_not_share_a_footnote_number():
+    """Each part numbers its notes from one, so the numbers collide on merge.
+
+    Chapter 20's note 6 and chapter 24's note 6 are different notes; across
+    Matthew 52 of 56 printed numbers are reused this way. Merging under the
+    printed numbers lets one silently overwrite the other, so the parts are
+    renumbered into one sequence as they are joined.
+    """
+    document = CochinDocument()
+    first, second = _one_part("20", "6"), _one_part("24", "6")
+    document.records = first + second
+
+    following = _resolve_part_notes(document, first, {"6": "on chapter 20"}, 1, True)
+    following = _resolve_part_notes(
+        document, second, {"6": "on chapter 24"}, following, True
+    )
+
+    assert document.notes == {"1": "on chapter 20", "2": "on chapter 24"}
+    assert first[0].hebrew_markers[0].number == "1"
+    assert second[0].hebrew_markers[0].number == "2"
+    assert following == 3
+
+
+def test_a_single_volume_keeps_the_numbers_its_source_prints():
+    """Revelation's notes run 15-588 and James's 8-33, neither from 1.
+
+    Renumbering those would move every note in the published files, so it is
+    confined to editions that actually come in parts.
+    """
+    document = CochinDocument()
+    records = _one_part("1", "15")
+    document.records = records
+
+    _resolve_part_notes(document, records, {"15": "as printed"}, 1, False)
+
+    assert document.notes == {"15": "as printed"}
+    assert records[0].hebrew_markers[0].number == "15"
+
+
+def test_a_marker_is_matched_against_its_own_part_only():
+    """This ordering is what makes renumbering safe.
+
+    Chapter 20 prints a marker 6 it never defines. Were the parts merged first
+    and matched afterwards, chapter 24's note 6 would satisfy it and print a
+    note about chapter 24 on a verse of chapter 20.
+    """
+    document = CochinDocument()
+    first, second = _one_part("20", "6"), _one_part("24", "6")
+    document.records = first + second
+
+    following = _resolve_part_notes(document, first, {}, 1, True)
+    _resolve_part_notes(document, second, {"6": "on chapter 24"}, following, True)
+
+    assert first[0].hebrew_markers == []
+    assert first[0].excluded_markers == ["6"]
+    assert second[0].hebrew_markers[0].number == "1"
+    assert document.notes == {"1": "on chapter 24"}

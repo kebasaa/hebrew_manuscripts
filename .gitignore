@@ -8,3 +8,12 @@
 # tests/: src/ grows one too the moment the tests import the generator.
 __pycache__/
 *.py[cod]
+
+# Setuptools build metadata, written by `pip install -e` under tools/python/.
+# Everything in it is derived from tools/pyproject.toml and goes stale the
+# moment a dependency changes, so it is generated rather than committed.
+*.egg-info/
+
+# pytest's caches, including the --basetemp the README uses.
+.pytest_cache/
+.pytest-tmp/

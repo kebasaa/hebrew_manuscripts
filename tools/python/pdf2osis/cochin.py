@@ -332,61 +332,123 @@ def reconcile_with_interlinear(record: VerseRecord) -> int:
     return repaired
 
 
-def _finalise(
-    document: CochinDocument, profile: BookProfile, notes: dict[str, str]
-) -> None:
-    flag_reordered_verses(document)
-    for record in document.records:
-        reconcile_with_interlinear(record)
+def _resolve_part_notes(
+    document: CochinDocument,
+    records: list[VerseRecord],
+    notes: dict[str, str],
+    first_number: int,
+    renumber: bool,
+) -> int:
+    """Settle one part's footnotes against the verses that reference them.
+
+    This runs per part rather than over the finished document because each part
+    of a serialised edition numbers its footnotes from one. A marker has to be
+    matched against the definitions of *its own* part before the parts are
+    merged: afterwards, a later part's note 6 would happily satisfy an earlier
+    part's dangling marker 6 and put the wrong note on the verse.
+
+    Where `renumber` is set the part's numbers are then remapped onto one
+    sequence running through the whole book, ascending, so that the merged
+    document has no two notes claiming the same number. Returns the next free
+    number. A single-volume edition passes `renumber=False` and keeps the
+    numbers its source prints.
+    """
     defined = set(notes)
-    for record in document.records:
-        record.hebrew = _clean(record.hebrew)
-        record.english = _clean(record.english)
+    for record in records:
         for markers in (record.hebrew_markers, record.english_markers):
             unknown = sorted({m.number for m in markers if m.number not in defined})
             record.excluded_markers.extend(unknown)
             markers[:] = [m for m in markers if m.number in defined]
-            markers.sort(key=lambda marker: marker.offset)
     used = {
         marker.number
-        for record in document.records
+        for record in records
         for marker in (*record.hebrew_markers, *record.english_markers)
     }
-    # Every definition the source carries, referenced or not — the per-record
-    # notes below are what actually reaches the OSIS, and an unreferenced
-    # definition is reported rather than dropped silently.
-    document.notes = dict(notes)
+    where = f"{records[0].chapter}: " if renumber and records else ""
+    for number in sorted(defined - used, key=int):
+        document.anomalies.append(
+            f"{where}footnote {number} is defined but unreferenced"
+        )
+
+    if not renumber:
+        document.notes.update(notes)
+        return first_number
+
+    moved = {
+        old: str(first_number + offset)
+        for offset, old in enumerate(sorted(notes, key=int))
+    }
+    for record in records:
+        for markers in (record.hebrew_markers, record.english_markers):
+            markers[:] = [
+                Marker(offset=m.offset, number=moved[m.number]) for m in markers
+            ]
+    document.notes.update(
+        {moved[old]: text for old, text in notes.items()}
+    )
+    return first_number + len(moved)
+
+
+def _finalise(document: CochinDocument, profile: BookProfile) -> None:
+    """Whole-document work, once every part has been read and merged."""
+    flag_reordered_verses(document)
     for record in document.records:
+        reconcile_with_interlinear(record)
+        record.hebrew = _clean(record.hebrew)
+        record.english = _clean(record.english)
+        for markers in (record.hebrew_markers, record.english_markers):
+            markers.sort(key=lambda marker: marker.offset)
+        # `document.notes` holds every definition the source carries,
+        # referenced or not; these per-record notes are what reaches the OSIS.
         record.notes = {
-            marker.number: notes[marker.number]
+            marker.number: document.notes[marker.number]
             for marker in (*record.hebrew_markers, *record.english_markers)
         }
-    for number in sorted(defined - used, key=int):
-        document.anomalies.append(f"footnote {number} is defined but unreferenced")
 
 
 def _run(
-    pdf_path: Path,
+    source: Path,
     profile: BookProfile,
     handle: Callable[..., None],
 ) -> CochinDocument:
     document = CochinDocument()
-    notes: dict[str, str] = {}
-    # A verse's translation routinely runs over a page break, so the section
-    # state has to survive one; resetting it per page dropped the remainder.
-    state = {"section": "idle"}
-    with fitz.open(pdf_path) as pdf:
-        first = max(profile.first_page, 0)
-        last = min(profile.last_page, len(pdf) - 1)
-        for index in range(first, last + 1):
-            handle(
-                document,
-                page_lines(pdf[index], profile.header_y1, profile.footer_y0),
-                index + 1,
-                notes,
-                state,
-            )
-    _finalise(document, profile, notes)
+    parts = profile.part_paths(Path(source))
+    # An edition published a part at a time restarts its footnote numbering in
+    # every part, so they are merged into one sequence rather than left to
+    # collide. Reading one volume leaves its numbering exactly as printed.
+    renumber = bool(profile.part_pattern)
+    next_number = 1
+    for path in parts:
+        notes: dict[str, str] = {}
+        # A verse's translation routinely runs over a page break, so the section
+        # state has to survive one; resetting it per page dropped the remainder.
+        # It does not survive a part: a new part is a new book.
+        state = {"section": "idle"}
+        opening = len(document.records)
+        with fitz.open(path) as pdf:
+            if renumber:
+                # Each part carries front matter of its own length, which the
+                # handler skips for itself; there is no page range to apply.
+                first, last = 0, len(pdf) - 1
+            else:
+                first = max(profile.first_page, 0)
+                last = min(profile.last_page, len(pdf) - 1)
+            for index in range(first, last + 1):
+                handle(
+                    document,
+                    page_lines(pdf[index], profile.header_y1, profile.footer_y0),
+                    index + 1,
+                    notes,
+                    state,
+                )
+        next_number = _resolve_part_notes(
+            document,
+            document.records[opening:],
+            notes,
+            next_number,
+            renumber,
+        )
+    _finalise(document, profile)
     return document
 
 
@@ -629,9 +691,16 @@ def extract_cochin_jas(pdf_path: Path, profile: BookProfile) -> CochinDocument:
 # Headed "Chapter C:V" rather than by book name, and printing a Syriac Aramaic
 # column at the same type size as its English, so script rather than size
 # separates them.
-MAT_HEADER_RE = re.compile(r"^Chapter\s+(\d+):(\d+)\s*$")
 MAT_TRANSCRIPTION_SIZE = 13.5
 MAT_BODY_SIZE = 10.5
+
+
+def _mat_header(line: _Line) -> tuple[int, str, str | None, tuple[int, str] | None] | None:
+    # "Chapter" stands where the other editions print the book's name, so the
+    # shared parser reads these headers too — including the parenthetical at
+    # 17:23 and 17:24, where the edition gives the manuscript's own reference.
+    # An anchored `Chapter N:V` pattern rejected those two and lost the verses.
+    return parse_reference(line.dominant, "Chapter", "Cochin")
 
 
 def _mat_page(
@@ -641,6 +710,21 @@ def _mat_page(
     notes: dict[str, str],
     carried: dict[str, str],
 ) -> None:
+    if not carried.get("started"):
+        # This part's front matter: a title page, a copyright page and an
+        # introduction, the last of which carries footnotes of its own. They
+        # are numbered from 1 like the chapter's, so letting them through would
+        # put the introduction's notes into the chapter's sequence. Nothing
+        # before the first verse header belongs to the text.
+        opening = next(
+            (index for index, line in enumerate(lines) if _mat_header(line)),
+            None,
+        )
+        if opening is None:
+            return
+        lines = lines[opening:]
+        carried["started"] = "yes"
+
     current = document.records[-1] if document.records else None
     state = carried["section"]
     notes.update(_collect_footnotes(lines, MAT_BODY_SIZE))
@@ -650,17 +734,20 @@ def _mat_page(
             continue
         # As in Revelation, not every header is set at the same size, so the
         # anchored pattern rather than the type size decides.
-        if True:
-            match = MAT_HEADER_RE.match(line.dominant.strip())
-            if match:
-                current = VerseRecord(
-                    chapter=int(match.group(1)),
-                    verse=match.group(2),
-                    page=page,
-                )
-                document.records.append(current)
-                state = "transcription"
-                continue
+        header = _mat_header(line)
+        if header is not None:
+            chapter, verse, source_verse, alt = header
+            current = VerseRecord(
+                chapter=chapter,
+                verse=verse,
+                page=page,
+                source_verse=source_verse,
+            )
+            if alt is not None:
+                current.alt_chapter, current.alt_verse = alt
+            document.records.append(current)
+            state = "transcription"
+            continue
         if current is None or line.syriac:
             continue
         if (
