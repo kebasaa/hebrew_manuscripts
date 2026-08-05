@@ -10,9 +10,10 @@
         <description>Hebrew transcription and English translation of John from Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v, transcribed, translated and annotated by Nehemia Gordon.</description>
         <description type="x-contents">Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.</description>
         <description type="x-script">Fully pointed Hebrew. The pointing is irregular by Tiberian standards: dagesh is often omitted where expected, and kamatz and patach — like tsere and segol — are used interchangeably, which the editor relates to the Sephardic pronunciation and to Palestinian pointing (Nikud Eretz-Yisraeli).</description>
-        <description type="x-provenance">Held by the Biblioteca Apostolica Vaticana and published through its digitisation programme on DigiVatLib.</description>
         <description type="x-editorial">The editor notes that a scribe scratched out Adonai and wrote Yehovah in its place, and records variant forms attested in Mishnaic manuscripts and in the Bar Ilan Responsa Database.</description>
-        <description type="x-folios">1r–2v</description>
+        <description type="x-folios">Part 1, fragment 11: two folios forming a single bifolium, 1r–2v (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).</description>
+        <description type="x-material">Paper, 290 × 229 mm. The shelfmark collects unbound fragments and quires from different manuscripts, several of them parchment; this fragment is paper (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).</description>
+        <description type="x-provenance">Held by the Biblioteca Apostolica Vaticana and published through its digitisation programme on DigiVatLib. Neither the library nor the printed catalogue records how the fragment reached the collection.</description>
         <description type="x-translated-from"/>
         <description type="x-exemplar"/>
         <publisher>Nehemia Gordon</publisher>
@@ -20,13 +21,13 @@
         <identifier type="OSIS">Ebr530_JOH_Gordon</identifier>
         <identifier type="x-shelfmark">Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v</identifier>
         <identifier type="URI">https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1</identifier>
-        <source>Shelfmark, extent and repository from the manuscript's record in DigiVatLib, https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1. Codicological detail is catalogued by Umberto Cassuto, 'Codices Vaticani Hebraici' — cited here, not consulted.</source>
+        <source>Shelfmark and repository from the manuscript's record in DigiVatLib, https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1, which publishes no codicological detail. Extent, material and date are from Benjamin Richler (ed.) and Malachi Beit-Arié, 'Hebrew Manuscripts in the Vatican Library: Catalogue', Studi e Testi 438 (2008), p. 452.</source>
         <source>Text, translation and annotation from Nehemia Gordon, 'Hebrew Gospels of Luke and John found in the Vatican Library', version 3.9 (2018), nehemiaswall.com.</source>
         <language>en</language>
         <coverage>John 1:1–13</coverage>
         <rights type="x-copyright">© 2018 Nehemia Gordon.</rights>
         <rights type="x-license">All rights reserved.</rights>
-        <scope>JOH</scope>
+        <scope>John</scope>
       </work>
       <work osisWork="bible">
         <title>Referenced versification (standard)</title>

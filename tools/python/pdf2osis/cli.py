@@ -17,6 +17,17 @@ from .profiles import BOOK_PROFILES, get_profile
 
 _CONVERTERS = {"sword": convert_sword_nt, "bsi_hnt": convert_bsi_nt}
 
+# tools/python/pdf2osis/cli.py -> tools/python -> tools -> the repository.
+# Defaulting to paths inside this repository is safe in a way that defaulting
+# across a repository boundary is not: this package ships with the corpus it
+# converts, so the two move together.
+_REPOSITORY = Path(__file__).resolve().parents[3]
+#: Where the source PDFs, SWORD module and scrape cache live.
+DEFAULT_SOURCE_DIR = _REPOSITORY / "tools" / "data" / "00_source_files"
+#: The published corpus. Conversion writes here directly, so there is no second
+#: copy of any text to fall out of step with the one people actually download.
+DEFAULT_OUTPUT_DIR = _REPOSITORY / "manuscripts"
+
 
 def _convert(profile, input_path, output_dir) -> ConversionReport:
     convert = _CONVERTERS.get(profile.extractor, convert_pdf)
@@ -40,17 +51,31 @@ def _parser() -> argparse.ArgumentParser:
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    convert = subparsers.add_parser("convert", help="convert one PDF")
+    convert = subparsers.add_parser("convert", help="convert one source")
     convert.add_argument("--book", choices=sorted(BOOK_PROFILES), required=True)
-    convert.add_argument("--input", type=Path, required=True)
-    convert.add_argument("--output-dir", type=Path, required=True)
+    convert.add_argument(
+        "--input",
+        type=Path,
+        help="the source file, or directory for an edition published in "
+        "parts; defaults to this book's own source under --source-dir",
+    )
+    convert.add_argument(
+        "--source-dir", type=Path, default=DEFAULT_SOURCE_DIR
+    )
+    convert.add_argument(
+        "--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR
+    )
 
     convert_all = subparsers.add_parser(
         "convert-all",
-        help="convert every canonical source PDF",
+        help="convert every source in the corpus",
     )
-    convert_all.add_argument("--source-dir", type=Path, required=True)
-    convert_all.add_argument("--output-dir", type=Path, required=True)
+    convert_all.add_argument(
+        "--source-dir", type=Path, default=DEFAULT_SOURCE_DIR
+    )
+    convert_all.add_argument(
+        "--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR
+    )
 
     return parser
 
@@ -59,9 +84,9 @@ def main(argv: list[str] | None = None) -> int:
     args = _parser().parse_args(argv)
     try:
         if args.command == "convert":
-            report = _convert(
-                get_profile(args.book), args.input, args.output_dir
-            )
+            profile = get_profile(args.book)
+            source = args.input or profile.default_path(args.source_dir)
+            report = _convert(profile, source, args.output_dir)
             _report(report)
         else:
             for profile in BOOK_PROFILES.values():

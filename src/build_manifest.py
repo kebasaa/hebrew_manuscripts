@@ -50,6 +50,14 @@ XML_NS = "http://www.w3.org/XML/1998/namespace"
 #: translation is not merely "the one that is not Hebrew".
 TRANSLATION_SUFFIX = "_translation"
 
+#: Texts generated into manuscripts/ for local use but never redistributed.
+#: The Bible Society in Israel grants no reuse permission for HaBrit
+#: HaChadasha, so it is git-ignored and left out of the catalogue: this
+#: manifest is what Milah's download dialog reads, and listing a file the
+#: repository does not carry would offer a download that cannot succeed.
+#: Keep in step with the matching rule in .gitignore.
+LOCAL_ONLY_PREFIXES = ("NT_BSI_",)
+
 
 def normalised_bytes(path: Path) -> bytes:
     """The file's content with line endings settled to LF.
@@ -205,6 +213,9 @@ def describe(path: Path) -> dict | None:
 def build(source: Path) -> list[dict]:
     entries = []
     for path in sorted(source.glob("*.osis")):
+        if path.name.startswith(LOCAL_ONLY_PREFIXES):
+            print(f"  not catalogued (local use only): {path.name}")
+            continue
         entry = describe(path)
         if entry is None:
             print(f"  skipped (not parseable): {path.name}")

@@ -10,11 +10,12 @@
         <date event="eversion" type="ISO">2003</date>
         <description>Franz Delitzsch's Hebrew translation of the whole New Testament, read from the CrossWire SWORD module 'HebDelitzsch', a fully pointed digital transcription and re-pointing by Streams in the Negev (2003).</description>
         <description type="x-contents">A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.</description>
-        <description type="x-provenance">Delitzsch (1813-1890) first published his Hebrew New Testament in 1877 and revised it through several editions; this digital text is based on the 1885 edition. Streams in the Negev transcribed and re-pointed it in 2003, distributed since as the CrossWire SWORD module 'HebDelitzsch'.</description>
         <description type="x-editorial">Fully pointed with niqqud and cantillation. No English text accompanies this translation. A handful of NRSV-versification verse slots the module leaves empty — 2 Cor 13:14, 3 John 1:15, Rev 12:18 — are kept, numbered, as the module has them.</description>
         <description type="x-folios"/>
-        <description type="x-translated-from"/>
-        <description type="x-exemplar"/>
+        <description type="x-material"/>
+        <description type="x-provenance">Delitzsch (1813–1890) first published his Hebrew New Testament in 1877 and revised it through several editions; this digital text is based on the 1885 edition. Streams in the Negev transcribed and re-pointed it in 2003, distributed since as the CrossWire SWORD module 'HebDelitzsch'.</description>
+        <description type="x-translated-from">From the Greek. Delitzsch first worked from Codex Sinaiticus, then at the British and Foreign Bible Society's wish based the text on the Elzevir Textus Receptus of 1624, keeping the more important Sinaiticus readings in brackets (Dalman, 1892).</description>
+        <description type="x-exemplar">The Elzevir Textus Receptus of 1624, with the more important Codex Sinaiticus readings bracketed (Dalman, 1892).</description>
         <publisher>Streams in the Negev</publisher>
         <type type="x-bible">Edition</type>
         <identifier type="OSIS">Delitzsch_NT_Hebrew_Commented</identifier>
@@ -22,6 +23,7 @@
         <identifier type="URI">https://github.com/HebrewNewTestament/HebDelitzsch</identifier>
         <source>Text from the CrossWire SWORD module 'HebDelitzsch' (version 1.2.1, 2022-08-05), https://www.crosswire.org/sword/modules/ModDisp.jsp?modType=Bibles&amp;modName=Delitzsch.</source>
         <source>Underlying transcription and pointing by Streams in the Negev (2003), https://github.com/HebrewNewTestament/HebDelitzsch.</source>
+        <source>Account of the Greek base text from Gustaf Dalman, 'The Hebrew New Testament of Franz Delitzsch', translated by A. S. Carrier (1892).</source>
         <language>he</language>
         <coverage>Matthew 1:1–Revelation 22:21</coverage>
         <rights type="x-copyright">Copyright 2003 (Streams in the Negev).</rights>

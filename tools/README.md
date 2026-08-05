@@ -11,66 +11,111 @@ on the converter, and the two are developed independently.
 ```
 tools/
   data/
-    00_source_files/   the manuscript PDFs
-    01_osis/           the converted OSIS
+    00_source_files/   the manuscript PDFs, the SWORD module, the scrape cache
   python/
     pdf2osis/          the converter package
     tools/             the generators for app/data/
     *.ipynb            notebooks driving the same package
 ```
 
-## Environment
+The converted OSIS does not live here. It is written straight into
+`manuscripts/` at the repository root — the published corpus — so there is no
+second copy of any text to fall out of step with the one people download.
 
-All Python commands use the shared `tp` environment, created by
-`tools\python\install_tp.bat` at `%USERPROFILE%\.venvs\tp`.
+## Regenerating the corpus
 
-```powershell
-& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pip install --no-build-isolation -e ".[dev]"
-& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pytest --basetemp .pytest-tmp
-```
+Four commands, run from the repository root, in this order. Together they
+rebuild every `.osis` file and the catalogue that lists them.
 
-Both run from the repository root: `pyproject.toml` lives there and points at
-`tools/python`.
-
-## PDF to OSIS
-
-Convert one PDF:
+**1. Set up the environment, once.** `python\install_tp.bat` creates the shared
+`tp` environment at `%USERPROFILE%\.venvs\tp`; then install this package into
+it, from the `tools/` directory where `pyproject.toml` lives:
 
 ```powershell
-& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pdf2osis convert `
-  --book sloane_rev `
-  --input "tools/data/00_source_files/A-Hebrew-Manuscript-of-the-Book-of-Revelation-British-Library-Sloane-273.pdf" `
-  --output-dir tools/data/01_osis
+tools\python\install_tp.bat
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pip install --no-build-isolation -e tools
 ```
 
-Books are `rev`, `jas` and `mat` (Project Truth Ministries Cochin editions),
-`sloane_rev` (British Library, Sloane MS 237) and `ebr530_luke` /
-`ebr530_john` (Vatican, Vat. ebr. 530). `convert-all` converts every one:
+**2. Convert every source.** No arguments needed: the sources default to
+`tools/data/00_source_files` and the output to `manuscripts/`.
 
 ```powershell
-& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pdf2osis convert-all `
-  --source-dir tools/data/00_source_files `
-  --output-dir tools/data/01_osis
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pdf2osis convert-all
 ```
 
-Each conversion writes clean Hebrew, annotated Hebrew and annotated English
-OSIS. The converter parses and validates every document before replacing any
-existing output. Its JSON report lists coverage, empty and alternate verses,
-note counts, excluded markers and source anomalies.
+This prints one JSON report per source — verse and chapter counts, empty and
+alternate verses, note counts, excluded markers and anomalies. It takes a few
+minutes, most of it Matthew's 25 PDFs. **Nothing is written unless every
+variant of a source parsed and validated first**, so a failure leaves the
+previous output untouched rather than half-replacing it.
 
-Output is named `<BOOK>_<Manuscript>_<variant>.osis` — book code first, then the
-manuscript, as in `Rev_CochinOo.1.16.2_hebrew_commented.osis` or
-`Luke_Ebr530_translation.osis`. `<BOOK>` is the OSIS book id — the same string
-that names the book's `<div type="book" osisID="…">` and every verse inside it
-(`Rev`, `Jas`, `Matt`, `Luke`, `John`, …), or `NT` for a source spanning the
-whole New Testament in one file. This is *not* USFM: USFM's own 3-letter codes
-are uppercase and fixed-width (`REV`, `JHN`), which is what the Milah app's own
-`libraryFileName()`/`usfmCode()` (`app/src/core/books.cpp` in the sibling
-`milah` repository) uses when *it* names a file — a deliberate difference
-between the two tools, not an oversight. `<variant>` is `hebrew`,
-`hebrew_commented` or `translation`. Every
-filename derives from `BookProfile.stem`, so that field is the single place
-the convention lives.
+To redo a single source, name it — `rev`, `jas`, `mat`, `sloane_rev`,
+`ebr530_luke`, `ebr530_john`, `delitzsch`, `bsi_hnt`:
+
+```powershell
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pdf2osis convert --book sloane_rev
+```
+
+Pass `--input` to convert a file from somewhere else, and `--output-dir` to
+write somewhere other than `manuscripts/`.
+
+**3. Rebuild the catalogue.** `manifest_manuscripts.json` is what Milah's
+download dialog reads, and it carries each file's size and checksum, so it has
+to be rebuilt whenever any `.osis` changes:
+
+```powershell
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" src\build_manifest.py
+```
+
+**4. Check the result.** Both suites, and then the diff:
+
+```powershell
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m pytest tools --basetemp tools\.pytest-tmp
+& "$env:USERPROFILE\.venvs\tp\Scripts\python.exe" -m unittest discover tests
+git status --short manuscripts/
+```
+
+`git status` should list only modified files. A file that appears or disappears
+means a `BookProfile.stem` or `output_names()` changed, which changes what the
+catalogue offers — check that it was meant.
+
+### One source is generated but not published
+
+`bsi_hnt` — the Bible Society in Israel's *HaBrit HaChadasha* — is converted
+along with the rest so a local copy exists, but the publisher grants no reuse
+permission of any kind. Its two files are git-ignored, and
+`src/build_manifest.py` leaves them out of the catalogue: the manifest is a
+list of downloads, and offering one the repository does not carry would fail
+for whoever tried. The `.gitignore` rule and `build_manifest.LOCAL_ONLY_PREFIXES`
+have to stay in step.
+
+Its source is a scrape cache rather than a PDF, and refreshing that is a
+separate, deliberate step — see [Modern Hebrew New Testament](#modern-hebrew-new-testament-scraped)
+below. `convert-all` never touches the network.
+
+## File naming
+
+Output is named `<BOOK>_<Manuscript>_<variant>.osis`, as in
+`REV_CochinOo.1.16.2_hebrew_commented.osis` or `LUK_Ebr530_translation.osis`.
+
+`<BOOK>` is the uppercase three-letter code — `REV`, `JAS`, `MAT`, `LUK`,
+`JOH` — or `NT` for a source spanning the whole New Testament in one file.
+Note this is *not* the OSIS book id that names the `<div type="book"
+osisID="…">` and every verse inside it (`Rev`, `Jas`, `Matt`, `Luke`, `John`):
+the ids inside the file follow OSIS, the filename follows the shelf.
+
+`<variant>` is `hebrew`, `hebrew_commented` or `translation`. Every filename
+derives from `BookProfile.stem`, so that field is the single place the
+convention lives.
+
+**Which variants are published** is decided by `BookProfile.output_names()`.
+The commented Hebrew is always published, and the translation wherever there is
+one. The bare `hebrew` variant is published *only* where there is no separate
+translation, as for Delitzsch: elsewhere the commented Hebrew carries the same
+transcription plus an apparatus, and publishing both would put two copies of
+one text in the catalogue. The bare variant is still buildable — `pdf2osis.osis`
+exports `VARIANTS` for the tests that check the apparatus really is confined to
+the annotated variants.
 
 ### Package layout
 
@@ -85,10 +130,10 @@ the convention lives.
   the indentation pass that gives one verse per line
 - `validate.py`, `converter.py`, `profiles.py`, `models.py`
 
-The CLI is the supported converter. `pdf2osis_cli.ipynb` is a thin interactive
-wrapper around the same package; `03_pdf2osis_REV_sloane237.ipynb` drives the
-Sloane 237 profile, `04_pdf2osis_LUK_JOH_ebr530.ipynb` the two Vatican ebr. 530
-profiles, and `05_pdf2osis_cochin.ipynb` the three Cochin editions.
+The CLI is the supported converter. The notebooks drive the same package and
+exist for the commentary around it: `03_pdf2osis_REV_sloane237.ipynb` for the
+Sloane 237 profile, `04_pdf2osis_LUK_JOH_ebr530.ipynb` for the two Vatican
+ebr. 530 profiles, and `05_pdf2osis_cochin.ipynb` for the Cochin editions.
 
 ### Pointed manuscripts
 
@@ -146,6 +191,50 @@ one record covers two verses.
 
 Every file validates against the upstream `osisCore.2.1.1.xsd`, vendored in
 `tools/python/pdf2osis/schema/`, and is pretty-printed one verse per line.
+
+### Cataloguing the manuscript
+
+Five `<description type="x-…">` elements describe the physical object rather
+than the file, which is why a translation carries the same answers as the
+witness it renders — it is a rendering of the same object. They come from
+`BookProfile`'s `folios`, `material`, `provenance`, `translated_from` and
+`exemplar`, and `src/build_manifest.py` reads each into a column of the
+catalogue.
+
+| element | what it answers |
+|---|---|
+| `x-folios` | which folios of the codex this book occupies |
+| `x-material` | what it is written on, and how much of it there is |
+| `x-provenance` | how it reached the collection that holds it |
+| `x-translated-from` | what the Hebrew was translated from |
+| `x-exemplar` | what it was copied from |
+
+This is the vocabulary Milah's transcription tab writes from its metadata dock
+(`app/src/transcription_controller.cpp` in the sibling `milah` repository), so
+a text transcribed by hand and one converted here describe themselves alike.
+
+**All five are written whether or not there is an answer**, an unanswered one
+as an empty element. To someone looking for the folios of a manuscript a
+missing element and an empty one say the same nothing; the empty one at least
+records that the question was put and has no published answer. That matters
+here because several genuinely have none — no catalogue states what Cochin
+Oo.1.16.2 is written on, and no exemplar is identified for any of the
+manuscripts — and inventing one would be worse than saying so.
+
+Every sentence names the authority it came from, in the same spirit as
+`sources`. Two cases are worth reading before adding more:
+
+- **A contested question records the disagreement rather than settling it.**
+  What the Cochin manuscripts were translated from is disputed — van Dort
+  argues from the Luther and Statenvertaling Bibles, van Rensburg finds most
+  books close to the Syriac Peshitta while holding that Revelation, James and
+  Jude derive from none of the Greek, Latin or Aramaic, and Cambridge names no
+  source language at all. All three positions are named. Picking one would turn
+  an open question into a fact of the catalogue.
+- **"Nobody has said" and "the editor declined to say" are different answers.**
+  Sloane 237's `x-translated-from` records that the editor put the question and
+  said outright he had no answer; Vat. ebr. 530's is empty, because its
+  catalogue simply never addresses it.
 
 ### Rights and licensing
 

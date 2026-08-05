@@ -211,6 +211,49 @@ class TheCataloguingFieldsAreRead(unittest.TestCase):
         self.assertEqual(entry["exemplar"], "")
 
 
+class LocalOnlyTextsAreNotCatalogued(unittest.TestCase):
+    """Some texts are generated but must not be offered for download.
+
+    The Bible Society in Israel grants no reuse permission for HaBrit
+    HaChadasha, so `pdf2osis convert-all` writes it into manuscripts/ for local
+    use while .gitignore keeps it out of the repository. Cataloguing it anyway
+    would advertise a download that is not there to fetch.
+    """
+
+    def build(self, *names: str) -> list[dict]:
+        with TemporaryDirectory() as folder:
+            for name in names:
+                (Path(folder) / name).write_bytes(OSIS.encode("utf-8"))
+            return build_manifest.build(Path(folder))
+
+    def test_the_local_only_text_is_left_out(self) -> None:
+        entries = self.build(
+            "REV_Sloane237_hebrew_commented.osis",
+            "NT_BSI_HaBritHaChadasha_hebrew.osis",
+            "NT_BSI_HaBritHaChadasha_hebrew_commented.osis",
+        )
+        self.assertEqual(
+            [entry["file"] for entry in entries],
+            ["REV_Sloane237_hebrew_commented.osis"],
+        )
+
+    def test_it_is_excluded_by_name_not_by_being_unreadable(self) -> None:
+        # The file parses perfectly well; it is withheld on licence grounds,
+        # so the exclusion must be deliberate rather than a happy accident.
+        self.assertEqual(self.build("NT_BSI_HaBritHaChadasha_hebrew.osis"), [])
+        self.assertTrue(
+            "NT_BSI_".startswith(build_manifest.LOCAL_ONLY_PREFIXES[0][:7])
+        )
+
+    def test_everything_else_still_reaches_the_catalogue(self) -> None:
+        # Both named `_hebrew`, matching what the fixture header declares, so
+        # the run stays quiet: a warning here would be about the fixture.
+        entries = self.build(
+            "NT_Delitzsch_hebrew.osis", "REV_Sloane237_hebrew.osis"
+        )
+        self.assertEqual(len(entries), 2)
+
+
 class RegeneratingReproducesTheManifest(unittest.TestCase):
     """Building twice over unchanged files must give the same answer.
 

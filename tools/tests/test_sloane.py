@@ -20,7 +20,7 @@ import pytest
 from lxml import etree
 
 from pdf2osis.converter import convert_pdf
-from pdf2osis.osis import OSIS_NS, build_structured_osis
+from pdf2osis.osis import OSIS_NS, VARIANTS, build_structured_osis
 from pdf2osis.profiles import SLOANE_REV
 from pdf2osis.sloane import extract_sloane, gematria
 from pdf2osis.validate import STRICT_SCHEMA, validate_sloane_records
@@ -44,9 +44,12 @@ def document():
 
 @pytest.fixture(scope="module")
 def outputs(tmp_path_factory, document):
+    # Every variant, not just the published ones: these tests are about what
+    # the OSIS says, and the bare `hebrew` is what shows the apparatus really
+    # is confined to the annotated variants.
     return {
         variant: build_structured_osis(document, SLOANE_REV, variant)
-        for variant in SLOANE_REV.output_names()
+        for variant in VARIANTS
     }
 
 
@@ -245,7 +248,9 @@ def test_conversion_is_deterministic(tmp_path):
     payloads = {p: p.read_bytes() for p in first.output_paths.values()}
     convert_pdf(PDF, SLOANE_REV, tmp_path)
     assert {p: p.read_bytes() for p in first.output_paths.values()} == payloads
-    assert set(first.output_paths) == {"hebrew", "hebrew_commented", "translation"}
+    # The bare Hebrew is built but not published: Gordon's translation covers
+    # the same transcription, so the catalogue carries it once, not twice.
+    assert set(first.output_paths) == {"hebrew_commented", "translation"}
 
 
 def test_output_is_pretty_printed_one_verse_per_line(outputs):

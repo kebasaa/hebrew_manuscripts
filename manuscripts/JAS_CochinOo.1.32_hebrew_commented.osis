@@ -6,8 +6,11 @@
         <title>James (Cochin MS Oo.1.32)</title>
         <date event="original" type="ISO">ca. 1730</date>
         <description>The Cochin Hebrew New Testament manuscripts are significant 18th-century Hebrew versions of the New Testament. This file encodes James from Cambridge MS Oo.1.32.</description>
-        <description type="x-folios"/>
-        <description type="x-translated-from"/>
+        <description type="x-contents">James 1:1–5:20, the whole letter. The edition's 2:15 record covers KJV 2:15–16, so there is no independent 2:26, and 1:21 is printed with no text because the manuscript has none.</description>
+        <description type="x-folios">Folios 158r–160r, at the end of the codex (Cambridge University Library catalogue, MS Oo.1.32).</description>
+        <description type="x-material">Paper — watermarked European paper; the codex runs to 160 folios (Cambridge University Library catalogue, MS Oo.1.32).</description>
+        <description type="x-provenance">Acquired in India in 1806 by the Revd Claudius Buchanan, from one of the synagogues of the Black Jews of Cochin, and presented to Cambridge in 1809 (Cambridge University Library catalogue). The edition states that all images of the manuscripts were photographed and gifted by Kurt Sutton, and that the manuscript is held by Cambridge University Library as part of the "Ktiv" Project of the National Library of Israel.</description>
+        <description type="x-translated-from">Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.</description>
         <description type="x-exemplar"/>
         <publisher>Project Truth Ministries</publisher>
         <type type="x-manuscript">Manuscript</type>
@@ -17,7 +20,7 @@
         <language>he</language>
         <rights type="x-copyright">© copyright 2024 Janice F. Baca</rights>
         <rights type="x-license">All Rights Reserved</rights>
-        <scope>JAS</scope>
+        <scope>Jas</scope>
       </work>
       <work osisWork="bible">
         <title>Referenced versification (standard)</title>

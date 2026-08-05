@@ -10,23 +10,24 @@
         <description>Hebrew transcription and English translation of the Revelation passages in British Library, Sloane MS 237, a fully pointed Hebrew manuscript, transcribed and translated by Nehemia Gordon.</description>
         <description type="x-contents">A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.</description>
         <description type="x-script">Square Hebrew script, fully vocalised, ruled and written ten lines to the page.</description>
+        <description type="x-editorial">The editor's notes record pointing absent from the manuscript — a missing sheva, shin- and sin-dots, and a cholam — together with one extraneous kamatz that the manuscript does carry. The manuscript numbers its own verses with Hebrew letters, which disagree with the printed numbering at Revelation 1:9, 1:15, 1:16, 1:17 and 2:8.</description>
+        <description type="x-folios">Four folios, 1r–4v, followed by sixteen blank leaves (British Library manuscript description, after Margoliouth, Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, 1965).</description>
+        <description type="x-material">Paper (British Library manuscript description, after Margoliouth, Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, 1965).</description>
         <description type="x-provenance">From the collection of Sir Hans Sloane (1660–1753), baronet, physician and collector. Part of the Sloane bequest, incorporated into the newly founded British Museum in 1753 and held by the British Library since 1973.</description>
-        <description type="x-editorial">The editor's notes record pointing absent from the manuscript — a missing sheva, shin- and sin-dots, and a cholam — together with one extraneous kamatz that the manuscript does carry. The manuscript numbers its own verses with Hebrew letters, which disagree with the printed numbering at Revelation 1:9, 1:15, 1:16, 1:17 and 2:8. The edition names the manuscript 'MS Sloane 273' on its title page and throughout; the shelfmark is Sloane MS 237, which is the reading given here and the one the British Library's own record and every image address the edition links to agree on.</description>
-        <description type="x-folios">1r–4v</description>
-        <description type="x-translated-from"/>
+        <description type="x-translated-from">Not established. The editor puts the question — whether this is the Hebrew as first written, or a translation out of Greek or some other language — and says outright that he has no answer to it.</description>
         <description type="x-exemplar"/>
         <publisher>Nehemia Gordon</publisher>
         <type type="x-bible">Edition</type>
         <identifier type="OSIS">Sloane237_REV_Gordon</identifier>
         <identifier type="x-shelfmark">British Library, Sloane MS 237</identifier>
-        <identifier type="URI">https://www.nehemiaswall.com/hebrew-manuscript-revelation-1</identifier>
+        <identifier type="URI">https://www.nehemiaswall.com/sloane-273</identifier>
         <source>Shelfmark, extent, script, date and provenance from the British Library Archives and Manuscripts catalogue record for Sloane MS 237.</source>
         <source>Text, translation and annotation from Nehemia Gordon, 'A Hebrew Manuscript of the Book of Revelation' (2017), nehemiaswall.com.</source>
         <language>en</language>
         <coverage>Revelation 1:1–2:13</coverage>
         <rights type="x-copyright">© 2017 by Nehemia Gordon</rights>
         <rights type="x-license">CC BY-NC-SA 4.0 (repository default; no licence stated in the source).</rights>
-        <scope>REV</scope>
+        <scope>Rev</scope>
       </work>
       <work osisWork="bible">
         <title>Referenced versification (standard)</title>
@@ -37,7 +38,7 @@
     </header>
     <div type="titlePage" canonical="false">
       <title type="main">A Hebrew Manuscript of the Book of Revelation</title>
-      <title type="sub">British Library, Sloane MS 237</title>
+      <title type="sub">British Library, MS Sloane 273</title>
       <title type="sub">Transcribed and Translated by Nehemia Gordon</title>
       <title type="sub">www.NehemiasWall.com</title>
       <title type="sub">© 2017 by Nehemia Gordon</title>

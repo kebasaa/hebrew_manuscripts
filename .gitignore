@@ -17,3 +17,11 @@ __pycache__/
 # pytest's caches, including the --basetemp the README uses.
 .pytest_cache/
 .pytest-tmp/
+/other
+
+# The Bible Society in Israel's HaBrit HaChadasha. `pdf2osis convert-all`
+# generates it alongside the rest so a local copy exists to work with, but the
+# publisher grants no reuse permission of any kind, so it is neither committed
+# nor catalogued. src/build_manifest.py keeps it out of the manifest; keep the
+# two in step.
+/manuscripts/NT_BSI_*.osis

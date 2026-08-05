@@ -51,6 +51,31 @@ class BookProfile:
     # Where the provenance came from, emitted as <source> elements so a reader
     # can check it rather than take our word for it.
     sources: tuple[str, ...] = ()
+
+    # The five cataloguing fields, written as <description type="x-…"> in the
+    # order below and read back by src/build_manifest.py into the catalogue.
+    # Milah's transcription tab writes the same five from its metadata dock
+    # (app/src/transcription_controller.cpp), so a text transcribed by hand and
+    # one converted here describe themselves the same way.
+    #
+    # Each is emitted whether or not it has an answer: an absent element and an
+    # empty one read alike to someone looking for the field, and the empty one
+    # records that the question was put. Several of these genuinely have no
+    # answer in any catalogue, and inventing one would be worse than saying so.
+    # Every sentence written here names the authority it came from.
+    #: Which folios of the codex this book occupies.
+    folios: str = ""
+    #: What it is written on — parchment, paper — and how much of it there is.
+    material: str = ""
+    #: How it reached the collection that now holds it.
+    provenance: str = ""
+    #: The language or text the Hebrew was translated from, where that is
+    #: established. Contested cases record the disagreement and who holds which
+    #: position rather than picking a side.
+    translated_from: str = ""
+    #: The manuscript or printed edition this one was copied from.
+    exemplar: str = ""
+
     coverage: str = ""
     relation: str = ""
     # Page geometry, which differs per source; see pdf2osis.layout.
@@ -94,12 +119,19 @@ class BookProfile:
     )
 
     def output_names(self) -> dict[str, str]:
-        names = {
-            "hebrew": f"{self.stem}_hebrew.osis",
-            "hebrew_commented": f"{self.stem}_hebrew_commented.osis",
-        }
+        """The files this profile publishes, keyed by variant.
+
+        The bare `hebrew` variant is published only where the source has no
+        separate translation. Where it has one, the commented Hebrew carries
+        the same transcription plus the apparatus, so publishing both would put
+        two copies of one text in the catalogue. `build_structured_osis` still
+        builds the bare variant on request — this governs what reaches disk.
+        """
+        names = {"hebrew_commented": f"{self.stem}_hebrew_commented.osis"}
         if self.has_translation:
             names["translation"] = f"{self.stem}_translation.osis"
+        else:
+            names["hebrew"] = f"{self.stem}_hebrew.osis"
         return names
 
     def default_path(self, source_dir: Path) -> Path:
@@ -137,12 +169,45 @@ class BookProfile:
         return [found[chapter] for chapter in sorted(found)]
 
 
+# The three Cochin editions come from one collection with one acquisition
+# history, and the question of what they were translated from is unsettled in
+# the same way for all of them, so those statements are written once here.
+_COCHIN_TRANSLATED_FROM = (
+    "Not settled, and actively disputed. Mascha van Dort (Revue des Études "
+    "Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated "
+    "the collection for Ezekiel Rahabi from the Luther and Statenvertaling "
+    "Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James "
+    "and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the "
+    "Syriac Peshitta, but hold that Revelation, James and Jude derive from "
+    "none of the Greek, Latin or Aramaic versions. The Cambridge University "
+    "Library catalogue names no source language at all."
+)
+# What the editions themselves state about where the manuscripts are and where
+# the photographs came from. For Oo.1.16.2 this is the only such statement
+# there is: Cambridge publishes no catalogue record for that shelfmark.
+_COCHIN_KTIV = (
+    "The edition states that all images of the manuscripts were photographed "
+    "and gifted by Kurt Sutton, and that the manuscript is held by Cambridge "
+    "University Library as part of the \"Ktiv\" Project of the National "
+    "Library of Israel."
+)
+_COCHIN_OO_1_32_MATERIAL = (
+    "Paper — watermarked European paper; the codex runs to 160 folios "
+    "(Cambridge University Library catalogue, MS Oo.1.32)."
+)
+_COCHIN_OO_1_32_PROVENANCE = (
+    "Acquired in India in 1806 by the Revd Claudius Buchanan, from one of the "
+    "synagogues of the Black Jews of Cochin, and presented to Cambridge in "
+    "1809 (Cambridge University Library catalogue). " + _COCHIN_KTIV
+)
+
+
 REV = BookProfile(
     key="rev",
     name="Revelation",
     osis_book="Rev",
     scope="Rev",
-    stem="Rev_CochinOo.1.16.2",
+    stem="REV_CochinOo.1.16.2",
     default_pdf="MS_Cochin_Oo.1.16.2_REV_ProjectTruthMinistries.pdf",
     first_page=15,
     # The final 22:21 transcription is on PDF page 370 and its translation
@@ -170,6 +235,30 @@ REV = BookProfile(
         "18th-century Hebrew versions of the New Testament. This file "
         "encodes Revelation from Cambridge MS Oo.1.16.2."
     ),
+    descriptions=(
+        (
+            "x-contents",
+            "Revelation 1:1–22:21, the whole book, including the combined "
+            "14:19-20 record. Four references are printed with no text because "
+            "the manuscript has none, and 2:21 and 2:22 stand in the "
+            "manuscript's order rather than the canonical one.",
+        ),
+    ),
+    folios=(
+        "Folios 102r–106v, the whole book fitted onto five leaves in a very "
+        "small cursive. Cambridge publishes no catalogue record for this "
+        "shelfmark; the foliation is Justin J. van Rensburg's (The Hebrew "
+        "Revelation, James and Jude, 2022, p. 1)."
+    ),
+    # No catalogue states what this one is written on. Its companion Oo.1.32 is
+    # paper, but that is a different codex and saying so here would be a guess.
+    provenance=(
+        "Cambridge publishes no catalogue record for Oo.1.16. Its record for "
+        "Oo.1.32 notes that Oo.1.16.1–2 is a related New Testament translation, "
+        "also acquired by the Revd Claudius Buchanan and also copied by David "
+        "Cohen. " + _COCHIN_KTIV
+    ),
+    translated_from=_COCHIN_TRANSLATED_FROM,
     expected_hebrew_prefix="אלה הסודות",
     cochin_book="rev",
     # Confirmed directly with Janice F. Baca / Project Truth Ministries: this
@@ -184,7 +273,7 @@ JAS = BookProfile(
     name="James",
     osis_book="Jas",
     scope="Jas",
-    stem="Jas_CochinOo.1.32",
+    stem="JAS_CochinOo.1.32",
     default_pdf="MS_Cochin_Oo.1.32_JAS_ProjectTruthMinistries.pdf",
     first_page=10,
     last_page=68,
@@ -205,6 +294,21 @@ JAS = BookProfile(
         "18th-century Hebrew versions of the New Testament. This file "
         "encodes James from Cambridge MS Oo.1.32."
     ),
+    descriptions=(
+        (
+            "x-contents",
+            "James 1:1–5:20, the whole letter. The edition's 2:15 record covers "
+            "KJV 2:15–16, so there is no independent 2:26, and 1:21 is printed "
+            "with no text because the manuscript has none.",
+        ),
+    ),
+    folios=(
+        "Folios 158r–160r, at the end of the codex (Cambridge University "
+        "Library catalogue, MS Oo.1.32)."
+    ),
+    material=_COCHIN_OO_1_32_MATERIAL,
+    provenance=_COCHIN_OO_1_32_PROVENANCE,
+    translated_from=_COCHIN_TRANSLATED_FROM,
     expected_hebrew_prefix="יעקב עבד",
     cochin_book="jas",
     # See REV — confirmed directly, the same publisher and terms.
@@ -219,7 +323,7 @@ SLOANE_REV = BookProfile(
     # The edition prints "MS Sloane 273", but the British Library catalogue
     # records the Hebrew Revelation as Sloane MS 237 — four paper folios in
     # square Hebrew script, which is exactly the 1r–4v this text occupies.
-    stem="Rev_Sloane237",
+    stem="REV_Sloane237",
     default_pdf=(
         "A-Hebrew-Manuscript-of-the-Book-of-Revelation-"
         "British-Library-Sloane-273.pdf"
@@ -257,13 +361,6 @@ SLOANE_REV = BookProfile(
             "lines to the page.",
         ),
         (
-            "x-provenance",
-            "From the collection of Sir Hans Sloane (1660–1753), baronet, "
-            "physician and collector. Part of the Sloane bequest, "
-            "incorporated into the newly founded British Museum in 1753 and "
-            "held by the British Library since 1973.",
-        ),
-        (
             "x-editorial",
             "The editor's notes record pointing absent from the manuscript — "
             "a missing sheva, shin- and sin-dots, and a cholam — together "
@@ -272,6 +369,29 @@ SLOANE_REV = BookProfile(
             "disagree with the printed numbering at Revelation 1:9, 1:15, "
             "1:16, 1:17 and 2:8.",
         ),
+    ),
+    folios=(
+        "Four folios, 1r–4v, followed by sixteen blank leaves (British Library "
+        "manuscript description, after Margoliouth, Catalogue of the Hebrew "
+        "and Samaritan Manuscripts in the British Museum, 1965)."
+    ),
+    material=(
+        "Paper (British Library manuscript description, after Margoliouth, "
+        "Catalogue of the Hebrew and Samaritan Manuscripts in the British "
+        "Museum, 1965)."
+    ),
+    provenance=(
+        "From the collection of Sir Hans Sloane (1660–1753), baronet, "
+        "physician and collector. Part of the Sloane bequest, incorporated "
+        "into the newly founded British Museum in 1753 and held by the "
+        "British Library since 1973."
+    ),
+    # Recorded because the editor addressed the question and declined to
+    # answer it, which is not the same as nobody having asked.
+    translated_from=(
+        "Not established. The editor puts the question — whether this is the "
+        "Hebrew as first written, or a translation out of Greek or some other "
+        "language — and says outright that he has no answer to it."
     ),
     sources=(
         "Shelfmark, extent, script, date and provenance from the British "
@@ -299,7 +419,7 @@ EBR530_LUKE = BookProfile(
     osis_book="Luke",
     osis_book_name="Luke",
     scope="Luke",
-    stem="Luke_Ebr530",
+    stem="LUK_Ebr530",
     default_pdf=(
         "Hebrew-Gospels-of-Luke-and-John-from-the-Vatican_"
         "Biblioteca Apostolica ebr. 530.pdf"
@@ -343,11 +463,6 @@ EBR530_LUKE = BookProfile(
             "pronunciation and to Palestinian pointing (Nikud Eretz-Yisraeli).",
         ),
         (
-            "x-provenance",
-            "Held by the Biblioteca Apostolica Vaticana and published through "
-            "its digitisation programme on DigiVatLib.",
-        ),
-        (
             "x-editorial",
             "The editor notes that a scribe scratched out Adonai and wrote "
             "Yehovah in its place, and records variant forms attested in "
@@ -355,13 +470,31 @@ EBR530_LUKE = BookProfile(
         ),
     ),
     sources=(
-        "Shelfmark, extent and repository from the manuscript's record in "
-        "DigiVatLib, https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1. "
-        "Codicological detail is catalogued by Umberto Cassuto, 'Codices "
-        "Vaticani Hebraici' — cited here, not consulted.",
+        "Shelfmark and repository from the manuscript's record in DigiVatLib, "
+        "https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1, which publishes no "
+        "codicological detail. Extent, material and date are from Benjamin "
+        "Richler (ed.) and Malachi Beit-Arié, 'Hebrew Manuscripts in the "
+        "Vatican Library: Catalogue', Studi e Testi 438 (2008), p. 452.",
         "Text, translation and annotation from Nehemia Gordon, 'Hebrew "
         "Gospels of Luke and John found in the Vatican Library', version 3.9 "
         "(2018), nehemiaswall.com.",
+    ),
+    folios=(
+        "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v "
+        "(Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452)."
+    ),
+    material=(
+        "Paper, 290 × 229 mm. The shelfmark collects unbound fragments and "
+        "quires from different manuscripts, several of them parchment; this "
+        "fragment is paper (Richler and Beit-Arié, Studi e Testi 438, 2008, "
+        "p. 452)."
+    ),
+    # A statement of where it is, not of how it got there: neither the Vatican
+    # nor Richler publishes an acquisition history for this fragment.
+    provenance=(
+        "Held by the Biblioteca Apostolica Vaticana and published through its "
+        "digitisation programme on DigiVatLib. Neither the library nor the "
+        "printed catalogue records how the fragment reached the collection."
     ),
     coverage="Luke 1:1–35",
     date_calendar="Gregorian",
@@ -385,7 +518,7 @@ EBR530_JOHN = BookProfile(
     osis_book="John",
     osis_book_name="John",
     scope="John",
-    stem="John_Ebr530",
+    stem="JOH_Ebr530",
     default_pdf=(
         "Hebrew-Gospels-of-Luke-and-John-from-the-Vatican_"
         "Biblioteca Apostolica ebr. 530.pdf"
@@ -429,11 +562,6 @@ EBR530_JOHN = BookProfile(
             "pronunciation and to Palestinian pointing (Nikud Eretz-Yisraeli).",
         ),
         (
-            "x-provenance",
-            "Held by the Biblioteca Apostolica Vaticana and published through "
-            "its digitisation programme on DigiVatLib.",
-        ),
-        (
             "x-editorial",
             "The editor notes that a scribe scratched out Adonai and wrote "
             "Yehovah in its place, and records variant forms attested in "
@@ -441,13 +569,31 @@ EBR530_JOHN = BookProfile(
         ),
     ),
     sources=(
-        "Shelfmark, extent and repository from the manuscript's record in "
-        "DigiVatLib, https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1. "
-        "Codicological detail is catalogued by Umberto Cassuto, 'Codices "
-        "Vaticani Hebraici' — cited here, not consulted.",
+        "Shelfmark and repository from the manuscript's record in DigiVatLib, "
+        "https://digi.vatlib.it/view/MSS_Vat.ebr.530.pt.1, which publishes no "
+        "codicological detail. Extent, material and date are from Benjamin "
+        "Richler (ed.) and Malachi Beit-Arié, 'Hebrew Manuscripts in the "
+        "Vatican Library: Catalogue', Studi e Testi 438 (2008), p. 452.",
         "Text, translation and annotation from Nehemia Gordon, 'Hebrew "
         "Gospels of Luke and John found in the Vatican Library', version 3.9 "
         "(2018), nehemiaswall.com.",
+    ),
+    folios=(
+        "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v "
+        "(Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452)."
+    ),
+    material=(
+        "Paper, 290 × 229 mm. The shelfmark collects unbound fragments and "
+        "quires from different manuscripts, several of them parchment; this "
+        "fragment is paper (Richler and Beit-Arié, Studi e Testi 438, 2008, "
+        "p. 452)."
+    ),
+    # A statement of where it is, not of how it got there: neither the Vatican
+    # nor Richler publishes an acquisition history for this fragment.
+    provenance=(
+        "Held by the Biblioteca Apostolica Vaticana and published through its "
+        "digitisation programme on DigiVatLib. Neither the library nor the "
+        "printed catalogue records how the fragment reached the collection."
     ),
     coverage="John 1:1–13",
     date_calendar="Gregorian",
@@ -471,7 +617,7 @@ MAT = BookProfile(
     osis_book="Matt",
     osis_book_name="Matthew",
     scope="Matt",
-    stem="Matt_CochinOo.1.32",
+    stem="MAT_CochinOo.1.32",
     # A directory, not a file: this edition is published a chapter at a time,
     # and each chapter is its own book with its own title page, copyright page
     # and introduction. The chapters cover Matthew 1–25 so far; the edition is
@@ -537,7 +683,16 @@ MAT = BookProfile(
         "Text, translation and commentary from Janice F. Baca, 'The Cochin "
         "Hebrew Book of Matthew' (Project Truth Ministries, 2025–2026), "
         "published a chapter at a time.",
+        "Codicology and provenance from the Cambridge University Library "
+        "catalogue record for MS Oo.1.32.",
     ),
+    folios=(
+        "Folios 1r–21v, opening the codex (Cambridge University Library "
+        "catalogue, MS Oo.1.32)."
+    ),
+    material=_COCHIN_OO_1_32_MATERIAL,
+    provenance=_COCHIN_OO_1_32_PROVENANCE,
+    translated_from=_COCHIN_TRANSLATED_FROM,
     coverage="Matthew 1:1–25:46",
     original_date="ca. 1730",
     edition_date="2026",
@@ -600,14 +755,6 @@ DELITZSCH = BookProfile(
             "NRSV versification.",
         ),
         (
-            "x-provenance",
-            "Delitzsch (1813-1890) first published his Hebrew New Testament "
-            "in 1877 and revised it through several editions; this digital "
-            "text is based on the 1885 edition. Streams in the Negev "
-            "transcribed and re-pointed it in 2003, distributed since as the "
-            "CrossWire SWORD module 'HebDelitzsch'.",
-        ),
-        (
             "x-editorial",
             "Fully pointed with niqqud and cantillation. No English text "
             "accompanies this translation. A handful of NRSV-versification "
@@ -621,6 +768,27 @@ DELITZSCH = BookProfile(
         "?modType=Bibles&modName=Delitzsch.",
         "Underlying transcription and pointing by Streams in the Negev "
         "(2003), https://github.com/HebrewNewTestament/HebDelitzsch.",
+        "Account of the Greek base text from Gustaf Dalman, 'The Hebrew New "
+        "Testament of Franz Delitzsch', translated by A. S. Carrier (1892).",
+    ),
+    # Not a manuscript: printed, so `folios` and `material` have no answer to
+    # give rather than an unknown one.
+    provenance=(
+        "Delitzsch (1813–1890) first published his Hebrew New Testament in "
+        "1877 and revised it through several editions; this digital text is "
+        "based on the 1885 edition. Streams in the Negev transcribed and "
+        "re-pointed it in 2003, distributed since as the CrossWire SWORD "
+        "module 'HebDelitzsch'."
+    ),
+    translated_from=(
+        "From the Greek. Delitzsch first worked from Codex Sinaiticus, then at "
+        "the British and Foreign Bible Society's wish based the text on the "
+        "Elzevir Textus Receptus of 1624, keeping the more important Sinaiticus "
+        "readings in brackets (Dalman, 1892)."
+    ),
+    exemplar=(
+        "The Elzevir Textus Receptus of 1624, with the more important Codex "
+        "Sinaiticus readings bracketed (Dalman, 1892)."
     ),
     coverage="Matthew 1:1–Revelation 22:21",
     date_calendar="Gregorian",
@@ -689,14 +857,6 @@ BSI_HNT = BookProfile(
             "at every disputed verse.",
         ),
         (
-            "x-provenance",
-            "Published by the Bible Society in Israel in 1995 and revised in "
-            "2010. No copy of the text exists on the publisher's own site; "
-            "this was read from nocr.net, a third-party mirror that displays "
-            "it chapter by chapter with the publisher's copyright notice "
-            "attached.",
-        ),
-        (
             "x-editorial",
             "Fully pointed with niqqud, though without cantillation marks. "
             "No English text accompanies this translation.",
@@ -705,6 +865,27 @@ BSI_HNT = BookProfile(
     sources=(
         "Text scraped from https://nocr.net/hbm/hebrew/hebmht/index.php, "
         "chapter by chapter, by pdf2osis.bsi_hnt.",
+        "Account of the translation process from the Bible Society in "
+        "Israel's own description of its Hebrew Bible translation work.",
+    ),
+    # The 1995 date is the copyright line on the mirror this was read from.
+    # The publisher tells the story differently, and both are recorded rather
+    # than one being quietly preferred.
+    provenance=(
+        "The Bible Society in Israel gives 1977 for the first printing of its "
+        "modern Hebrew New Testament in Jerusalem, and 2010 for the most "
+        "recent revision. The 1995 date carried elsewhere in this file is the "
+        "copyright line on the text as consulted, not the publisher's own "
+        "account. No copy exists on the publisher's site; this was read from "
+        "nocr.net, a third-party mirror that displays it chapter by chapter "
+        "with the publisher's copyright notice attached."
+    ),
+    translated_from=(
+        "At one remove from the Greek. The Bible Society in Israel describes a "
+        "first Hebrew draft made from English by Joseph Atzmon, worked through "
+        "with Yochanan Elichai, who checked it repeatedly against the Greek, "
+        "and reviewed twice yearly against the Greek by a committee of "
+        "biblical-language scholars."
     ),
     coverage="Matthew 1:1–Revelation 22:21",
     date_calendar="Gregorian",

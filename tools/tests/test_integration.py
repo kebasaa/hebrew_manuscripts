@@ -8,7 +8,7 @@ import pytest
 
 from pdf2osis.converter import convert_pdf
 from pdf2osis.cochin import extract_cochin
-from pdf2osis.osis import OSIS_NS
+from pdf2osis.osis import OSIS_NS, build_structured_osis
 from pdf2osis.profiles import JAS, MAT, REV
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -179,7 +179,8 @@ def test_conversion_is_deterministic_and_variants_share_coverage(
         coverages.append(
             root.xpath("//osis:verse/@osisID", namespaces=namespace)
         )
-    assert coverages[0] == coverages[1] == coverages[2]
+    assert len(coverages) == len(JAS.output_names())
+    assert all(coverage == coverages[0] for coverage in coverages)
 
 
 @pytest.mark.parametrize("profile", [REV, JAS, MAT])
@@ -289,14 +290,15 @@ def test_a_combined_record_is_not_read_as_an_absent_one() -> None:
 
 
 def test_transposed_verses_are_flagged_in_the_osis(tmp_path: Path) -> None:
-    report = convert_pdf(SOURCE / REV.default_pdf, REV, tmp_path)
-    for variant, path in report.output_paths.items():
-        root = etree.fromstring(path.read_bytes())
+    document = extract_cochin(SOURCE / REV.default_pdf, REV)
+    # Every variant, including the bare `hebrew` one the catalogue does not
+    # publish: the point of the flag being an attribute rather than a note is
+    # that it survives into the variant carrying no apparatus at all.
+    for variant in ("hebrew", "hebrew_commented", "translation"):
+        root = etree.fromstring(build_structured_osis(document, REV, variant))
         flagged = root.xpath(
             "//osis:verse[@type='x-reordered']/@osisID", namespaces={"osis": OSIS_NS}
         )
-        # An attribute rather than a note, so it survives into `hebrew`, which
-        # carries no apparatus at all.
         assert flagged == ["Rev.2.22", "Rev.2.21"], variant
 
 
@@ -312,14 +314,17 @@ def test_an_absent_verse_carries_the_edition_s_notice_as_a_note(
     order = root.xpath("//osis:note[@osisID='Rev.2.21!note.order']", namespaces=ns)[0]
     assert "changes the order" in order.text
     # The plain Hebrew variant carries no apparatus, so it has neither note.
-    bare = etree.fromstring(report.output_paths["hebrew"].read_bytes())
+    # Built here rather than read from disk: the catalogue publishes the
+    # commented Hebrew and the translation, so this variant is never written.
+    document = extract_cochin(SOURCE / REV.default_pdf, REV)
+    bare = etree.fromstring(build_structured_osis(document, REV, "hebrew"))
     assert bare.xpath("//osis:note", namespaces=ns) == []
 
 
-def test_cochin_records_its_own_versification_on_the_verse(tmp_path: Path) -> None:
+def test_cochin_records_its_own_versification_on_the_verse() -> None:
     """Revelation 14:19 is one record for two verses, labelled as printed."""
-    report = convert_pdf(SOURCE / REV.default_pdf, REV, tmp_path)
-    root = etree.fromstring(report.output_paths["hebrew"].read_bytes())
+    document = extract_cochin(SOURCE / REV.default_pdf, REV)
+    root = etree.fromstring(build_structured_osis(document, REV, "hebrew"))
     verse = root.xpath(
         "//osis:verse[@osisID='Rev.14.19']", namespaces={"osis": OSIS_NS}
     )[0]

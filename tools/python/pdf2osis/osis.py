@@ -18,6 +18,13 @@ BOOK_TITLE_KINDS = {"incipit", "book-title"}
 # Kinds that introduce a chapter: Sloane's gate heading, ebr. 530's פרק ראשון.
 CHAPTER_TITLE_KINDS = {"gate", "chapter-title"}
 
+#: Every variant this module can build, in increasing order of apparatus. Not
+#: the same as what a profile publishes — `BookProfile.output_names()` decides
+#: that, and drops the bare `hebrew` wherever a translation covers the same
+#: transcription. The apparatus-free variant stays buildable regardless: it is
+#: what shows that the notes really are confined to the annotated variants.
+VARIANTS = ("hebrew", "hebrew_commented", "translation")
+
 OSIS_NS = "http://www.bibletechnologies.net/2003/OSIS/namespace"
 XSI_NS = "http://www.w3.org/2001/XMLSchema-instance"
 XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
@@ -88,6 +95,21 @@ def _work(
     etree.SubElement(work, _tag("description")).text = profile.description
     for kind, text in profile.descriptions:
         etree.SubElement(work, _tag("description"), type=kind).text = text
+    # The five cataloguing fields, always all five, in this order. They are the
+    # vocabulary Milah's transcription tab writes and src/build_manifest.py
+    # reads into a column apiece. An unanswered one is written empty rather than
+    # left out: to a reader looking for the folios of a manuscript, a missing
+    # element and an empty one say the same nothing, and the empty one at least
+    # records that the question was asked and has no published answer.
+    for kind, text in (
+        ("x-folios", profile.folios),
+        ("x-material", profile.material),
+        ("x-provenance", profile.provenance),
+        ("x-translated-from", profile.translated_from),
+        ("x-exemplar", profile.exemplar),
+    ):
+        # `or None` so an unanswered field serialises self-closing.
+        etree.SubElement(work, _tag("description"), type=kind).text = text or None
     etree.SubElement(work, _tag("publisher")).text = profile.publisher
     is_edition = translation or not profile.has_translation
     etree.SubElement(
@@ -464,7 +486,7 @@ def build_structured_osis(
     represented while every verse is a container.
     """
     root, osis_text, translation, with_notes = _start_document(
-        profile, variant, {"hebrew", "hebrew_commented", "translation"}
+        profile, variant, set(VARIANTS)
     )
 
     for passage in document.passages:

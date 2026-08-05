@@ -22,7 +22,7 @@ from lxml import etree
 from pdf2osis.converter import convert_pdf
 from pdf2osis.ebr530 import extract_ebr530
 from pdf2osis.glyphs import is_syriac
-from pdf2osis.osis import OSIS_NS, build_structured_osis
+from pdf2osis.osis import OSIS_NS, VARIANTS, build_structured_osis
 from pdf2osis.profiles import EBR530_JOHN, EBR530_LUKE
 from pdf2osis.validate import STRICT_SCHEMA, validate_sloane_records
 
@@ -48,10 +48,13 @@ def documents():
 
 @pytest.fixture(scope="module")
 def outputs(documents):
+    # Every variant, not just the published ones: these tests are about what
+    # the OSIS says, and the bare `hebrew` is what shows the apparatus really
+    # is confined to the annotated variants.
     return {
         book: {
             variant: build_structured_osis(documents[book], profile, variant)
-            for variant in profile.output_names()
+            for variant in VARIANTS
         }
         for book, profile in PROFILES.items()
     }

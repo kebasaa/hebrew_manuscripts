@@ -203,6 +203,18 @@ exists so a correction can be regenerated rather than re-typed. Full account,
 including per-source extraction notes and known issues, in
 [`tools/README.md`](tools/README.md).
 
+To rebuild the whole corpus and the catalogue that lists it, follow
+[Regenerating the corpus](tools/README.md#regenerating-the-corpus) — four
+commands, the middle two being:
+
+```bash
+python -m pdf2osis convert-all
+python src/build_manifest.py
+```
+
+The converter writes into `manuscripts/` directly, so there is no intermediate
+copy of any text to fall out of step with the published one.
+
 The one thing worth knowing without opening it: **every OSIS file the
 converter writes carries `<rights>` twice**, `type="x-copyright"` and
 `type="x-license"` — the same split this repository's own `## Licence`

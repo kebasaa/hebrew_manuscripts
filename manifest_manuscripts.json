@@ -9,15 +9,15 @@
    "role": "manuscript",
    "language": "he",
    "date": "ca. 1730",
-   "covers": "",
+   "covers": "James 1:1–5:20, the whole letter. The edition's 2:15 record covers KJV 2:15–16, so there is no independent 2:26, and 1:21 is printed with no text because the manuscript has none.",
    "shelfmark": "MS.Oo.1.32",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 158r–160r, at the end of the codex (Cambridge University Library catalogue, MS Oo.1.32).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 24973,
-   "sha256": "7c6d518391d62ebda4a7bea52ed9e249d2cc0cff740648cdd0890a12ed1c50bf"
+   "bytes": 26525,
+   "sha256": "a0d4b8260648e88b681fe74d074f545fec459e3e584cfe2f6c452f7d795fb948"
   },
   {
    "file": "JAS_CochinOo.1.32_translation.osis",
@@ -26,15 +26,15 @@
    "role": "translation",
    "language": "en",
    "date": "2024",
-   "covers": "",
+   "covers": "James 1:1–5:20, the whole letter. The edition's 2:15 record covers KJV 2:15–16, so there is no independent 2:26, and 1:21 is printed with no text because the manuscript has none.",
    "shelfmark": "MS.Oo.1.32",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 158r–160r, at the end of the codex (Cambridge University Library catalogue, MS Oo.1.32).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 28968,
-   "sha256": "8bddf753c699d8d3f49e80d146de965863e9a88871d95bb14ea50966f91f85e8"
+   "bytes": 30520,
+   "sha256": "c74de18a738374fb025849aa9ae66cc11e8f1426398d7a7246220d476e6adc97"
   },
   {
    "file": "JOH_Ebr530_hebrew_commented.osis",
@@ -45,13 +45,13 @@
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
    "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
-   "folios": "1r–2v",
+   "folios": "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).",
    "translatedFrom": "",
    "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 7984,
-   "sha256": "10061dca4ca62efd8f400dd792d57af48caaf7bb543529e3a9c6c188f57cd5ae"
+   "bytes": 8553,
+   "sha256": "9c89d1511ff7ff7e175e082f4ff4ee783fd486d0c6324deabc13d1417dee6112"
   },
   {
    "file": "JOH_Ebr530_translation.osis",
@@ -62,13 +62,13 @@
    "date": "2018",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
    "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
-   "folios": "1r–2v",
+   "folios": "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).",
    "translatedFrom": "",
    "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 6253,
-   "sha256": "92eaf87bdb5936b938842c2e1e2780f4e8c24af683499fd540e49eb2b6a6037a"
+   "bytes": 6822,
+   "sha256": "ea21181a88ed30c945c04eb161759e639501f771cfef931113e25b95959af5ad"
   },
   {
    "file": "LUK_Ebr530_hebrew_commented.osis",
@@ -79,13 +79,13 @@
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
    "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
-   "folios": "1r–2v",
+   "folios": "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).",
    "translatedFrom": "",
    "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 16095,
-   "sha256": "56f6ea5b78b8622c69f809b0d787a9e9fd742b9e3429fdb38f213099cc8070df"
+   "bytes": 16664,
+   "sha256": "684cca7a14dd73d0ae7c72da1f547ee54082d2e7e837acf225d6f1ad5e79038e"
   },
   {
    "file": "LUK_Ebr530_translation.osis",
@@ -96,13 +96,13 @@
    "date": "2018",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
    "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
-   "folios": "1r–2v",
+   "folios": "Part 1, fragment 11: two folios forming a single bifolium, 1r–2v (Richler and Beit-Arié, Studi e Testi 438, 2008, p. 452).",
    "translatedFrom": "",
    "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 12032,
-   "sha256": "c4fa51e5451849bf8abeca91100b9b1a766e642f8e1c0cabd98f0b6523f3fd16"
+   "bytes": 12601,
+   "sha256": "bada74aa8ebd674515705e5dc14f81dacdeb87f9f331bb4cf39f0388c46aedad"
   },
   {
    "file": "MAT_CochinOo.1.32_hebrew_commented.osis",
@@ -111,15 +111,15 @@
    "role": "manuscript",
    "language": "he",
    "date": "ca. 1730",
-   "covers": "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+   "covers": "Matthew 1:1–25:46. The edition is published a chapter at a time and has reached chapter 25; the remaining chapters are not out yet. Chapter 17:23 and 17:24 are numbered as the edition prints them, with the manuscript's own 17:22b and 17:23 recorded beside them.",
    "shelfmark": "MS.Oo.1.32",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 1r–21v, opening the codex (Cambridge University Library catalogue, MS Oo.1.32).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2025 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 135090,
-   "sha256": "6a90971f9136a5fb4d7b4c0fbcfdde94fb93f0334341240fdc832ac72b9537de"
+   "bytes": 189765,
+   "sha256": "ffbcfc8605513ecfaae244df1b0d625eb0918d80e016b62928db9693e82ab7ad"
   },
   {
    "file": "MAT_CochinOo.1.32_translation.osis",
@@ -127,16 +127,16 @@
    "book": "MAT",
    "role": "translation",
    "language": "en",
-   "date": "2025",
-   "covers": "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+   "date": "2026",
+   "covers": "Matthew 1:1–25:46. The edition is published a chapter at a time and has reached chapter 25; the remaining chapters are not out yet. Chapter 17:23 and 17:24 are numbered as the edition prints them, with the manuscript's own 17:22b and 17:23 recorded beside them.",
    "shelfmark": "MS.Oo.1.32",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 1r–21v, opening the codex (Cambridge University Library catalogue, MS Oo.1.32).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2025 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 229233,
-   "sha256": "1d57f674b4e9846aad9876f40d60df6afe7c4d43bbf25dbd00da7b68edbd0f60"
+   "bytes": 287159,
+   "sha256": "bf954b9180da4e50b8a949c9b3bf5b9f3628ee3d4734a78983bc139e829a193a"
   },
   {
    "file": "NT_Delitzsch_hebrew.osis",
@@ -148,12 +148,12 @@
    "covers": "A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.",
    "shelfmark": "Delitzsch Hebrew New Testament (Streams in the Negev transcription)",
    "folios": "",
-   "translatedFrom": "",
-   "exemplar": "",
+   "translatedFrom": "From the Greek. Delitzsch first worked from Codex Sinaiticus, then at the British and Foreign Bible Society's wish based the text on the Elzevir Textus Receptus of 1624, keeping the more important Sinaiticus readings in brackets (Dalman, 1892).",
+   "exemplar": "The Elzevir Textus Receptus of 1624, with the more important Codex Sinaiticus readings bracketed (Dalman, 1892).",
    "rights": "Copyright 2003 (Streams in the Negev).",
    "license": "Free for use by any non-commercial project.",
-   "bytes": 2383729,
-   "sha256": "50eadca62cae7dbf495e4af55007f385912b41908de3bd0fa7039147d453f8e2"
+   "bytes": 2384313,
+   "sha256": "d4a9510d729e9707165d6eda1134f859068376f147bc523dbc7e32f4f009b86a"
   },
   {
    "file": "NT_Delitzsch_hebrew_commented.osis",
@@ -165,12 +165,12 @@
    "covers": "A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.",
    "shelfmark": "Delitzsch Hebrew New Testament (Streams in the Negev transcription)",
    "folios": "",
-   "translatedFrom": "",
-   "exemplar": "",
+   "translatedFrom": "From the Greek. Delitzsch first worked from Codex Sinaiticus, then at the British and Foreign Bible Society's wish based the text on the Elzevir Textus Receptus of 1624, keeping the more important Sinaiticus readings in brackets (Dalman, 1892).",
+   "exemplar": "The Elzevir Textus Receptus of 1624, with the more important Codex Sinaiticus readings bracketed (Dalman, 1892).",
    "rights": "Copyright 2003 (Streams in the Negev).",
    "license": "Free for use by any non-commercial project.",
-   "bytes": 2384296,
-   "sha256": "e75e4cce59cc5992f82574f1140376a0c26af48ed51f75ef35040c70bd1af748"
+   "bytes": 2384880,
+   "sha256": "5939284fb39732c44a580c113f0e767a8f23de62d51f86c2bbd7a8831e6a4c6c"
   },
   {
    "file": "REV_CochinOo.1.16.2_hebrew_commented.osis",
@@ -179,15 +179,15 @@
    "role": "manuscript",
    "language": "he",
    "date": "ca. 1730",
-   "covers": "",
+   "covers": "Revelation 1:1–22:21, the whole book, including the combined 14:19-20 record. Four references are printed with no text because the manuscript has none, and 2:21 and 2:22 stand in the manuscript's order rather than the canonical one.",
    "shelfmark": "MS.Oo.1.16.2",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 102r–106v, the whole book fitted onto five leaves in a very small cursive. Cambridge publishes no catalogue record for this shelfmark; the foliation is Justin J. van Rensburg's (The Hebrew Revelation, James and Jude, 2022, p. 1).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 169647,
-   "sha256": "abba734611725eed575fc2ead8b6a3d94c7fc62136f588c0404201f994c42fef"
+   "bytes": 171286,
+   "sha256": "adf7180c514c5fd8c515a90e903da716afdd01abe311b13dcca9bce519f7f859"
   },
   {
    "file": "REV_CochinOo.1.16.2_translation.osis",
@@ -196,15 +196,15 @@
    "role": "translation",
    "language": "en",
    "date": "2024",
-   "covers": "",
+   "covers": "Revelation 1:1–22:21, the whole book, including the combined 14:19-20 record. Four references are printed with no text because the manuscript has none, and 2:21 and 2:22 stand in the manuscript's order rather than the canonical one.",
    "shelfmark": "MS.Oo.1.16.2",
-   "folios": "",
-   "translatedFrom": "",
+   "folios": "Folios 102r–106v, the whole book fitted onto five leaves in a very small cursive. Cambridge publishes no catalogue record for this shelfmark; the foliation is Justin J. van Rensburg's (The Hebrew Revelation, James and Jude, 2022, p. 1).",
+   "translatedFrom": "Not settled, and actively disputed. Mascha van Dort (Revue des Études Juives 182, 2023) argues that Leopold Immanuel Jacob van Dort translated the collection for Ezekiel Rahabi from the Luther and Statenvertaling Bibles. Justin and Michael J. van Rensburg (The Hebrew Revelation, James and Jude, 2022) find most books of Oo.1.16 and Oo.1.32 close to the Syriac Peshitta, but hold that Revelation, James and Jude derive from none of the Greek, Latin or Aramaic versions. The Cambridge University Library catalogue names no source language at all.",
    "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 159595,
-   "sha256": "ee8d65263531ddcdcb60dcb2ddc13e868a731fcdb65f824d2df3eaa76a051169"
+   "bytes": 161234,
+   "sha256": "decae9d876372048cd44b9648f9cde0094c9210b583263f64217a82c5044807c"
   },
   {
    "file": "REV_Sloane237_hebrew_commented.osis",
@@ -215,13 +215,13 @@
    "date": "between 1500 and 1699",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
    "shelfmark": "British Library, Sloane MS 237",
-   "folios": "1r–4v",
-   "translatedFrom": "",
+   "folios": "Four folios, 1r–4v, followed by sixteen blank leaves (British Library manuscript description, after Margoliouth, Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, 1965).",
+   "translatedFrom": "Not established. The editor puts the question — whether this is the Hebrew as first written, or a translation out of Greek or some other language — and says outright that he has no answer to it.",
    "exemplar": "",
    "rights": "© 2017 by Nehemia Gordon",
    "license": "CC BY-NC-SA 4.0 (repository default; no licence stated in the source).",
-   "bytes": 17815,
-   "sha256": "74ae8ad7e26d963a35b6b1b376a648da969c18defbff94bb8f0879fe63521e96"
+   "bytes": 18145,
+   "sha256": "7fffc3c49b0226b56d534f6305336b44d0b347e40796eac83ffd6fa68147b62a"
   },
   {
    "file": "REV_Sloane237_translation.osis",
@@ -232,13 +232,13 @@
    "date": "2017",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
    "shelfmark": "British Library, Sloane MS 237",
-   "folios": "1r–4v",
-   "translatedFrom": "",
+   "folios": "Four folios, 1r–4v, followed by sixteen blank leaves (British Library manuscript description, after Margoliouth, Catalogue of the Hebrew and Samaritan Manuscripts in the British Museum, 1965).",
+   "translatedFrom": "Not established. The editor puts the question — whether this is the Hebrew as first written, or a translation out of Greek or some other language — and says outright that he has no answer to it.",
    "exemplar": "",
    "rights": "© 2017 by Nehemia Gordon",
    "license": "CC BY-NC-SA 4.0 (repository default; no licence stated in the source).",
-   "bytes": 13334,
-   "sha256": "c690a1d09cc4dcaa7793d9eb2e6eda667200f279bbf066d1596323f465234149"
+   "bytes": 13664,
+   "sha256": "e0a881b1a680ee6a2e4f7585ad34945bf74c22ed584eba26548a0cd46733a6bd"
   }
  ]
 }
