@@ -42,6 +42,29 @@
 #        before they can wonder why the entry is greyed out; a row with none
 #        prints a warning when this file is regenerated.
 #
+# The three below are judgements about the text rather than facts about the
+# object, which is why no library record carries them and why they are written
+# here by hand. Milah offers them when a scan is opened, so a transcription
+# starts out saying what is already known about the manuscript.
+#
+# translatedFrom  what the Hebrew renders, where it renders anything:
+#        "Translated from the Greek". Empty is not itself an answer — the
+#        column beside it is what says whether anything has been settled.
+# translationCertainty  how firmly that is held. One of:
+#          certain             established
+#          uncertain           stated, not settled
+#          original            not a translation; an original Hebrew text
+#          original-uncertain  probably not a translation
+#        Empty means nobody has recorded an answer, which is a different thing
+#        from "not a translation", and is what every row here says until it is
+#        filled in. Milah marks an unsettled answer with a question mark rather
+#        than stating it flat: for several of these manuscripts — Shem Tov's
+#        Matthew above all — that is the whole argument.
+# exemplar  the older manuscript this one copies, where it is known to copy
+#        one: "Copied from Cambridge MS Oo.1.32". Gaster Hebrew MS 1616 is
+#        Thomas Yeates's copy of exactly that, which is the case this exists
+#        for.
+#
 # Rows may name one address as often as they like: the library's record is read
 # once per run and each row takes its own slice of it.
 #
@@ -50,7 +73,7 @@
 # holds, so naming the manuscript again in every title prints it twice.
 #
 # Regenerate after editing:  python src/build_scan_manifest.py
-url	title	book	width	folios	shelfmark	licence	repository	status	note
+url	title	book	width	folios	shelfmark	licence	repository	status	note	translatedFrom	translationCertainty	exemplar
 # Cambridge MS Oo.1.32 — one binding of 328 images holding twenty-six New
 # Testament books, so one row per book rather than one entry nobody can choose
 # Mark out of. The whole codex is kept as well, first, because a reader may want
@@ -325,29 +348,6 @@ https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1217954254/manifest	Even Bohan (Sh
 # document ids above.
 https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1217952233/manifest	Even Bohan (Shem Tov's Hebrew Matthew), NT gate at pp. 413-463	MAT			Leiden Or. 4766 (Warner 28)	Public Domain Non-Commercial Use: use permitted for non-commercial purposes only, as determined by the depositor (National Library of Israel).	Leiden University Libraries
 #
-# The four Gospels in Judaeo-Arabic: Arabic, written in Hebrew letters, c.
-# 1590-1610. The Bodleian's record says "Judaeo-Arabic" and this row does
-# not argue with it — checked against f. 16r, where the running head reads
-# מתי, Matthew, in Hebrew script above a page of Arabic carrying its
-# definite article אל throughout. It is offered on the same footing as
-# Pococke 280 above: by the script a transcriber has to read rather than by
-# the language underneath it, and named for what it is so that nobody opens
-# it expecting Hebrew.
-https://iiif.bodleian.ox.ac.uk/iiif/manifest/9c99fb80-6ebf-4326-8a54-c21823407cc4.json	Four Gospels in Judaeo-Arabic (Arabic in Hebrew script)				Bodleian, MS. Huntington 615	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
-#
-# A single leaf from the Cairo Genizah, and the oldest New Testament witness
-# in this file. Cambridge's record calls it only "Genizah fragment" and says
-# nothing of its contents; the fragment says it itself, in a heading a reader
-# can see without a catalogue: אנגיל מתי : כ :, the Evangel of Matthew,
-# chapter 20, above the parable of the labourers in the vineyard with its
-# verse numbers still in the margin. Judaeo-Arabic, like Huntington 615
-# above. Identified in the literature as well — Niessen, "New Testament
-# Translations from the Cairo Genizah", Collectanea Christiana Orientalia 6
-# (2009), 203-205 — but the heading is the evidence recorded here.
-#
-# Two leaves only, so no range: this is the whole of it.
-https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00198-00152/1	Matthew 20 (Genizah fragment, Judaeo-Arabic)	MAT			T-S AS 198.152
-#
 # Harley MS 7637, an 18th-century Hebrew Matthew, on OPenn beside Sloane MS
 # 237 above. The British Library's own viewer for it has been down since the
 # 2023 cyberattack; OPenn's copy is unaffected, which is the same reason Add
@@ -434,3 +434,75 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json	Hebrew Matthew, ascrib
 # this manuscript's own binding, not Oo.1.16 itself. Described only in print
 # (Reif 1997, no. 917; Schechter, JQR 6 (1893), 144–145).
 	Revelation	REV			MS Oo.1.16		Cambridge University Library	unavailable	Not on Cambridge Digital Library. A CUDL search for "Oo.1.16" finds only MS Add. 4541 — a Greek Matthew fragment from its own binding waste, not the manuscript. Described in print: Reif, Hebrew Manuscripts at Cambridge University Library (1997), no. 917.
+#
+# Three witnesses at the P. Bertolla Library of the Archbishop's Seminary in
+# Udine, in Aramaic/Hebrew, probably by the same 18th-century translator,
+# Filippo Renati (formerly Pinkerli), a converted Jew. A small seminary
+# library with no digital collections site found, and none of the three
+# turns up through Ktiv either — the Udine holdings Ktiv does carry (found by
+# searching the shelfmark directly) are unrelated Hebrew manuscripts, not
+# these. Described only in Tamani, "Pico Grimani Jewish Codes in the
+# Archiepiscopal Library of Udine", Atti dell'Istituto Veneto di Scienze,
+# Lettere ed Arti X,3 (1971), 1-25.
+	Matthew, Mark, Luke	MAT			Udine, Ms. ebr. 3 (Ms. 235-237)		P. Bertolla Library, Archbishop's Seminary of Udine	unavailable	No digital collections site found for this library, and no record of this shelfmark on Ktiv, which does carry other Udine Hebrew manuscripts under different shelfmarks. Described in print only: Tamani (1971), cited above.
+	John	JOH			Udine, Ms. ebr. 4 (Ms. 238)		P. Bertolla Library, Archbishop's Seminary of Udine	unavailable	No digital collections site found for this library, and no record of this shelfmark on Ktiv. Described in print only: Tamani (1971), cited above.
+	Acts, Romans, 1 Corinthians to 3:1	ACT			Udine, Ms. ebr. 5 (Ms. 239)		P. Bertolla Library, Archbishop's Seminary of Udine	unavailable	No digital collections site found for this library, and no record of this shelfmark on Ktiv. Described in print only: Tamani (1971), cited above.
+#
+# The Institute of Oriental Manuscripts, St Petersburg — a second manuscript
+# from this institute, unrelated to Ms. A 207 above: a single leaf, the
+# oldest witness in this catalogue if it is what it is catalogued as, Matthew
+# 5:32-6:25 in a 13th-century hand. No online presence found for it, and none
+# for the institute's own holdings generally outside what Ktiv carries, which
+# does not include this shelfmark.
+	Matthew 5:32-6:25	MAT			IOM RAS Ms. D 101		Institute of Oriental Manuscripts, Russian Academy of Sciences	unavailable	No online record found beyond the catalogue entry this repository was compiled from. Not on Ktiv under this shelfmark, though the institute's Ms. A 207 (Even Bohan) is — see above.
+#
+# The Russian State Library's Guenzburg collection was digitised on Ktiv
+# after a 2017 agreement between Russia and Israel, and Ms. Guenzburg 363
+# — a 16th/17th-century Italian miscellany of some twenty unrelated Hebrew
+# texts bound as one volume — is one of the manuscripts that reached it: its
+# own record, found by searching the shelfmark directly, names "ברית חדשה
+# (לקוטים)" — New Testament (excerpts) — as one of those texts, Luke
+# 17-24 and John 1-6, ff. 48a-59b, and states "Images: Available". Its
+# pages are not this text's own, though: the manifest below returns the
+# whole 223-page miscellany, numbered Page 1 to Page 223 with no table of
+# contents mapping any of its twenty texts to a page range, so which of the
+# 223 are the twelve leaves of ff. 48a-59b is not stated anywhere and is not
+# guessed at here — book is left blank rather than tagged Luke, since a
+# transcriber choosing Luke from the picker would otherwise open this and
+# find nineteen unrelated things first. Offered anyway, unsliced, since a
+# human paging through by eye can do what a folios range cannot: the
+# reading-room viewer is the second address below, easier to browse than
+# the bare manifest — https://www.nli.org.il/en/manuscripts/NNL_ALEPH990001465430205171/NLI
+https://iiif.nli.org.il/IIIFv21/DOCID/NNL_ALEPH71228769860005171/manifest/IE70811450	Luke 17-24, John 1-6 (ff. 48a-59b of this miscellany; page not yet located)				Russian State Library, Ms. Guenzburg 363	Public Domain Free Use: all uses of this item are permitted, including commercial use (National Library of Israel).	The Russian State Library
+#
+# Two French municipal libraries, both stating outright that no photograph of
+# theirs exists — not merely undigitised, but never reproduced at all.
+	New Testament, 4 volumes	MAT			Médiathèque Épernay, Ms. 45		Médiathèque Simone-Veil, Épernay	unavailable	The manuscript's own catalogue description states directly that no photograph exists at the institute. No online presence found for the library's manuscript holdings otherwise.
+	Acts of the Apostles	ACT			Marseille, Bibliothèque L'Alcazar, Ms. 48.445		Bibliothèque municipale L'Alcazar, Marseille	unavailable	The manuscript's own catalogue description states directly that no photograph exists at the institute. Marseille's own digitised-manuscripts record (archivesetmanuscrits.bnf.fr) does not carry this shelfmark.
+	New Testament (parts), 4 volumes	MAT			Marseille, Bibliothèque L'Alcazar, Ms. 23-26		Bibliothèque municipale L'Alcazar, Marseille	unavailable	Catalogued as "Parties de la Bible traduites en hébreu" in the Catalogue général des manuscrits des bibliothèques publiques de France. No photograph on record at the institute, and no online presence found otherwise.
+#
+# Columbia's Hebraica and Judaica manuscripts are catalogued under call
+# numbers beginning X893; this one was not found among the ones digitised on
+# OPenn or in Columbia's own online exhibitions and finding aids.
+	New Testament excerpts (Syriac-Hebrew)	MAT			Columbia University, Ms. X 893 B 471		Columbia University Libraries	unavailable	Not found among the Hebraica manuscripts Columbia has digitised on OPenn (openn.library.upenn.edu/html/0032.html) or in its own online exhibitions and finding aids. No other online record located.
+#
+# Three printed editions rather than manuscripts, included because the
+# catalogue this file was checked against does not distinguish the two and
+# the user asked that both be checked. None is a manuscript scan, so none
+# fits this file's usual shape, but the same "known but unreachable" pattern
+# applies.
+#
+# The New Testament volume of the eight-volume Antwerp Polyglot (Plantin,
+# 1568-73): Greek and Syriac with Latin translations, and a transliteration
+# of the Syriac into Hebrew letters. The National Library of Israel holds a
+# copy from the Mehlman Collection, print-only as far as could be found.
+	New Testament (Syriac in Hebrew transliteration), Antwerp Polyglot vol. 5	MAT			Antwerp Polyglot (Plantin, 1568-73)		National Library of Israel (Mehlman Collection)	unavailable	Printed, not a manuscript. NLI holds a copy from the Mehlman Collection; no online scan located for it specifically, distinct from the Polyglot's wider afterlife in other libraries' digitised rare-book collections.
+# Dithika Hadta — Syriac in Hebrew letters, Antwerp: Plantin, 1575. Reported
+# elsewhere as scanned under the National Library of Israel's "450 years of
+# the Hebrew book" project, but no working link to that scan could be found
+# this session — the Library's own book-search interface did not resolve a
+# record for it. Worth a direct check with the Library rather than ruled out.
+	New Testament (Syriac in Hebrew letters)	MAT			Dithika Hadta (Antwerp: Plantin, 1575)		National Library of Israel	unavailable	Printed, not a manuscript. Reported as digitised under NLI's "450 years of the Hebrew book" project, but no working scan URL found this session — the Library's own search interface returned no record for it. Worth checking with the Library directly rather than treated as confirmed absent.
+# Giovanni Battista Jona's Hebrew translation of the four Gospels, printed by
+# the Propaganda Fide press, Rome, 1668, dedicated to Clement IX.
+	New Testament (Four Gospels)	MAT			Jona's Hebrew Gospels (Rome: Propaganda Fide, 1668)			unavailable	Printed, not a manuscript. No online scan located for this edition; holding library not established.

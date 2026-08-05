@@ -199,6 +199,47 @@ class TheCataloguingFieldsAreRead(unittest.TestCase):
         for field in ("shelfmark", "folios", "translatedFrom", "exemplar"):
             self.assertEqual(entry[field], "", field)
 
+    def test_the_certainty_is_read_off_the_subtype(self) -> None:
+        # What a text renders and whether that is settled are two questions.
+        entry = self.describe(
+            self.HEADER.replace(
+                '<description type="x-translated-from">',
+                '<description type="x-translated-from" subType="x-certain">',
+            )
+        )
+        self.assertEqual(entry["translationCertainty"], "certain")
+        # The prose is untouched by the verdict beside it.
+        self.assertEqual(entry["translatedFrom"], "Translated from the Greek")
+
+    def test_a_description_with_no_subtype_records_no_verdict(self) -> None:
+        # The state every header in this repository is in: the field is there
+        # to be filled, and until it is, nothing has been claimed.
+        self.assertEqual(self.describe(self.HEADER)["translationCertainty"], "")
+
+    def test_a_subtype_without_the_x_prefix_is_not_taken(self) -> None:
+        # The schema's rule for a value it does not define is the x- prefix, and
+        # something else in that attribute is not this vocabulary.
+        entry = self.describe(
+            self.HEADER.replace(
+                '<description type="x-translated-from">',
+                '<description type="x-translated-from" subType="certain">',
+            )
+        )
+        self.assertEqual(entry["translationCertainty"], "")
+
+    def test_an_original_composition_can_say_so(self) -> None:
+        # The other half of the silence problem: an empty field used to mean
+        # both "an original Hebrew text" and "nobody knows".
+        entry = self.describe(
+            self.HEADER.replace(
+                '<description type="x-translated-from">Translated from the Greek'
+                "</description>",
+                '<description type="x-translated-from" subType="x-original">'
+                "An original Hebrew composition.</description>",
+            )
+        )
+        self.assertEqual(entry["translationCertainty"], "original")
+
     def test_an_empty_element_reads_as_no_answer(self) -> None:
         # The shape left in the published headers for the owner to fill in.
         entry = self.describe(

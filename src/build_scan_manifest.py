@@ -366,11 +366,24 @@ def parse_link(url: str) -> tuple[str, str]:
 
     # Anything else that is plainly a IIIF manifest can still be read, just
     # without the richer record a library's own API would give. The bare
-    # "/manifest" ending is the National Library of Israel's: it publishes at
+    # "/manifest" ending is the National Library of Israel's usual shape:
     # /IIIFv21/DOCID/{id}/manifest, with neither the lowercase word nor the
-    # file extension the other two tests look for.
+    # file extension the other two tests look for. A composite volume there
+    # can carry a further /{intellectual entity id} after "manifest" too,
+    # scoping the same address down to one bibliographic item inside a
+    # shared binding — Guenzburg 363's "manifest/IE70811450" is host to
+    # twenty unrelated Hebrew texts, of which this is the address of one.
+    # Matched case-insensitively because NLI's own path segment is
+    # "/IIIFv21/", capitalised, which the plain lowercase substring below
+    # would otherwise miss.
     path = parsed.path
-    if "/iiif/" in path or path.endswith("manifest.json") or path.endswith("/manifest"):
+    path_lower = path.lower()
+    if (
+        "/iiif/" in path_lower
+        or path_lower.endswith("manifest.json")
+        or path_lower.endswith("/manifest")
+        or "/manifest/" in path_lower
+    ):
         return "iiif", url.strip()
 
     return "", ""
@@ -723,6 +736,42 @@ def _v3_label(label: object) -> str:
     return ""
 
 
+#: What `translationCertainty` may say. Anything else is a typo in the link
+#: list, and is dropped with a warning rather than published — Milah has the
+#: same four words and would show an unknown one as no answer at all, which is
+#: a quieter way to lose a fact than saying so here.
+CERTAINTIES = ("certain", "uncertain", "original", "original-uncertain")
+
+
+def judgements(row: dict) -> dict:
+    """What a row says about the text, as against about the object.
+
+    No library record carries these: whether a Hebrew text renders a Greek one,
+    and whether it copies an older book, are arguments rather than catalogue
+    entries. They are written by hand in the link list and travel with the scan
+    so that a transcription started from it begins already knowing them.
+
+    ``translationCertainty`` is kept apart from the sentence beside it because
+    two things are being said at once — what it renders, and whether that is
+    settled — and for several of these manuscripts the second is the whole
+    dispute. Empty means nobody has recorded an answer, which is not the same
+    as "not a translation": that is ``original``.
+    """
+    certainty = (row.get("translationCertainty") or "").strip().lower()
+    if certainty and certainty not in CERTAINTIES:
+        print(
+            f"  warning: {row.get('url', '').strip() or 'a row'} says "
+            f"translationCertainty={certainty!r}, which is not one of "
+            f"{', '.join(CERTAINTIES)} — dropped"
+        )
+        certainty = ""
+    return {
+        "translatedFrom": (row.get("translatedFrom") or "").strip(),
+        "translationCertainty": certainty,
+        "exemplar": (row.get("exemplar") or "").strip(),
+    }
+
+
 def read_links(path: Path) -> list[dict]:
     """The link list, as rows keyed by column name.
 
@@ -887,6 +936,11 @@ def unavailable_entry(row: dict, given: set[str]) -> dict | None:
         # themselves — a plain catalogue record, most often.
         "source": (row.get("url") or "").strip(),
         "folios": "",
+        # Carried even here. What a text renders and what it copies are known
+        # or argued about quite independently of whether anybody has
+        # photographed it, and a reader looking a manuscript up is often
+        # looking for exactly that.
+        **judgements(row),
         # Non-empty is what tells Milah this absence is deliberate rather than
         # a resolver that came back with nothing to show — see fromJson().
         "unavailable": note or "Not digitised; no scan has been published.",
@@ -1039,6 +1093,9 @@ def build(rows: list[dict]) -> list[dict]:
         # share a shelfmark, a date and a repository, and the first thing anyone
         # reading the file needs is which folios each one covers.
         entry["folios"] = folios
+        # Written by hand in the link list, because they are judgements about
+        # the text and no library record carries them.
+        entry.update(judgements(row))
         # Always present and always empty here: this entry was resolved and
         # has pages. A stub for a manuscript with no scan is the only place
         # this field is ever non-empty — see unavailable_entry().

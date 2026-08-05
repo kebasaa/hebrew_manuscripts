@@ -133,6 +133,28 @@ def description_text(work: ET.Element | None, kind: str) -> str:
     return ""
 
 
+def description_certainty(work: ET.Element | None, kind: str) -> str:
+    """The ``subType`` of ``<description type="x-{kind}">``, without its ``x-``.
+
+    Where a verdict lives. OSIS defines no ``certainty`` attribute — the schema
+    was checked — but ``<description>`` accepts ``subType`` through
+    ``globalWithoutType``, so that is what carries it.
+
+    What a text renders and whether that is settled are two questions, and for
+    several of these manuscripts the second is the argument: a catalogue that
+    printed "Greek" flat would be taking a side. An element with no ``subType``
+    means nobody has recorded an answer, which is the state every header in this
+    repository is in until somebody says otherwise.
+    """
+    if work is None:
+        return ""
+    for description in work.findall(f"{{{OSIS_NS}}}description"):
+        if description.get("type") == f"x-{kind}":
+            subtype = (description.get("subType") or "").strip()
+            return subtype[2:] if subtype.startswith("x-") else ""
+    return ""
+
+
 def identifier_text(work: ET.Element | None, kind: str) -> str:
     """The ``<identifier type="x-{kind}">`` text, or "" where there is none."""
     if work is None:
@@ -188,6 +210,11 @@ def describe(path: Path) -> dict | None:
         # a question nobody has settled, which are different and both honest to
         # leave unanswered.
         "translatedFrom": description_text(work, "translated-from"),
+        # How firmly the line above is held: "certain", "uncertain", "original"
+        # for a Hebrew composition that renders nothing, "original-uncertain",
+        # or empty where nobody has said. Milah's download list marks an
+        # unsettled answer with a question mark rather than stating it flat.
+        "translationCertainty": description_certainty(work, "translated-from"),
         # The older manuscript this one copies, where it is known to copy one —
         # "Copied from Cambridge MS Oo.1.32".
         "exemplar": description_text(work, "exemplar"),

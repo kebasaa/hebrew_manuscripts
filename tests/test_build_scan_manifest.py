@@ -321,6 +321,21 @@ class ALinkIsRecognisedOrRefused(unittest.TestCase):
         self.assertEqual(source, "iiif")
         self.assertTrue(item.endswith("/manifest"))
 
+    def test_a_manifest_scoped_to_one_item_of_a_composite_is_still_a_manifest(
+        self,
+    ) -> None:
+        # Guenzburg 363's own address doesn't end "/manifest" at all: a
+        # further intellectual-entity id follows it, scoping the same
+        # manifest down to one of the twenty unrelated texts sharing its
+        # binding. Missing this reads as "nothing here can open this" for
+        # every composite volume Ktiv publishes this way, not just this one.
+        source, item = build_scan_manifest.parse_link(
+            "https://iiif.nli.org.il/IIIFv21/DOCID/NNL_ALEPH71228769860005171"
+            "/manifest/IE70811450"
+        )
+        self.assertEqual(source, "iiif")
+        self.assertTrue(item.endswith("/IE70811450"))
+
     def test_an_alvin_record_is_found_by_its_id(self) -> None:
         # Uppsala's viewer and its record page write the same id two ways, and
         # a reader arrives with whichever they had open.
@@ -1034,6 +1049,66 @@ class TheLinkListIsReadAsWritten(unittest.TestCase):
             build_scan_manifest.LINKS.is_file(),
             f"no link list at {build_scan_manifest.LINKS}",
         )
+
+
+class WhatIsSaidAboutTheTextRatherThanTheObject(unittest.TestCase):
+    """The three a library never records, written by hand in the link list.
+
+    Whether a Hebrew text renders a Greek one, and whether it copies an older
+    book, are arguments rather than catalogue entries — so they come from the
+    row, and they have to survive to the manifest for Milah to offer them when
+    a scan is opened.
+    """
+
+    def test_a_row_carries_all_three(self) -> None:
+        answered = build_scan_manifest.judgements(
+            {
+                "translatedFrom": "  Translated from the Greek  ",
+                "translationCertainty": "Uncertain",
+                "exemplar": "Copied from Cambridge MS Oo.1.32",
+            }
+        )
+        self.assertEqual(answered["translatedFrom"], "Translated from the Greek")
+        # Lowercased, so a row written either way matches the vocabulary Milah
+        # compares against.
+        self.assertEqual(answered["translationCertainty"], "uncertain")
+        self.assertEqual(answered["exemplar"], "Copied from Cambridge MS Oo.1.32")
+
+    def test_a_row_that_says_nothing_answers_nothing(self) -> None:
+        # Which is every row in the link list today, and is a different thing
+        # from saying the manuscript is an original Hebrew composition.
+        answered = build_scan_manifest.judgements({})
+        self.assertEqual(answered["translatedFrom"], "")
+        self.assertEqual(answered["translationCertainty"], "")
+        self.assertEqual(answered["exemplar"], "")
+
+    def test_a_certainty_outside_the_vocabulary_is_dropped_with_a_warning(self) -> None:
+        # A typo published as data would show in Milah as no answer at all,
+        # which is a quieter way to lose a fact than saying so at build time.
+        with contextlib.redirect_stdout(io.StringIO()) as printed:
+            answered = build_scan_manifest.judgements(
+                {"url": "https://example/x", "translationCertainty": "probably"}
+            )
+        self.assertEqual(answered["translationCertainty"], "")
+        self.assertIn("probably", printed.getvalue())
+
+    def test_an_unavailable_stub_carries_them_too(self) -> None:
+        # Nobody has photographed Add MS 26964, and what its Hebrew renders is
+        # a question quite independent of that.
+        entry = build_scan_manifest.unavailable_entry(
+            {
+                "title": "Even Bohan",
+                "shelfmark": "Add MS 26964",
+                "note": "Images currently unavailable.",
+                "translatedFrom": "Translated from the Greek",
+                "translationCertainty": "original-uncertain",
+            },
+            set(),
+        )
+        self.assertIsNotNone(entry)
+        self.assertEqual(entry["translationCertainty"], "original-uncertain")
+        self.assertEqual(entry["translatedFrom"], "Translated from the Greek")
+        self.assertEqual(entry["exemplar"], "")
 
 
 class ThePublishedManifestIsUsable(unittest.TestCase):
