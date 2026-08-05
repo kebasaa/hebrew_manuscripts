@@ -6,6 +6,9 @@
         <title>Revelation (Cochin MS Oo.1.16.2)</title>
         <date event="original" type="ISO">ca. 1730</date>
         <description>The Cochin Hebrew New Testament manuscripts are significant 18th-century Hebrew versions of the New Testament. This file encodes Revelation from Cambridge MS Oo.1.16.2.</description>
+        <description type="x-folios"/>
+        <description type="x-translated-from"/>
+        <description type="x-exemplar"/>
         <publisher>Project Truth Ministries</publisher>
         <type type="x-manuscript">Manuscript</type>
         <identifier type="OSIS">CochinOo.1.16.2_REV_Hebrew_Commented</identifier>

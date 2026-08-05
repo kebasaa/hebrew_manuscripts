@@ -10,10 +10,14 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "",
+   "shelfmark": "MS.Oo.1.32",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 24845,
-   "sha256": "76953e9034ec713d164473d35c7bb1a5fdcf9932ff5bca3c2188866a8f1807b1"
+   "bytes": 24973,
+   "sha256": "7c6d518391d62ebda4a7bea52ed9e249d2cc0cff740648cdd0890a12ed1c50bf"
   },
   {
    "file": "JAS_CochinOo.1.32_translation.osis",
@@ -23,10 +27,14 @@
    "language": "en",
    "date": "2024",
    "covers": "",
+   "shelfmark": "MS.Oo.1.32",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 28840,
-   "sha256": "9a6cc2035d0e7a5cf87a8c137d240d7998fa68131a0cdb2a237097d36df9340f"
+   "bytes": 28968,
+   "sha256": "8bddf753c699d8d3f49e80d146de965863e9a88871d95bb14ea50966f91f85e8"
   },
   {
    "file": "JOH_Ebr530_hebrew_commented.osis",
@@ -36,10 +44,14 @@
    "language": "he",
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
+   "folios": "1r–2v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 7836,
-   "sha256": "fd99a1c6ccbad58da377987f27ff01481d2a37fe85338fc5bd1077fb91976261"
+   "bytes": 7984,
+   "sha256": "10061dca4ca62efd8f400dd792d57af48caaf7bb543529e3a9c6c188f57cd5ae"
   },
   {
    "file": "JOH_Ebr530_translation.osis",
@@ -49,10 +61,14 @@
    "language": "en",
    "date": "2018",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
+   "folios": "1r–2v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 6105,
-   "sha256": "677d4cc4d1ba8abf4f232e6d25c7ac1c5786753e76c31bf11a7bd6772a26b4b5"
+   "bytes": 6253,
+   "sha256": "92eaf87bdb5936b938842c2e1e2780f4e8c24af683499fd540e49eb2b6a6037a"
   },
   {
    "file": "LUK_Ebr530_hebrew_commented.osis",
@@ -62,10 +78,14 @@
    "language": "he",
    "date": "undated",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
+   "folios": "1r–2v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 15947,
-   "sha256": "84c715cddca1a151555a64385b931a6acd5ba5f8052782f9e4bf3c6009353dd5"
+   "bytes": 16095,
+   "sha256": "56f6ea5b78b8622c69f809b0d787a9e9fd742b9e3429fdb38f213099cc8070df"
   },
   {
    "file": "LUK_Ebr530_translation.osis",
@@ -75,10 +95,14 @@
    "language": "en",
    "date": "2018",
    "covers": "Part 1, fragment 11 of a composite volume of fragments. Folios 1r–2v carry Luke 1:1–35 and John 1:1–13 in Hebrew, each with a heading and a chapter heading.",
+   "shelfmark": "Biblioteca Apostolica Vaticana, Vat. ebr. 530, part 1, fragment 11, folios 1r–2v",
+   "folios": "1r–2v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2018 Nehemia Gordon.",
    "license": "All rights reserved.",
-   "bytes": 11884,
-   "sha256": "b4b965d697fcf2d84c93dd063e389784c52fb86892a48ef462c426e10a0772da"
+   "bytes": 12032,
+   "sha256": "c4fa51e5451849bf8abeca91100b9b1a766e642f8e1c0cabd98f0b6523f3fd16"
   },
   {
    "file": "MAT_CochinOo.1.32_hebrew_commented.osis",
@@ -88,10 +112,14 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+   "shelfmark": "MS.Oo.1.32",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2025 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 134962,
-   "sha256": "0b83e3f3adae410ccac73348bcc47b9bc3691b6017659d187714a85e7ab86a8c"
+   "bytes": 135090,
+   "sha256": "6a90971f9136a5fb4d7b4c0fbcfdde94fb93f0334341240fdc832ac72b9537de"
   },
   {
    "file": "MAT_CochinOo.1.32_translation.osis",
@@ -101,10 +129,14 @@
    "language": "en",
    "date": "2025",
    "covers": "Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.",
+   "shelfmark": "MS.Oo.1.32",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2025 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 229105,
-   "sha256": "14213c6a73939eaff2a3269bcae2f77b47a503c125b6c19e528a456fa211b799"
+   "bytes": 229233,
+   "sha256": "1d57f674b4e9846aad9876f40d60df6afe7c4d43bbf25dbd00da7b68edbd0f60"
   },
   {
    "file": "NT_Delitzsch_hebrew.osis",
@@ -114,10 +146,14 @@
    "language": "he",
    "date": "1885",
    "covers": "A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.",
+   "shelfmark": "Delitzsch Hebrew New Testament (Streams in the Negev transcription)",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "Copyright 2003 (Streams in the Negev).",
    "license": "Free for use by any non-commercial project.",
-   "bytes": 2383601,
-   "sha256": "8ae16f7792c0aafe0c44ca3ea8cd2f5b1eb2468e239a44f4612cd190b2246159"
+   "bytes": 2383729,
+   "sha256": "50eadca62cae7dbf495e4af55007f385912b41908de3bd0fa7039147d453f8e2"
   },
   {
    "file": "NT_Delitzsch_hebrew_commented.osis",
@@ -127,10 +163,14 @@
    "language": "he",
    "date": "1885",
    "covers": "A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.",
+   "shelfmark": "Delitzsch Hebrew New Testament (Streams in the Negev transcription)",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "Copyright 2003 (Streams in the Negev).",
    "license": "Free for use by any non-commercial project.",
-   "bytes": 2384168,
-   "sha256": "4e4f6d4fa6959e89c65145c9a7563a8d18a704fefcf1fbf64b6be3283d5e0a23"
+   "bytes": 2384296,
+   "sha256": "e75e4cce59cc5992f82574f1140376a0c26af48ed51f75ef35040c70bd1af748"
   },
   {
    "file": "REV_CochinOo.1.16.2_hebrew_commented.osis",
@@ -140,10 +180,14 @@
    "language": "he",
    "date": "ca. 1730",
    "covers": "",
+   "shelfmark": "MS.Oo.1.16.2",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 169519,
-   "sha256": "1aaa2833b6ed63b47a037afb6c47895ef1f6e99b138f22f9a453723db820d413"
+   "bytes": 169647,
+   "sha256": "abba734611725eed575fc2ead8b6a3d94c7fc62136f588c0404201f994c42fef"
   },
   {
    "file": "REV_CochinOo.1.16.2_translation.osis",
@@ -153,10 +197,14 @@
    "language": "en",
    "date": "2024",
    "covers": "",
+   "shelfmark": "MS.Oo.1.16.2",
+   "folios": "",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© copyright 2024 Janice F. Baca",
    "license": "All Rights Reserved",
-   "bytes": 159467,
-   "sha256": "f9e97f10b146eb3530eea70ca714896c39afb0e99e9f97be1e14f1fb26dc5694"
+   "bytes": 159595,
+   "sha256": "ee8d65263531ddcdcb60dcb2ddc13e868a731fcdb65f824d2df3eaa76a051169"
   },
   {
    "file": "REV_Sloane237_hebrew_commented.osis",
@@ -166,10 +214,14 @@
    "language": "he",
    "date": "between 1500 and 1699",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
+   "shelfmark": "British Library, Sloane MS 237",
+   "folios": "1r–4v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2017 by Nehemia Gordon",
    "license": "CC BY-NC-SA 4.0 (repository default; no licence stated in the source).",
-   "bytes": 17667,
-   "sha256": "ead0f72882c1ed50a3241c3960774cceb2a5d277d63061ad5b1934ed7f697ac9"
+   "bytes": 17815,
+   "sha256": "74ae8ad7e26d963a35b6b1b376a648da969c18defbff94bb8f0879fe63521e96"
   },
   {
    "file": "REV_Sloane237_translation.osis",
@@ -179,10 +231,14 @@
    "language": "en",
    "date": "2017",
    "covers": "A Hebrew translation of the Revelation of John occupying four paper folios, 1r–4v. This edition covers Revelation 1:1–2:13.",
+   "shelfmark": "British Library, Sloane MS 237",
+   "folios": "1r–4v",
+   "translatedFrom": "",
+   "exemplar": "",
    "rights": "© 2017 by Nehemia Gordon",
    "license": "CC BY-NC-SA 4.0 (repository default; no licence stated in the source).",
-   "bytes": 13186,
-   "sha256": "4a559084203668377f7a07b0585482f361b5d070b85fdfb1108e649621b6a48e"
+   "bytes": 13334,
+   "sha256": "c690a1d09cc4dcaa7793d9eb2e6eda667200f279bbf066d1596323f465234149"
   }
  ]
 }

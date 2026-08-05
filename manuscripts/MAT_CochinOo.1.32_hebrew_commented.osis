@@ -9,6 +9,9 @@
         <description type="x-contents">Matthew 1:1–19:30. The edition stops at 19:30; the remaining chapters are not part of this volume.</description>
         <description type="x-script">Essentially unpointed Hebrew, with gershayim marking divine names and abbreviations.</description>
         <description type="x-editorial">Each verse is set with the Hebrew transcription, an English translation, The Scriptures 2009 for comparison, a Syriac Aramaic witness with its own English rendering, and an interlinear gloss table.</description>
+        <description type="x-folios"/>
+        <description type="x-translated-from"/>
+        <description type="x-exemplar"/>
         <publisher>Project Truth Ministries</publisher>
         <type type="x-manuscript">Manuscript</type>
         <identifier type="OSIS">CochinOo.1.32_MAT_Hebrew_Commented</identifier>

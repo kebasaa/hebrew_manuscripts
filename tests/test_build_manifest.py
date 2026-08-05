@@ -143,6 +143,74 @@ class CopyrightAndLicenceAreReadApart(unittest.TestCase):
         self.assertEqual(entry["license"], "CC BY-NC-SA 4.0")
 
 
+class TheCataloguingFieldsAreRead(unittest.TestCase):
+    """What the download window shows beside a manuscript's title.
+
+    All four describe the manuscript rather than the file, which is why a
+    translation carries the same answers as the witness it renders: it is a
+    rendering of the same physical object.
+    """
+
+    HEADER = """<?xml version="1.0" encoding="UTF-8"?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace">
+ <osisText osisIDWork="Test" xml:lang="he">
+  <header>
+   <work osisWork="Test">
+    <title>Revelation</title>
+    <description type="x-contents">1:1-2:13</description>
+    <description type="x-folios">1r-4v</description>
+    <description type="x-translated-from">Translated from the Greek</description>
+    <description type="x-exemplar">Copied from Cambridge MS Oo.1.32</description>
+    <identifier type="OSIS">Test</identifier>
+    <identifier type="x-shelfmark">British Library, Sloane MS 237</identifier>
+   </work>
+  </header>
+  <div type="book" osisID="Rev"><verse osisID="Rev.1.1">TEXT</verse></div>
+ </osisText>
+</osis>
+"""
+
+    def describe(self, header: str) -> dict:
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "REV_test.osis"
+            path.write_bytes(header.encode("utf-8"))
+            return build_manifest.describe(path)
+
+    def test_each_field_reaches_the_manifest(self) -> None:
+        entry = self.describe(self.HEADER)
+        self.assertEqual(entry["shelfmark"], "British Library, Sloane MS 237")
+        self.assertEqual(entry["folios"], "1r-4v")
+        self.assertEqual(entry["translatedFrom"], "Translated from the Greek")
+        self.assertEqual(entry["exemplar"], "Copied from Cambridge MS Oo.1.32")
+
+    def test_the_shelfmark_is_not_confused_with_the_osis_identifier(self) -> None:
+        # Both are <identifier>; only the type tells them apart, and reading the
+        # first one would file every manuscript under its work id.
+        self.assertNotEqual(self.describe(self.HEADER)["shelfmark"], "Test")
+
+    def test_x_contents_is_still_its_own_field(self) -> None:
+        # Four descriptions now sit side by side, told apart only by type.
+        self.assertEqual(self.describe(self.HEADER)["covers"], "1:1-2:13")
+
+    def test_absent_fields_are_empty_rather_than_missing(self) -> None:
+        # Most manuscripts answer none of these. Absent has to be ordinary: a
+        # catalogue that demanded them is one nobody could add to.
+        entry = self.describe(OSIS)
+        for field in ("shelfmark", "folios", "translatedFrom", "exemplar"):
+            self.assertEqual(entry[field], "", field)
+
+    def test_an_empty_element_reads_as_no_answer(self) -> None:
+        # The shape left in the published headers for the owner to fill in.
+        entry = self.describe(
+            self.HEADER.replace(
+                '<description type="x-exemplar">Copied from Cambridge MS Oo.1.32'
+                "</description>",
+                '<description type="x-exemplar"/>',
+            )
+        )
+        self.assertEqual(entry["exemplar"], "")
+
+
 class RegeneratingReproducesTheManifest(unittest.TestCase):
     """Building twice over unchanged files must give the same answer.
 

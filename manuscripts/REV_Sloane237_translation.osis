@@ -12,6 +12,9 @@
         <description type="x-script">Square Hebrew script, fully vocalised, ruled and written ten lines to the page.</description>
         <description type="x-provenance">From the collection of Sir Hans Sloane (1660–1753), baronet, physician and collector. Part of the Sloane bequest, incorporated into the newly founded British Museum in 1753 and held by the British Library since 1973.</description>
         <description type="x-editorial">The editor's notes record pointing absent from the manuscript — a missing sheva, shin- and sin-dots, and a cholam — together with one extraneous kamatz that the manuscript does carry. The manuscript numbers its own verses with Hebrew letters, which disagree with the printed numbering at Revelation 1:9, 1:15, 1:16, 1:17 and 2:8. The edition names the manuscript 'MS Sloane 273' on its title page and throughout; the shelfmark is Sloane MS 237, which is the reading given here and the one the British Library's own record and every image address the edition links to agree on.</description>
+        <description type="x-folios">1r–4v</description>
+        <description type="x-translated-from"/>
+        <description type="x-exemplar"/>
         <publisher>Nehemia Gordon</publisher>
         <type type="x-bible">Edition</type>
         <identifier type="OSIS">Sloane237_REV_Gordon</identifier>

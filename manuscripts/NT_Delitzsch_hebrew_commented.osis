@@ -12,6 +12,9 @@
         <description type="x-contents">A Hebrew translation of the whole New Testament from Greek, all 27 books in one file. Verse division follows the module's own NRSV versification.</description>
         <description type="x-provenance">Delitzsch (1813-1890) first published his Hebrew New Testament in 1877 and revised it through several editions; this digital text is based on the 1885 edition. Streams in the Negev transcribed and re-pointed it in 2003, distributed since as the CrossWire SWORD module 'HebDelitzsch'.</description>
         <description type="x-editorial">Fully pointed with niqqud and cantillation. No English text accompanies this translation. A handful of NRSV-versification verse slots the module leaves empty — 2 Cor 13:14, 3 John 1:15, Rev 12:18 — are kept, numbered, as the module has them.</description>
+        <description type="x-folios"/>
+        <description type="x-translated-from"/>
+        <description type="x-exemplar"/>
         <publisher>Streams in the Negev</publisher>
         <type type="x-bible">Edition</type>
         <identifier type="OSIS">Delitzsch_NT_Hebrew_Commented</identifier>

@@ -107,13 +107,31 @@ def rights_text(work: ET.Element | None, kind: str) -> str:
     return ""
 
 
-def coverage(work: ET.Element | None) -> str:
-    """What the edition covers, from the description the transcriber wrote."""
+def description_text(work: ET.Element | None, kind: str) -> str:
+    """The ``<description type="x-{kind}">`` text, or "" where there is none.
+
+    The header's open-ended half. A description carries what no other element
+    has a place for, told apart by its type — what the edition covers, which
+    folios it sits on, what the Hebrew was translated out of, which older
+    manuscript it copies. Absent is ordinary: most of these are known for some
+    manuscripts and not for others, and a catalogue that demanded them would be
+    a catalogue nobody could add to.
+    """
     if work is None:
         return ""
     for description in work.findall(f"{{{OSIS_NS}}}description"):
-        if description.get("type") == "x-contents":
+        if description.get("type") == f"x-{kind}":
             return re.sub(r"\s+", " ", "".join(description.itertext())).strip()
+    return ""
+
+
+def identifier_text(work: ET.Element | None, kind: str) -> str:
+    """The ``<identifier type="x-{kind}">`` text, or "" where there is none."""
+    if work is None:
+        return ""
+    for identifier in work.findall(f"{{{OSIS_NS}}}identifier"):
+        if identifier.get("type") == f"x-{kind}":
+            return re.sub(r"\s+", " ", "".join(identifier.itertext())).strip()
     return ""
 
 
@@ -149,7 +167,22 @@ def describe(path: Path) -> dict | None:
         "role": "translation" if is_translation else "manuscript",
         "language": language,
         "date": element_text(work, "date"),
-        "covers": coverage(work),
+        "covers": description_text(work, "contents"),
+        # What a cataloguer looks a manuscript up by, and the four columns the
+        # download window shows beside it. All four describe the manuscript
+        # rather than the file, so a translation carries its witness's answers
+        # — it is a rendering of the same physical object.
+        "shelfmark": identifier_text(work, "shelfmark"),
+        # Which leaves it occupies: "1r-4v". Empty where the edition never said.
+        "folios": description_text(work, "folios"),
+        # What the Hebrew was rendered out of, where it is a rendering at all —
+        # "Translated from the Greek". Empty means an independent Hebrew text or
+        # a question nobody has settled, which are different and both honest to
+        # leave unanswered.
+        "translatedFrom": description_text(work, "translated-from"),
+        # The older manuscript this one copies, where it is known to copy one —
+        # "Copied from Cambridge MS Oo.1.32".
+        "exemplar": description_text(work, "exemplar"),
         # Two different questions, never assumed. `rights` is who holds
         # copyright — may legitimately be empty, when nobody in particular is
         # credited with a bare transcription. `license` is what a reader may
