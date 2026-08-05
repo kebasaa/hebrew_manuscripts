@@ -310,6 +310,45 @@ class ALinkIsRecognisedOrRefused(unittest.TestCase):
         self.assertEqual(source, "iiif")
         self.assertTrue(item.endswith("manifest.json"))
 
+    def test_a_manifest_without_the_json_ending_is_still_a_manifest(self) -> None:
+        # The National Library of Israel ends its manifests with the bare word,
+        # and spells the version in the path with capitals, so neither the
+        # lowercase "/iiif/" test nor the ".json" one catches it. Left
+        # unrecognised, four manuscripts read as addresses nothing can open.
+        source, item = build_scan_manifest.parse_link(
+            "https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1219421241/manifest"
+        )
+        self.assertEqual(source, "iiif")
+        self.assertTrue(item.endswith("/manifest"))
+
+    def test_an_alvin_record_is_found_by_its_id(self) -> None:
+        # Uppsala's viewer and its record page write the same id two ways, and
+        # a reader arrives with whichever they had open.
+        for address in (
+            "https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:154435",
+            "https://www.alvin-portal.org/alvin/imageViewer.jsf?pid=alvin-record:154435",
+            "https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record%3A154435",
+        ):
+            self.assertEqual(
+                build_scan_manifest.parse_link(address),
+                ("alvin", "154435"),
+                address,
+            )
+
+    def test_alvin_counts_its_pages_off_the_pdf(self) -> None:
+        # The record page lists only the thumbnails it has loaded, so the
+        # images have to be counted off the one attachment that names its
+        # format — the whole manuscript as a PDF, always last. Believing the
+        # thumbnails instead offers fifteen pages of a two-hundred-folio book.
+        page = (
+            '<a href="/alvin/attachment/record/alvin-record:154435/ATTACHMENT-0001">'
+            '<a href="/alvin/attachment/record/alvin-record:154435/ATTACHMENT-0002">'
+            '<a href="/alvin/attachment/document/alvin-record:154435/ATTACHMENT-0063.pdf">'
+        )
+        end = build_scan_manifest.ALVIN_PDF.search(page)
+        self.assertIsNotNone(end)
+        self.assertEqual(int(end.group(1)) - 1, 62)
+
     def test_an_unknown_address_names_no_source(self) -> None:
         for address in ("https://example.com/some/manuscript", "", "not a url"):
             self.assertEqual(build_scan_manifest.parse_link(address)[0], "", address)

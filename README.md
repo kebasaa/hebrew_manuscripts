@@ -192,6 +192,32 @@ Only the `web` derivatives are linked from OPenn. Its masters are sometimes TIFF
 which Milah cannot decode and which OPenn's own `robots.txt` declines to serve to
 a program.
 
+### The National Library of Israel, and manifests that lie
+
+Ktiv, the NLI's international collection, aggregates other libraries'
+manuscripts as well as its own, and several of the witnesses here are reachable
+nowhere else. Its manifests are ordinary IIIF once you have one, but getting one
+has a trap worth knowing, because falling into it looks exactly like success.
+
+A manuscript there has two identifiers: the catalogue's system number, which is
+what its record and its address show, and an internal document id of the form
+`dedupmrg…`, which is what its viewer actually uses. Both are accepted at
+`iiif.nli.org.il/IIIFv21/DOCID/{id}/manifest`. Only the second returns any
+pages. The first returns `200`, valid IIIF, the manuscript's real title — and an
+empty page list, which reads precisely like a manuscript catalogued but never
+photographed. Four of the manuscripts offered here were written off that way
+before the difference was noticed; one of them had sat in this file as an
+`unavailable` stub, with a note explaining an absence that was not there.
+
+The `dedupmrg…` id is not in the catalogue record or the address. It is in the
+page source of the manuscript's own reading-room page at
+`nli.org.il/en/manuscripts/…`, which is why the links in `scan_links.tsv` are
+manifests rather than the pages a reader would copy: `www.nli.org.il` sits
+behind a bot check that refuses this program outright, while the image host
+answers it fine. So the id has to be looked up by hand, once, and the manifest
+address written into the file — the one place in this repository where a link is
+not simply what a library's viewer shows.
+
 ## tools/
 
 `tools/` holds the converter that produces `manuscripts/*.osis` from source —

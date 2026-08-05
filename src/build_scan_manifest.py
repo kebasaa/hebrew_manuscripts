@@ -163,6 +163,26 @@ OPENN_BROWSE = re.compile(r"/Data/(\d{4})/html/([^/]+)\.html$")
 OPENN_ITEM = re.compile(r"/Data/(\d{4})/(?!html/)([^/]+)(?:/.*)?$")
 TEI_NS = {"t": "http://www.tei-c.org/ns/1.0"}
 
+#: Alvin, the Swedish platform Uppsala publishes on, has no IIIF at all — no
+#: manifest, no image API, nothing under any of the addresses the others use.
+#: What it has is a record page and a run of numbered attachments, and the
+#: pages have to be counted off those.
+ALVIN_HOST = "alvin-portal.org"
+ALVIN_RECORD = "https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:{item}"
+ALVIN_IMAGE = (
+    "https://www.alvin-portal.org/alvin/attachment/record/"
+    "alvin-record:{item}/ATTACHMENT-{n:04d}"
+)
+#: The record id, from any of the addresses its viewer and its record page use.
+ALVIN_PID = re.compile(r"alvin-record[:%]3?A?(\d+)", re.IGNORECASE)
+#: Where the images stop. Every attachment is ATTACHMENT-0001 upwards with no
+#: extension and no label, except the last, which is the whole manuscript as a
+#: PDF and is the only one written with one. So the PDF's number is not a page
+#: — it is where the pages end, and the count is one short of it. Checked
+#: against both manuscripts offered here: O Hebr. 41 ends at 62 with the PDF
+#: at 63, O Hebr. 32 at 426 with the PDF at 427, and one past each is a 404.
+ALVIN_PDF = re.compile(r"ATTACHMENT-(\d{4})\.pdf")
+
 _TAGS = re.compile(r"<[^>]+>")
 _SPACE = re.compile(r"\s+")
 
@@ -199,6 +219,20 @@ def fetch_json(url: str) -> dict:
         print(f"  could not read {url}: {failure}")
         return {}
     return payload if isinstance(payload, dict) else {}
+
+
+def fetch_text(url: str) -> str:
+    """The page at a URL as text, or "" when it cannot be had.
+
+    Same forgiving contract as fetch_json: a library being down is one
+    manuscript to skip with a word about it, not a manifest to lose. For the
+    one platform here that publishes no API and has to be read as a page.
+    """
+    try:
+        return fetch(url).decode("utf-8", "replace")
+    except (urllib.error.URLError, TimeoutError, OSError) as failure:
+        print(f"  could not read {url}: {failure}")
+        return ""
 
 
 def fetch_xml(url: str) -> ET.Element | None:
@@ -321,9 +355,22 @@ def parse_link(url: str) -> tuple[str, str]:
             return "openn", f"{found.group(1)}/{found.group(2)}"
         return "", ""
 
+    # Before the IIIF fallback, which Alvin would never reach anyway — it
+    # publishes none — but which its viewer address would otherwise fall past
+    # into the "nothing here can read this" case with no explanation.
+    if host.endswith(ALVIN_HOST):
+        found = ALVIN_PID.search(url)
+        if found:
+            return "alvin", found.group(1)
+        return "", ""
+
     # Anything else that is plainly a IIIF manifest can still be read, just
-    # without the richer record a library's own API would give.
-    if "/iiif/" in parsed.path or parsed.path.endswith("manifest.json"):
+    # without the richer record a library's own API would give. The bare
+    # "/manifest" ending is the National Library of Israel's: it publishes at
+    # /IIIFv21/DOCID/{id}/manifest, with neither the lowercase word nor the
+    # file extension the other two tests look for.
+    path = parsed.path
+    if "/iiif/" in path or path.endswith("manifest.json") or path.endswith("/manifest"):
         return "iiif", url.strip()
 
     return "", ""
@@ -483,6 +530,64 @@ def openn_scan(identifier: str, width: int) -> dict | None:
         # The first of two: it covers the images, which is what a transcriber
         # fetches. The second covers the metadata and is not what governs this.
         "licence": strip_html("".join(licences[0].itertext())) if licences else "",
+        "pages": pages,
+    }
+
+
+def alvin_scan(item: str, width: int) -> dict | None:
+    """One entry from Alvin, the platform Uppsala publishes on.
+
+    Alvin serves no IIIF and no API: there is a record page, and beside it a
+    run of numbered attachments, and nothing that says how many. The count is
+    read off the one attachment that names its format — the whole manuscript
+    as a PDF, always last — because the record page itself lists only the
+    dozen or so thumbnails it has loaded, and believing that count would offer
+    fifteen pages of a two-hundred-folio manuscript.
+
+    Nothing here is a folio label, so the pages are numbered and named for
+    their position. Alvin knows nothing of r and v.
+    """
+    page = fetch_text(ALVIN_RECORD.format(item=item))
+    if not page:
+        return None
+
+    end = ALVIN_PDF.search(page)
+    if not end:
+        # Without it there is no way to know where the images stop, and
+        # guessing produces an entry that is short by an unknown amount.
+        print(f"  {item}: no PDF attachment, so no way to count the pages")
+        return None
+    last = int(end.group(1)) - 1
+
+    if width != DEFAULT_WIDTH:
+        # Said rather than ignored, as for OPenn: Alvin serves one size.
+        print(f"  {item}: Alvin serves a single image size, so width is not used")
+
+    pages = [
+        {
+            "n": n,
+            "label": f"image {n}",
+            "image": ALVIN_IMAGE.format(item=item, n=n),
+        }
+        for n in range(1, last + 1)
+    ]
+
+    return {
+        "id": f"alvin-{item}",
+        # Alvin renders its record with JavaScript, so the fields a IIIF
+        # manifest would carry are not in the page this fetched. They are
+        # given in scan_links.tsv instead, which is what its override columns
+        # are for.
+        "title": "",
+        "shelfmark": "",
+        "repository": "",
+        "origin": "",
+        "date": "",
+        "language": "",
+        "material": "",
+        "provenance": "",
+        "attribution": "",
+        "licence": "",
         "pages": pages,
     }
 
@@ -847,6 +952,7 @@ def build(rows: list[dict]) -> list[dict]:
                 "cudl": cudl_scan,
                 "manchester": manchester_scan,
                 "openn": openn_scan,
+                "alvin": alvin_scan,
                 "iiif": iiif_scan,
             }
             fetched[key] = readers[source](identifier, width)
@@ -905,6 +1011,14 @@ def build(rows: list[dict]) -> list[dict]:
         repository = (row.get("repository") or "").strip()
         if repository:
             entry["repository"] = repository
+
+        # A credit line for a platform that publishes none. Alvin states no
+        # fields at all, so an entry from it would otherwise reach Milah
+        # crediting nobody, which is the one thing every scan here owes the
+        # library that made it. Only filled where it is empty: a record that
+        # names its own credit keeps it, wording and all.
+        if not entry["attribution"] and entry["repository"]:
+            entry["attribution"] = f"Provided by {entry['repository']}"
 
         # Where a library states its terms somewhere a manifest has no field
         # for. The Bodleian puts them in the attribution line and leaves

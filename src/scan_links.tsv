@@ -186,10 +186,23 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.523/manifest.json	Even Bohan (Shem Tov's
 # (Maʿaseh Ashmedai, Mishle Sendebar), and — as with Vat. ebr. 523 above — the
 # folio label "1v" is not unique in this manifest: an unfoliated flyleaf pair
 # is labelled "1r"/"1v" too, ahead of the numbered leaf 1 the catalogue means.
-# Slicing on the label would silently take the flyleaf's "1v" instead of the
-# real one, so the whole codex is offered unsliced rather than risk that —
-# the same choice made above for the Bodleian Even Bohan and Pococke 280.
+# Slicing on the catalogue's own "1v" would silently take the flyleaf's
+# instead of the real one, so the whole codex is kept unsliced, first — for a
+# reader who wants to page through the binding itself.
 https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Gospels), ff. 1v-153r				Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+# The four Gospels are offered separately as well. The Vatican states no
+# per-book division anywhere, so these boundaries come from its own viewer:
+# each book's opening leaf was read off the page the viewer shows, and each
+# range ends on the leaf before the next one begins. Unlike "1v", none of
+# these four labels repeats in this manifest, which is what makes slicing
+# safe here where it was not for the codex as a whole. The last range ends on
+# 153r, which is where the catalogue's own "1v-153r" for the Gospels ends —
+# the two agree, and what follows (Maʿaseh Ashmedai, Mishle Sendebar) is
+# outside all four.
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	Matthew	MAT		2r..47r	Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	Mark	MRK		47v..73v	Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	Luke	LUK		74r..117r	Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	John	JOH		117v..153r	Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
 #
 # Neofiti.32, early 17th century: ff. 1r-229r hold "עדות חדשה" — New
 # Testament — a Hebrew translation by Domenico Gerosolimitano (c. 1552-1622),
@@ -201,6 +214,28 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Go
 # numbered preface, which itself precedes the numbered "1r" the catalogue's
 # citation means.
 https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translated by Domenico Gerosolimitano)				Neofiti.32	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+# Neofiti.33 is the volume that continues it: where 32 holds the Gospels, 33
+# holds Acts, the epistles and Revelation. The Vatican's own record for this
+# one describes no contents at all — it gives a single bibliographic
+# reference (Sacerdote, I codici ebraici della Pia Casa dei Neofiti in Roma)
+# and nothing else — so the title below says what that literature says, not
+# what the library does, the same distinction Vat. ebr. 101's "ascribed"
+# title draws below. The Vatican marks its images "Low Quality"; they are
+# offered anyway, since a hard-to-read scan is still more than none.
+https://digi.vatlib.it/iiif/MSS_Neofiti.33/manifest.json	Acts, Epistles and Revelation (companion volume to Neofiti.32)				Neofiti.33	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+#
+# A second full New Testament from the Bibliothèque nationale de France,
+# unrelated to the du Tillet Matthew above: Georgius Mayr's translation,
+# 16th/17th century, complete — four Gospels, Acts, the Pauline epistles and
+# the Apocalypse across 350 pages. BnF digitised it with the National Library
+# of Israel and the Friedberg Jewish Manuscript Society under the Ktiv
+# project. Two digitisations exist; this is the colour one made from the
+# original, not the black-and-white microfilm substitute (btv1b9064450g).
+# BnF's own record states the page ranges per part, but its IIIF canvases
+# are labelled by image number rather than by those pages, so no folios
+# range is given here — the whole volume is offered instead of a slice that
+# would have to be guessed at.
+https://gallica.bnf.fr/iiif/ark:/12148/btv1b105396027/manifest.json	New Testament (translated by Georgius Mayr)				BnF Hébreu 131		Bibliothèque nationale de France
 #
 # British Library, Add MS 11659 — found through the National Library of
 # Israel's Ktiv catalogue, searching the Hebrew word for "Matthew" rather
@@ -237,6 +272,104 @@ https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	John	JOH		103r.
 # library's own, generic one.
 https://iiif.bodleian.ox.ac.uk/iiif/manifest/472d4374-8071-45c6-874a-3e56aef74057.json	Fragments of the New Testament			92v..101v	Pococke 280	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
 #
+# Three more from the National Library of Israel's Ktiv project, which
+# aggregates other libraries' Hebrew manuscripts as well as its own. Its
+# manifests are addressed by an internal document id rather than by
+# shelfmark — the "dedupmrg…" below — which is found in the page source of
+# the manuscript's own reading-room page (nli.org.il/en/manuscripts/…) and
+# is the only key that returns anything: the same endpoint asked with the
+# catalogue's system number answers with a valid manifest of zero pages,
+# which reads exactly like a manuscript that was never photographed. The
+# images host is open to a plain client; www.nli.org.il is not, so a link
+# here has to be the manifest and never the reading-room page.
+#
+# NLI's own terms, quoted below, come from the pages its manifests link to
+# rather than being summarised: two of the three are outright public domain,
+# and the third is a depositor's non-commercial restriction.
+#
+# Poznanski's working copy, c. 1900: the Even Bohan collated across four
+# witnesses at once — Breslau 59 as its base, with the British Museum, Rome
+# and Paris copies noted against it. Not a medieval witness but a scholar's
+# comparative edition of them, in a clear modern hand, with editorial notes
+# in German: "Johannes … Cap. 2" heads one page, a note on Luke of Antioch
+# another. It covers more than the Even Bohan's twelfth gate — John begins
+# on page 275, Luke on 306, Mark on 401 — but where each ends is not
+# recorded anywhere, and that order is not the order anything else in this
+# file is in, so the whole volume is offered rather than four ranges guessed
+# at.
+https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1219421241/manifest	Even Bohan, collated with the Gospels (Poznanski's copy)	MAT			NLI Ms. Heb. 8°751	Public Domain Free Use: all uses of this item are permitted, including commercial use (National Library of Israel).	The National Library of Israel
+# Breslau 59b itself — the manuscript Poznanski's copy above takes as its
+# base — written in Constantinople in 1578 by Jacob ben Samuel Catalani for
+# Isaac Akrish, in the house of Don Joseph Nasi. Looted by the Nazis,
+# recovered in Prague after the war, now at Wrocław. Its own catalogue
+# numbers are Loewinger-Weinryb 233 and Zuckermann 59b, which is why the
+# same manuscript appears in the literature under both.
+https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1219267520/manifest	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Wrocław Ms. 59b (JTS Breslau 233)	Public Domain Free Use: all uses of this item are permitted, including commercial use (National Library of Israel).	Wrocław University Library
+# A polemical miscellany of 1689 copied by Ḥayyim Shlomo Gagin, of which the
+# Even Bohan is the first and longest part, ff. 1a-123b. What follows it —
+# Ibn Shapruṭ's own refutation of Christian doctrine, Crescas's, and
+# Nachmanides' disputation, ff. 124a-142b — argues about the New Testament
+# rather than containing it, and is no part of what this row offers. The
+# volume is left unsliced all the same: its pages are labelled by number
+# and not by folio, so "f. 123b" is not a label a range could name here.
+https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1217954254/manifest	Even Bohan (Shem Tov's Hebrew Matthew), ff. 1a-123b of a polemical miscellany	MAT			St Petersburg, Institute of Oriental Manuscripts, Ms. A 207	Public Domain Non-Commercial Use: use permitted for non-commercial purposes only, as determined by the depositor (National Library of Israel).	Institute of Oriental Manuscripts, Russian Academy of Sciences
+# Leiden's copy, 17th century, in sixteen gates. Its own cataloguer notes
+# that the gate holding the New Testament was not copied where it belongs
+# but added later in a different hand, headed "the twelfth[!] gate, on the
+# Evangelion", at pp. 413-463 of the manuscript's own pagination. That
+# pagination is not what the images are labelled with — they run "page 1" to
+# "page 234" by image — so the range cannot be named here and the volume is
+# offered whole, with the cataloguer's own page numbers recorded above for
+# whoever goes looking. This row was an `unavailable` stub until its
+# manifest was asked for by the right identifier: see the note on Ktiv's
+# document ids above.
+https://iiif.nli.org.il/IIIFv21/DOCID/dedupmrg1217952233/manifest	Even Bohan (Shem Tov's Hebrew Matthew), NT gate at pp. 413-463	MAT			Leiden Or. 4766 (Warner 28)	Public Domain Non-Commercial Use: use permitted for non-commercial purposes only, as determined by the depositor (National Library of Israel).	Leiden University Libraries
+#
+# The four Gospels in Judaeo-Arabic: Arabic, written in Hebrew letters, c.
+# 1590-1610. The Bodleian's record says "Judaeo-Arabic" and this row does
+# not argue with it — checked against f. 16r, where the running head reads
+# מתי, Matthew, in Hebrew script above a page of Arabic carrying its
+# definite article אל throughout. It is offered on the same footing as
+# Pococke 280 above: by the script a transcriber has to read rather than by
+# the language underneath it, and named for what it is so that nobody opens
+# it expecting Hebrew.
+https://iiif.bodleian.ox.ac.uk/iiif/manifest/9c99fb80-6ebf-4326-8a54-c21823407cc4.json	Four Gospels in Judaeo-Arabic (Arabic in Hebrew script)				Bodleian, MS. Huntington 615	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
+#
+# A single leaf from the Cairo Genizah, and the oldest New Testament witness
+# in this file. Cambridge's record calls it only "Genizah fragment" and says
+# nothing of its contents; the fragment says it itself, in a heading a reader
+# can see without a catalogue: אנגיל מתי : כ :, the Evangel of Matthew,
+# chapter 20, above the parable of the labourers in the vineyard with its
+# verse numbers still in the margin. Judaeo-Arabic, like Huntington 615
+# above. Identified in the literature as well — Niessen, "New Testament
+# Translations from the Cairo Genizah", Collectanea Christiana Orientalia 6
+# (2009), 203-205 — but the heading is the evidence recorded here.
+#
+# Two leaves only, so no range: this is the whole of it.
+https://cudl.lib.cam.ac.uk/view/MS-TS-AS-00198-00152/1	Matthew 20 (Genizah fragment, Judaeo-Arabic)	MAT			T-S AS 198.152
+#
+# Harley MS 7637, an 18th-century Hebrew Matthew, on OPenn beside Sloane MS
+# 237 above. The British Library's own viewer for it has been down since the
+# 2023 cyberattack; OPenn's copy is unaffected, which is the same reason Add
+# MS 11659 is linked there rather than to the Library.
+https://openn.library.upenn.edu/Data/0047/html/harley_ms_7637.html	Matthew	MAT
+#
+# Johann Kemper's two manuscripts at Uppsala. Kemper was born Moses ben Aaron
+# of Kraków, a Sabbatean who converted in 1696 and taught Hebrew at Uppsala;
+# he translated the New Testament from Syriac into Hebrew, which is why his
+# Matthew below is titled with the Aramaic name of the Gospel rather than a
+# Hebrew one. Uppsala publishes on Alvin, which serves no IIIF and no API at
+# all — see `alvin_scan` for how its pages have to be counted — and states no
+# fields this file can read, so everything but the images is given by hand
+# here. Both are marked "Public Domain Mark (No Known Copyright)".
+#
+# The Epistle to the Hebrews, 1713, with Kemper's own commentary.
+https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:154435	Hebrews (translated by Johann Kemper)	HEB			Uppsala O Hebr. 41	Public Domain Mark (No Known Copyright): Alvin states all its digitised material may be downloaded and used freely.	Uppsala University Library
+# Matthew, with Kemper's commentary Meʼirat ʻEnayim and Andreas Norrelius's
+# Latin translation of it alongside — which is why 208 folios come to 426
+# images.
+https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:154384	Matthew (translated by Johann Kemper)	MAT			Uppsala O Hebr. 32	Public Domain Mark (No Known Copyright): Alvin states all its digitised material may be downloaded and used freely.	Uppsala University Library
+#
 # Known but with nothing to open — offered anyway, so a transcriber sees these
 # exist rather than having to already know to look for them. Each is the best
 # remaining Even Bohan witness after the four above; none is guessed at, and
@@ -255,11 +388,20 @@ https://searcharchives.bl.uk/catalog/032-003313863	Even Bohan (Shem Tov's Hebrew
 # Bohan" / "Ibn Shaprut" — a search that does find the Bodleian's other
 # witness, Opp. Add. 4° 72, above.
 	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			MS. Michael 119		Bodleian Libraries, University of Oxford	unavailable	Not digitised. Digital Bodleian's Hebrew collection and a manuscript search return no record under this shelfmark, Even Bohan, or Ibn Shaprut.
-# The NLI/Ktiv manifest for this shelfmark resolves and is valid IIIF, which is
-# why it is not simply absent the way Michael 119 is: it names the manuscript
-# ("אבן בחן") and states zero canvases — a published record of nothing to
-# fetch, not the absence of a record.
-https://iiif.nli.org.il/IIIFv21/DOCID/PNX_MANUSCRIPTS990000883540205171/manifest	Even Bohan (Shem Tov's Hebrew Matthew)	MAT			Or. 4766 (Warner 28)		Leiden University Library	unavailable	NLI/Ktiv catalogues this as Leiden Or. 4766 = Ms. Warn. 28, with the Gospel portion at pp. 413–463, but its own IIIF manifest publishes zero canvases. Leiden's own Digital Collections has no separate record for it.
+# James and Jude in Hebrew, with a Latin dedication to Henry VIII by John
+# Shepreve — the second manuscript here whose images the British Library
+# made and can no longer serve. Its catalogue record carries the digitised
+# link and annotates it, in the Library's own words, as unavailable. OPenn
+# mirrors much of the Library's Hebrew collection but not this: its 0047
+# directory holds Royal 16 A I and 16 A XIV and no other Royal 16 A.
+https://searcharchives.bl.uk/catalog/040-003376870	James and Jude, dedicated to Henry VIII	JAS			Royal MS 16 A II		British Library	unavailable	Digitised under the Hebrew Manuscripts Digitisation Project, 49 ff., 16th century (Margoliouth no. 164): Shepreve's dedication ff. 1v-23r, James ff. 23r-44r, Jude ff. 44r-49v. The only surrogate the catalogue lists is the Library's own viewer, which it annotates "digital images currently unavailable" — that site has been down since the 2023 cyberattack. Not among the British Library manuscripts OPenn mirrors, and the Library's new IIIF platform publishes no way to find a manuscript by shelfmark.
+# Cambridge has a record of it in print and nothing online: the id form that
+# works for its digitised manuscripts answers 500 for this one, where a
+# control shelfmark answers 200.
+	John	JOH			MS Add. 170		Cambridge University Library	unavailable	Not on Cambridge Digital Library. Asking its IIIF endpoint for MS-ADD-00170 answers 500 where the same address answers 200 for a digitised shelfmark, and a CUDL keyword search finds only full-text mentions in unrelated printed catalogues. Cambridge ArchiveSearch has no record either.
+# Trinity's own catalogue does carry Hebrew manuscripts — F.12.41 is one, with
+# a IIIF manifest — but not the F.18 class this belongs to.
+	Acts of the Apostles	ACT			Trinity College MS F.18.51		Trinity College, Cambridge	unavailable	19th century, from William Aldis Wright's collection, catalogued by H. Loewe, Catalogue of the Manuscripts in the Hebrew Character … Trinity College (1926), no. 153. Absent from Trinity's James Catalogue, as is the whole F.18 class; the catalogue is derived from M. R. James's Western Manuscripts and largely does not cover the Wright Hebrew-character manuscripts.
 # Marx's description survives in JTS's own finding aid; Howard used this
 # manuscript for the part Add MS 26964 lacks, Mt 23:23–28:20.
 	Even Bohan (Shem Tov's Hebrew Matthew), Mt 23:23–28:20	MAT			MS. 2426		Jewish Theological Seminary	unavailable	Catalogued in JTS's Primo discovery layer alongside MSS 2209, 2234, 2279, 2451 and 2228, with a full Marx description, but no delivery link and no public IIIF endpoint.
