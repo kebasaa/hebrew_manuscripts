@@ -226,14 +226,72 @@ def index_wlc(directory: Path) -> tuple[dict[str, Counter], dict[str, Counter]]:
     return forms, pointed
 
 
-def ranked(counters: dict[str, Counter], limit: int) -> dict[str, list[str]]:
+_FINALS = str.maketrans("ךםןףץ", "כמנפצ")
+
+
+def _consonants(text: str) -> str:
+    """The bare letters, final forms folded — `foldedKey()` in
+    app/src/core/hebrew_forms.cpp, for the one purpose below."""
+    decomposed = unicodedata.normalize("NFD", text)
+    letters = [ch for ch in decomposed if 0x05D0 <= ord(ch) <= 0x05EA]
+    return "".join(letters).translate(_FINALS)
+
+
+def could_be_the_same_word(form: str, lemma: str) -> bool:
+    """Whether a form and the entry it is filed under could be the same word, at
+    the weakest strength that says anything: they share a consonant.
+
+    Deliberately this weak. Hebrew loses radicals freely — נָתַן is written תֵּן,
+    הָלַךְ is written לֵךְ — so anything stricter refuses real inflections.
+    Mirrored by ``couldBeTheSameWord`` in app/src/core/lexicon.cpp, which applies
+    it again at load time; the two must agree.
+    """
+    written, root = _consonants(form), _consonants(lemma)
+    if not written or not root:
+        return True                       # nothing to judge on
+    return any(ch in root for ch in written)
+
+
+def ranked(
+    counters: dict[str, Counter],
+    limit: int,
+    entries: dict[str, dict[str, str]],
+    what: str,
+) -> dict[str, list[str]]:
     """Most frequent reading first, so the interlinear cell shows the likeliest
-    number and the rest stay available as candidates."""
+    number and the rest stay available as candidates.
+
+    Indexing counts which numbers each inflected form appears *with* in the
+    corpus, and a form can pick up the number of the word beside it: בו "in him"
+    came out filed under H8055 שָׂמַח "to rejoice", and לי "to me" under H7121
+    קָרָא "to call" — prepositions carrying a pronominal suffix, which Strong's
+    has no entry for at all, wearing the number of the verb they follow. Those
+    are dropped here, and said out loud: a silent filter over somebody's corpus
+    is how the second one of these goes unnoticed for a year.
+    """
     result: dict[str, list[str]] = {}
+    dropped: list[tuple[str, str, str]] = []
     for key in sorted(counters):
         counter = counters[key]
-        ordered = [number for number, _ in counter.most_common(limit)]
-        result[key] = ordered
+        ordered = []
+        for number, _ in counter.most_common(limit):
+            lemma = entries.get(number, {}).get("l", "")
+            # A number with no entry says nothing about itself, so there is
+            # nothing for it to disagree with.
+            if not lemma or could_be_the_same_word(key, lemma):
+                ordered.append(number)
+            else:
+                dropped.append((key, number, lemma))
+        if ordered:
+            result[key] = ordered
+
+    print(
+        f"  {what}: dropped {len(dropped)} candidate(s) sharing no letter "
+        f"with their entry",
+        file=sys.stderr,
+    )
+    for key, number, lemma in dropped:
+        print(f"    {key} was filed under {number} {lemma}", file=sys.stderr)
     return result
 
 
@@ -299,8 +357,8 @@ def main() -> int:
             "See app/data/README.md."
         ),
         "entries": kept,
-        "forms": ranked(forms, arguments.max_candidates),
-        "pointed": ranked(pointed, arguments.max_candidates),
+        "forms": ranked(forms, arguments.max_candidates, entries, "forms"),
+        "pointed": ranked(pointed, arguments.max_candidates, entries, "pointed"),
     }
 
     arguments.out.parent.mkdir(parents=True, exist_ok=True)
