@@ -7,8 +7,11 @@
 # url    the address as copied from the library's viewer
 # title  overrides the library's own title, which sometimes names a whole codex
 #        where only a part of it is being transcribed
-# book   the OSIS book code, where the scan is of one book; only used to group
-#        the list, and empty for a codex covering many
+# book   the book code, where the scan is of one book; empty for a codex
+#        covering many. Written as the filename prefixes in manuscripts/ are
+#        (JAS, JOH, MAT) and published as the OSIS id the text catalogue uses
+#        (Jas, John, Matt) — src/osis_books.py holds the table. An OSIS id is
+#        accepted here too.
 # width  pixels wide to request, default 1024. Honoured only where the library
 #        lets a size be asked for: Cambridge serves any width but caps delivery
 #        at 2000, while OPenn publishes fixed derivatives and chooses for you.
@@ -65,6 +68,10 @@
 #        Thomas Yeates's copy of exactly that, which is the case this exists
 #        for.
 #
+# category  ot, nt or other — which part of Milah's library the scan is filed
+#        in. Follows from `book` where there is one, so it is only needed on a
+#        row that names none: a whole codex, or a miscellany.
+#
 # Rows may name one address as often as they like: the library's record is read
 # once per run and each row takes its own slice of it.
 #
@@ -73,7 +80,7 @@
 # holds, so naming the manuscript again in every title prints it twice.
 #
 # Regenerate after editing:  python src/build_scan_manifest.py
-url	title	book	width	folios	shelfmark	licence	repository	status	note	translatedFrom	translationCertainty	exemplar
+url	title	book	width	folios	shelfmark	licence	repository	status	note	translatedFrom	translationCertainty	exemplar	category
 # Cambridge MS Oo.1.32 — one binding of 328 images holding twenty-six New
 # Testament books, so one row per book rather than one entry nobody can choose
 # Mark out of. The whole codex is kept as well, first, because a reader may want
@@ -81,9 +88,10 @@ url	title	book	width	folios	shelfmark	licence	repository	status	note	translatedF
 # already published. The ranges are the catalogue's own, copied from its record
 # and not interpolated: assuming 1 Corinthians begins where Romans ends is
 # exactly the "nearly always" that build_scan_manifest.py refuses. Note that the
-# book codes follow the OSIS filename prefixes in manuscripts/, which is why John
-# is JOH and not the JHN a Paratext list would give.
-https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1
+# book codes follow the filename prefixes in manuscripts/, which is why John is
+# JOH and not the JHN a Paratext list would give; the manifest carries the OSIS
+# id either way.
+https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1													nt
 https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Matthew	MAT		1r..21v
 https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Mark	MRK		22r..33v
 https://cudl.lib.cam.ac.uk/view/MS-OO-00001-00032/1	Luke	LUK		34r..48v
@@ -124,7 +132,7 @@ https://openn.library.upenn.edu/Data/0047/html/sloane_ms_237.html		REV
 # fragment 11's four pages from the identically-numbered "1r" of every other
 # fragment in the volume. The Vatican states no reuse licence, the same as
 # Vat. ebr. 101 above.
-https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.1/manifest.json	Luke 1:1–35; John 1:1–13 (fragment 11)			1r.[11.fs.0000]..2v.[11.fs.0000]	Vat. ebr. 530	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.1/manifest.json	Luke 1:1–35; John 1:1–13 (fragment 11)			1r.[11.fs.0000]..2v.[11.fs.0000]	Vat. ebr. 530	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana						nt
 #
 # Gaster Hebrew MS 1616 (The John Rylands Library, Manchester) — a second full
 # witness of the same family as MS Oo.1.32: Thomas Yeates's exact copy of it,
@@ -138,7 +146,7 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.530.pt.1/manifest.json	Luke 1:1–35; Jo
 # those books "here omitted"; the note is recorded, not resolved, but a
 # transcriber works from the images actually on screen, which is what this
 # offers.
-https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1
+https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1													nt
 https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Matthew	MAT		1..64	Gaster Hebrew MS 1616
 https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Mark	MRK		65..103	Gaster Hebrew MS 1616
 https://www.digitalcollections.manchester.ac.uk/view/MS-GASTER-HEBREW-01616/1	Luke	LUK		104..171	Gaster Hebrew MS 1616
@@ -212,7 +220,7 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.523/manifest.json	Even Bohan (Shem Tov's
 # Slicing on the catalogue's own "1v" would silently take the flyleaf's
 # instead of the real one, so the whole codex is kept unsliced, first — for a
 # reader who wants to page through the binding itself.
-https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Gospels), ff. 1v-153r				Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	New Testament (Four Gospels), ff. 1v-153r				Vat. ebr. 100	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana						nt
 # The four Gospels are offered separately as well. The Vatican states no
 # per-book division anywhere, so these boundaries come from its own viewer:
 # each book's opening leaf was read off the page the viewer shows, and each
@@ -236,7 +244,7 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.100/manifest.json	John	JOH		117v..153r	V
 # single unrelated leaf opens the volume under that label before the roman-
 # numbered preface, which itself precedes the numbered "1r" the catalogue's
 # citation means.
-https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translated by Domenico Gerosolimitano)				Neofiti.32	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translated by Domenico Gerosolimitano)				Neofiti.32	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana						nt
 # Neofiti.33 is the volume that continues it: where 32 holds the Gospels, 33
 # holds Acts, the epistles and Revelation. The Vatican's own record for this
 # one describes no contents at all — it gives a single bibliographic
@@ -245,7 +253,7 @@ https://digi.vatlib.it/iiif/MSS_Neofiti.32/manifest.json	New Testament (translat
 # what the library does, the same distinction Vat. ebr. 101's "ascribed"
 # title draws below. The Vatican marks its images "Low Quality"; they are
 # offered anyway, since a hard-to-read scan is still more than none.
-https://digi.vatlib.it/iiif/MSS_Neofiti.33/manifest.json	Acts, Epistles and Revelation (companion volume to Neofiti.32)				Neofiti.33	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana
+https://digi.vatlib.it/iiif/MSS_Neofiti.33/manifest.json	Acts, Epistles and Revelation (companion volume to Neofiti.32)				Neofiti.33	Images Copyright Biblioteca Apostolica Vaticana. No reuse licence is stated.	Biblioteca Apostolica Vaticana						nt
 #
 # A second full New Testament from the Bibliothèque nationale de France,
 # unrelated to the du Tillet Matthew above: Georgius Mayr's translation,
@@ -258,7 +266,7 @@ https://digi.vatlib.it/iiif/MSS_Neofiti.33/manifest.json	Acts, Epistles and Reve
 # are labelled by image number rather than by those pages, so no folios
 # range is given here — the whole volume is offered instead of a slice that
 # would have to be guessed at.
-https://gallica.bnf.fr/iiif/ark:/12148/btv1b105396027/manifest.json	New Testament (translated by Georgius Mayr)				BnF Hébreu 131		Bibliothèque nationale de France
+https://gallica.bnf.fr/iiif/ark:/12148/btv1b105396027/manifest.json	New Testament (translated by Georgius Mayr)				BnF Hébreu 131		Bibliothèque nationale de France						nt
 #
 # British Library, Add MS 11659 — found through the National Library of
 # Israel's Ktiv catalogue, searching the Hebrew word for "Matthew" rather
@@ -271,7 +279,7 @@ https://gallica.bnf.fr/iiif/ark:/12148/btv1b105396027/manifest.json	New Testamen
 # Gospel's opening folio (4r, 42r, 66r, 103r); the ranges below end one leaf
 # short of the next Gospel's start, not stated by OPenn but read directly off
 # its own page list.
-https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html
+https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html													nt
 https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Matthew	MAT		4r..41v
 https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Mark	MRK		42r..65v
 https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	Luke	LUK		66r..102v
@@ -293,7 +301,7 @@ https://openn.library.upenn.edu/Data/0047/html/add_ms_11659.html	John	JOH		103r.
 # beyond the one line above, so which book(s) and verses these folios transcribe
 # is not stated anywhere and is not guessed at here — the title stays the
 # library's own, generic one.
-https://iiif.bodleian.ox.ac.uk/iiif/manifest/472d4374-8071-45c6-874a-3e56aef74057.json	Fragments of the New Testament			92v..101v	Pococke 280	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford
+https://iiif.bodleian.ox.ac.uk/iiif/manifest/472d4374-8071-45c6-874a-3e56aef74057.json	Fragments of the New Testament			92v..101v	Pococke 280	Photo: © Bodleian Libraries, University of Oxford. Terms of use: CC BY-NC 4.0.	Bodleian Libraries, University of Oxford						nt
 #
 # Three more from the National Library of Israel's Ktiv project, which
 # aggregates other libraries' Hebrew manuscripts as well as its own. Its
@@ -375,7 +383,7 @@ https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:154384	Matthew (tra
 # remaining Even Bohan witness after the four above; none is guessed at, and
 # each note below is what its own library or record states, not an inference.
 # Columns from here on: url title book width folios shelfmark licence
-# repository status note.
+# repository status note, and category where no book is named.
 #
 # The best witness of all, and out of copyright: 206 folios, dated 1696, one
 # of the four purest texts and Howard's base manuscript for 1:1–23:22. The
@@ -473,7 +481,7 @@ https://digi.vatlib.it/iiif/MSS_Vat.ebr.101/manifest.json	Hebrew Matthew, ascrib
 # human paging through by eye can do what a folios range cannot: the
 # reading-room viewer is the second address below, easier to browse than
 # the bare manifest — https://www.nli.org.il/en/manuscripts/NNL_ALEPH990001465430205171/NLI
-https://iiif.nli.org.il/IIIFv21/DOCID/NNL_ALEPH71228769860005171/manifest/IE70811450	Luke 17-24, John 1-6 (ff. 48a-59b of this miscellany; page not yet located)				Russian State Library, Ms. Guenzburg 363	Public Domain Free Use: all uses of this item are permitted, including commercial use (National Library of Israel).	The Russian State Library
+https://iiif.nli.org.il/IIIFv21/DOCID/NNL_ALEPH71228769860005171/manifest/IE70811450	Luke 17-24, John 1-6 (ff. 48a-59b of this miscellany; page not yet located)				Russian State Library, Ms. Guenzburg 363	Public Domain Free Use: all uses of this item are permitted, including commercial use (National Library of Israel).	The Russian State Library						nt
 #
 # Two French municipal libraries, both stating outright that no photograph of
 # theirs exists — not merely undigitised, but never reproduced at all.

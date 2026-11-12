@@ -12,6 +12,8 @@ the feature working rather than like a bug.
 
 from __future__ import annotations
 
+import contextlib
+import io
 import sys
 import unittest
 from pathlib import Path
@@ -20,6 +22,7 @@ from tempfile import TemporaryDirectory
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import build_manifest  # noqa: E402
+import osis_books  # noqa: E402
 
 
 #: Small but real: a header the generator actually reads, so a change to how it
@@ -189,8 +192,11 @@ class TheCataloguingFieldsAreRead(unittest.TestCase):
         self.assertNotEqual(self.describe(self.HEADER)["shelfmark"], "Test")
 
     def test_x_contents_is_still_its_own_field(self) -> None:
-        # Four descriptions now sit side by side, told apart only by type.
-        self.assertEqual(self.describe(self.HEADER)["covers"], "1:1-2:13")
+        # Four descriptions now sit side by side, told apart only by type. The
+        # sentence is "contents"; "covers" is the list computed from the verses.
+        entry = self.describe(self.HEADER)
+        self.assertEqual(entry["contents"], "1:1-2:13")
+        self.assertEqual(entry["covers"], ["Rev.1.1"])
 
     def test_absent_fields_are_empty_rather_than_missing(self) -> None:
         # Most manuscripts answer none of these. Absent has to be ordinary: a
@@ -250,6 +256,143 @@ class TheCataloguingFieldsAreRead(unittest.TestCase):
             )
         )
         self.assertEqual(entry["exemplar"], "")
+
+
+def text(name: str, verses: list[str], header: str = "") -> dict:
+    """The entry for a file called ``name`` holding ``verses``, as milestones."""
+    body = "".join(
+        f'<verse sID="{ref}" osisID="{ref}"/>TEXT<verse eID="{ref}"/>' for ref in verses
+    )
+    # A translation declares English, or the generator rightly warns about it.
+    language = "en" if name.endswith("_translation.osis") else "he"
+    document = f"""<?xml version="1.0" encoding="UTF-8"?>
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace">
+ <osisText osisIDWork="Test" xml:lang="{language}">
+  <header><work osisWork="Test"><title>Test</title>{header}</work></header>
+  <div type="book">{body}</div>
+ </osisText>
+</osis>
+"""
+    with TemporaryDirectory() as folder:
+        path = Path(folder) / name
+        path.write_bytes(document.encode("utf-8"))
+        return build_manifest.describe(path)
+
+
+def chapter(book: str, number: int, verses: int) -> list[str]:
+    return [f"{book}.{number}.{verse}" for verse in range(1, verses + 1)]
+
+
+#: The whole of James, 108 verses, as the KJV numbers it.
+JAMES = (
+    chapter("Jas", 1, 27)
+    + chapter("Jas", 2, 26)
+    + chapter("Jas", 3, 18)
+    + chapter("Jas", 4, 17)
+    + chapter("Jas", 5, 20)
+)
+
+
+class AnEntrySaysWhereItSitsInTheCanon(unittest.TestCase):
+    """``book``, ``category``, ``fragment`` and ``covers``.
+
+    What lets Milah group its library by testament and tell a fragment from a
+    complete witness, without keeping a canon of its own that could disagree
+    with this one.
+    """
+
+    def test_the_book_is_the_osis_id_not_the_filename_prefix(self) -> None:
+        self.assertEqual(text("JAS_x_hebrew_commented.osis", JAMES)["book"], "Jas")
+        self.assertEqual(text("JOH_x_hebrew_commented.osis", ["John.1.1"])["book"], "John")
+        self.assertEqual(text("MAT_x_hebrew_commented.osis", ["Matt.1.1"])["book"], "Matt")
+        self.assertEqual(text("GEN_x_hebrew_commented.osis", ["Gen.1.1"])["book"], "Gen")
+
+    def test_a_whole_testament_names_no_book_but_still_a_category(self) -> None:
+        entry = text("NT_x_hebrew.osis", ["Matt.1.1", "Rev.22.21"])
+        self.assertEqual(entry["book"], "")
+        self.assertEqual(entry["category"], "nt")
+
+    def test_the_category_follows_the_testament(self) -> None:
+        self.assertEqual(text("GEN_x_hebrew.osis", ["Gen.1.1"])["category"], "ot")
+        self.assertEqual(text("SIR_x_hebrew.osis", ["Sir.1.1"])["category"], "ot")
+        self.assertEqual(text("REV_x_hebrew.osis", ["Rev.1.1"])["category"], "nt")
+
+    def test_a_text_with_no_biblical_verse_is_other(self) -> None:
+        entry = text("Pirkei_x_hebrew.osis", [])
+        self.assertEqual(entry["book"], "")
+        self.assertEqual(entry["category"], "other")
+        self.assertFalse(entry["fragment"])
+        self.assertEqual(entry["covers"], [])
+
+    def test_the_header_may_state_the_category(self) -> None:
+        # The same mechanism every other hand-written fact uses: a typed
+        # <description> inside <work>.
+        entry = text(
+            "REV_x_hebrew.osis",
+            ["Rev.1.1"],
+            '<description type="x-category">other</description>',
+        )
+        self.assertEqual(entry["category"], "other")
+
+    def test_a_category_outside_the_vocabulary_is_not_taken(self) -> None:
+        with contextlib.redirect_stdout(io.StringIO()) as printed:
+            entry = text(
+                "REV_x_hebrew.osis",
+                ["Rev.1.1"],
+                '<description type="x-category">apocrypha</description>',
+            )
+        self.assertEqual(entry["category"], "nt")
+        self.assertIn("apocrypha", printed.getvalue())
+
+    def test_covers_collapses_the_verses_into_ranges(self) -> None:
+        entry = text(
+            "REV_x_hebrew.osis", chapter("Rev", 1, 20) + chapter("Rev", 2, 13)
+        )
+        self.assertEqual(entry["covers"], ["Rev.1.1-Rev.2.13"])
+
+    def test_a_missing_verse_splits_the_range(self) -> None:
+        verses = [ref for ref in chapter("Rev", 1, 10) if ref != "Rev.1.5"]
+        self.assertEqual(
+            text("REV_x_hebrew.osis", verses)["covers"],
+            ["Rev.1.1-Rev.1.4", "Rev.1.6-Rev.1.10"],
+        )
+
+    def test_verses_out_of_order_are_put_in_order(self) -> None:
+        # Revelation in MS Oo.1.16 has 2:22 before 2:21: the manuscript's order,
+        # kept in the text, but not what a reference list should say.
+        verses = ["Rev.2.20", "Rev.2.22", "Rev.2.21", "Rev.2.23"]
+        self.assertEqual(text("REV_x_hebrew.osis", verses)["covers"], ["Rev.2.20-Rev.2.23"])
+
+    def test_a_whole_book_is_not_a_fragment(self) -> None:
+        self.assertFalse(text("JAS_x_hebrew.osis", JAMES)["fragment"])
+
+    def test_a_book_that_stops_short_is_a_fragment(self) -> None:
+        self.assertTrue(text("JAS_x_hebrew.osis", JAMES[:-1])["fragment"])
+
+    def test_a_book_that_starts_late_is_a_fragment(self) -> None:
+        self.assertTrue(text("JAS_x_hebrew.osis", JAMES[1:])["fragment"])
+
+    def test_a_book_that_skips_a_chapter_is_a_fragment(self) -> None:
+        verses = [ref for ref in JAMES if not ref.startswith("Jas.3.")]
+        self.assertTrue(text("JAS_x_hebrew.osis", verses)["fragment"])
+
+    def test_a_verse_missing_inside_a_chapter_is_not_a_fragment(self) -> None:
+        # MS Oo.1.32's James has no independent 2:26: its 2:15 spans two KJV
+        # verses. That is a numbering difference, not a missing leaf.
+        verses = [ref for ref in JAMES if ref != "Jas.2.26"]
+        self.assertFalse(text("JAS_x_hebrew.osis", verses)["fragment"])
+
+    def test_a_testament_missing_a_book_is_a_fragment(self) -> None:
+        entry = text("NT_x_hebrew.osis", JAMES)
+        self.assertTrue(entry["fragment"])
+        self.assertEqual(entry["covers"], ["Jas.1.1-Jas.5.20"])
+
+    def test_the_translation_carries_the_same_placement(self) -> None:
+        # A rendering of the same witness covers the same verses.
+        witness = text("JAS_x_hebrew_commented.osis", JAMES)
+        rendering = text("JAS_x_translation.osis", JAMES)
+        for field in ("book", "category", "fragment", "covers"):
+            self.assertEqual(witness[field], rendering[field], field)
 
 
 class LocalOnlyTextsAreNotCatalogued(unittest.TestCase):
@@ -353,6 +496,24 @@ class RegeneratingReproducesTheManifest(unittest.TestCase):
         self.assertEqual(defaults.source, self.MANUSCRIPTS)
         self.assertEqual(defaults.out, self.MANIFEST)
         self.assertTrue(defaults.source.is_dir(), f"no {defaults.source}")
+
+    def test_every_entry_is_placed_in_the_canon(self) -> None:
+        # Asked of the published file, which is what Milah reads.
+        import json
+
+        held = json.loads(self.MANIFEST.read_text(encoding="utf-8"))
+        for entry in held["manuscripts"]:
+            name = entry["file"]
+            self.assertIn(entry["category"], osis_books.CATEGORIES, name)
+            if entry["book"]:
+                self.assertEqual(osis_books.book_id(entry["book"]), entry["book"], name)
+                self.assertEqual(osis_books.category_of(entry["book"]), entry["category"], name)
+            self.assertIsInstance(entry["fragment"], bool, name)
+            self.assertIsInstance(entry["covers"], list, name)
+            for reference in entry["covers"]:
+                for end in reference.split("-"):
+                    self.assertIsNotNone(osis_books.parse(end), f"{name}: {reference}")
+            self.assertIsInstance(entry["contents"], str, name)
 
     def test_two_builds_agree(self) -> None:
         self.assertEqual(
