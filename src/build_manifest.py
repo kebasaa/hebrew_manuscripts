@@ -42,6 +42,8 @@ import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+import osis_books
+
 OSIS_NS = "http://www.bibletechnologies.net/2003/OSIS/namespace"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 
@@ -165,6 +167,77 @@ def identifier_text(work: ET.Element | None, kind: str) -> str:
     return ""
 
 
+def verse_refs(root: ET.Element) -> list[str]:
+    """Every verse reference the text carries, in the order it carries them.
+
+    Read from ``<verse osisID>``: a start milestone carries one and its end
+    milestone does not, so each verse is met once. An ``osisID`` may list more
+    than one reference, space-separated, where one verse of the manuscript is
+    two of the versification.
+    """
+    refs: list[str] = []
+    for verse in root.iter(f"{{{OSIS_NS}}}verse"):
+        refs.extend((verse.get("osisID") or "").split())
+    return refs
+
+
+def canon(path: Path, work: ET.Element | None, refs: list[str]) -> dict:
+    """Where a text sits in the canon: ``book``, ``category``, ``fragment``, ``covers``.
+
+    ``book`` is the OSIS id the filename's prefix names (``JAS`` → ``Jas``),
+    empty for a file named for a whole testament (``NT_…``) or for anything
+    that is not a biblical book.
+
+    ``category`` is ``ot``, ``nt`` or ``other``. A header may say outright with
+    ``<description type="x-category">``, the same mechanism every other
+    hand-written fact about a witness uses; otherwise it follows from the book,
+    then from the books the verses belong to, then from a testament prefix, and
+    is ``other`` when nothing biblical is found — a text with no verse a canon
+    knows is not one Milah should file under either testament.
+
+    ``covers`` lists the verses present, collapsed into ranges. ``fragment`` is
+    true when any book the text touches is not there whole, or when a file named
+    for a testament is missing one of its books.
+    """
+    prefix = path.name.split("_", 1)[0]
+    book = osis_books.book_id(prefix)
+    parsed = [ref for ref in map(osis_books.parse, refs) if ref is not None]
+    books = list(dict.fromkeys(name for name, _, _ in parsed))
+    biblical = [name for name in books if osis_books.category_of(name)]
+
+    category = description_text(work, "category").lower()
+    if category and category not in osis_books.CATEGORIES:
+        print(
+            f"  warning: {path.name} says x-category={category!r}, which is not one "
+            f"of {', '.join(osis_books.CATEGORIES)} — derived instead"
+        )
+        category = ""
+    if not category:
+        found = {osis_books.category_of(name) for name in biblical}
+        if len(found) > 1:
+            print(f"  warning: {path.name} spans both testaments; filed under the first")
+        category = (
+            osis_books.category_of(book)
+            or (osis_books.category_of(biblical[0]) if biblical else "")
+            or osis_books.TESTAMENTS.get(prefix.upper(), "")
+            or "other"
+        )
+
+    fragment = any(not osis_books.complete(parsed, name) for name in biblical)
+    testament = osis_books.TESTAMENTS.get(prefix.upper())
+    if testament and biblical:
+        fragment = fragment or any(
+            name not in books for name in osis_books.PROTOCANON[testament]
+        )
+
+    return {
+        "book": book,
+        "category": category,
+        "fragment": fragment,
+        "covers": osis_books.covers(refs),
+    }
+
+
 def describe(path: Path) -> dict | None:
     """One manifest entry, or None when the file is not usable OSIS."""
     try:
@@ -188,16 +261,31 @@ def describe(path: Path) -> dict | None:
         # Worth knowing about rather than silently trusting either signal.
         print(f"  warning: {path.name} is named a translation but declares Hebrew")
 
+    placed = canon(path, work, verse_refs(root))
+
     return {
         "file": path.name,
         "title": title,
-        # The OSIS book code the file is named for, used only to group the
-        # download list; the title is what a reader actually reads.
-        "book": path.name.split("_", 1)[0],
+        # The OSIS book id the file is named for — "Jas", not the "JAS" of its
+        # filename — used to group the download list; the title is what a
+        # reader actually reads. Empty for a whole testament in one file.
+        "book": placed["book"],
+        # "ot", "nt" or "other", so the list can be grouped by testament
+        # without Milah keeping its own idea of which book belongs where.
+        "category": placed["category"],
+        # True when the witness does not hold the whole of its book(s).
+        "fragment": placed["fragment"],
         "role": "translation" if is_translation else "manuscript",
         "language": language,
         "date": element_text(work, "date"),
-        "covers": description_text(work, "contents"),
+        # The verses present, as OSIS references and ranges:
+        # ["Rev.1.1-Rev.2.13"]. Computed from the text, not from the header.
+        "covers": placed["covers"],
+        # What the edition says it covers, in its own words — the header's
+        # <description type="x-contents">. This was "covers" until that key
+        # became the computed list above; the sentence is kept because it says
+        # what a list cannot ("the edition's 2:15 covers KJV 2:15–16").
+        "contents": description_text(work, "contents"),
         # What a cataloguer looks a manuscript up by, and the four columns the
         # download window shows beside it. All four describe the manuscript
         # rather than the file, so a translation carries its witness's answers

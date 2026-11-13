@@ -90,6 +90,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import NamedTuple
 
+import osis_books
+
 #: Named rather than left to the default, because a default one gets blocked.
 #: Cambridge bot-filters unidentified clients — its own help pages answer 403 —
 #: and the National Library of Israel refuses them outright.
@@ -772,6 +774,41 @@ def judgements(row: dict) -> dict:
     }
 
 
+def placement(row: dict) -> dict:
+    """``book`` and ``category`` for a row: where Milah files the scan.
+
+    ``book`` is written in the link list as a short code (``JAS``, ``JOH``) and
+    published as the OSIS id the text catalogue uses (``Jas``, ``John``), so a
+    scan and a transcription of the same book group together. An OSIS id is
+    accepted in the column as well. A code nobody knows is dropped with a
+    warning rather than published: a scan filed under a book Milah cannot name
+    is a scan in a group of its own.
+
+    ``category`` is ``ot``, ``nt`` or ``other``. The ``category`` column says
+    so outright, and is what a row covering a whole codex needs — it names no
+    single book to derive it from. Otherwise it follows from the book. Empty,
+    with a warning, where neither says: guessing "other" would file a New
+    Testament codex as a non-biblical text.
+    """
+    where = (row.get("url") or "").strip() or (row.get("shelfmark") or "").strip() or "a row"
+    code = (row.get("book") or "").strip()
+    book = osis_books.book_id(code) if code else ""
+    if code and not book:
+        print(f"  warning: {where} says book={code!r}, which names no OSIS book — dropped")
+
+    category = (row.get("category") or "").strip().lower()
+    if category and category not in osis_books.CATEGORIES:
+        print(
+            f"  warning: {where} says category={category!r}, which is not one of "
+            f"{', '.join(osis_books.CATEGORIES)} — derived instead"
+        )
+        category = ""
+    category = category or osis_books.category_of(book)
+    if not category:
+        print(f"  warning: {where} names no book and no category")
+    return {"book": book, "category": category}
+
+
 def read_links(path: Path) -> list[dict]:
     """The link list, as rows keyed by column name.
 
@@ -930,7 +967,7 @@ def unavailable_entry(row: dict, given: set[str]) -> dict | None:
         "provenance": "",
         "attribution": "",
         "licence": "",
-        "book": (row.get("book") or "").strip(),
+        **placement(row),
         # The one thing a stub row may still usefully link to: not a viewer,
         # since there isn't one, but wherever a reader could confirm this for
         # themselves — a plain catalogue record, most often.
@@ -1087,7 +1124,7 @@ def build(rows: list[dict]) -> list[dict]:
         # entry. It is hundreds of lines long, and anything after it would be
         # unreadable in a file people do open to see what is offered.
         entry.pop("pages")
-        entry["book"] = (row.get("book") or "").strip()
+        entry.update(placement(row))
         entry["source"] = url
         # Which part of the codex this is, said outright: several sliced entries
         # share a shelfmark, a date and a repository, and the first thing anyone

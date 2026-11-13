@@ -67,6 +67,29 @@ GitHub serves and therefore what Milah downloads. Measuring the working copy
 instead would make every manuscript report an update for ever on any clone
 checked out with `core.autocrlf=true`, and taking the update would not settle it.
 
+### What an entry in `manifest_manuscripts.json` says
+
+| field | what |
+|---|---|
+| `file` | the file's name in `manuscripts/`, never a path |
+| `title` | the edition's title — the `<title>` inside `<work>`, nothing looser |
+| `book` | the OSIS book id the file is named for: `Jas`, `John`, `Luke`, `Matt`, `Rev`, `Gen`. The filename prefix (`JAS`, `JOH`) is mapped through the table in `src/osis_books.py`. Empty for a file covering a whole testament (`NT_…`) and for a text that is not a biblical book |
+| `category` | `ot`, `nt` or `other` (non-biblical) — which part of Milah's library it is filed in. Derived from `book`, then from the books its verses belong to, then from a testament prefix; `other` when no verse a canon knows is found. A header may state it outright with `<description type="x-category">`. Deuterocanonical books are `ot` |
+| `fragment` | `true` when the witness does not hold the whole of its book(s): it does not start at 1:1, skips a chapter, or stops short of the book's last verse — or, for a whole-testament file, is missing a book. A verse missing *inside* a chapter does not count, since that is usually versification rather than a lost leaf |
+| `covers` | the verses present, as OSIS references and ranges computed from the text's own `<verse osisID>`s: `["Rev.1.1-Rev.2.13"]`. A range runs on into the next chapter when that chapter starts at verse 1, so it cannot see verses missing from the end of a chapter |
+| `contents` | what the edition says it covers, in its own words — `<description type="x-contents">`. Until `covers` became the list above, this sentence was published as `covers` |
+| `role` | `manuscript` or `translation`, from the filename suffix |
+| `language` | the `xml:lang` of `<osisText>` |
+| `date` | the `<date>` inside `<work>` |
+| `shelfmark` | `<identifier type="x-shelfmark">` |
+| `folios` | `<description type="x-folios">`: `1r-4v` |
+| `translatedFrom`, `translationCertainty` | `<description type="x-translated-from">` and its `subType` |
+| `exemplar` | `<description type="x-exemplar">` |
+| `rights`, `license` | the two `<rights>` elements; see [Licence](#licence) |
+| `bytes`, `sha256` | size and checksum of the LF form of the file |
+
+Every field is present on every entry, empty where there is nothing to say.
+
 ## After adding a scan
 
 Add its address to `src/scan_links.tsv` — the URL as copied from the library's
@@ -166,9 +189,15 @@ Each sliced entry gets its own id — the codex's, with its two folios on the en
 is still the number in Cambridge's own viewer and not a count from 1 inside the
 slice. A row with no range keeps the id it has always had.
 
-`book` is what groups the two catalogues together, so the codes here are the OSIS
+`book` is what groups the two catalogues together. It is written here with the
 filename prefixes used in `manuscripts/` — which is why John is `JOH` and not the
-`JHN` a Paratext list would give.
+`JHN` a Paratext list would give — and published, in both manifests, as the OSIS
+id (`John`), mapped through `src/osis_books.py`. An OSIS id in the column is
+accepted as well, and a code the table does not know is dropped with a warning.
+
+Each scan also carries a `category` — `ot`, `nt` or `other` — derived from
+`book`. A row that names no book, such as a whole codex or a miscellany, says
+it in the `category` column instead, the last in the file.
 
 `build_scan_manifest.py` knows these kinds of source:
 

@@ -27,6 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 import build_scan_manifest  # noqa: E402
+import osis_books  # noqa: E402
 
 
 #: Cut down from the real answer for MS-OO-00001-00032, keeping every shape the
@@ -927,6 +928,67 @@ class OneRecordServesEveryRowThatNamesIt(unittest.TestCase):
         entries = self._build(self._rows("1r..1v", "1r–1v"))
         self.assertEqual(len(entries), 1)
 
+    def test_a_books_code_is_published_as_its_osis_id(self) -> None:
+        # The link list says JOH, as the filenames do; the text catalogue says
+        # John, and a scan has to land in the same group as its transcription.
+        entries = self._build(
+            [
+                {"url": self.ROW, "book": "JOH", "folios": "1r..1v"},
+                {"url": self.ROW, "book": "Jas", "folios": "2r..2v"},
+            ]
+        )
+        self.assertEqual([entry["book"] for entry in entries], ["John", "Jas"])
+        self.assertEqual([entry["category"] for entry in entries], ["nt", "nt"])
+
+    def test_a_codex_takes_its_category_from_the_column(self) -> None:
+        entries = self._build([{"url": self.ROW, "category": "nt"}])
+        self.assertEqual(entries[0]["book"], "")
+        self.assertEqual(entries[0]["category"], "nt")
+
+
+class AScanIsFiledByBookAndTestament(unittest.TestCase):
+    """``placement()``: where Milah files a row, with nothing fetched."""
+
+    def place(self, row: dict) -> dict:
+        noise = io.StringIO()
+        with contextlib.redirect_stdout(noise):
+            placed = build_scan_manifest.placement(row)
+        self.said = noise.getvalue()
+        return placed
+
+    def test_the_book_decides_the_category(self) -> None:
+        self.assertEqual(self.place({"book": "GEN"}), {"book": "Gen", "category": "ot"})
+        self.assertEqual(self.place({"book": "MAT"}), {"book": "Matt", "category": "nt"})
+
+    def test_the_column_overrides_the_book(self) -> None:
+        self.assertEqual(
+            self.place({"book": "MAT", "category": "other"}),
+            {"book": "Matt", "category": "other"},
+        )
+
+    def test_an_unknown_code_is_dropped_and_said(self) -> None:
+        placed = self.place({"book": "XYZ", "url": "https://example.org/x"})
+        self.assertEqual(placed["book"], "")
+        self.assertIn("XYZ", self.said)
+
+    def test_a_category_outside_the_vocabulary_is_dropped_and_said(self) -> None:
+        placed = self.place({"book": "REV", "category": "apocrypha"})
+        self.assertEqual(placed["category"], "nt")
+        self.assertIn("apocrypha", self.said)
+
+    def test_neither_is_empty_and_said_rather_than_guessed(self) -> None:
+        placed = self.place({"url": "https://example.org/codex"})
+        self.assertEqual(placed, {"book": "", "category": ""})
+        self.assertIn("no category", self.said)
+
+    def test_an_unavailable_stub_is_filed_the_same_way(self) -> None:
+        entry = build_scan_manifest.unavailable_entry(
+            {"title": "John", "shelfmark": "MS Add. 170", "book": "JOH", "note": "x"},
+            set(),
+        )
+        self.assertEqual(entry["book"], "John")
+        self.assertEqual(entry["category"], "nt")
+
 
 class AManuscriptWithNothingToFetchIsOfferedAnyway(unittest.TestCase):
     """A row may say ``unavailable`` instead of naming an address.
@@ -1099,6 +1161,7 @@ class WhatIsSaidAboutTheTextRatherThanTheObject(unittest.TestCase):
             {
                 "title": "Even Bohan",
                 "shelfmark": "Add MS 26964",
+                "book": "MAT",
                 "note": "Images currently unavailable.",
                 "translatedFrom": "Translated from the Greek",
                 "translationCertainty": "original-uncertain",
@@ -1166,11 +1229,20 @@ class ThePublishedManifestIsUsable(unittest.TestCase):
 
     def test_every_book_a_scan_names_is_one_the_texts_would_recognise(self) -> None:
         # book is what groups the two catalogues together, so a scan filed under
-        # JHN beside a text filed under JOH is two lists that never meet.
+        # JOH beside a text filed under John is two lists that never meet. Both
+        # publish the OSIS id.
         for scan in self.document["scans"]:
             book = scan.get("book", "")
             if book:
-                self.assertRegex(book, r"^[1-3]?[A-Z]{2,3}$", scan["id"])
+                self.assertEqual(osis_books.book_id(book), book, scan["id"])
+
+    def test_every_scan_is_filed_under_a_testament(self) -> None:
+        for scan in self.document["scans"]:
+            self.assertIn(scan["category"], osis_books.CATEGORIES, scan["id"])
+            if scan["book"]:
+                self.assertEqual(
+                    osis_books.category_of(scan["book"]), scan["category"], scan["id"]
+                )
 
     def test_every_folio_has_somewhere_to_be_fetched_from(self) -> None:
         for scan in self.document["scans"]:
